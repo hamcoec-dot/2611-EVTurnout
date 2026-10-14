@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamilton County TN - Early Voting &amp; Absentee Turnout Report</title>
+  <meta name="description" content="Official daily turnout metrics for the State &amp; Federal General election in Hamilton County, TN.">
+  <link rel="stylesheet" href="index.css">
+  <!-- Load Inter font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <!-- Load Chart.js and DataLabels plugin from CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body onload="initApp()">
+
+  <!-- Patriotic Title Banner Header -->
+  <header class="patriotic-header">
+    <div class="header-container">
+      <div class="header-seal" aria-hidden="true">&#x2605;&#x2605;&#x2605;</div>
+      <h1 id="main-report-title">Hamilton County TN Turnout Report</h1>
+      <h2 id="sub-election-name">State &amp; Federal General Election</h2>
+      <h3 id="sub-election-date">November 3rd, 2026</h3>
+    </div>
+  </header>
+  
+  <!-- Red, White, and Blue Stripe Divider Bar -->
+  <div class="patriotic-stripes" aria-hidden="true">
+    <div class="stripe stripe-red"></div>
+    <div class="stripe stripe-white"></div>
+    <div class="stripe stripe-blue"></div>
+  </div>
+
+  <!-- Top Navigation Jump Menu Bar -->
+  <nav class="top-nav-bar" aria-label="Dashboard Section Navigation">
+    <div class="top-nav-container">
+      <a href="#section-overview" class="top-nav-link active">Overview</a>
+      <a href="#section-general-turnout" class="top-nav-link">Daily Turnout</a>
+      <a href="#section-comparison" class="top-nav-link">Historical Comparison</a>
+      <a href="#section-locations" class="top-nav-link">Locations</a>
+      <a href="#section-first-time-voters" class="top-nav-link">First-Time Co. Voters</a>
+      <a href="#section-demographics" class="top-nav-link">Demographics</a>
+      <a href="#section-districts" class="top-nav-link">Districts</a>
+      <a href="#section-precincts" class="top-nav-link">Precincts</a>
+    </div>
+  </nav>
+
+  <main class="content-container">
+
+    <!-- Hero Stat Cards (Flex Grid) -->
+    <section class="stat-grid" id="section-overview" aria-label="Key Election Statistics">
+      <div class="stat-card glass-card">
+        <div class="stat-icon" aria-hidden="true">&#x1F5F3;&#xFE0F;</div>
+        <div class="stat-info">
+          <span class="stat-label">Grand Total Turnout</span>
+          <strong class="stat-value" id="stat-grand-total">0</strong>
+        </div>
+      </div>
+      
+      <div class="stat-card glass-card">
+        <div class="stat-icon" aria-hidden="true">&#x1F464;</div>
+        <div class="stat-info">
+          <span class="stat-label">Registered Voters</span>
+          <strong class="stat-value" id="stat-registered">0</strong>
+        </div>
+      </div>
+      
+      <div class="stat-card glass-card">
+        <div class="stat-icon" aria-hidden="true">&#x1F4C8;</div>
+        <div class="stat-info">
+          <span class="stat-label">Percentage Turnout</span>
+          <strong class="stat-value" id="stat-percent">0.00%</strong>
+        </div>
+      </div>
+      
+      <div class="stat-card glass-card">
+        <div class="stat-icon" aria-hidden="true">&#x23F3;</div>
+        <div class="stat-info">
+          <span class="stat-label">Days of EV Remaining</span>
+          <strong class="stat-value" id="stat-days-left">0</strong>
+        </div>
+      </div>
+
+      <div class="stat-card glass-card accent-card">
+        <div class="stat-icon" aria-hidden="true">&#x1F3F7;&#xFE0F;</div>
+        <div class="stat-info">
+          <span class="stat-label">First-Time Co. Voters</span>
+          <strong class="stat-value" id="stat-first-time-total">0</strong>
+          <span class="stat-sublabel" id="stat-first-time-pct">0.00% of turnout</span>
+        </div>
+      </div>
+      
+      <div class="stat-card glass-card" id="projection-card">
+        <div class="stat-icon" aria-hidden="true">&#x1F52E;</div>
+        <div class="stat-info">
+          <span class="stat-label">Projected Early Turnout</span>
+          <strong class="stat-value text-nowrap" id="stat-projected-range">Calculating...</strong>
+          <span class="stat-sublabel" id="stat-projected-pct"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Party Turnout Section -->
+    <section class="party-container" aria-label="Turnout by Party Groupings">
+      <div class="party-card rep-theme">
+        <div class="party-card-header">
+          <h3>Republican Party</h3>
+          <span class="party-badge">REP</span>
+        </div>
+        <div class="party-num-display">
+          <span class="party-count" id="rep-count">0</span>
+          <span class="party-pct" id="rep-pct">0.0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="rep-progress" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="party-card dem-theme">
+        <div class="party-card-header">
+          <h3>Democrat Party</h3>
+          <span class="party-badge">DEM</span>
+        </div>
+        <div class="party-num-display">
+          <span class="party-count" id="dem-count">0</span>
+          <span class="party-pct" id="dem-pct">0.0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="dem-progress" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="party-card gen-theme">
+        <div class="party-card-header">
+          <h3>General Election</h3>
+          <span class="party-badge">GEN</span>
+        </div>
+        <div class="party-num-display">
+          <span class="party-count" id="gen-count">0</span>
+          <span class="party-pct" id="gen-pct">0.0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="gen-progress" style="width: 0%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turnout Details Table Section -->
+    <section class="table-section" id="section-general-turnout" aria-label="Daily Turnout Breakdown by Location">
+      <div class="table-header-row">
+        <h2>Daily Turnout Breakdown</h2>
+        <!-- Accessible CSV Export Button -->
+        <button type="button" class="export-btn" id="btn-export-csv" onclick="exportToCSV()" aria-label="Export turnout data to CSV file">
+          <span class="btn-icon" aria-hidden="true">&#x1F4E5;</span> Export CSV
+        </button>
+      </div>
+
+      <!-- Scroll Wrapper for responsive table behavior -->
+      <div class="table-scroll-wrapper">
+        <table class="turnout-table" id="data-turnout-table">
+          <thead>
+            <tr id="table-headers">
+              <th scope="col" class="sticky-col">Date</th>
+              <!-- Dynamically populated headers -->
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Dynamically populated turnout rows -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Historical Comparison Table Section -->
+    <section class="table-section" id="section-comparison" aria-label="Historical Turnout Comparison">
+      <div class="table-header-row">
+        <h2>Historical Turnout Comparison (November Elections)</h2>
+      </div>
+      
+      <div class="table-scroll-wrapper">
+        <table class="turnout-table" id="comparison-table">
+          <thead>
+            <tr>
+              <th scope="col" class="sticky-col">Election Year</th>
+              <th scope="col">Early Voting</th>
+              <th scope="col">Absentee/Mail</th>
+              <th scope="col">Grand Total</th>
+              <th scope="col">Registered Voters</th>
+              <th scope="col">Turnout Rate</th>
+              <th scope="col">Republican share</th>
+              <th scope="col">Democrat share</th>
+              <th scope="col">General share</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-table-body">
+            <!-- Dynamically populated comparison rows -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Full-Width Featured Chart: Cumulative Turnout Progression -->
+    <section class="full-width-chart-section" aria-label="Cumulative Turnout Progression Chart">
+      <div class="chart-container card-surface featured-chart-container">
+        <div class="chart-header-row">
+          <h2>Cumulative Turnout Progression (vs. Past Cycles)</h2>
+        </div>
+        <div class="chart-wrapper cumulative-chart-wrapper">
+          <canvas id="cumulativeChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Symmetrical 2-Column Visualizations Grid -->
+    <section class="visualization-grid" id="section-locations" aria-label="Turnout Visualizations">
+      <!-- Row 1: Location Analytics -->
+      <div class="chart-container card-surface">
+        <div class="chart-header-row">
+          <h3>Turnout by Location</h3>
+          <div class="view-switch-group" role="group" aria-label="Location View Switch">
+            <button type="button" class="view-switch-btn active" id="btn-loc-pct" onclick="setLocationMode('pct')">% Share</button>
+            <button type="button" class="view-switch-btn" id="btn-loc-count" onclick="setLocationMode('count')">Voters</button>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="locationChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-container card-surface">
+        <div class="chart-header-row">
+          <h3>Partisan Party Share by Location</h3>
+          <div class="view-switch-group" role="group" aria-label="Partisan Location View Switch">
+            <button type="button" class="view-switch-btn active" id="btn-part-loc-pct" onclick="setPartisanLocationMode('pct')">% Share</button>
+            <button type="button" class="view-switch-btn" id="btn-part-loc-count" onclick="setPartisanLocationMode('count')">Voters</button>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="partisanLocationChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Row 2: Historical & Party Trends -->
+      <div class="chart-container card-surface" id="historical-party-chart-container">
+        <div class="chart-header-row">
+          <h3>Historical Partisan Party Share Trend</h3>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="historicalPartyChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-container card-surface" id="party-distribution-chart-container">
+        <div class="chart-header-row">
+          <h3>Party Election Distribution</h3>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="partyDistributionChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Row 3: Top 5 Precincts by Location -->
+      <div class="full-width-feature-container card-surface" style="grid-column: 1 / -1; margin-top: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <div>
+            <h3 class="major-feature-title">Top 5 Precincts by Location</h3>
+            <p class="feature-subtitle">Highest turnout precincts ranked by location and partisan distribution.</p>
+          </div>
+          <div class="feature-controls">
+            <select id="top5-loc-select" class="location-select-field" onchange="setTop5LocLocation(this.value)">
+              <option value="ALL">All Locations Combined</option>
+            </select>
+            <div class="view-switch-group" role="group" aria-label="Top 5 Location View Switch">
+              <button type="button" class="view-switch-btn active" id="btn-top5-loc-count" onclick="setTop5LocMode('count')">Voters</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-loc-pct" onclick="setTop5LocMode('pct')">% Share</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 350px !important;">
+          <canvas id="top5LocationPrecinctChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- First-Time Hamilton County Voters Insights Section -->
+    <section class="demographics-section" id="section-first-time-voters" aria-label="First-Time Hamilton County Voters Analytics">
+      <div class="section-title-container">
+        <h2>First-Time Hamilton County Voters Analytics</h2>
+        <p class="section-subtitle">Insights on voters casting their first ballot in Hamilton County, TN during this election cycle.</p>
+      </div>
+
+      <!-- KPI Summary Cards for First-Time Voters -->
+      <div class="stat-grid ft-stat-grid" style="margin-bottom: 24px;">
+        <div class="stat-card glass-card accent-card">
+          <div class="stat-icon" aria-hidden="true">&#x1F3F7;&#xFE0F;</div>
+          <div class="stat-info">
+            <span class="stat-label">First-Time Co. Voters</span>
+            <strong class="stat-value" id="ft-kpi-total">0</strong>
+            <span class="stat-sublabel" id="ft-kpi-turnout-share">0% of total turnout</span>
+          </div>
+        </div>
+
+        <div class="stat-card glass-card" id="ft-kpi-party-card">
+          <div class="stat-icon" aria-hidden="true">&#x1F5F3;&#xFE0F;</div>
+          <div class="stat-info">
+            <span class="stat-label">Partisan Split</span>
+            <strong class="stat-value text-nowrap stat-value-compact" id="ft-kpi-party-split">0% Dem / 0% Rep</strong>
+            <span class="stat-sublabel" id="ft-kpi-leading-party">Democrat Lead</span>
+          </div>
+        </div>
+
+        <div class="stat-card glass-card">
+          <div class="stat-icon" aria-hidden="true">&#x1F393;</div>
+          <div class="stat-info">
+            <span class="stat-label">Top Age Cohort</span>
+            <strong class="stat-value" id="ft-kpi-top-age">18-29</strong>
+            <span class="stat-sublabel" id="ft-kpi-youth-share">0% youth share</span>
+          </div>
+        </div>
+
+        <div class="stat-card glass-card">
+          <div class="stat-icon" aria-hidden="true">&#x1F4CD;</div>
+          <div class="stat-info">
+            <span class="stat-label">Top Location</span>
+            <strong class="stat-value" id="ft-kpi-top-location">Election Comm.</strong>
+            <span class="stat-sublabel" id="ft-kpi-location-count">0 voters</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 1: Partisan Breakdown & Sex Breakdown -->
+      <div class="visualization-grid" id="ft-grid-row-1">
+        <div class="chart-container card-surface" id="ft-party-chart-container">
+          <div class="chart-header-row">
+            <h3>Partisan Breakdown (First-Time Co. Voters)</h3>
+            <div class="view-switch-group" role="group" aria-label="First-Time Party Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-ft-party-pct" onclick="setFTPartyMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-ft-party-count" onclick="setFTPartyMode('count')">Voters</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ftPartyChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-container card-surface" id="ft-sex-chart-container">
+          <div class="chart-header-row">
+            <h3>Turnout by Sex (First-Time Co. Voters)</h3>
+            <div class="view-switch-group" role="group" aria-label="First-Time Sex Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-ft-sex-pct" onclick="setFTSexMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-ft-sex-count" onclick="setFTSexMode('count')">Voters</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ftSexChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Age Distribution & Location Breakdown -->
+      <div class="visualization-grid" id="ft-grid-row-2" style="margin-top: 24px;">
+        <div class="chart-container card-surface" id="ft-age-chart-container">
+          <div class="chart-header-row">
+            <h3>Age Distribution (First-Time Co. Voters)</h3>
+            <div class="view-switch-group" role="group" aria-label="First-Time Age Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-ft-age-pct" onclick="setFTAgeMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-ft-age-count" onclick="setFTAgeMode('count')">Voters</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ftAgeChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-container card-surface" id="ft-location-chart-container">
+          <div class="chart-header-row">
+            <h3>First-Time Co. Voters by Location</h3>
+            <div class="view-switch-group" role="group" aria-label="First-Time Location Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-ft-loc-pct" onclick="setFTLocationMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-ft-loc-count" onclick="setFTLocationMode('count')">Voters</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ftLocationChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Daily Trend -->
+      <div class="full-width-feature-container card-surface" id="ft-daily-trend-container" style="margin-top: 24px;">
+        <div class="chart-header-row">
+          <h3>Daily First-Time Co. Voter Trend</h3>
+        </div>
+        <div class="chart-wrapper" style="height: 320px !important;">
+          <canvas id="ftDailyTrendChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Row 4: Top 5 Precincts & District Distribution for First-Time Voters -->
+      <div class="visualization-grid" id="ft-grid-row-4" style="margin-top: 24px; margin-bottom: 24px;">
+        <div class="chart-container card-surface" id="ft-top5-precinct-chart-container">
+          <div class="chart-header-row header-flex-wrap">
+            <h3>Top 5 Precincts (First-Time Co. Voters)</h3>
+            <div class="view-switch-group" role="group" aria-label="First-Time Top 5 Precinct Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-ft-top5-count" onclick="setFTTop5PrecinctMode('count')">Voters</button>
+              <button type="button" class="view-switch-btn" id="btn-ft-top5-pct" onclick="setFTTop5PrecinctMode('pct')">% Share</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="top5FTPrecinctChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-container card-surface" id="ft-district-chart-container">
+          <div class="chart-header-row header-flex-wrap">
+            <h3>District Distribution (First-Time Co. Voters)</h3>
+            <div class="feature-controls">
+              <div class="view-switch-group" role="group" aria-label="First-Time District Type Switch">
+                <button type="button" class="view-switch-btn active" id="btn-ft-dist-commission" onclick="setFTDistrictView('commission')">Commission</button>
+                <button type="button" class="view-switch-btn" id="btn-ft-dist-senate" onclick="setFTDistrictView('senate')">Senate</button>
+                <button type="button" class="view-switch-btn" id="btn-ft-dist-house" onclick="setFTDistrictView('house')">House</button>
+                <button type="button" class="view-switch-btn" id="btn-ft-dist-school" onclick="setFTDistrictView('school')">School</button>
+                <button type="button" class="view-switch-btn" id="btn-ft-dist-city" onclick="setFTDistrictView('city')">City</button>
+              </div>
+              <div class="view-switch-group" role="group" aria-label="First-Time District Mode Switch">
+                <button type="button" class="view-switch-btn active" id="btn-ft-dist-unit-pct" onclick="setFTDistrictMode('pct')">% Share</button>
+                <button type="button" class="view-switch-btn" id="btn-ft-dist-unit-count" onclick="setFTDistrictMode('count')">Voters</button>
+              </div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ftDistrictChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demographic Analytics Section -->
+    <section class="demographics-section" id="section-demographics" aria-label="Demographic Analytics">
+      <div class="section-title-container">
+        <h2>Voter Demographic Breakdown</h2>
+      </div>
+
+      <div class="visualization-grid">
+        <div class="chart-container card-surface">
+          <div class="chart-header-row">
+            <h3>Turnout by Age Brackets</h3>
+            <div class="view-switch-group" role="group" aria-label="Age View Switch">
+              <button type="button" class="view-switch-btn active" id="btn-age-pct" onclick="setAgeMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-age-count" onclick="setAgeMode('count')">Voters</button>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="ageChart"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-container card-surface">
+          <div class="chart-header-row">
+            <h3>Turnout by Sex</h3>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="genderChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature: Top 5 Precincts for Age Brackets -->
+      <div class="full-width-feature-container card-surface" style="margin-top: 24px; margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <h3 class="major-feature-title">Top 5 Precincts for Age Brackets</h3>
+          <div class="feature-controls">
+            <div class="view-switch-group" role="group" aria-label="Top 5 Age Switch">
+              <button type="button" class="view-switch-btn active" id="btn-top5-age-all" onclick="setTop5AgeBracket('ALL')">All</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-age-18" onclick="setTop5AgeBracket('18-29')">18-29</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-age-30" onclick="setTop5AgeBracket('30-49')">30-49</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-age-50" onclick="setTop5AgeBracket('50-64')">50-64</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-age-65" onclick="setTop5AgeBracket('65+')">65+</button>
+            </div>
+            <div class="view-switch-group" role="group" aria-label="Top 5 Age Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-top5-age-count" onclick="setTop5AgeMode('count')">Voters</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-age-pct" onclick="setTop5AgeMode('pct')">% Share</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 350px !important;">
+          <canvas id="top5AgePrecinctChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Feature: District Breakdown by Party -->
+      <div class="full-width-feature-container card-surface" id="section-districts" style="margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <h3 class="major-feature-title">District Breakdown by Party</h3>
+          <div class="feature-controls">
+            <div class="view-switch-group" role="group" aria-label="District Type Switch">
+              <button type="button" class="view-switch-btn active" id="btn-dist-commission" onclick="setDistrictView('commission')">Commission</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-senate" onclick="setDistrictView('senate')">Senate</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-house" onclick="setDistrictView('house')">House</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-school" onclick="setDistrictView('school')">School</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-city" onclick="setDistrictView('city')">City</button>
+            </div>
+            <div class="view-switch-group" role="group" aria-label="District Unit Switch">
+              <button type="button" class="view-switch-btn active" id="btn-dist-unit-pct" onclick="setDistrictMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-unit-count" onclick="setDistrictMode('count')">Voters</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 350px !important;">
+          <canvas id="districtChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Feature: Top 5 Precincts for Districts -->
+      <div class="full-width-feature-container card-surface" style="margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <h3 class="major-feature-title">Top 5 Precincts for Districts</h3>
+          <div class="feature-controls">
+            <div class="view-switch-group" role="group" aria-label="Top 5 District Type Switch">
+              <button type="button" class="view-switch-btn active" id="btn-top5-dist-commission" onclick="setTop5DistrictType('commission')">Commission</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-dist-senate" onclick="setTop5DistrictType('senate')">Senate</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-dist-house" onclick="setTop5DistrictType('house')">House</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-dist-school" onclick="setTop5DistrictType('school')">School</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-dist-city" onclick="setTop5DistrictType('city')">City</button>
+            </div>
+            <select id="top5-dist-select" class="location-select-field" onchange="setTop5DistrictName(this.value)">
+              <option value="ALL">All Districts Combined</option>
+            </select>
+            <div class="view-switch-group" role="group" aria-label="Top 5 District Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-top5-dist-count" onclick="setTop5DistrictMode('count')">Voters</button>
+              <button type="button" class="view-switch-btn" id="btn-top5-dist-pct" onclick="setTop5DistrictMode('pct')">% Share</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 350px !important;">
+          <canvas id="top5DistrictPrecinctChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Feature: District Share of Total County Ballots -->
+      <div class="full-width-feature-container card-surface" style="margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <div>
+            <h3 class="major-feature-title">District Share of Total County Ballots</h3>
+            <p class="feature-subtitle">Proportion of total countywide early voting turnout cast per district.</p>
+          </div>
+          <div class="feature-controls">
+            <div class="view-switch-group" role="group" aria-label="District Share Type Switch">
+              <button type="button" class="view-switch-btn active" id="btn-dist-share-commission" onclick="setDistrictShareType('commission')">Commission</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-share-senate" onclick="setDistrictShareType('senate')">Senate</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-share-house" onclick="setDistrictShareType('house')">House</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-share-school" onclick="setDistrictShareType('school')">School</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-share-city" onclick="setDistrictShareType('city')">City</button>
+            </div>
+            <div class="view-switch-group" role="group" aria-label="District Share Mode Switch">
+              <button type="button" class="view-switch-btn active" id="btn-dist-share-pct" onclick="setDistrictShareMode('pct')">% Share</button>
+              <button type="button" class="view-switch-btn" id="btn-dist-share-count" onclick="setDistrictShareMode('count')">Voters</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 360px !important;">
+          <canvas id="districtShareChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Feature: Top 10 Precincts by Turnout -->
+      <div class="full-width-feature-container card-surface" id="section-precincts" style="margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <div>
+            <h3 class="major-feature-title">Top 10 Precincts by Turnout</h3>
+            <p class="feature-subtitle">Highest volume precincts ranked by total early voting participation and partisan distribution.</p>
+          </div>
+          <div class="view-switch-group" role="group" aria-label="Top 10 Precinct View Switch">
+            <button type="button" class="view-switch-btn active" id="btn-top10-count" onclick="setTop10PrecinctMode('count')">Voters</button>
+            <button type="button" class="view-switch-btn" id="btn-top10-pct" onclick="setTop10PrecinctMode('pct')">% Share</button>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 420px !important;">
+          <canvas id="top10PrecinctChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Feature: Competitive Battleground Precincts -->
+      <div class="full-width-feature-container card-surface" style="margin-bottom: 24px;">
+        <div class="chart-header-row header-flex-wrap">
+          <div>
+            <h3 class="major-feature-title">Competitive Battleground Precincts</h3>
+            <p class="feature-subtitle">Ranked by closest party split margin between Republican and Democrat participation (50/50 Index).</p>
+          </div>
+          <div class="feature-controls">
+            <div class="view-switch-group" role="group" aria-label="Competitive District Type Switch">
+              <button type="button" class="view-switch-btn active" id="btn-comp-dist-commission" onclick="setCompDistrictType('commission')">Commission</button>
+              <button type="button" class="view-switch-btn" id="btn-comp-dist-senate" onclick="setCompDistrictType('senate')">Senate</button>
+              <button type="button" class="view-switch-btn" id="btn-comp-dist-house" onclick="setCompDistrictType('house')">House</button>
+              <button type="button" class="view-switch-btn" id="btn-comp-dist-school" onclick="setCompDistrictType('school')">School</button>
+              <button type="button" class="view-switch-btn" id="btn-comp-dist-city" onclick="setCompDistrictType('city')">City</button>
+            </div>
+            <select id="comp-dist-select" class="location-select-field" onchange="setCompDistrictName(this.value)">
+              <option value="ALL">All Districts Combined</option>
+            </select>
+            <div class="view-switch-group" role="group" aria-label="Competitive Precinct View Switch">
+              <button type="button" class="view-switch-btn active" id="btn-comp-close" onclick="setCompetitivePrecinctMode('close')">Closest Split (50/50)</button>
+              <button type="button" class="view-switch-btn" id="btn-comp-wide" onclick="setCompetitivePrecinctMode('wide')">Widest Margin</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-wrapper" style="height: 420px !important;">
+          <canvas id="competitivePrecinctChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Major Feature: All Precincts Turnout & Party Distribution -->
+      <div class="full-width-feature-container card-surface">
+        <div class="chart-header-row header-flex-wrap">
+          <div>
+            <h3 class="major-feature-title">All Precincts Turnout &amp; Party Distribution</h3>
+            <p class="feature-subtitle">Interactive breakdown of turnout and partisan party participation across all precincts in Hamilton County.</p>
+          </div>
+          <div class="feature-controls">
+            <div class="search-input-wrapper">
+              <label for="precinct-search-input" class="visually-hidden">Search precincts</label>
+              <input type="text" id="precinct-search-input" class="precinct-search-field" placeholder="Search precinct name..." oninput="onPrecinctSearch(this.value)">
+            </div>
+            <div class="view-switch-group" role="group" aria-label="Precinct View Switch">
+              <button type="button" class="view-switch-btn active" id="btn-precinct-count" onclick="setPrecinctMode('count')">Voters</button>
+              <button type="button" class="view-switch-btn" id="btn-precinct-pct" onclick="setPrecinctMode('pct')">% Share</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="major-chart-scroll-wrapper" id="precinctChartWrapper">
+          <canvas id="precinctChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn" onclick="scrollToTop()" aria-label="Return to top of page">
+    <span aria-hidden="true">&#x25B2;</span> Top
+  </button>
+
+  <!-- Footer Disclaimer -->
+  <footer class="patriotic-footer">
+    <div class="footer-container">
+      <div class="warning-symbol" aria-hidden="true">&#x26A0;&#xFE0F;</div>
+      <p id="disclaimer-text">*All totals are unofficial and are subject to verification and certification by the Hamilton County Election Commission.</p>
+    </div>
+  </footer>
+
+  <!-- Load generated data first -->
+  <script src="data.js"></script>
+  <!-- Load application rendering logic -->
+  <script src="app.js"></script>
+</body>
+</html>
