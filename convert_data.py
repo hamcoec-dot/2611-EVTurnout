@@ -366,6 +366,7 @@ def main():
         "D": "democrat",
         "DEM": "democrat",
         "DEMOCRAT": "democrat",
+        "DEMOCRATIC": "democrat",
         "G": "general",
         "GEN": "general",
         "GENERAL": "general"

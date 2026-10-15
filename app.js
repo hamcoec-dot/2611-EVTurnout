@@ -327,7 +327,7 @@ function renderFirstTimeKpis() {
     if (isPartisan && !is100General) {
       var diff = demCount - repCount;
       if (diff > 0) {
-        leadEl.innerText = "Democrat Lead (+" + diff + " voters)";
+        leadEl.innerText = "Democratic Lead (+" + diff + " voters)";
         leadEl.style.color = "#1976D2";
       } else if (diff < 0) {
         leadEl.innerText = "Republican Lead (+" + Math.abs(diff) + " voters)";
@@ -557,7 +557,7 @@ function appendDetailsSubrow(tbody, rIdx, entry) {
     "<tr>" +
       "<th scope=\"col\">Voting Location</th>" +
       "<th scope=\"col\">Total Voters</th>" +
-      "<th scope=\"col\">Democrat</th>" +
+      "<th scope=\"col\">Democratic</th>" +
       "<th scope=\"col\">Republican</th>" +
       "<th scope=\"col\">General</th>" +
       "<th scope=\"col\">Distribution Share</th>" +
@@ -597,7 +597,7 @@ function appendDetailsSubrow(tbody, rIdx, entry) {
             "<span class=\"share-legend-item\"><span class=\"legend-dot\" style=\"background-color: var(--gold);\"></span>G: " + gPct + "%</span>" +
           "</div>" +
           "<div class=\"stacked-bar-container\">" +
-            "<div class=\"stacked-bar-segment\" style=\"width:" + dPct + "%; background-color: var(--blue-muted);\" title=\"Democrat: " + dPct + "%\">" + dText + "</div>" +
+            "<div class=\"stacked-bar-segment\" style=\"width:" + dPct + "%; background-color: var(--blue-muted);\" title=\"Democratic: " + dPct + "%\">" + dText + "</div>" +
             "<div class=\"stacked-bar-segment\" style=\"width:" + rPct + "%; background-color: var(--red-muted);\" title=\"Republican: " + rPct + "%\">" + rText + "</div>" +
             "<div class=\"stacked-bar-segment gen-seg\" style=\"width:" + gPct + "%; background-color: var(--gold);\" title=\"General: " + gPct + "%\">" + gText + "</div>" +
           "</div>" +
@@ -731,7 +731,7 @@ function renderComparisonTable() {
 function exportToCSV() {
   var csvLines = [];
   
-  var headers = ["Date", "Location", "TotalVoters", "DEMOCRAT", "REPUBLICAN", "GENERAL"];
+  var headers = ["Date", "Location", "TotalVoters", "DEMOCRATIC", "REPUBLICAN", "GENERAL"];
   csvLines.push(headers.join(","));
   
   var daily = TURNOUT_DATA.dailyTurnout;
@@ -1031,7 +1031,7 @@ function renderCharts() {
     partyDistributionChartRef = new Chart(ctx3, {
       type: 'doughnut',
       data: {
-        labels: ['Republican Party', 'Democrat Party', 'General Election'],
+        labels: ['Republican Party', 'Democratic Party', 'General Election'],
         datasets: [{
           data: [pt.republican, pt.democrat, pt.general],
           backgroundColor: ['#C4483E', '#3B6FA0', '#D4A843'],
@@ -1249,7 +1249,7 @@ function renderHistoricalPartyTrendChart() {
           borderWidth: 1
         },
         {
-          label: 'Democrat',
+          label: 'Democratic',
           data: demData,
           backgroundColor: '#3B6FA0',
           borderColor: '#325E88',
@@ -1497,7 +1497,7 @@ function renderPartisanLocationChart() {
           borderRadius: 4
         },
         {
-          label: 'Democrat',
+          label: 'Democratic',
           data: demData,
           backgroundColor: '#2980B9',
           borderRadius: 4
@@ -1689,7 +1689,7 @@ function renderAgeChart() {
       labels: labels,
       datasets: [
         { label: isPctMode ? 'Republican %' : 'Republican Voters', data: repData, backgroundColor: '#D32F2F' },
-        { label: isPctMode ? 'Democrat %' : 'Democrat Voters', data: demData, backgroundColor: '#1976D2' },
+        { label: isPctMode ? 'Democratic %' : 'Democratic Voters', data: demData, backgroundColor: '#1976D2' },
         { label: isPctMode ? 'General %' : 'General/Other', data: genData, backgroundColor: '#F57C00' }
       ]
     },
@@ -1852,7 +1852,7 @@ function renderDistrictChart() {
       labels: labels,
       datasets: [
         { label: isPctMode ? 'Republican %' : 'Republican Voters', data: repData, backgroundColor: '#D32F2F' },
-        { label: isPctMode ? 'Democrat %' : 'Democrat Voters', data: demData, backgroundColor: '#1976D2' },
+        { label: isPctMode ? 'Democratic %' : 'Democratic Voters', data: demData, backgroundColor: '#1976D2' },
         { label: isPctMode ? 'General %' : 'General/Other', data: genData, backgroundColor: '#F57C00' }
       ]
     },
@@ -1965,7 +1965,7 @@ function renderPrecinctChart() {
           categoryPercentage: 0.9
         },
         {
-          label: isPctMode ? 'Democrat %' : 'Democrat Voters',
+          label: isPctMode ? 'Democratic %' : 'Democratic Voters',
           data: demData,
           backgroundColor: '#1976D2',
           barPercentage: 0.85,
@@ -2104,7 +2104,7 @@ function renderTop10PrecinctChart() {
           categoryPercentage: 0.85
         },
         {
-          label: isPctMode ? 'Democrat %' : 'Democrat Voters',
+          label: isPctMode ? 'Democratic %' : 'Democratic Voters',
           data: demData,
           backgroundColor: '#1976D2',
           barPercentage: 0.75,
@@ -2303,7 +2303,7 @@ function renderFTPartyChart() {
   ftPartyChartRef = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Democrat Party', 'Republican Party', 'General Election'],
+      labels: ['Democratic Party', 'Republican Party', 'General Election'],
       datasets: [{
         data: dataVals,
         backgroundColor: ['#1976D2', '#D32F2F', '#F57C00'],
@@ -2390,7 +2390,7 @@ function renderFTSexChart() {
     data: {
       labels: labels,
       datasets: [
-        { label: 'Democrat', data: demData, backgroundColor: '#1976D2' },
+        { label: 'Democratic', data: demData, backgroundColor: '#1976D2' },
         { label: 'Republican', data: repData, backgroundColor: '#D32F2F' },
         { label: 'General/Other', data: genData, backgroundColor: '#F57C00' }
       ]
@@ -2465,7 +2465,7 @@ function renderFTAgeChart() {
     data: {
       labels: brackets,
       datasets: [
-        { label: 'Democrat', data: demData, backgroundColor: '#1976D2' },
+        { label: 'Democratic', data: demData, backgroundColor: '#1976D2' },
         { label: 'Republican', data: repData, backgroundColor: '#D32F2F' },
         { label: 'General/Other', data: genData, backgroundColor: '#F57C00' }
       ]
@@ -2677,7 +2677,7 @@ function renderFTDistrictChart() {
     data: {
       labels: labels,
       datasets: [
-        { label: 'Democrat', data: demData, backgroundColor: '#1976D2' },
+        { label: 'Democratic', data: demData, backgroundColor: '#1976D2' },
         { label: 'Republican', data: repData, backgroundColor: '#D32F2F' },
         { label: 'General/Other', data: genData, backgroundColor: '#F57C00' }
       ]
@@ -2827,7 +2827,7 @@ function createTop5PrecinctChart(canvasId, currentRef, precinctsDict, isPctMode)
         categoryPercentage: 0.85
       },
       {
-        label: isPctMode ? 'Democrat %' : 'Democrat',
+        label: isPctMode ? 'Democratic %' : 'Democratic',
         data: demData,
         backgroundColor: '#1976D2',
         barPercentage: 0.75,
@@ -3082,7 +3082,7 @@ function renderDistrictShareChart() {
   if (isPartisan) {
     datasets = [
       { label: isPctMode ? 'Republican Share %' : 'Republican', data: repData, backgroundColor: '#D32F2F', barPercentage: 0.75 },
-      { label: isPctMode ? 'Democrat Share %' : 'Democrat', data: demData, backgroundColor: '#1976D2', barPercentage: 0.75 },
+      { label: isPctMode ? 'Democratic Share %' : 'Democratic', data: demData, backgroundColor: '#1976D2', barPercentage: 0.75 },
       { label: isPctMode ? 'General Share %' : 'General/Other', data: genData, backgroundColor: '#F57C00', barPercentage: 0.75 }
     ];
   } else {
@@ -3272,7 +3272,7 @@ function renderCompetitivePrecinctChart() {
       labels: labels,
       datasets: [
         { label: 'Republican Party %', data: repData, backgroundColor: '#D32F2F', barPercentage: 0.75 },
-        { label: 'Democrat Party %', data: demData, backgroundColor: '#1976D2', barPercentage: 0.75 }
+        { label: 'Democratic Party %', data: demData, backgroundColor: '#1976D2', barPercentage: 0.75 }
       ]
     },
     options: {
