@@ -944,3 +944,12 @@ body {
   display: none !important;
 }
 
+/* Party Voting History Disclaimer */
+.party-disclaimer {
+  font-size: 12px !important;
+  font-style: italic !important;
+  color: #64748B !important;
+  margin-top: 4px !important;
+  margin-bottom: 0 !important;
+}
+

@@ -549,7 +549,7 @@ function appendDetailsSubrow(tbody, rIdx, entry) {
   
   var container = document.createElement("div");
   container.className = "details-container";
-  container.innerHTML = "<h4>Party Turnout Details: " + escapeHTML(entry.date) + "</h4>";
+  container.innerHTML = "<h4>Party Turnout Details: " + escapeHTML(entry.date) + "</h4><p class=\"party-disclaimer\">This data reflects the last primary voting history if applicable</p>";
   
   var table = document.createElement("table");
   table.className = "mini-details-table";
