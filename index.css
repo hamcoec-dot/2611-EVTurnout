@@ -946,10 +946,23 @@ body {
 
 /* Party Voting History Disclaimer */
 .party-disclaimer {
-  font-size: 12px !important;
-  font-style: italic !important;
-  color: #64748B !important;
-  margin-top: 4px !important;
+  display: block;
+  font-size: 13px !important;
+  font-weight: 600;
+  font-style: normal !important;
+  color: #92400E !important;
+  background: #FEF3C7;
+  border: 1px solid #FCD34D;
+  border-left: 4px solid #F59E0B;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 6px !important;
   margin-bottom: 0 !important;
+  line-height: 1.4;
+}
+
+.party-disclaimer::before {
+  content: "\24D8  ";
+  font-weight: 700;
 }
 
