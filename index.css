@@ -562,6 +562,19 @@ body {
   height: 320px !important;
 }
 
+/* Side-by-side cards stretch to the taller one in the row; let the chart fill
+   that height instead of leaving empty space under it. */
+.visualization-grid > .chart-container {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.visualization-grid > .chart-container > .chart-wrapper {
+  flex: 1 1 auto !important;
+  height: auto !important;
+  min-height: 320px !important;
+}
+
 /* Demographic Section Header */
 .demographics-section {
   margin-top: 40px !important;
