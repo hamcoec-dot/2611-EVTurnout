@@ -6,7 +6,6 @@ Chart.register(ChartDataLabels);
 // Global Chart references for responsive resizing/destruction
 var cumulativeChartRef = null;
 var locationChartRef = null;
-var partyDistributionChartRef = null;
 var historicalPartyChartRef = null;
 var partisanLocationChartRef = null;
 var currentPartisanLocationMode = 'pct';
@@ -807,7 +806,6 @@ function escapeCSV(val) {
 function renderCharts() {
   if (cumulativeChartRef) cumulativeChartRef.destroy();
   if (locationChartRef) locationChartRef.destroy();
-  if (partyDistributionChartRef) partyDistributionChartRef.destroy();
   if (historicalPartyChartRef) historicalPartyChartRef.destroy();
   if (partisanLocationChartRef) partisanLocationChartRef.destroy();
   if (ageChartRef) ageChartRef.destroy();
@@ -1029,63 +1027,16 @@ function renderCharts() {
   // 2. Turnout by location horizontal bar chart
   renderLocationChart();
   
-  // 3. Party election distribution donut chart
-  var pt = TURNOUT_DATA.partyTotals;
-  var ctx3 = document.getElementById('partyDistributionChart');
-  if (ctx3) {
-    partyDistributionChartRef = new Chart(ctx3, {
-      type: 'doughnut',
-      data: {
-        labels: ['Republican Party', 'Democratic Party', 'General Election'],
-        datasets: [{
-          data: [pt.republican, pt.democrat, pt.general],
-          backgroundColor: ['#C4483E', '#3B6FA0', '#D4A843'],
-          borderWidth: 2,
-          hoverOffset: 4
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            position: 'bottom',
-            labels: {
-              boxWidth: 12,
-              font: { size: 12 }
-            }
-          },
-          datalabels: {
-            display: true,
-            color: function(ctx) {
-              return ctx.dataIndex === 2 ? '#1B2A4A' : '#FFFFFF';
-            },
-            font: { weight: 'bold', size: 11 },
-            formatter: function(value, ctx) {
-              var sum = 0;
-              var dataArr = ctx.chart.data.datasets[0].data;
-              dataArr.map(function(data) { sum += data; });
-              var percentage = (value * 100 / sum).toFixed(1) + "%";
-              return value > 0 ? percentage : '';
-            }
-          }
-        },
-        cutout: '65%'
-      }
-    });
-  }
-  
-  // 4. Partisan Party Share by Location stacked bar chart
+  // 3. Partisan Party Share by Location stacked bar chart
   renderPartisanLocationChart();
   
-  // 5. Historical Partisan Party Share Trend stacked bar chart
+  // 4. Historical Partisan Party Share Trend stacked bar chart
   renderHistoricalPartyTrendChart();
 }
 
 // Render Historical Partisan Party Ballot Share Trend Stacked Bar Chart
 function renderHistoricalPartyTrendChart() {
   var container = document.getElementById('historical-party-chart-container');
-  var distContainer = document.getElementById('party-distribution-chart-container');
 
   // Check for apples-to-apples partisan comparison:
   // Both current election and past historical elections must contain actual partisan breakdown data.
@@ -1121,9 +1072,6 @@ function renderHistoricalPartyTrendChart() {
       container.classList.add('is-suppressed');
       container.style.setProperty('display', 'none', 'important');
     }
-    if (distContainer) {
-      distContainer.style.setProperty('grid-column', '1 / -1', 'important');
-    }
     return;
   }
 
@@ -1131,9 +1079,6 @@ function renderHistoricalPartyTrendChart() {
     container.removeAttribute('hidden');
     container.classList.remove('is-suppressed');
     container.style.removeProperty('display');
-  }
-  if (distContainer) {
-    distContainer.style.removeProperty('grid-column');
   }
 
   var ctx = document.getElementById('historicalPartyChart');
