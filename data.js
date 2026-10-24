@@ -539,15 +539,52 @@ var TURNOUT_DATA = {
       "isMailOnly": false,
       "values": {
         "By Mail/NH Voters": 0,
-        "Brainerd": 0,
-        "Collegedale": 0,
-        "Election Comm.": 0,
-        "Harrison": 0,
-        "Hixson": 0,
-        "Soddy Daisy": 0
+        "Brainerd": 719,
+        "Collegedale": 638,
+        "Election Comm.": 891,
+        "Harrison": 272,
+        "Hixson": 660,
+        "Soddy Daisy": 272
       },
-      "total": 0,
-      "partyBreakdown": null
+      "total": 3452,
+      "partyBreakdown": {
+        "Brainerd": {
+          "total": 719,
+          "democrat": 468,
+          "republican": 88,
+          "general": 163
+        },
+        "Collegedale": {
+          "total": 638,
+          "democrat": 173,
+          "republican": 270,
+          "general": 195
+        },
+        "Election Comm.": {
+          "total": 891,
+          "democrat": 487,
+          "republican": 203,
+          "general": 201
+        },
+        "Harrison": {
+          "total": 272,
+          "democrat": 88,
+          "republican": 108,
+          "general": 76
+        },
+        "Hixson": {
+          "total": 660,
+          "democrat": 253,
+          "republican": 254,
+          "general": 153
+        },
+        "Soddy Daisy": {
+          "total": 272,
+          "democrat": 55,
+          "republican": 145,
+          "general": 72
+        }
+      }
     },
     {
       "date": "2026-10-26",
@@ -675,20 +712,25 @@ var TURNOUT_DATA = {
       "date": "2026-10-23",
       "count": 4817,
       "delta": 677
+    },
+    {
+      "date": "2026-10-24",
+      "count": 3452,
+      "delta": -1365
     }
   ],
   "competitivePrecincts": [
     {
-      "name": "MOUNTAIN CREEK A",
-      "total": 728,
-      "registered": 3689,
-      "turnoutPct": 19.73,
-      "partyTotal": 602,
-      "primaryTotal": 602,
-      "republican": 300,
-      "democrat": 302,
-      "general": 126,
-      "margin": 2,
+      "name": "MOUNTAIN CREEK B",
+      "total": 273,
+      "registered": 1413,
+      "turnoutPct": 19.32,
+      "partyTotal": 213,
+      "primaryTotal": 213,
+      "republican": 106,
+      "democrat": 107,
+      "general": 60,
+      "margin": 1,
       "pctMargin": 0.4,
       "repPct": 49.8,
       "demPct": 50.2,
@@ -702,18 +744,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "NORTHWOODS",
-      "total": 800,
+      "total": 861,
       "registered": 3764,
-      "turnoutPct": 21.25,
-      "partyTotal": 661,
-      "primaryTotal": 661,
-      "republican": 333,
-      "democrat": 328,
-      "general": 139,
-      "margin": 5,
-      "pctMargin": 0.8,
-      "repPct": 50.4,
-      "demPct": 49.6,
+      "turnoutPct": 22.87,
+      "partyTotal": 708,
+      "primaryTotal": 708,
+      "republican": 350,
+      "democrat": 358,
+      "general": 153,
+      "margin": 8,
+      "pctMargin": 1.2,
+      "repPct": 49.4,
+      "demPct": 50.6,
       "districts": {
         "commission": "2",
         "senate": "11",
@@ -723,60 +765,104 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "EAST RIDGE A",
-      "total": 505,
-      "registered": 3307,
-      "turnoutPct": 15.27,
-      "partyTotal": 416,
-      "primaryTotal": 416,
-      "republican": 202,
-      "democrat": 214,
-      "general": 89,
-      "margin": 12,
-      "pctMargin": 2.8,
-      "repPct": 48.6,
-      "demPct": 51.4,
+      "name": "HARRISON",
+      "total": 805,
+      "registered": 3542,
+      "turnoutPct": 22.73,
+      "partyTotal": 658,
+      "primaryTotal": 658,
+      "republican": 336,
+      "democrat": 322,
+      "general": 147,
+      "margin": 14,
+      "pctMargin": 2.2,
+      "repPct": 51.1,
+      "demPct": 48.9,
       "districts": {
-        "commission": "8",
-        "senate": "10",
-        "house": "30",
-        "school": "8",
+        "commission": "9",
+        "senate": "11",
+        "house": "26",
+        "school": "9",
+        "city": "5"
+      }
+    },
+    {
+      "name": "MOUNTAIN CREEK A",
+      "total": 778,
+      "registered": 3689,
+      "turnoutPct": 21.09,
+      "partyTotal": 645,
+      "primaryTotal": 645,
+      "republican": 315,
+      "democrat": 330,
+      "general": 133,
+      "margin": 15,
+      "pctMargin": 2.4,
+      "repPct": 48.8,
+      "demPct": 51.2,
+      "districts": {
+        "commission": "2",
+        "senate": "11",
+        "house": "27",
+        "school": "2",
+        "city": "1"
+      }
+    },
+    {
+      "name": "PLEASANT GROVE B",
+      "total": 45,
+      "registered": 260,
+      "turnoutPct": 17.31,
+      "partyTotal": 43,
+      "primaryTotal": 43,
+      "republican": 22,
+      "democrat": 21,
+      "general": 2,
+      "margin": 1,
+      "pctMargin": 2.4,
+      "repPct": 51.2,
+      "demPct": 48.8,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
         "city": ""
       }
     },
     {
-      "name": "MOUNTAIN CREEK B",
-      "total": 264,
-      "registered": 1413,
-      "turnoutPct": 18.68,
-      "partyTotal": 208,
-      "primaryTotal": 208,
-      "republican": 101,
-      "democrat": 107,
-      "general": 56,
-      "margin": 6,
-      "pctMargin": 2.8,
-      "repPct": 48.6,
-      "demPct": 51.4,
+      "name": "SILVERDALE",
+      "total": 292,
+      "registered": 1458,
+      "turnoutPct": 20.03,
+      "partyTotal": 240,
+      "primaryTotal": 240,
+      "republican": 124,
+      "democrat": 116,
+      "general": 52,
+      "margin": 8,
+      "pctMargin": 3.4,
+      "repPct": 51.7,
+      "demPct": 48.3,
       "districts": {
-        "commission": "2",
-        "senate": "11",
-        "house": "27",
-        "school": "2",
-        "city": "1"
+        "commission": "10",
+        "senate": "10",
+        "house": "29",
+        "school": "10",
+        "city": "6"
       }
     },
     {
       "name": "SUMMIT",
-      "total": 615,
+      "total": 673,
       "registered": 3379,
-      "turnoutPct": 18.2,
-      "partyTotal": 481,
-      "primaryTotal": 481,
-      "republican": 231,
-      "democrat": 250,
-      "general": 134,
-      "margin": 19,
+      "turnoutPct": 19.92,
+      "partyTotal": 523,
+      "primaryTotal": 523,
+      "republican": 251,
+      "democrat": 272,
+      "general": 150,
+      "margin": 21,
       "pctMargin": 4.0,
       "repPct": 48.0,
       "demPct": 52.0,
@@ -789,63 +875,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "SILVERDALE",
-      "total": 272,
-      "registered": 1458,
-      "turnoutPct": 18.66,
-      "partyTotal": 226,
-      "primaryTotal": 226,
-      "republican": 118,
-      "democrat": 108,
-      "general": 46,
-      "margin": 10,
-      "pctMargin": 4.4,
-      "repPct": 52.2,
-      "demPct": 47.8,
-      "districts": {
-        "commission": "10",
-        "senate": "10",
-        "house": "29",
-        "school": "10",
-        "city": "6"
-      }
-    },
-    {
-      "name": "HARRISON",
-      "total": 739,
-      "registered": 3542,
-      "turnoutPct": 20.86,
-      "partyTotal": 612,
-      "primaryTotal": 612,
-      "republican": 320,
-      "democrat": 292,
-      "general": 127,
-      "margin": 28,
-      "pctMargin": 4.6,
-      "repPct": 52.3,
-      "demPct": 47.7,
-      "districts": {
-        "commission": "9",
-        "senate": "11",
-        "house": "26",
-        "school": "9",
-        "city": "5"
-      }
-    },
-    {
       "name": "EAST RIDGE D",
-      "total": 404,
+      "total": 440,
       "registered": 2934,
-      "turnoutPct": 13.77,
-      "partyTotal": 331,
-      "primaryTotal": 331,
-      "republican": 173,
-      "democrat": 158,
-      "general": 73,
-      "margin": 15,
-      "pctMargin": 4.6,
-      "repPct": 52.3,
-      "demPct": 47.7,
+      "turnoutPct": 15.0,
+      "partyTotal": 361,
+      "primaryTotal": 361,
+      "republican": 189,
+      "democrat": 172,
+      "general": 79,
+      "margin": 17,
+      "pctMargin": 4.8,
+      "repPct": 52.4,
+      "demPct": 47.6,
       "districts": {
         "commission": "8",
         "senate": "10",
@@ -856,18 +898,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "CONCORD B",
-      "total": 542,
+      "total": 577,
       "registered": 3108,
-      "turnoutPct": 17.44,
-      "partyTotal": 435,
-      "primaryTotal": 435,
-      "republican": 207,
-      "democrat": 228,
-      "general": 107,
-      "margin": 21,
-      "pctMargin": 4.8,
-      "repPct": 47.6,
-      "demPct": 52.4,
+      "turnoutPct": 18.56,
+      "partyTotal": 456,
+      "primaryTotal": 456,
+      "republican": 215,
+      "democrat": 241,
+      "general": 121,
+      "margin": 26,
+      "pctMargin": 5.8,
+      "repPct": 47.1,
+      "demPct": 52.9,
       "districts": {
         "commission": "8",
         "senate": "10",
@@ -878,18 +920,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "RED BANK B",
-      "total": 407,
+      "total": 444,
       "registered": 2491,
-      "turnoutPct": 16.34,
-      "partyTotal": 339,
-      "primaryTotal": 339,
-      "republican": 181,
-      "democrat": 158,
-      "general": 68,
-      "margin": 23,
-      "pctMargin": 6.8,
-      "repPct": 53.4,
-      "demPct": 46.6,
+      "turnoutPct": 17.82,
+      "partyTotal": 363,
+      "primaryTotal": 363,
+      "republican": 192,
+      "democrat": 171,
+      "general": 81,
+      "margin": 21,
+      "pctMargin": 5.8,
+      "repPct": 52.9,
+      "demPct": 47.1,
       "districts": {
         "commission": "6",
         "senate": "11",
@@ -899,41 +941,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "EAST BRAINERD A",
-      "total": 589,
-      "registered": 3313,
-      "turnoutPct": 17.78,
-      "partyTotal": 481,
-      "primaryTotal": 481,
-      "republican": 259,
-      "democrat": 222,
-      "general": 108,
-      "margin": 37,
-      "pctMargin": 7.6,
-      "repPct": 53.8,
-      "demPct": 46.2,
-      "districts": {
-        "commission": "7",
-        "senate": "10",
-        "house": "30",
-        "school": "7",
-        "city": "4"
-      }
-    },
-    {
       "name": "HIXSON",
-      "total": 485,
+      "total": 519,
       "registered": 2084,
-      "turnoutPct": 23.27,
-      "partyTotal": 415,
-      "primaryTotal": 415,
-      "republican": 225,
-      "democrat": 190,
-      "general": 70,
-      "margin": 35,
-      "pctMargin": 8.4,
-      "repPct": 54.2,
-      "demPct": 45.8,
+      "turnoutPct": 24.9,
+      "partyTotal": 439,
+      "primaryTotal": 439,
+      "republican": 234,
+      "democrat": 205,
+      "general": 80,
+      "margin": 29,
+      "pctMargin": 6.6,
+      "repPct": 53.3,
+      "demPct": 46.7,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -943,19 +963,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "EAST RIDGE C",
-      "total": 196,
-      "registered": 1508,
-      "turnoutPct": 13.0,
-      "partyTotal": 157,
-      "primaryTotal": 157,
-      "republican": 71,
-      "democrat": 86,
-      "general": 39,
-      "margin": 15,
-      "pctMargin": 9.6,
-      "repPct": 45.2,
-      "demPct": 54.8,
+      "name": "EAST RIDGE A",
+      "total": 553,
+      "registered": 3307,
+      "turnoutPct": 16.72,
+      "partyTotal": 455,
+      "primaryTotal": 455,
+      "republican": 209,
+      "democrat": 246,
+      "general": 98,
+      "margin": 37,
+      "pctMargin": 8.2,
+      "repPct": 45.9,
+      "demPct": 54.1,
       "districts": {
         "commission": "8",
         "senate": "10",
@@ -965,63 +985,41 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "EAST BRAINERD B",
-      "total": 982,
-      "registered": 4696,
-      "turnoutPct": 20.91,
-      "partyTotal": 784,
-      "primaryTotal": 784,
-      "republican": 440,
-      "democrat": 344,
-      "general": 198,
-      "margin": 96,
-      "pctMargin": 12.2,
-      "repPct": 56.1,
-      "demPct": 43.9,
-      "districts": {
-        "commission": "7",
-        "senate": "10",
-        "house": "29",
-        "school": "7",
-        "city": "4"
-      }
-    },
-    {
-      "name": "WESTVIEW B",
-      "total": 595,
-      "registered": 3045,
-      "turnoutPct": 19.54,
-      "partyTotal": 506,
-      "primaryTotal": 506,
-      "republican": 284,
-      "democrat": 222,
-      "general": 89,
-      "margin": 62,
-      "pctMargin": 12.2,
-      "repPct": 56.1,
-      "demPct": 43.9,
+      "name": "EAST BRAINERD A",
+      "total": 647,
+      "registered": 3313,
+      "turnoutPct": 19.53,
+      "partyTotal": 528,
+      "primaryTotal": 528,
+      "republican": 288,
+      "democrat": 240,
+      "general": 119,
+      "margin": 48,
+      "pctMargin": 9.0,
+      "repPct": 54.5,
+      "demPct": 45.5,
       "districts": {
         "commission": "7",
         "senate": "10",
         "house": "30",
         "school": "7",
-        "city": ""
+        "city": "4"
       }
     },
     {
       "name": "WOLFTEVER",
-      "total": 935,
+      "total": 1030,
       "registered": 4537,
-      "turnoutPct": 20.61,
-      "partyTotal": 757,
-      "primaryTotal": 757,
-      "republican": 429,
-      "democrat": 328,
-      "general": 178,
-      "margin": 101,
-      "pctMargin": 13.4,
-      "repPct": 56.7,
-      "demPct": 43.3,
+      "turnoutPct": 22.7,
+      "partyTotal": 827,
+      "primaryTotal": 827,
+      "republican": 457,
+      "democrat": 370,
+      "general": 203,
+      "margin": 87,
+      "pctMargin": 10.6,
+      "repPct": 55.3,
+      "demPct": 44.7,
       "districts": {
         "commission": "9",
         "senate": "11",
@@ -1031,16 +1029,126 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "EAST BRAINERD B",
+      "total": 1063,
+      "registered": 4696,
+      "turnoutPct": 22.64,
+      "partyTotal": 842,
+      "primaryTotal": 842,
+      "republican": 467,
+      "democrat": 375,
+      "general": 221,
+      "margin": 92,
+      "pctMargin": 11.0,
+      "repPct": 55.5,
+      "demPct": 44.5,
+      "districts": {
+        "commission": "7",
+        "senate": "10",
+        "house": "29",
+        "school": "7",
+        "city": "4"
+      }
+    },
+    {
+      "name": "COLLEGEDALE A",
+      "total": 382,
+      "registered": 2094,
+      "turnoutPct": 18.24,
+      "partyTotal": 288,
+      "primaryTotal": 288,
+      "republican": 161,
+      "democrat": 127,
+      "general": 94,
+      "margin": 34,
+      "pctMargin": 11.8,
+      "repPct": 55.9,
+      "demPct": 44.1,
+      "districts": {
+        "commission": "10",
+        "senate": "11",
+        "house": "29",
+        "school": "10",
+        "city": ""
+      }
+    },
+    {
+      "name": "EAST RIDGE C",
+      "total": 219,
+      "registered": 1508,
+      "turnoutPct": 14.52,
+      "partyTotal": 175,
+      "primaryTotal": 175,
+      "republican": 77,
+      "democrat": 98,
+      "general": 44,
+      "margin": 21,
+      "pctMargin": 12.0,
+      "repPct": 44.0,
+      "demPct": 56.0,
+      "districts": {
+        "commission": "8",
+        "senate": "10",
+        "house": "30",
+        "school": "8",
+        "city": ""
+      }
+    },
+    {
+      "name": "WESTVIEW B",
+      "total": 653,
+      "registered": 3045,
+      "turnoutPct": 21.44,
+      "partyTotal": 546,
+      "primaryTotal": 546,
+      "republican": 307,
+      "democrat": 239,
+      "general": 107,
+      "margin": 68,
+      "pctMargin": 12.4,
+      "repPct": 56.2,
+      "demPct": 43.8,
+      "districts": {
+        "commission": "7",
+        "senate": "10",
+        "house": "30",
+        "school": "7",
+        "city": ""
+      }
+    },
+    {
+      "name": "STUART HEIGHTS",
+      "total": 677,
+      "registered": 3107,
+      "turnoutPct": 21.79,
+      "partyTotal": 600,
+      "primaryTotal": 600,
+      "republican": 260,
+      "democrat": 340,
+      "general": 77,
+      "margin": 80,
+      "pctMargin": 13.4,
+      "repPct": 43.3,
+      "demPct": 56.7,
+      "districts": {
+        "commission": "6",
+        "senate": "11",
+        "house": "26",
+        "school": "6",
+        "city": "2"
+      }
+    },
+    {
       "name": "RED BANK C",
-      "total": 324,
+      "total": 363,
       "registered": 1874,
-      "turnoutPct": 17.29,
-      "partyTotal": 274,
-      "primaryTotal": 274,
-      "republican": 118,
-      "democrat": 156,
-      "general": 50,
-      "margin": 38,
+      "turnoutPct": 19.37,
+      "partyTotal": 306,
+      "primaryTotal": 306,
+      "republican": 132,
+      "democrat": 174,
+      "general": 57,
+      "margin": 42,
       "pctMargin": 13.8,
       "repPct": 43.1,
       "demPct": 56.9,
@@ -1054,18 +1162,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "NORTHGATE",
-      "total": 601,
+      "total": 642,
       "registered": 3063,
-      "turnoutPct": 19.62,
-      "partyTotal": 480,
-      "primaryTotal": 480,
-      "republican": 277,
-      "democrat": 203,
-      "general": 121,
-      "margin": 74,
-      "pctMargin": 15.4,
-      "repPct": 57.7,
-      "demPct": 42.3,
+      "turnoutPct": 20.96,
+      "partyTotal": 506,
+      "primaryTotal": 506,
+      "republican": 289,
+      "democrat": 217,
+      "general": 136,
+      "margin": 72,
+      "pctMargin": 14.2,
+      "repPct": 57.1,
+      "demPct": 42.9,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -1075,107 +1183,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "STUART HEIGHTS",
-      "total": 614,
-      "registered": 3107,
-      "turnoutPct": 19.76,
-      "partyTotal": 550,
-      "primaryTotal": 550,
-      "republican": 232,
-      "democrat": 318,
-      "general": 64,
-      "margin": 86,
-      "pctMargin": 15.6,
-      "repPct": 42.2,
-      "demPct": 57.8,
-      "districts": {
-        "commission": "6",
-        "senate": "11",
-        "house": "26",
-        "school": "6",
-        "city": "2"
-      }
-    },
-    {
-      "name": "COLLEGEDALE A",
-      "total": 352,
-      "registered": 2094,
-      "turnoutPct": 16.81,
-      "partyTotal": 266,
-      "primaryTotal": 266,
-      "republican": 154,
-      "democrat": 112,
-      "general": 86,
-      "margin": 42,
-      "pctMargin": 15.8,
-      "repPct": 57.9,
-      "demPct": 42.1,
-      "districts": {
-        "commission": "10",
-        "senate": "11",
-        "house": "29",
-        "school": "10",
-        "city": ""
-      }
-    },
-    {
-      "name": "WESTVIEW A",
-      "total": 311,
-      "registered": 1574,
-      "turnoutPct": 19.76,
-      "partyTotal": 258,
-      "primaryTotal": 258,
-      "republican": 150,
-      "democrat": 108,
-      "general": 53,
-      "margin": 42,
-      "pctMargin": 16.2,
-      "repPct": 58.1,
-      "demPct": 41.9,
-      "districts": {
-        "commission": "7",
-        "senate": "10",
-        "house": "30",
-        "school": "7",
-        "city": "4"
-      }
-    },
-    {
-      "name": "SIGNAL MOUNTAIN A",
-      "total": 401,
-      "registered": 2345,
-      "turnoutPct": 17.1,
-      "partyTotal": 350,
-      "primaryTotal": 350,
-      "republican": 204,
-      "democrat": 146,
-      "general": 51,
-      "margin": 58,
-      "pctMargin": 16.6,
-      "repPct": 58.3,
-      "demPct": 41.7,
-      "districts": {
-        "commission": "2",
-        "senate": "11",
-        "house": "27",
-        "school": "2",
-        "city": ""
-      }
-    },
-    {
       "name": "NORTH CHATTANOOGA B",
-      "total": 169,
+      "total": 192,
       "registered": 1194,
-      "turnoutPct": 14.15,
-      "partyTotal": 126,
-      "primaryTotal": 126,
-      "republican": 52,
-      "democrat": 74,
-      "general": 43,
-      "margin": 22,
-      "pctMargin": 17.4,
-      "repPct": 41.3,
-      "demPct": 58.7,
+      "turnoutPct": 16.08,
+      "partyTotal": 138,
+      "primaryTotal": 138,
+      "republican": 59,
+      "democrat": 79,
+      "general": 54,
+      "margin": 20,
+      "pctMargin": 14.4,
+      "repPct": 42.8,
+      "demPct": 57.2,
       "districts": {
         "commission": "6",
         "senate": "10",
@@ -1185,19 +1205,63 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "SIGNAL MOUNTAIN A",
+      "total": 429,
+      "registered": 2345,
+      "turnoutPct": 18.29,
+      "partyTotal": 372,
+      "primaryTotal": 372,
+      "republican": 215,
+      "democrat": 157,
+      "general": 57,
+      "margin": 58,
+      "pctMargin": 15.6,
+      "repPct": 57.8,
+      "demPct": 42.2,
+      "districts": {
+        "commission": "2",
+        "senate": "11",
+        "house": "27",
+        "school": "2",
+        "city": ""
+      }
+    },
+    {
+      "name": "WESTVIEW A",
+      "total": 338,
+      "registered": 1574,
+      "turnoutPct": 21.47,
+      "partyTotal": 276,
+      "primaryTotal": 276,
+      "republican": 162,
+      "democrat": 114,
+      "general": 62,
+      "margin": 48,
+      "pctMargin": 17.4,
+      "repPct": 58.7,
+      "demPct": 41.3,
+      "districts": {
+        "commission": "7",
+        "senate": "10",
+        "house": "30",
+        "school": "7",
+        "city": "4"
+      }
+    },
+    {
       "name": "DUPONT",
-      "total": 603,
+      "total": 658,
       "registered": 2988,
-      "turnoutPct": 20.18,
-      "partyTotal": 506,
-      "primaryTotal": 506,
-      "republican": 298,
-      "democrat": 208,
-      "general": 97,
-      "margin": 90,
-      "pctMargin": 17.8,
-      "repPct": 58.9,
-      "demPct": 41.1,
+      "turnoutPct": 22.02,
+      "partyTotal": 545,
+      "primaryTotal": 545,
+      "republican": 322,
+      "democrat": 223,
+      "general": 113,
+      "margin": 99,
+      "pctMargin": 18.2,
+      "repPct": 59.1,
+      "demPct": 40.9,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -1207,41 +1271,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "EAST RIDGE B",
-      "total": 518,
-      "registered": 3463,
-      "turnoutPct": 14.96,
-      "partyTotal": 452,
-      "primaryTotal": 452,
-      "republican": 181,
-      "democrat": 271,
-      "general": 66,
-      "margin": 90,
-      "pctMargin": 20.0,
-      "repPct": 40.0,
-      "demPct": 60.0,
-      "districts": {
-        "commission": "8",
-        "senate": "10",
-        "house": "30",
-        "school": "8",
-        "city": "9"
-      }
-    },
-    {
       "name": "TYNER",
-      "total": 474,
+      "total": 518,
       "registered": 2345,
-      "turnoutPct": 20.21,
-      "partyTotal": 382,
-      "primaryTotal": 382,
-      "republican": 152,
-      "democrat": 230,
-      "general": 92,
-      "margin": 78,
-      "pctMargin": 20.4,
-      "repPct": 39.8,
-      "demPct": 60.2,
+      "turnoutPct": 22.09,
+      "partyTotal": 417,
+      "primaryTotal": 417,
+      "republican": 161,
+      "democrat": 256,
+      "general": 101,
+      "margin": 95,
+      "pctMargin": 22.8,
+      "repPct": 38.6,
+      "demPct": 61.4,
       "districts": {
         "commission": "5",
         "senate": "10",
@@ -1251,37 +1293,103 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "PLEASANT GROVE B",
-      "total": 38,
-      "registered": 260,
-      "turnoutPct": 14.62,
-      "partyTotal": 36,
-      "primaryTotal": 36,
-      "republican": 22,
-      "democrat": 14,
-      "general": 2,
-      "margin": 8,
-      "pctMargin": 22.2,
-      "repPct": 61.1,
-      "demPct": 38.9,
+      "name": "EAST RIDGE B",
+      "total": 570,
+      "registered": 3463,
+      "turnoutPct": 16.46,
+      "partyTotal": 491,
+      "primaryTotal": 491,
+      "republican": 189,
+      "democrat": 302,
+      "general": 79,
+      "margin": 113,
+      "pctMargin": 23.0,
+      "repPct": 38.5,
+      "demPct": 61.5,
       "districts": {
-        "commission": "1",
+        "commission": "8",
+        "senate": "10",
+        "house": "30",
+        "school": "8",
+        "city": "9"
+      }
+    },
+    {
+      "name": "MIDDLE VALLEY",
+      "total": 321,
+      "registered": 2081,
+      "turnoutPct": 15.43,
+      "partyTotal": 275,
+      "primaryTotal": 275,
+      "republican": 169,
+      "democrat": 106,
+      "general": 46,
+      "margin": 63,
+      "pctMargin": 23.0,
+      "repPct": 61.5,
+      "demPct": 38.5,
+      "districts": {
+        "commission": "3",
         "senate": "11",
         "house": "26",
-        "school": "1",
+        "school": "3",
         "city": ""
       }
     },
     {
+      "name": "FAIRMOUNT",
+      "total": 421,
+      "registered": 2893,
+      "turnoutPct": 14.55,
+      "partyTotal": 341,
+      "primaryTotal": 341,
+      "republican": 210,
+      "democrat": 131,
+      "general": 80,
+      "margin": 79,
+      "pctMargin": 23.2,
+      "repPct": 61.6,
+      "demPct": 38.4,
+      "districts": {
+        "commission": "2",
+        "senate": "11",
+        "house": "27",
+        "school": "2",
+        "city": ""
+      }
+    },
+    {
+      "name": "HURRICANE CREEK",
+      "total": 1030,
+      "registered": 4545,
+      "turnoutPct": 22.66,
+      "partyTotal": 858,
+      "primaryTotal": 858,
+      "republican": 529,
+      "democrat": 329,
+      "general": 172,
+      "margin": 200,
+      "pctMargin": 23.4,
+      "repPct": 61.7,
+      "demPct": 38.3,
+      "districts": {
+        "commission": "7",
+        "senate": "10",
+        "house": "30",
+        "school": "7",
+        "city": "4"
+      }
+    },
+    {
       "name": "MOWBRAY A",
-      "total": 44,
+      "total": 45,
       "registered": 525,
-      "turnoutPct": 8.38,
+      "turnoutPct": 8.57,
       "partyTotal": 34,
       "primaryTotal": 34,
       "republican": 21,
       "democrat": 13,
-      "general": 10,
+      "general": 11,
       "margin": 8,
       "pctMargin": 23.6,
       "repPct": 61.8,
@@ -1296,15 +1404,15 @@ var TURNOUT_DATA = {
     },
     {
       "name": "LUPTON CITY",
-      "total": 455,
+      "total": 499,
       "registered": 2664,
-      "turnoutPct": 17.08,
-      "partyTotal": 383,
-      "primaryTotal": 383,
-      "republican": 145,
-      "democrat": 238,
-      "general": 72,
-      "margin": 93,
+      "turnoutPct": 18.73,
+      "partyTotal": 419,
+      "primaryTotal": 419,
+      "republican": 159,
+      "democrat": 260,
+      "general": 80,
+      "margin": 101,
       "pctMargin": 24.2,
       "repPct": 37.9,
       "demPct": 62.1,
@@ -1317,151 +1425,41 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "AIRPORT B",
-      "total": 266,
-      "registered": 1328,
-      "turnoutPct": 20.03,
-      "partyTotal": 217,
-      "primaryTotal": 217,
-      "republican": 82,
-      "democrat": 135,
-      "general": 49,
-      "margin": 53,
-      "pctMargin": 24.4,
-      "repPct": 37.8,
-      "demPct": 62.2,
-      "districts": {
-        "commission": "5",
-        "senate": "10",
-        "house": "28",
-        "school": "5",
-        "city": "6"
-      }
-    },
-    {
-      "name": "FAIRMOUNT",
-      "total": 401,
-      "registered": 2893,
-      "turnoutPct": 13.86,
-      "partyTotal": 325,
-      "primaryTotal": 325,
-      "republican": 203,
-      "democrat": 122,
-      "general": 76,
-      "margin": 81,
-      "pctMargin": 25.0,
-      "repPct": 62.5,
-      "demPct": 37.5,
-      "districts": {
-        "commission": "2",
-        "senate": "11",
-        "house": "27",
-        "school": "2",
-        "city": ""
-      }
-    },
-    {
-      "name": "MISSIONARY RIDGE",
-      "total": 261,
-      "registered": 1451,
-      "turnoutPct": 17.99,
-      "partyTotal": 216,
-      "primaryTotal": 216,
-      "republican": 81,
-      "democrat": 135,
-      "general": 45,
-      "margin": 54,
-      "pctMargin": 25.0,
-      "repPct": 37.5,
-      "demPct": 62.5,
-      "districts": {
-        "commission": "11",
-        "senate": "10",
-        "house": "30",
-        "school": "11",
-        "city": "9"
-      }
-    },
-    {
-      "name": "HURRICANE CREEK",
-      "total": 970,
-      "registered": 4545,
-      "turnoutPct": 21.34,
-      "partyTotal": 807,
-      "primaryTotal": 807,
-      "republican": 506,
-      "democrat": 301,
-      "general": 163,
-      "margin": 205,
-      "pctMargin": 25.4,
-      "repPct": 62.7,
-      "demPct": 37.3,
-      "districts": {
-        "commission": "7",
-        "senate": "10",
-        "house": "30",
-        "school": "7",
-        "city": "4"
-      }
-    },
-    {
       "name": "SIGNAL MOUNTAIN B",
-      "total": 732,
+      "total": 776,
       "registered": 4359,
-      "turnoutPct": 16.79,
-      "partyTotal": 656,
-      "primaryTotal": 656,
-      "republican": 416,
-      "democrat": 240,
-      "general": 76,
-      "margin": 176,
-      "pctMargin": 26.8,
-      "repPct": 63.4,
-      "demPct": 36.6,
+      "turnoutPct": 17.8,
+      "partyTotal": 688,
+      "primaryTotal": 688,
+      "republican": 429,
+      "democrat": 259,
+      "general": 88,
+      "margin": 170,
+      "pctMargin": 24.8,
+      "repPct": 62.4,
+      "demPct": 37.6,
       "districts": {
         "commission": "2",
         "senate": "11",
         "house": "27",
         "school": "2",
-        "city": ""
-      }
-    },
-    {
-      "name": "RIDGESIDE",
-      "total": 50,
-      "registered": 364,
-      "turnoutPct": 13.74,
-      "partyTotal": 41,
-      "primaryTotal": 41,
-      "republican": 15,
-      "democrat": 26,
-      "general": 9,
-      "margin": 11,
-      "pctMargin": 26.8,
-      "repPct": 36.6,
-      "demPct": 63.4,
-      "districts": {
-        "commission": "5",
-        "senate": "11",
-        "house": "30",
-        "school": "5",
         "city": ""
       }
     },
     {
       "name": "LOOKOUT VALLEY",
-      "total": 618,
+      "total": 655,
       "registered": 4320,
-      "turnoutPct": 14.31,
-      "partyTotal": 521,
-      "primaryTotal": 521,
-      "republican": 331,
-      "democrat": 190,
-      "general": 97,
-      "margin": 141,
-      "pctMargin": 27.0,
-      "repPct": 63.5,
-      "demPct": 36.5,
+      "turnoutPct": 15.16,
+      "partyTotal": 550,
+      "primaryTotal": 550,
+      "republican": 348,
+      "democrat": 202,
+      "general": 105,
+      "margin": 146,
+      "pctMargin": 26.6,
+      "repPct": 63.3,
+      "demPct": 36.7,
       "districts": {
         "commission": "11",
         "senate": "10",
@@ -1471,107 +1469,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "MIDDLE VALLEY",
-      "total": 293,
-      "registered": 2081,
-      "turnoutPct": 14.08,
-      "partyTotal": 253,
-      "primaryTotal": 253,
-      "republican": 161,
-      "democrat": 92,
-      "general": 40,
-      "margin": 69,
+      "name": "OOLTEWAH RINGGOLD",
+      "total": 1174,
+      "registered": 5405,
+      "turnoutPct": 21.72,
+      "partyTotal": 927,
+      "primaryTotal": 927,
+      "republican": 590,
+      "democrat": 337,
+      "general": 247,
+      "margin": 253,
       "pctMargin": 27.2,
       "repPct": 63.6,
       "demPct": 36.4,
-      "districts": {
-        "commission": "3",
-        "senate": "11",
-        "house": "26",
-        "school": "3",
-        "city": ""
-      }
-    },
-    {
-      "name": "LOOKOUT MOUNTAIN",
-      "total": 180,
-      "registered": 1549,
-      "turnoutPct": 11.62,
-      "partyTotal": 168,
-      "primaryTotal": 168,
-      "republican": 107,
-      "democrat": 61,
-      "general": 12,
-      "margin": 46,
-      "pctMargin": 27.4,
-      "repPct": 63.7,
-      "demPct": 36.3,
-      "districts": {
-        "commission": "11",
-        "senate": "10",
-        "house": "27",
-        "school": "11",
-        "city": ""
-      }
-    },
-    {
-      "name": "DALLAS",
-      "total": 561,
-      "registered": 3718,
-      "turnoutPct": 15.09,
-      "partyTotal": 461,
-      "primaryTotal": 461,
-      "republican": 294,
-      "democrat": 167,
-      "general": 100,
-      "margin": 127,
-      "pctMargin": 27.6,
-      "repPct": 63.8,
-      "demPct": 36.2,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "26",
-        "school": "1",
-        "city": ""
-      }
-    },
-    {
-      "name": "CONCORD A",
-      "total": 257,
-      "registered": 1785,
-      "turnoutPct": 14.4,
-      "partyTotal": 202,
-      "primaryTotal": 202,
-      "republican": 73,
-      "democrat": 129,
-      "general": 55,
-      "margin": 56,
-      "pctMargin": 27.8,
-      "repPct": 36.1,
-      "demPct": 63.9,
-      "districts": {
-        "commission": "8",
-        "senate": "10",
-        "house": "30",
-        "school": "8",
-        "city": "4"
-      }
-    },
-    {
-      "name": "OOLTEWAH RINGGOLD",
-      "total": 1094,
-      "registered": 5405,
-      "turnoutPct": 20.24,
-      "partyTotal": 873,
-      "primaryTotal": 873,
-      "republican": 564,
-      "democrat": 309,
-      "general": 221,
-      "margin": 255,
-      "pctMargin": 29.2,
-      "repPct": 64.6,
-      "demPct": 35.4,
       "districts": {
         "commission": "7",
         "senate": "10",
@@ -1581,19 +1491,63 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "AIRPORT B",
+      "total": 289,
+      "registered": 1328,
+      "turnoutPct": 21.76,
+      "partyTotal": 228,
+      "primaryTotal": 228,
+      "republican": 83,
+      "democrat": 145,
+      "general": 61,
+      "margin": 62,
+      "pctMargin": 27.2,
+      "repPct": 36.4,
+      "demPct": 63.6,
+      "districts": {
+        "commission": "5",
+        "senate": "10",
+        "house": "28",
+        "school": "5",
+        "city": "6"
+      }
+    },
+    {
+      "name": "LOOKOUT MOUNTAIN",
+      "total": 188,
+      "registered": 1549,
+      "turnoutPct": 12.14,
+      "partyTotal": 176,
+      "primaryTotal": 176,
+      "republican": 112,
+      "democrat": 64,
+      "general": 12,
+      "margin": 48,
+      "pctMargin": 27.2,
+      "repPct": 63.6,
+      "demPct": 36.4,
+      "districts": {
+        "commission": "11",
+        "senate": "10",
+        "house": "27",
+        "school": "11",
+        "city": ""
+      }
+    },
+    {
       "name": "PLEASANT GROVE A",
-      "total": 622,
+      "total": 660,
       "registered": 3325,
-      "turnoutPct": 18.71,
-      "partyTotal": 538,
-      "primaryTotal": 538,
-      "republican": 351,
-      "democrat": 187,
-      "general": 84,
-      "margin": 164,
-      "pctMargin": 30.4,
-      "repPct": 65.2,
-      "demPct": 34.8,
+      "turnoutPct": 19.85,
+      "partyTotal": 566,
+      "primaryTotal": 566,
+      "republican": 364,
+      "democrat": 202,
+      "general": 94,
+      "margin": 162,
+      "pctMargin": 28.6,
+      "repPct": 64.3,
+      "demPct": 35.7,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -1603,41 +1557,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "NORTHSHORE",
-      "total": 695,
-      "registered": 3171,
-      "turnoutPct": 21.92,
-      "partyTotal": 584,
-      "primaryTotal": 584,
-      "republican": 201,
-      "democrat": 383,
-      "general": 111,
-      "margin": 182,
-      "pctMargin": 31.2,
-      "repPct": 34.4,
-      "demPct": 65.6,
-      "districts": {
-        "commission": "6",
-        "senate": "11",
-        "house": "26",
-        "school": "6",
-        "city": "2"
-      }
-    },
-    {
       "name": "HUNTER",
-      "total": 829,
+      "total": 914,
       "registered": 4201,
-      "turnoutPct": 19.73,
-      "partyTotal": 691,
-      "primaryTotal": 691,
-      "republican": 457,
-      "democrat": 234,
-      "general": 138,
-      "margin": 223,
-      "pctMargin": 32.2,
-      "repPct": 66.1,
-      "demPct": 33.9,
+      "turnoutPct": 21.76,
+      "partyTotal": 756,
+      "primaryTotal": 756,
+      "republican": 492,
+      "democrat": 264,
+      "general": 158,
+      "margin": 228,
+      "pctMargin": 30.2,
+      "repPct": 65.1,
+      "demPct": 34.9,
       "districts": {
         "commission": "9",
         "senate": "11",
@@ -1647,19 +1579,129 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "RIDGESIDE",
+      "total": 52,
+      "registered": 364,
+      "turnoutPct": 14.29,
+      "partyTotal": 43,
+      "primaryTotal": 43,
+      "republican": 15,
+      "democrat": 28,
+      "general": 9,
+      "margin": 13,
+      "pctMargin": 30.2,
+      "repPct": 34.9,
+      "demPct": 65.1,
+      "districts": {
+        "commission": "5",
+        "senate": "11",
+        "house": "30",
+        "school": "5",
+        "city": ""
+      }
+    },
+    {
+      "name": "MISSIONARY RIDGE",
+      "total": 286,
+      "registered": 1451,
+      "turnoutPct": 19.71,
+      "partyTotal": 237,
+      "primaryTotal": 237,
+      "republican": 82,
+      "democrat": 155,
+      "general": 49,
+      "margin": 73,
+      "pctMargin": 30.8,
+      "repPct": 34.6,
+      "demPct": 65.4,
+      "districts": {
+        "commission": "11",
+        "senate": "10",
+        "house": "30",
+        "school": "11",
+        "city": "9"
+      }
+    },
+    {
+      "name": "DALLAS",
+      "total": 629,
+      "registered": 3718,
+      "turnoutPct": 16.92,
+      "partyTotal": 510,
+      "primaryTotal": 510,
+      "republican": 335,
+      "democrat": 175,
+      "general": 119,
+      "margin": 160,
+      "pctMargin": 31.4,
+      "repPct": 65.7,
+      "demPct": 34.3,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
+      "name": "NORTHSHORE",
+      "total": 761,
+      "registered": 3171,
+      "turnoutPct": 24.0,
+      "partyTotal": 639,
+      "primaryTotal": 639,
+      "republican": 218,
+      "democrat": 421,
+      "general": 122,
+      "margin": 203,
+      "pctMargin": 31.8,
+      "repPct": 34.1,
+      "demPct": 65.9,
+      "districts": {
+        "commission": "6",
+        "senate": "11",
+        "house": "26",
+        "school": "6",
+        "city": "2"
+      }
+    },
+    {
+      "name": "CONCORD A",
+      "total": 276,
+      "registered": 1785,
+      "turnoutPct": 15.46,
+      "partyTotal": 215,
+      "primaryTotal": 215,
+      "republican": 73,
+      "democrat": 142,
+      "general": 61,
+      "margin": 69,
+      "pctMargin": 32.0,
+      "repPct": 34.0,
+      "demPct": 66.0,
+      "districts": {
+        "commission": "8",
+        "senate": "10",
+        "house": "30",
+        "school": "8",
+        "city": "4"
+      }
+    },
+    {
       "name": "VALLEYBROOK",
-      "total": 1216,
+      "total": 1309,
       "registered": 4578,
-      "turnoutPct": 26.56,
-      "partyTotal": 1053,
-      "primaryTotal": 1053,
-      "republican": 707,
-      "democrat": 346,
-      "general": 163,
-      "margin": 361,
-      "pctMargin": 34.2,
-      "repPct": 67.1,
-      "demPct": 32.9,
+      "turnoutPct": 28.59,
+      "partyTotal": 1134,
+      "primaryTotal": 1134,
+      "republican": 750,
+      "democrat": 384,
+      "general": 175,
+      "margin": 366,
+      "pctMargin": 32.2,
+      "repPct": 66.1,
+      "demPct": 33.9,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -1670,18 +1712,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "RIVERVIEW",
-      "total": 335,
+      "total": 382,
       "registered": 1964,
-      "turnoutPct": 17.06,
-      "partyTotal": 289,
-      "primaryTotal": 289,
-      "republican": 94,
-      "democrat": 195,
-      "general": 46,
-      "margin": 101,
-      "pctMargin": 35.0,
-      "repPct": 32.5,
-      "demPct": 67.5,
+      "turnoutPct": 19.45,
+      "partyTotal": 327,
+      "primaryTotal": 327,
+      "republican": 105,
+      "democrat": 222,
+      "general": 55,
+      "margin": 117,
+      "pctMargin": 35.8,
+      "repPct": 32.1,
+      "demPct": 67.9,
       "districts": {
         "commission": "6",
         "senate": "11",
@@ -1691,41 +1733,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "BRAINERD HILLS",
-      "total": 265,
-      "registered": 1991,
-      "turnoutPct": 13.31,
-      "partyTotal": 198,
-      "primaryTotal": 198,
-      "republican": 64,
-      "democrat": 134,
-      "general": 67,
-      "margin": 70,
-      "pctMargin": 35.4,
-      "repPct": 32.3,
-      "demPct": 67.7,
-      "districts": {
-        "commission": "8",
-        "senate": "10",
-        "house": "30",
-        "school": "8",
-        "city": "6"
-      }
-    },
-    {
       "name": "DOWNTOWN",
-      "total": 366,
+      "total": 404,
       "registered": 2690,
-      "turnoutPct": 13.61,
-      "partyTotal": 266,
-      "primaryTotal": 266,
-      "republican": 85,
-      "democrat": 181,
-      "general": 100,
-      "margin": 96,
-      "pctMargin": 36.0,
-      "repPct": 32.0,
-      "demPct": 68.0,
+      "turnoutPct": 15.02,
+      "partyTotal": 287,
+      "primaryTotal": 287,
+      "republican": 92,
+      "democrat": 195,
+      "general": 117,
+      "margin": 103,
+      "pctMargin": 35.8,
+      "repPct": 32.1,
+      "demPct": 67.9,
       "districts": {
         "commission": "4",
         "senate": "10",
@@ -1735,41 +1755,41 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "RED BANK A",
-      "total": 463,
-      "registered": 3253,
-      "turnoutPct": 14.23,
-      "partyTotal": 360,
-      "primaryTotal": 360,
-      "republican": 111,
-      "democrat": 249,
-      "general": 103,
-      "margin": 138,
-      "pctMargin": 38.4,
-      "repPct": 30.8,
-      "demPct": 69.2,
+      "name": "BRAINERD HILLS",
+      "total": 299,
+      "registered": 1991,
+      "turnoutPct": 15.02,
+      "partyTotal": 227,
+      "primaryTotal": 227,
+      "republican": 72,
+      "democrat": 155,
+      "general": 72,
+      "margin": 83,
+      "pctMargin": 36.6,
+      "repPct": 31.7,
+      "demPct": 68.3,
       "districts": {
-        "commission": "6",
+        "commission": "8",
         "senate": "10",
-        "house": "27",
-        "school": "6",
-        "city": "2"
+        "house": "30",
+        "school": "8",
+        "city": "6"
       }
     },
     {
       "name": "APISON B",
-      "total": 540,
+      "total": 563,
       "registered": 2692,
-      "turnoutPct": 20.06,
-      "partyTotal": 406,
-      "primaryTotal": 406,
-      "republican": 282,
-      "democrat": 124,
-      "general": 134,
-      "margin": 158,
-      "pctMargin": 39.0,
-      "repPct": 69.5,
-      "demPct": 30.5,
+      "turnoutPct": 20.91,
+      "partyTotal": 422,
+      "primaryTotal": 422,
+      "republican": 289,
+      "democrat": 133,
+      "general": 141,
+      "margin": 156,
+      "pctMargin": 37.0,
+      "repPct": 68.5,
+      "demPct": 31.5,
       "districts": {
         "commission": "10",
         "senate": "10",
@@ -1779,19 +1799,107 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "FALLING WATER A",
+      "total": 103,
+      "registered": 510,
+      "turnoutPct": 20.2,
+      "partyTotal": 86,
+      "primaryTotal": 86,
+      "republican": 59,
+      "democrat": 27,
+      "general": 17,
+      "margin": 32,
+      "pctMargin": 37.2,
+      "repPct": 68.6,
+      "demPct": 31.4,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
+        "city": "1"
+      }
+    },
+    {
       "name": "GANNS",
-      "total": 831,
+      "total": 891,
       "registered": 3716,
-      "turnoutPct": 22.36,
-      "partyTotal": 707,
-      "primaryTotal": 707,
-      "republican": 493,
-      "democrat": 214,
-      "general": 124,
-      "margin": 279,
-      "pctMargin": 39.4,
-      "repPct": 69.7,
-      "demPct": 30.3,
+      "turnoutPct": 23.98,
+      "partyTotal": 749,
+      "primaryTotal": 749,
+      "republican": 520,
+      "democrat": 229,
+      "general": 142,
+      "margin": 291,
+      "pctMargin": 38.8,
+      "repPct": 69.4,
+      "demPct": 30.6,
+      "districts": {
+        "commission": "3",
+        "senate": "11",
+        "house": "26",
+        "school": "3",
+        "city": ""
+      }
+    },
+    {
+      "name": "RED BANK A",
+      "total": 508,
+      "registered": 3253,
+      "turnoutPct": 15.62,
+      "partyTotal": 394,
+      "primaryTotal": 394,
+      "republican": 119,
+      "democrat": 275,
+      "general": 114,
+      "margin": 156,
+      "pctMargin": 39.6,
+      "repPct": 30.2,
+      "demPct": 69.8,
+      "districts": {
+        "commission": "6",
+        "senate": "10",
+        "house": "27",
+        "school": "6",
+        "city": "2"
+      }
+    },
+    {
+      "name": "OOLTEWAH",
+      "total": 1003,
+      "registered": 5007,
+      "turnoutPct": 20.03,
+      "partyTotal": 781,
+      "primaryTotal": 781,
+      "republican": 554,
+      "democrat": 227,
+      "general": 222,
+      "margin": 327,
+      "pctMargin": 41.8,
+      "repPct": 70.9,
+      "demPct": 29.1,
+      "districts": {
+        "commission": "10",
+        "senate": "11",
+        "house": "29",
+        "school": "10",
+        "city": "6"
+      }
+    },
+    {
+      "name": "LAKESITE",
+      "total": 185,
+      "registered": 1407,
+      "turnoutPct": 13.15,
+      "partyTotal": 148,
+      "primaryTotal": 148,
+      "republican": 105,
+      "democrat": 43,
+      "general": 37,
+      "margin": 62,
+      "pctMargin": 41.8,
+      "repPct": 70.9,
+      "demPct": 29.1,
       "districts": {
         "commission": "3",
         "senate": "11",
@@ -1802,18 +1910,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "NORTH CHATTANOOGA A",
-      "total": 315,
+      "total": 342,
       "registered": 1818,
-      "turnoutPct": 17.33,
-      "partyTotal": 238,
-      "primaryTotal": 238,
-      "republican": 72,
-      "democrat": 166,
-      "general": 77,
-      "margin": 94,
-      "pctMargin": 39.4,
-      "repPct": 30.3,
-      "demPct": 69.7,
+      "turnoutPct": 18.81,
+      "partyTotal": 259,
+      "primaryTotal": 259,
+      "republican": 75,
+      "democrat": 184,
+      "general": 83,
+      "margin": 109,
+      "pctMargin": 42.0,
+      "repPct": 29.0,
+      "demPct": 71.0,
       "districts": {
         "commission": "6",
         "senate": "11",
@@ -1823,151 +1931,41 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "FALLING WATER A",
-      "total": 92,
-      "registered": 510,
-      "turnoutPct": 18.04,
-      "partyTotal": 77,
-      "primaryTotal": 77,
-      "republican": 54,
-      "democrat": 23,
-      "general": 15,
-      "margin": 31,
-      "pctMargin": 40.2,
-      "repPct": 70.1,
-      "demPct": 29.9,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "26",
-        "school": "1",
-        "city": "1"
-      }
-    },
-    {
       "name": "WALDEN",
-      "total": 227,
+      "total": 242,
       "registered": 1613,
-      "turnoutPct": 14.07,
-      "partyTotal": 199,
-      "primaryTotal": 199,
-      "republican": 140,
-      "democrat": 59,
-      "general": 28,
-      "margin": 81,
-      "pctMargin": 40.8,
-      "repPct": 70.4,
-      "demPct": 29.6,
+      "turnoutPct": 15.0,
+      "partyTotal": 210,
+      "primaryTotal": 210,
+      "republican": 149,
+      "democrat": 61,
+      "general": 32,
+      "margin": 88,
+      "pctMargin": 42.0,
+      "repPct": 71.0,
+      "demPct": 29.0,
       "districts": {
         "commission": "2",
         "senate": "11",
         "house": "27",
         "school": "2",
         "city": ""
-      }
-    },
-    {
-      "name": "FALLING WATER B",
-      "total": 166,
-      "registered": 1008,
-      "turnoutPct": 16.47,
-      "partyTotal": 148,
-      "primaryTotal": 148,
-      "republican": 105,
-      "democrat": 43,
-      "general": 18,
-      "margin": 62,
-      "pctMargin": 41.8,
-      "repPct": 70.9,
-      "demPct": 29.1,
-      "districts": {
-        "commission": "2",
-        "senate": "11",
-        "house": "27",
-        "school": "2",
-        "city": ""
-      }
-    },
-    {
-      "name": "LAKESITE",
-      "total": 166,
-      "registered": 1407,
-      "turnoutPct": 11.8,
-      "partyTotal": 132,
-      "primaryTotal": 132,
-      "republican": 94,
-      "democrat": 38,
-      "general": 34,
-      "margin": 56,
-      "pctMargin": 42.4,
-      "repPct": 71.2,
-      "demPct": 28.8,
-      "districts": {
-        "commission": "3",
-        "senate": "11",
-        "house": "26",
-        "school": "3",
-        "city": ""
-      }
-    },
-    {
-      "name": "OOLTEWAH",
-      "total": 930,
-      "registered": 5007,
-      "turnoutPct": 18.57,
-      "partyTotal": 735,
-      "primaryTotal": 735,
-      "republican": 524,
-      "democrat": 211,
-      "general": 195,
-      "margin": 313,
-      "pctMargin": 42.6,
-      "repPct": 71.3,
-      "demPct": 28.7,
-      "districts": {
-        "commission": "10",
-        "senate": "11",
-        "house": "29",
-        "school": "10",
-        "city": "6"
-      }
-    },
-    {
-      "name": "MURRAY HILLS",
-      "total": 344,
-      "registered": 1771,
-      "turnoutPct": 19.42,
-      "partyTotal": 289,
-      "primaryTotal": 289,
-      "republican": 79,
-      "democrat": 210,
-      "general": 55,
-      "margin": 131,
-      "pctMargin": 45.4,
-      "repPct": 27.3,
-      "demPct": 72.7,
-      "districts": {
-        "commission": "4",
-        "senate": "11",
-        "house": "28",
-        "school": "4",
-        "city": "5"
       }
     },
     {
       "name": "BRAINERD",
-      "total": 380,
+      "total": 429,
       "registered": 1991,
-      "turnoutPct": 19.09,
-      "partyTotal": 328,
-      "primaryTotal": 328,
-      "republican": 88,
-      "democrat": 240,
-      "general": 52,
-      "margin": 152,
-      "pctMargin": 46.4,
-      "repPct": 26.8,
-      "demPct": 73.2,
+      "turnoutPct": 21.55,
+      "partyTotal": 368,
+      "primaryTotal": 368,
+      "republican": 104,
+      "democrat": 264,
+      "general": 61,
+      "margin": 160,
+      "pctMargin": 43.4,
+      "repPct": 28.3,
+      "demPct": 71.7,
       "districts": {
         "commission": "5",
         "senate": "10",
@@ -1977,41 +1975,63 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "SODDY DAISY A",
-      "total": 575,
-      "registered": 3126,
-      "turnoutPct": 18.39,
-      "partyTotal": 489,
-      "primaryTotal": 489,
-      "republican": 359,
-      "democrat": 130,
-      "general": 86,
-      "margin": 229,
-      "pctMargin": 46.8,
-      "repPct": 73.4,
-      "demPct": 26.6,
+      "name": "FALLING WATER B",
+      "total": 179,
+      "registered": 1008,
+      "turnoutPct": 17.76,
+      "partyTotal": 159,
+      "primaryTotal": 159,
+      "republican": 114,
+      "democrat": 45,
+      "general": 20,
+      "margin": 69,
+      "pctMargin": 43.4,
+      "repPct": 71.7,
+      "demPct": 28.3,
       "districts": {
-        "commission": "1",
+        "commission": "2",
         "senate": "11",
         "house": "27",
-        "school": "1",
+        "school": "2",
+        "city": ""
+      }
+    },
+    {
+      "name": "HARRISON BAY",
+      "total": 974,
+      "registered": 4214,
+      "turnoutPct": 23.11,
+      "partyTotal": 812,
+      "primaryTotal": 812,
+      "republican": 591,
+      "democrat": 221,
+      "general": 162,
+      "margin": 370,
+      "pctMargin": 45.6,
+      "repPct": 72.8,
+      "demPct": 27.2,
+      "districts": {
+        "commission": "9",
+        "senate": "11",
+        "house": "29",
+        "school": "9",
         "city": ""
       }
     },
     {
       "name": "SODDY DAISY B",
-      "total": 526,
+      "total": 559,
       "registered": 2973,
-      "turnoutPct": 17.69,
-      "partyTotal": 440,
-      "primaryTotal": 440,
-      "republican": 323,
-      "democrat": 117,
-      "general": 86,
-      "margin": 206,
-      "pctMargin": 46.8,
-      "repPct": 73.4,
-      "demPct": 26.6,
+      "turnoutPct": 18.8,
+      "partyTotal": 463,
+      "primaryTotal": 463,
+      "republican": 338,
+      "democrat": 125,
+      "general": 96,
+      "margin": 213,
+      "pctMargin": 46.0,
+      "repPct": 73.0,
+      "demPct": 27.0,
       "districts": {
         "commission": "1",
         "senate": "11",
@@ -2022,18 +2042,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "COLLEGEDALE B",
-      "total": 372,
+      "total": 387,
       "registered": 1066,
-      "turnoutPct": 34.9,
-      "partyTotal": 297,
-      "primaryTotal": 297,
-      "republican": 220,
-      "democrat": 77,
-      "general": 75,
+      "turnoutPct": 36.3,
+      "partyTotal": 311,
+      "primaryTotal": 311,
+      "republican": 227,
+      "democrat": 84,
+      "general": 76,
       "margin": 143,
-      "pctMargin": 48.2,
-      "repPct": 74.1,
-      "demPct": 25.9,
+      "pctMargin": 46.0,
+      "repPct": 73.0,
+      "demPct": 27.0,
       "districts": {
         "commission": "10",
         "senate": "10",
@@ -2043,63 +2063,41 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "HARRISON BAY",
-      "total": 907,
-      "registered": 4214,
-      "turnoutPct": 21.52,
-      "partyTotal": 756,
-      "primaryTotal": 756,
-      "republican": 561,
-      "democrat": 195,
-      "general": 151,
-      "margin": 366,
-      "pctMargin": 48.4,
-      "repPct": 74.2,
-      "demPct": 25.8,
-      "districts": {
-        "commission": "9",
-        "senate": "11",
-        "house": "29",
-        "school": "9",
-        "city": ""
-      }
-    },
-    {
-      "name": "POSSUM CREEK",
-      "total": 724,
-      "registered": 3527,
-      "turnoutPct": 20.53,
-      "partyTotal": 613,
-      "primaryTotal": 613,
-      "republican": 456,
-      "democrat": 157,
-      "general": 111,
-      "margin": 299,
-      "pctMargin": 48.8,
-      "repPct": 74.4,
-      "demPct": 25.6,
+      "name": "SODDY DAISY A",
+      "total": 608,
+      "registered": 3126,
+      "turnoutPct": 19.45,
+      "partyTotal": 517,
+      "primaryTotal": 517,
+      "republican": 379,
+      "democrat": 138,
+      "general": 91,
+      "margin": 241,
+      "pctMargin": 46.6,
+      "repPct": 73.3,
+      "demPct": 26.7,
       "districts": {
         "commission": "1",
         "senate": "11",
-        "house": "26",
+        "house": "27",
         "school": "1",
         "city": ""
       }
     },
     {
       "name": "SAVANNAH BAY",
-      "total": 659,
+      "total": 713,
       "registered": 3253,
-      "turnoutPct": 20.26,
-      "partyTotal": 548,
-      "primaryTotal": 548,
-      "republican": 408,
-      "democrat": 140,
-      "general": 111,
-      "margin": 268,
-      "pctMargin": 49.0,
-      "repPct": 74.5,
-      "demPct": 25.5,
+      "turnoutPct": 21.92,
+      "partyTotal": 583,
+      "primaryTotal": 583,
+      "republican": 433,
+      "democrat": 150,
+      "general": 130,
+      "margin": 283,
+      "pctMargin": 48.6,
+      "repPct": 74.3,
+      "demPct": 25.7,
       "districts": {
         "commission": "10",
         "senate": "11",
@@ -2109,19 +2107,63 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "MURRAY HILLS",
+      "total": 383,
+      "registered": 1771,
+      "turnoutPct": 21.63,
+      "partyTotal": 319,
+      "primaryTotal": 319,
+      "republican": 82,
+      "democrat": 237,
+      "general": 64,
+      "margin": 155,
+      "pctMargin": 48.6,
+      "repPct": 25.7,
+      "demPct": 74.3,
+      "districts": {
+        "commission": "4",
+        "senate": "11",
+        "house": "28",
+        "school": "4",
+        "city": "5"
+      }
+    },
+    {
+      "name": "POSSUM CREEK",
+      "total": 779,
+      "registered": 3527,
+      "turnoutPct": 22.09,
+      "partyTotal": 653,
+      "primaryTotal": 653,
+      "republican": 487,
+      "democrat": 166,
+      "general": 126,
+      "margin": 321,
+      "pctMargin": 49.2,
+      "repPct": 74.6,
+      "demPct": 25.4,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
       "name": "EAST LAKE",
-      "total": 122,
+      "total": 143,
       "registered": 1462,
-      "turnoutPct": 8.34,
-      "partyTotal": 87,
-      "primaryTotal": 87,
-      "republican": 22,
-      "democrat": 65,
-      "general": 35,
-      "margin": 43,
-      "pctMargin": 49.4,
-      "repPct": 25.3,
-      "demPct": 74.7,
+      "turnoutPct": 9.78,
+      "partyTotal": 101,
+      "primaryTotal": 101,
+      "republican": 25,
+      "democrat": 76,
+      "general": 42,
+      "margin": 51,
+      "pctMargin": 50.4,
+      "repPct": 24.8,
+      "demPct": 75.2,
       "districts": {
         "commission": "11",
         "senate": "10",
@@ -2132,18 +2174,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "APISON A",
-      "total": 267,
+      "total": 293,
       "registered": 1953,
-      "turnoutPct": 13.67,
-      "partyTotal": 212,
-      "primaryTotal": 212,
-      "republican": 162,
-      "democrat": 50,
-      "general": 55,
-      "margin": 112,
-      "pctMargin": 52.8,
-      "repPct": 76.4,
-      "demPct": 23.6,
+      "turnoutPct": 15.0,
+      "partyTotal": 229,
+      "primaryTotal": 229,
+      "republican": 173,
+      "democrat": 56,
+      "general": 64,
+      "margin": 117,
+      "pctMargin": 51.0,
+      "repPct": 75.5,
+      "demPct": 24.5,
       "districts": {
         "commission": "7",
         "senate": "10",
@@ -2153,19 +2195,195 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "MEADOWVIEW",
+      "total": 576,
+      "registered": 3098,
+      "turnoutPct": 18.59,
+      "partyTotal": 447,
+      "primaryTotal": 447,
+      "republican": 341,
+      "democrat": 106,
+      "general": 129,
+      "margin": 235,
+      "pctMargin": 52.6,
+      "repPct": 76.3,
+      "demPct": 23.7,
+      "districts": {
+        "commission": "9",
+        "senate": "11",
+        "house": "29",
+        "school": "9",
+        "city": ""
+      }
+    },
+    {
+      "name": "OOLTEWAH GEORGETOWN",
+      "total": 495,
+      "registered": 2485,
+      "turnoutPct": 19.92,
+      "partyTotal": 392,
+      "primaryTotal": 392,
+      "republican": 299,
+      "democrat": 93,
+      "general": 103,
+      "margin": 206,
+      "pctMargin": 52.6,
+      "repPct": 76.3,
+      "demPct": 23.7,
+      "districts": {
+        "commission": "10",
+        "senate": "11",
+        "house": "29",
+        "school": "10",
+        "city": ""
+      }
+    },
+    {
+      "name": "MOWBRAY B",
+      "total": 117,
+      "registered": 694,
+      "turnoutPct": 16.86,
+      "partyTotal": 105,
+      "primaryTotal": 105,
+      "republican": 81,
+      "democrat": 24,
+      "general": 12,
+      "margin": 57,
+      "pctMargin": 54.2,
+      "repPct": 77.1,
+      "demPct": 22.9,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "27",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
+      "name": "ST ELMO",
+      "total": 428,
+      "registered": 2643,
+      "turnoutPct": 16.19,
+      "partyTotal": 365,
+      "primaryTotal": 365,
+      "republican": 82,
+      "democrat": 283,
+      "general": 63,
+      "margin": 201,
+      "pctMargin": 55.0,
+      "repPct": 22.5,
+      "demPct": 77.5,
+      "districts": {
+        "commission": "11",
+        "senate": "10",
+        "house": "27",
+        "school": "11",
+        "city": "7"
+      }
+    },
+    {
+      "name": "BIRCHWOOD",
+      "total": 329,
+      "registered": 2211,
+      "turnoutPct": 14.88,
+      "partyTotal": 271,
+      "primaryTotal": 271,
+      "republican": 211,
+      "democrat": 60,
+      "general": 58,
+      "margin": 151,
+      "pctMargin": 55.8,
+      "repPct": 77.9,
+      "demPct": 22.1,
+      "districts": {
+        "commission": "9",
+        "senate": "11",
+        "house": "29",
+        "school": "9",
+        "city": ""
+      }
+    },
+    {
+      "name": "SEQUOYAH",
+      "total": 478,
+      "registered": 2636,
+      "turnoutPct": 18.13,
+      "partyTotal": 400,
+      "primaryTotal": 400,
+      "republican": 313,
+      "democrat": 87,
+      "general": 78,
+      "margin": 226,
+      "pctMargin": 56.4,
+      "repPct": 78.2,
+      "demPct": 21.8,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
+      "name": "SALE CREEK",
+      "total": 313,
+      "registered": 2351,
+      "turnoutPct": 13.31,
+      "partyTotal": 266,
+      "primaryTotal": 266,
+      "republican": 208,
+      "democrat": 58,
+      "general": 47,
+      "margin": 150,
+      "pctMargin": 56.4,
+      "repPct": 78.2,
+      "demPct": 21.8,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "26",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
+      "name": "FLAT TOP MOUNTAIN",
+      "total": 48,
+      "registered": 501,
+      "turnoutPct": 9.58,
+      "partyTotal": 46,
+      "primaryTotal": 46,
+      "republican": 36,
+      "democrat": 10,
+      "general": 2,
+      "margin": 26,
+      "pctMargin": 56.6,
+      "repPct": 78.3,
+      "demPct": 21.7,
+      "districts": {
+        "commission": "1",
+        "senate": "11",
+        "house": "27",
+        "school": "1",
+        "city": ""
+      }
+    },
+    {
       "name": "AIRPORT A",
-      "total": 61,
+      "total": 65,
       "registered": 462,
-      "turnoutPct": 13.2,
-      "partyTotal": 47,
-      "primaryTotal": 47,
+      "turnoutPct": 14.07,
+      "partyTotal": 51,
+      "primaryTotal": 51,
       "republican": 11,
-      "democrat": 36,
+      "democrat": 40,
       "general": 14,
-      "margin": 25,
-      "pctMargin": 53.2,
-      "repPct": 23.4,
-      "demPct": 76.6,
+      "margin": 29,
+      "pctMargin": 56.8,
+      "repPct": 21.6,
+      "demPct": 78.4,
       "districts": {
         "commission": "5",
         "senate": "11",
@@ -2175,19 +2393,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "MOWBRAY B",
-      "total": 112,
-      "registered": 694,
-      "turnoutPct": 16.14,
-      "partyTotal": 103,
-      "primaryTotal": 103,
-      "republican": 79,
-      "democrat": 24,
-      "general": 9,
-      "margin": 55,
-      "pctMargin": 53.4,
-      "repPct": 76.7,
-      "demPct": 23.3,
+      "name": "SODDY DAISY C",
+      "total": 382,
+      "registered": 1604,
+      "turnoutPct": 23.82,
+      "partyTotal": 334,
+      "primaryTotal": 334,
+      "republican": 265,
+      "democrat": 69,
+      "general": 48,
+      "margin": 196,
+      "pctMargin": 58.6,
+      "repPct": 79.3,
+      "demPct": 20.7,
       "districts": {
         "commission": "1",
         "senate": "11",
@@ -2198,18 +2416,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "MOUNTAIN CREEK C",
-      "total": 15,
+      "total": 17,
       "registered": 187,
-      "turnoutPct": 8.02,
-      "partyTotal": 13,
-      "primaryTotal": 13,
+      "turnoutPct": 9.09,
+      "partyTotal": 15,
+      "primaryTotal": 15,
       "republican": 3,
-      "democrat": 10,
+      "democrat": 12,
       "general": 2,
-      "margin": 7,
-      "pctMargin": 53.8,
-      "repPct": 23.1,
-      "demPct": 76.9,
+      "margin": 9,
+      "pctMargin": 60.0,
+      "repPct": 20.0,
+      "demPct": 80.0,
       "districts": {
         "commission": "2",
         "senate": "10",
@@ -2219,217 +2437,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "MEADOWVIEW",
-      "total": 523,
-      "registered": 3098,
-      "turnoutPct": 16.88,
-      "partyTotal": 413,
-      "primaryTotal": 413,
-      "republican": 318,
-      "democrat": 95,
-      "general": 110,
-      "margin": 223,
-      "pctMargin": 54.0,
-      "repPct": 77.0,
-      "demPct": 23.0,
-      "districts": {
-        "commission": "9",
-        "senate": "11",
-        "house": "29",
-        "school": "9",
-        "city": ""
-      }
-    },
-    {
-      "name": "BIRCHWOOD",
-      "total": 311,
-      "registered": 2211,
-      "turnoutPct": 14.07,
-      "partyTotal": 257,
-      "primaryTotal": 257,
-      "republican": 199,
-      "democrat": 58,
-      "general": 54,
-      "margin": 141,
-      "pctMargin": 54.8,
-      "repPct": 77.4,
-      "demPct": 22.6,
-      "districts": {
-        "commission": "9",
-        "senate": "11",
-        "house": "29",
-        "school": "9",
-        "city": ""
-      }
-    },
-    {
-      "name": "FLAT TOP MOUNTAIN",
-      "total": 47,
-      "registered": 501,
-      "turnoutPct": 9.38,
-      "partyTotal": 45,
-      "primaryTotal": 45,
-      "republican": 35,
-      "democrat": 10,
-      "general": 2,
-      "margin": 25,
-      "pctMargin": 55.6,
-      "repPct": 77.8,
-      "demPct": 22.2,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "27",
-        "school": "1",
-        "city": ""
-      }
-    },
-    {
-      "name": "SEQUOYAH",
-      "total": 450,
-      "registered": 2636,
-      "turnoutPct": 17.07,
-      "partyTotal": 376,
-      "primaryTotal": 376,
-      "republican": 293,
-      "democrat": 83,
-      "general": 74,
-      "margin": 210,
-      "pctMargin": 55.8,
-      "repPct": 77.9,
-      "demPct": 22.1,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "26",
-        "school": "1",
-        "city": ""
-      }
-    },
-    {
-      "name": "ST ELMO",
-      "total": 402,
-      "registered": 2643,
-      "turnoutPct": 15.21,
-      "partyTotal": 345,
-      "primaryTotal": 345,
-      "republican": 76,
-      "democrat": 269,
-      "general": 57,
-      "margin": 193,
-      "pctMargin": 56.0,
-      "repPct": 22.0,
-      "demPct": 78.0,
-      "districts": {
-        "commission": "11",
-        "senate": "10",
-        "house": "27",
-        "school": "11",
-        "city": "7"
-      }
-    },
-    {
-      "name": "SODDY DAISY C",
-      "total": 365,
-      "registered": 1604,
-      "turnoutPct": 22.76,
-      "partyTotal": 320,
-      "primaryTotal": 320,
-      "republican": 252,
-      "democrat": 68,
-      "general": 45,
-      "margin": 184,
-      "pctMargin": 57.6,
-      "repPct": 78.8,
-      "demPct": 21.2,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "27",
-        "school": "1",
-        "city": ""
-      }
-    },
-    {
-      "name": "OOLTEWAH GEORGETOWN",
-      "total": 453,
-      "registered": 2485,
-      "turnoutPct": 18.23,
+      "name": "EASTSIDE",
+      "total": 461,
+      "registered": 2821,
+      "turnoutPct": 16.34,
       "partyTotal": 363,
       "primaryTotal": 363,
-      "republican": 287,
-      "democrat": 76,
-      "general": 90,
-      "margin": 211,
-      "pctMargin": 58.2,
-      "repPct": 79.1,
-      "demPct": 20.9,
-      "districts": {
-        "commission": "10",
-        "senate": "11",
-        "house": "29",
-        "school": "10",
-        "city": ""
-      }
-    },
-    {
-      "name": "SALE CREEK",
-      "total": 290,
-      "registered": 2351,
-      "turnoutPct": 12.34,
-      "partyTotal": 246,
-      "primaryTotal": 246,
-      "republican": 196,
-      "democrat": 50,
-      "general": 44,
-      "margin": 146,
-      "pctMargin": 59.4,
-      "repPct": 79.7,
-      "demPct": 20.3,
-      "districts": {
-        "commission": "1",
-        "senate": "11",
-        "house": "26",
-        "school": "1",
-        "city": ""
-      }
-    },
-    {
-      "name": "KINGSPOINT",
-      "total": 351,
-      "registered": 1864,
-      "turnoutPct": 18.83,
-      "partyTotal": 293,
-      "primaryTotal": 293,
-      "republican": 57,
-      "democrat": 236,
-      "general": 58,
-      "margin": 179,
-      "pctMargin": 61.0,
-      "repPct": 19.5,
-      "demPct": 80.5,
-      "districts": {
-        "commission": "4",
-        "senate": "11",
-        "house": "28",
-        "school": "4",
-        "city": "5"
-      }
-    },
-    {
-      "name": "EASTSIDE",
-      "total": 409,
-      "registered": 2821,
-      "turnoutPct": 14.5,
-      "partyTotal": 324,
-      "primaryTotal": 324,
-      "republican": 63,
-      "democrat": 261,
-      "general": 85,
-      "margin": 198,
-      "pctMargin": 61.2,
-      "repPct": 19.4,
-      "demPct": 80.6,
+      "republican": 72,
+      "democrat": 291,
+      "general": 98,
+      "margin": 219,
+      "pctMargin": 60.4,
+      "repPct": 19.8,
+      "demPct": 80.2,
       "districts": {
         "commission": "11",
         "senate": "10",
@@ -2439,19 +2459,41 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "KINGSPOINT",
+      "total": 374,
+      "registered": 1864,
+      "turnoutPct": 20.06,
+      "partyTotal": 313,
+      "primaryTotal": 313,
+      "republican": 58,
+      "democrat": 255,
+      "general": 61,
+      "margin": 197,
+      "pctMargin": 63.0,
+      "repPct": 18.5,
+      "demPct": 81.5,
+      "districts": {
+        "commission": "4",
+        "senate": "11",
+        "house": "28",
+        "school": "4",
+        "city": "5"
+      }
+    },
+    {
       "name": "COURTHOUSE",
-      "total": 167,
+      "total": 192,
       "registered": 1489,
-      "turnoutPct": 11.22,
-      "partyTotal": 118,
-      "primaryTotal": 118,
-      "republican": 19,
-      "democrat": 99,
-      "general": 49,
-      "margin": 80,
-      "pctMargin": 67.8,
-      "repPct": 16.1,
-      "demPct": 83.9,
+      "turnoutPct": 12.89,
+      "partyTotal": 134,
+      "primaryTotal": 134,
+      "republican": 20,
+      "democrat": 114,
+      "general": 58,
+      "margin": 94,
+      "pctMargin": 70.2,
+      "repPct": 14.9,
+      "demPct": 85.1,
       "districts": {
         "commission": "4",
         "senate": "10",
@@ -2462,18 +2504,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "GLENWOOD",
-      "total": 348,
+      "total": 378,
       "registered": 1843,
-      "turnoutPct": 18.88,
-      "partyTotal": 301,
-      "primaryTotal": 301,
+      "turnoutPct": 20.51,
+      "partyTotal": 324,
+      "primaryTotal": 324,
       "republican": 47,
-      "democrat": 254,
-      "general": 47,
-      "margin": 207,
-      "pctMargin": 68.8,
-      "repPct": 15.6,
-      "demPct": 84.4,
+      "democrat": 277,
+      "general": 54,
+      "margin": 230,
+      "pctMargin": 71.0,
+      "repPct": 14.5,
+      "demPct": 85.5,
       "districts": {
         "commission": "5",
         "senate": "11",
@@ -2484,18 +2526,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "LAKE HILLS",
-      "total": 268,
+      "total": 295,
       "registered": 1474,
-      "turnoutPct": 18.18,
-      "partyTotal": 226,
-      "primaryTotal": 226,
+      "turnoutPct": 20.01,
+      "partyTotal": 242,
+      "primaryTotal": 242,
       "republican": 28,
-      "democrat": 198,
-      "general": 42,
-      "margin": 170,
-      "pctMargin": 75.2,
-      "repPct": 12.4,
-      "demPct": 87.6,
+      "democrat": 214,
+      "general": 53,
+      "margin": 186,
+      "pctMargin": 76.8,
+      "repPct": 11.6,
+      "demPct": 88.4,
       "districts": {
         "commission": "5",
         "senate": "11",
@@ -2506,18 +2548,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "EASTGATE",
-      "total": 424,
+      "total": 473,
       "registered": 2018,
-      "turnoutPct": 21.01,
-      "partyTotal": 371,
-      "primaryTotal": 371,
-      "republican": 41,
-      "democrat": 330,
-      "general": 53,
-      "margin": 289,
-      "pctMargin": 77.8,
-      "repPct": 11.1,
-      "demPct": 88.9,
+      "turnoutPct": 23.44,
+      "partyTotal": 407,
+      "primaryTotal": 407,
+      "republican": 44,
+      "democrat": 363,
+      "general": 66,
+      "margin": 319,
+      "pctMargin": 78.4,
+      "repPct": 10.8,
+      "demPct": 89.2,
       "districts": {
         "commission": "5",
         "senate": "10",
@@ -2528,18 +2570,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "BONNY OAKS",
-      "total": 465,
+      "total": 510,
       "registered": 2321,
-      "turnoutPct": 20.03,
-      "partyTotal": 418,
-      "primaryTotal": 418,
-      "republican": 46,
-      "democrat": 372,
-      "general": 47,
-      "margin": 326,
-      "pctMargin": 78.0,
-      "repPct": 11.0,
-      "demPct": 89.0,
+      "turnoutPct": 21.97,
+      "partyTotal": 456,
+      "primaryTotal": 456,
+      "republican": 48,
+      "democrat": 408,
+      "general": 54,
+      "margin": 360,
+      "pctMargin": 79.0,
+      "repPct": 10.5,
+      "demPct": 89.5,
       "districts": {
         "commission": "5",
         "senate": "11",
@@ -2550,18 +2592,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "RIDGEDALE",
-      "total": 354,
+      "total": 405,
       "registered": 2215,
-      "turnoutPct": 15.98,
-      "partyTotal": 304,
-      "primaryTotal": 304,
-      "republican": 31,
-      "democrat": 273,
-      "general": 50,
-      "margin": 242,
-      "pctMargin": 79.6,
-      "repPct": 10.2,
-      "demPct": 89.8,
+      "turnoutPct": 18.28,
+      "partyTotal": 340,
+      "primaryTotal": 340,
+      "republican": 33,
+      "democrat": 307,
+      "general": 65,
+      "margin": 274,
+      "pctMargin": 80.6,
+      "repPct": 9.7,
+      "demPct": 90.3,
       "districts": {
         "commission": "4",
         "senate": "10",
@@ -2572,15 +2614,15 @@ var TURNOUT_DATA = {
     },
     {
       "name": "ALTON PARK",
-      "total": 210,
+      "total": 230,
       "registered": 2009,
-      "turnoutPct": 10.45,
-      "partyTotal": 162,
-      "primaryTotal": 162,
-      "republican": 14,
-      "democrat": 148,
-      "general": 48,
-      "margin": 134,
+      "turnoutPct": 11.45,
+      "partyTotal": 175,
+      "primaryTotal": 175,
+      "republican": 15,
+      "democrat": 160,
+      "general": 55,
+      "margin": 145,
       "pctMargin": 82.8,
       "repPct": 8.6,
       "demPct": 91.4,
@@ -2594,18 +2636,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "EAST CHATTANOOGA",
-      "total": 345,
+      "total": 398,
       "registered": 1769,
-      "turnoutPct": 19.5,
-      "partyTotal": 288,
-      "primaryTotal": 288,
-      "republican": 20,
-      "democrat": 268,
-      "general": 57,
-      "margin": 248,
-      "pctMargin": 86.2,
-      "repPct": 6.9,
-      "demPct": 93.1,
+      "turnoutPct": 22.5,
+      "partyTotal": 331,
+      "primaryTotal": 331,
+      "republican": 26,
+      "democrat": 305,
+      "general": 67,
+      "margin": 279,
+      "pctMargin": 84.2,
+      "repPct": 7.9,
+      "demPct": 92.1,
       "districts": {
         "commission": "4",
         "senate": "11",
@@ -2615,16 +2657,38 @@ var TURNOUT_DATA = {
       }
     },
     {
+      "name": "BUSHTOWN",
+      "total": 428,
+      "registered": 2192,
+      "turnoutPct": 19.53,
+      "partyTotal": 352,
+      "primaryTotal": 352,
+      "republican": 18,
+      "democrat": 334,
+      "general": 76,
+      "margin": 316,
+      "pctMargin": 89.8,
+      "repPct": 5.1,
+      "demPct": 94.9,
+      "districts": {
+        "commission": "4",
+        "senate": "11",
+        "house": "28",
+        "school": "4",
+        "city": "8"
+      }
+    },
+    {
       "name": "WOODMORE",
-      "total": 414,
+      "total": 458,
       "registered": 1634,
-      "turnoutPct": 25.34,
-      "partyTotal": 379,
-      "primaryTotal": 379,
-      "republican": 19,
-      "democrat": 360,
-      "general": 35,
-      "margin": 341,
+      "turnoutPct": 28.03,
+      "partyTotal": 418,
+      "primaryTotal": 418,
+      "republican": 21,
+      "democrat": 397,
+      "general": 40,
+      "margin": 376,
       "pctMargin": 90.0,
       "repPct": 5.0,
       "demPct": 95.0,
@@ -2637,41 +2701,19 @@ var TURNOUT_DATA = {
       }
     },
     {
-      "name": "BUSHTOWN",
-      "total": 385,
-      "registered": 2192,
-      "turnoutPct": 17.56,
-      "partyTotal": 318,
-      "primaryTotal": 318,
-      "republican": 16,
-      "democrat": 302,
-      "general": 67,
-      "margin": 286,
-      "pctMargin": 90.0,
-      "repPct": 5.0,
-      "demPct": 95.0,
-      "districts": {
-        "commission": "4",
-        "senate": "11",
-        "house": "28",
-        "school": "4",
-        "city": "8"
-      }
-    },
-    {
       "name": "AVONDALE",
-      "total": 191,
+      "total": 205,
       "registered": 1295,
-      "turnoutPct": 14.75,
-      "partyTotal": 159,
-      "primaryTotal": 159,
+      "turnoutPct": 15.83,
+      "partyTotal": 170,
+      "primaryTotal": 170,
       "republican": 6,
-      "democrat": 153,
-      "general": 32,
-      "margin": 147,
-      "pctMargin": 92.4,
-      "repPct": 3.8,
-      "demPct": 96.2,
+      "democrat": 164,
+      "general": 35,
+      "margin": 158,
+      "pctMargin": 93.0,
+      "repPct": 3.5,
+      "demPct": 96.5,
       "districts": {
         "commission": "4",
         "senate": "11",
@@ -2682,18 +2724,18 @@ var TURNOUT_DATA = {
     },
     {
       "name": "DALEWOOD",
-      "total": 528,
+      "total": 569,
       "registered": 2151,
-      "turnoutPct": 24.55,
-      "partyTotal": 466,
-      "primaryTotal": 466,
-      "republican": 13,
-      "democrat": 453,
-      "general": 62,
-      "margin": 440,
-      "pctMargin": 94.4,
-      "repPct": 2.8,
-      "demPct": 97.2,
+      "turnoutPct": 26.45,
+      "partyTotal": 496,
+      "primaryTotal": 496,
+      "republican": 16,
+      "democrat": 480,
+      "general": 73,
+      "margin": 464,
+      "pctMargin": 93.6,
+      "repPct": 3.2,
+      "demPct": 96.8,
       "districts": {
         "commission": "5",
         "senate": "11",
@@ -2706,303 +2748,303 @@ var TURNOUT_DATA = {
   "districtShares": {
     "commission": {
       "5": {
-        "total": 3678,
-        "sharePct": 9.09,
-        "republican": 542,
-        "democrat": 2634,
-        "general": 502
+        "total": 4036,
+        "sharePct": 9.19,
+        "republican": 578,
+        "democrat": 2872,
+        "general": 586
       },
       "11": {
-        "total": 2202,
+        "total": 2391,
         "sharePct": 5.44,
-        "republican": 694,
-        "democrat": 1129,
-        "general": 379
+        "republican": 736,
+        "democrat": 1231,
+        "general": 424
       },
       "7": {
-        "total": 4808,
-        "sharePct": 11.88,
-        "republican": 2365,
-        "democrat": 1556,
-        "general": 887
+        "total": 5198,
+        "sharePct": 11.84,
+        "republican": 2516,
+        "democrat": 1690,
+        "general": 992
       },
       "10": {
-        "total": 4193,
-        "sharePct": 10.36,
-        "republican": 2224,
-        "democrat": 1098,
-        "general": 871
+        "total": 4508,
+        "sharePct": 10.26,
+        "republican": 2338,
+        "democrat": 1202,
+        "general": 968
       },
       "4": {
-        "total": 2503,
-        "sharePct": 6.19,
-        "republican": 313,
-        "democrat": 1722,
-        "general": 468
+        "total": 2789,
+        "sharePct": 6.35,
+        "republican": 335,
+        "democrat": 1911,
+        "general": 543
       },
       "9": {
-        "total": 4244,
-        "sharePct": 10.49,
-        "republican": 2284,
-        "democrat": 1202,
-        "general": 758
+        "total": 4628,
+        "sharePct": 10.54,
+        "republican": 2428,
+        "democrat": 1343,
+        "general": 857
       },
       "8": {
-        "total": 2687,
-        "sharePct": 6.64,
-        "republican": 971,
-        "democrat": 1220,
-        "general": 496
+        "total": 2934,
+        "sharePct": 6.68,
+        "republican": 1024,
+        "democrat": 1356,
+        "general": 554
       },
       "1": {
-        "total": 3780,
-        "sharePct": 9.34,
-        "republican": 2363,
-        "democrat": 843,
-        "general": 574
+        "total": 4061,
+        "sharePct": 9.25,
+        "republican": 2523,
+        "democrat": 900,
+        "general": 638
       },
       "3": {
-        "total": 4817,
-        "sharePct": 11.9,
-        "republican": 2606,
-        "democrat": 1478,
-        "general": 733
+        "total": 5185,
+        "sharePct": 11.81,
+        "republican": 2753,
+        "democrat": 1609,
+        "general": 823
       },
       "2": {
-        "total": 3778,
-        "sharePct": 9.34,
-        "republican": 1826,
-        "democrat": 1370,
-        "general": 582
+        "total": 4021,
+        "sharePct": 9.16,
+        "republican": 1912,
+        "democrat": 1473,
+        "general": 636
       },
       "6": {
-        "total": 3777,
-        "sharePct": 9.33,
-        "republican": 1206,
-        "democrat": 1937,
-        "general": 634
+        "total": 4168,
+        "sharePct": 9.49,
+        "republican": 1319,
+        "democrat": 2126,
+        "general": 723
       }
     },
     "senate": {
       "11": {
-        "total": 26094,
-        "sharePct": 64.48,
-        "republican": 12061,
-        "democrat": 9794,
-        "general": 4239
+        "total": 28269,
+        "sharePct": 64.37,
+        "republican": 12807,
+        "democrat": 10696,
+        "general": 4766
       },
       "10": {
-        "total": 14373,
-        "sharePct": 35.52,
-        "republican": 5333,
-        "democrat": 6395,
-        "general": 2645
+        "total": 15650,
+        "sharePct": 35.63,
+        "republican": 5655,
+        "democrat": 7017,
+        "general": 2978
       }
     },
     "house": {
       "28": {
-        "total": 6059,
-        "sharePct": 14.97,
-        "republican": 733,
-        "democrat": 4379,
-        "general": 947
+        "total": 6716,
+        "sharePct": 15.29,
+        "republican": 784,
+        "democrat": 4822,
+        "general": 1110
       },
       "29": {
-        "total": 9309,
-        "sharePct": 23.0,
-        "republican": 4847,
-        "democrat": 2667,
-        "general": 1795
+        "total": 10056,
+        "sharePct": 22.9,
+        "republican": 5126,
+        "democrat": 2931,
+        "general": 1999
       },
       "30": {
-        "total": 7232,
-        "sharePct": 17.87,
-        "republican": 3077,
-        "democrat": 2816,
-        "general": 1339
+        "total": 7894,
+        "sharePct": 17.97,
+        "republican": 3272,
+        "democrat": 3115,
+        "general": 1507
       },
       "26": {
-        "total": 9699,
-        "sharePct": 23.97,
-        "republican": 4789,
-        "democrat": 3396,
-        "general": 1514
+        "total": 10513,
+        "sharePct": 23.94,
+        "republican": 5120,
+        "democrat": 3680,
+        "general": 1713
       },
       "27": {
-        "total": 8168,
-        "sharePct": 20.18,
-        "republican": 3948,
-        "democrat": 2931,
-        "general": 1289
+        "total": 8740,
+        "sharePct": 19.9,
+        "republican": 4160,
+        "democrat": 3165,
+        "general": 1415
       }
     },
     "school": {
       "5": {
-        "total": 3678,
-        "sharePct": 9.09,
-        "republican": 542,
-        "democrat": 2634,
-        "general": 502
+        "total": 4036,
+        "sharePct": 9.19,
+        "republican": 578,
+        "democrat": 2872,
+        "general": 586
       },
       "11": {
-        "total": 2202,
+        "total": 2391,
         "sharePct": 5.44,
-        "republican": 694,
-        "democrat": 1129,
-        "general": 379
+        "republican": 736,
+        "democrat": 1231,
+        "general": 424
       },
       "7": {
-        "total": 4808,
-        "sharePct": 11.88,
-        "republican": 2365,
-        "democrat": 1556,
-        "general": 887
+        "total": 5198,
+        "sharePct": 11.84,
+        "republican": 2516,
+        "democrat": 1690,
+        "general": 992
       },
       "10": {
-        "total": 4193,
-        "sharePct": 10.36,
-        "republican": 2224,
-        "democrat": 1098,
-        "general": 871
+        "total": 4508,
+        "sharePct": 10.26,
+        "republican": 2338,
+        "democrat": 1202,
+        "general": 968
       },
       "4": {
-        "total": 2503,
-        "sharePct": 6.19,
-        "republican": 313,
-        "democrat": 1722,
-        "general": 468
+        "total": 2789,
+        "sharePct": 6.35,
+        "republican": 335,
+        "democrat": 1911,
+        "general": 543
       },
       "9": {
-        "total": 4244,
-        "sharePct": 10.49,
-        "republican": 2284,
-        "democrat": 1202,
-        "general": 758
+        "total": 4628,
+        "sharePct": 10.54,
+        "republican": 2428,
+        "democrat": 1343,
+        "general": 857
       },
       "8": {
-        "total": 2687,
-        "sharePct": 6.64,
-        "republican": 971,
-        "democrat": 1220,
-        "general": 496
+        "total": 2934,
+        "sharePct": 6.68,
+        "republican": 1024,
+        "democrat": 1356,
+        "general": 554
       },
       "1": {
-        "total": 3780,
-        "sharePct": 9.34,
-        "republican": 2363,
-        "democrat": 843,
-        "general": 574
+        "total": 4061,
+        "sharePct": 9.25,
+        "republican": 2523,
+        "democrat": 900,
+        "general": 638
       },
       "3": {
-        "total": 4817,
-        "sharePct": 11.9,
-        "republican": 2606,
-        "democrat": 1478,
-        "general": 733
+        "total": 5185,
+        "sharePct": 11.81,
+        "republican": 2753,
+        "democrat": 1609,
+        "general": 823
       },
       "2": {
-        "total": 3778,
-        "sharePct": 9.34,
-        "republican": 1826,
-        "democrat": 1370,
-        "general": 582
+        "total": 4021,
+        "sharePct": 9.16,
+        "republican": 1912,
+        "democrat": 1473,
+        "general": 636
       },
       "6": {
-        "total": 3777,
-        "sharePct": 9.33,
-        "republican": 1206,
-        "democrat": 1937,
-        "general": 634
+        "total": 4168,
+        "sharePct": 9.49,
+        "republican": 1319,
+        "democrat": 2126,
+        "general": 723
       }
     },
     "city": {
       "6": {
-        "total": 1796,
-        "sharePct": 4.44,
-        "republican": 556,
-        "democrat": 893,
-        "general": 347
+        "total": 1969,
+        "sharePct": 4.48,
+        "republican": 592,
+        "democrat": 988,
+        "general": 389
       },
       "7": {
-        "total": 1198,
-        "sharePct": 2.96,
-        "republican": 210,
-        "democrat": 738,
-        "general": 250
+        "total": 1328,
+        "sharePct": 3.02,
+        "republican": 233,
+        "democrat": 801,
+        "general": 294
       },
       "8": {
-        "total": 1204,
-        "sharePct": 2.98,
-        "republican": 120,
-        "democrat": 833,
-        "general": 251
+        "total": 1325,
+        "sharePct": 3.02,
+        "republican": 127,
+        "democrat": 915,
+        "general": 283
       },
       "5": {
-        "total": 2387,
-        "sharePct": 5.9,
-        "republican": 299,
-        "democrat": 1787,
-        "general": 301
+        "total": 2624,
+        "sharePct": 5.97,
+        "republican": 311,
+        "democrat": 1960,
+        "general": 353
       },
       "9": {
-        "total": 1893,
-        "sharePct": 4.68,
-        "republican": 233,
-        "democrat": 1390,
-        "general": 270
+        "total": 2106,
+        "sharePct": 4.8,
+        "republican": 249,
+        "democrat": 1541,
+        "general": 316
       },
       "4": {
-        "total": 2413,
-        "sharePct": 5.96,
-        "republican": 1009,
-        "democrat": 930,
-        "general": 474
+        "total": 2613,
+        "sharePct": 5.95,
+        "republican": 1078,
+        "democrat": 1007,
+        "general": 528
       },
       "2": {
-        "total": 2472,
-        "sharePct": 6.11,
-        "republican": 771,
-        "democrat": 1325,
-        "general": 376
+        "total": 2714,
+        "sharePct": 6.18,
+        "republican": 839,
+        "democrat": 1449,
+        "general": 426
       },
       "3": {
-        "total": 3068,
-        "sharePct": 7.58,
-        "republican": 1539,
-        "democrat": 1035,
-        "general": 494
+        "total": 3322,
+        "sharePct": 7.56,
+        "republican": 1637,
+        "democrat": 1137,
+        "general": 548
       },
       "1": {
-        "total": 2206,
-        "sharePct": 5.45,
-        "republican": 979,
-        "democrat": 836,
-        "general": 391
+        "total": 2359,
+        "sharePct": 5.37,
+        "republican": 1032,
+        "democrat": 896,
+        "general": 431
       }
     }
   },
   "totals": {
     "By Mail/NH Voters": 2291,
-    "Brainerd": 6128,
-    "Collegedale": 7583,
-    "Election Comm.": 10554,
-    "Harrison": 3255,
-    "Hixson": 7370,
-    "Soddy Daisy": 3286,
-    "total": 40467
+    "Brainerd": 6847,
+    "Collegedale": 8221,
+    "Election Comm.": 11445,
+    "Harrison": 3527,
+    "Hixson": 8030,
+    "Soddy Daisy": 3558,
+    "total": 43919
   },
   "summary": {
     "totalRegistered": 223809,
-    "turnoutPercent": 0.18081042317333082,
-    "earlyVoting": 38176,
+    "turnoutPercent": 0.1962342890589744,
+    "earlyVoting": 41628,
     "absenteeNH": 2291,
-    "grandTotal": 40467
+    "grandTotal": 43919
   },
   "partyTotals": {
-    "republican": 17394,
-    "democrat": 16189,
-    "general": 6884,
-    "total": 40467,
+    "republican": 18462,
+    "democrat": 17713,
+    "general": 7744,
+    "total": 43919,
     "hasPartisanData": true,
     "hasApplesToApplesHistoricalComparison": false
   },
@@ -3103,835 +3145,835 @@ var TURNOUT_DATA = {
   "demographics": {
     "ageGroups": {
       "65+": {
-        "total": 21910,
-        "republican": 11943,
-        "democrat": 7543,
-        "general": 2424
+        "total": 22618,
+        "republican": 12285,
+        "democrat": 7814,
+        "general": 2519
       },
       "50-64": {
-        "total": 9179,
-        "republican": 3829,
-        "democrat": 3642,
-        "general": 1708
+        "total": 10326,
+        "republican": 4294,
+        "democrat": 4097,
+        "general": 1935
       },
       "30-49": {
-        "total": 6943,
-        "republican": 1369,
-        "democrat": 3924,
-        "general": 1650
+        "total": 8071,
+        "republican": 1578,
+        "democrat": 4531,
+        "general": 1962
       },
       "18-29": {
-        "total": 2435,
-        "republican": 253,
-        "democrat": 1080,
-        "general": 1102
+        "total": 2904,
+        "republican": 305,
+        "democrat": 1271,
+        "general": 1328
       }
     },
     "sex": {
       "M": {
-        "total": 17975,
-        "republican": 8632,
-        "democrat": 6206,
-        "general": 3137
+        "total": 19515,
+        "republican": 9156,
+        "democrat": 6798,
+        "general": 3561
       },
       "F": {
-        "total": 22492,
-        "republican": 8762,
-        "democrat": 9983,
-        "general": 3747
+        "total": 24404,
+        "republican": 9306,
+        "democrat": 10915,
+        "general": 4183
       }
     },
     "districts": {
       "commission": {
         "5": {
-          "total": 3678,
-          "republican": 542,
-          "democrat": 2634,
-          "general": 502
+          "total": 4036,
+          "republican": 578,
+          "democrat": 2872,
+          "general": 586
         },
         "11": {
-          "total": 2202,
-          "republican": 694,
-          "democrat": 1129,
-          "general": 379
+          "total": 2391,
+          "republican": 736,
+          "democrat": 1231,
+          "general": 424
         },
         "7": {
-          "total": 4808,
-          "republican": 2365,
-          "democrat": 1556,
-          "general": 887
+          "total": 5198,
+          "republican": 2516,
+          "democrat": 1690,
+          "general": 992
         },
         "10": {
-          "total": 4193,
-          "republican": 2224,
-          "democrat": 1098,
-          "general": 871
+          "total": 4508,
+          "republican": 2338,
+          "democrat": 1202,
+          "general": 968
         },
         "4": {
-          "total": 2503,
-          "republican": 313,
-          "democrat": 1722,
-          "general": 468
+          "total": 2789,
+          "republican": 335,
+          "democrat": 1911,
+          "general": 543
         },
         "9": {
-          "total": 4244,
-          "republican": 2284,
-          "democrat": 1202,
-          "general": 758
+          "total": 4628,
+          "republican": 2428,
+          "democrat": 1343,
+          "general": 857
         },
         "8": {
-          "total": 2687,
-          "republican": 971,
-          "democrat": 1220,
-          "general": 496
+          "total": 2934,
+          "republican": 1024,
+          "democrat": 1356,
+          "general": 554
         },
         "1": {
-          "total": 3780,
-          "republican": 2363,
-          "democrat": 843,
-          "general": 574
+          "total": 4061,
+          "republican": 2523,
+          "democrat": 900,
+          "general": 638
         },
         "3": {
-          "total": 4817,
-          "republican": 2606,
-          "democrat": 1478,
-          "general": 733
+          "total": 5185,
+          "republican": 2753,
+          "democrat": 1609,
+          "general": 823
         },
         "2": {
-          "total": 3778,
-          "republican": 1826,
-          "democrat": 1370,
-          "general": 582
+          "total": 4021,
+          "republican": 1912,
+          "democrat": 1473,
+          "general": 636
         },
         "6": {
-          "total": 3777,
-          "republican": 1206,
-          "democrat": 1937,
-          "general": 634
+          "total": 4168,
+          "republican": 1319,
+          "democrat": 2126,
+          "general": 723
         }
       },
       "senate": {
         "11": {
-          "total": 26094,
-          "republican": 12061,
-          "democrat": 9794,
-          "general": 4239
+          "total": 28269,
+          "republican": 12807,
+          "democrat": 10696,
+          "general": 4766
         },
         "10": {
-          "total": 14373,
-          "republican": 5333,
-          "democrat": 6395,
-          "general": 2645
+          "total": 15650,
+          "republican": 5655,
+          "democrat": 7017,
+          "general": 2978
         }
       },
       "house": {
         "28": {
-          "total": 6059,
-          "republican": 733,
-          "democrat": 4379,
-          "general": 947
+          "total": 6716,
+          "republican": 784,
+          "democrat": 4822,
+          "general": 1110
         },
         "29": {
-          "total": 9309,
-          "republican": 4847,
-          "democrat": 2667,
-          "general": 1795
+          "total": 10056,
+          "republican": 5126,
+          "democrat": 2931,
+          "general": 1999
         },
         "30": {
-          "total": 7232,
-          "republican": 3077,
-          "democrat": 2816,
-          "general": 1339
+          "total": 7894,
+          "republican": 3272,
+          "democrat": 3115,
+          "general": 1507
         },
         "26": {
-          "total": 9699,
-          "republican": 4789,
-          "democrat": 3396,
-          "general": 1514
+          "total": 10513,
+          "republican": 5120,
+          "democrat": 3680,
+          "general": 1713
         },
         "27": {
-          "total": 8168,
-          "republican": 3948,
-          "democrat": 2931,
-          "general": 1289
+          "total": 8740,
+          "republican": 4160,
+          "democrat": 3165,
+          "general": 1415
         }
       },
       "school": {
         "5": {
-          "total": 3678,
-          "republican": 542,
-          "democrat": 2634,
-          "general": 502
+          "total": 4036,
+          "republican": 578,
+          "democrat": 2872,
+          "general": 586
         },
         "11": {
-          "total": 2202,
-          "republican": 694,
-          "democrat": 1129,
-          "general": 379
+          "total": 2391,
+          "republican": 736,
+          "democrat": 1231,
+          "general": 424
         },
         "7": {
-          "total": 4808,
-          "republican": 2365,
-          "democrat": 1556,
-          "general": 887
+          "total": 5198,
+          "republican": 2516,
+          "democrat": 1690,
+          "general": 992
         },
         "10": {
-          "total": 4193,
-          "republican": 2224,
-          "democrat": 1098,
-          "general": 871
+          "total": 4508,
+          "republican": 2338,
+          "democrat": 1202,
+          "general": 968
         },
         "4": {
-          "total": 2503,
-          "republican": 313,
-          "democrat": 1722,
-          "general": 468
+          "total": 2789,
+          "republican": 335,
+          "democrat": 1911,
+          "general": 543
         },
         "9": {
-          "total": 4244,
-          "republican": 2284,
-          "democrat": 1202,
-          "general": 758
+          "total": 4628,
+          "republican": 2428,
+          "democrat": 1343,
+          "general": 857
         },
         "8": {
-          "total": 2687,
-          "republican": 971,
-          "democrat": 1220,
-          "general": 496
+          "total": 2934,
+          "republican": 1024,
+          "democrat": 1356,
+          "general": 554
         },
         "1": {
-          "total": 3780,
-          "republican": 2363,
-          "democrat": 843,
-          "general": 574
+          "total": 4061,
+          "republican": 2523,
+          "democrat": 900,
+          "general": 638
         },
         "3": {
-          "total": 4817,
-          "republican": 2606,
-          "democrat": 1478,
-          "general": 733
+          "total": 5185,
+          "republican": 2753,
+          "democrat": 1609,
+          "general": 823
         },
         "2": {
-          "total": 3778,
-          "republican": 1826,
-          "democrat": 1370,
-          "general": 582
+          "total": 4021,
+          "republican": 1912,
+          "democrat": 1473,
+          "general": 636
         },
         "6": {
-          "total": 3777,
-          "republican": 1206,
-          "democrat": 1937,
-          "general": 634
+          "total": 4168,
+          "republican": 1319,
+          "democrat": 2126,
+          "general": 723
         }
       },
       "city": {
         "6": {
-          "total": 1796,
-          "republican": 556,
-          "democrat": 893,
-          "general": 347
+          "total": 1969,
+          "republican": 592,
+          "democrat": 988,
+          "general": 389
         },
         "7": {
-          "total": 1198,
-          "republican": 210,
-          "democrat": 738,
-          "general": 250
+          "total": 1328,
+          "republican": 233,
+          "democrat": 801,
+          "general": 294
         },
         "8": {
-          "total": 1204,
-          "republican": 120,
-          "democrat": 833,
-          "general": 251
+          "total": 1325,
+          "republican": 127,
+          "democrat": 915,
+          "general": 283
         },
         "5": {
-          "total": 2387,
-          "republican": 299,
-          "democrat": 1787,
-          "general": 301
+          "total": 2624,
+          "republican": 311,
+          "democrat": 1960,
+          "general": 353
         },
         "9": {
-          "total": 1893,
-          "republican": 233,
-          "democrat": 1390,
-          "general": 270
+          "total": 2106,
+          "republican": 249,
+          "democrat": 1541,
+          "general": 316
         },
         "4": {
-          "total": 2413,
-          "republican": 1009,
-          "democrat": 930,
-          "general": 474
+          "total": 2613,
+          "republican": 1078,
+          "democrat": 1007,
+          "general": 528
         },
         "2": {
-          "total": 2472,
-          "republican": 771,
-          "democrat": 1325,
-          "general": 376
+          "total": 2714,
+          "republican": 839,
+          "democrat": 1449,
+          "general": 426
         },
         "3": {
-          "total": 3068,
-          "republican": 1539,
-          "democrat": 1035,
-          "general": 494
+          "total": 3322,
+          "republican": 1637,
+          "democrat": 1137,
+          "general": 548
         },
         "1": {
-          "total": 2206,
-          "republican": 979,
-          "democrat": 836,
-          "general": 391
+          "total": 2359,
+          "republican": 1032,
+          "democrat": 896,
+          "general": 431
         }
       }
     },
     "precincts": {
       "AIRPORT A": {
-        "total": 61,
+        "total": 65,
         "republican": 11,
-        "democrat": 36,
+        "democrat": 40,
         "general": 14
       },
       "AIRPORT B": {
-        "total": 266,
-        "republican": 82,
-        "democrat": 135,
-        "general": 49
+        "total": 289,
+        "republican": 83,
+        "democrat": 145,
+        "general": 61
       },
       "ALTON PARK": {
-        "total": 210,
-        "republican": 14,
-        "democrat": 148,
-        "general": 48
+        "total": 230,
+        "republican": 15,
+        "democrat": 160,
+        "general": 55
       },
       "APISON A": {
-        "total": 267,
-        "republican": 162,
-        "democrat": 50,
-        "general": 55
+        "total": 293,
+        "republican": 173,
+        "democrat": 56,
+        "general": 64
       },
       "APISON B": {
-        "total": 540,
-        "republican": 282,
-        "democrat": 124,
-        "general": 134
+        "total": 563,
+        "republican": 289,
+        "democrat": 133,
+        "general": 141
       },
       "AVONDALE": {
-        "total": 191,
+        "total": 205,
         "republican": 6,
-        "democrat": 153,
-        "general": 32
-      },
-      "BIRCHWOOD": {
-        "total": 311,
-        "republican": 199,
-        "democrat": 58,
-        "general": 54
-      },
-      "BONNY OAKS": {
-        "total": 465,
-        "republican": 46,
-        "democrat": 372,
-        "general": 47
-      },
-      "BRAINERD": {
-        "total": 380,
-        "republican": 88,
-        "democrat": 240,
-        "general": 52
-      },
-      "BRAINERD HILLS": {
-        "total": 265,
-        "republican": 64,
-        "democrat": 134,
-        "general": 67
-      },
-      "BUSHTOWN": {
-        "total": 385,
-        "republican": 16,
-        "democrat": 302,
-        "general": 67
-      },
-      "COLLEGEDALE A": {
-        "total": 352,
-        "republican": 154,
-        "democrat": 112,
-        "general": 86
-      },
-      "COLLEGEDALE B": {
-        "total": 372,
-        "republican": 220,
-        "democrat": 77,
-        "general": 75
-      },
-      "CONCORD A": {
-        "total": 257,
-        "republican": 73,
-        "democrat": 129,
-        "general": 55
-      },
-      "CONCORD B": {
-        "total": 542,
-        "republican": 207,
-        "democrat": 228,
-        "general": 107
-      },
-      "COURTHOUSE": {
-        "total": 167,
-        "republican": 19,
-        "democrat": 99,
-        "general": 49
-      },
-      "DALEWOOD": {
-        "total": 528,
-        "republican": 13,
-        "democrat": 453,
-        "general": 62
-      },
-      "DALLAS": {
-        "total": 561,
-        "republican": 294,
-        "democrat": 167,
-        "general": 100
-      },
-      "DOWNTOWN": {
-        "total": 366,
-        "republican": 85,
-        "democrat": 181,
-        "general": 100
-      },
-      "DUPONT": {
-        "total": 603,
-        "republican": 298,
-        "democrat": 208,
-        "general": 97
-      },
-      "EAST BRAINERD A": {
-        "total": 589,
-        "republican": 259,
-        "democrat": 222,
-        "general": 108
-      },
-      "EAST BRAINERD B": {
-        "total": 982,
-        "republican": 440,
-        "democrat": 344,
-        "general": 198
-      },
-      "EAST CHATTANOOGA": {
-        "total": 345,
-        "republican": 20,
-        "democrat": 268,
-        "general": 57
-      },
-      "EAST LAKE": {
-        "total": 122,
-        "republican": 22,
-        "democrat": 65,
+        "democrat": 164,
         "general": 35
       },
-      "EAST RIDGE A": {
-        "total": 505,
-        "republican": 202,
-        "democrat": 214,
-        "general": 89
+      "BIRCHWOOD": {
+        "total": 329,
+        "republican": 211,
+        "democrat": 60,
+        "general": 58
       },
-      "EAST RIDGE B": {
-        "total": 518,
-        "republican": 181,
-        "democrat": 271,
-        "general": 66
+      "BONNY OAKS": {
+        "total": 510,
+        "republican": 48,
+        "democrat": 408,
+        "general": 54
       },
-      "EAST RIDGE C": {
-        "total": 196,
-        "republican": 71,
-        "democrat": 86,
-        "general": 39
+      "BRAINERD": {
+        "total": 429,
+        "republican": 104,
+        "democrat": 264,
+        "general": 61
       },
-      "EAST RIDGE D": {
-        "total": 404,
-        "republican": 173,
-        "democrat": 158,
-        "general": 73
+      "BRAINERD HILLS": {
+        "total": 299,
+        "republican": 72,
+        "democrat": 155,
+        "general": 72
       },
-      "EASTGATE": {
-        "total": 424,
-        "republican": 41,
-        "democrat": 330,
-        "general": 53
-      },
-      "EASTSIDE": {
-        "total": 409,
-        "republican": 63,
-        "democrat": 261,
-        "general": 85
-      },
-      "FAIRMOUNT": {
-        "total": 401,
-        "republican": 203,
-        "democrat": 122,
+      "BUSHTOWN": {
+        "total": 428,
+        "republican": 18,
+        "democrat": 334,
         "general": 76
       },
+      "COLLEGEDALE A": {
+        "total": 382,
+        "republican": 161,
+        "democrat": 127,
+        "general": 94
+      },
+      "COLLEGEDALE B": {
+        "total": 387,
+        "republican": 227,
+        "democrat": 84,
+        "general": 76
+      },
+      "CONCORD A": {
+        "total": 276,
+        "republican": 73,
+        "democrat": 142,
+        "general": 61
+      },
+      "CONCORD B": {
+        "total": 577,
+        "republican": 215,
+        "democrat": 241,
+        "general": 121
+      },
+      "COURTHOUSE": {
+        "total": 192,
+        "republican": 20,
+        "democrat": 114,
+        "general": 58
+      },
+      "DALEWOOD": {
+        "total": 569,
+        "republican": 16,
+        "democrat": 480,
+        "general": 73
+      },
+      "DALLAS": {
+        "total": 629,
+        "republican": 335,
+        "democrat": 175,
+        "general": 119
+      },
+      "DOWNTOWN": {
+        "total": 404,
+        "republican": 92,
+        "democrat": 195,
+        "general": 117
+      },
+      "DUPONT": {
+        "total": 658,
+        "republican": 322,
+        "democrat": 223,
+        "general": 113
+      },
+      "EAST BRAINERD A": {
+        "total": 647,
+        "republican": 288,
+        "democrat": 240,
+        "general": 119
+      },
+      "EAST BRAINERD B": {
+        "total": 1063,
+        "republican": 467,
+        "democrat": 375,
+        "general": 221
+      },
+      "EAST CHATTANOOGA": {
+        "total": 398,
+        "republican": 26,
+        "democrat": 305,
+        "general": 67
+      },
+      "EAST LAKE": {
+        "total": 143,
+        "republican": 25,
+        "democrat": 76,
+        "general": 42
+      },
+      "EAST RIDGE A": {
+        "total": 553,
+        "republican": 209,
+        "democrat": 246,
+        "general": 98
+      },
+      "EAST RIDGE B": {
+        "total": 570,
+        "republican": 189,
+        "democrat": 302,
+        "general": 79
+      },
+      "EAST RIDGE C": {
+        "total": 219,
+        "republican": 77,
+        "democrat": 98,
+        "general": 44
+      },
+      "EAST RIDGE D": {
+        "total": 440,
+        "republican": 189,
+        "democrat": 172,
+        "general": 79
+      },
+      "EASTGATE": {
+        "total": 473,
+        "republican": 44,
+        "democrat": 363,
+        "general": 66
+      },
+      "EASTSIDE": {
+        "total": 461,
+        "republican": 72,
+        "democrat": 291,
+        "general": 98
+      },
+      "FAIRMOUNT": {
+        "total": 421,
+        "republican": 210,
+        "democrat": 131,
+        "general": 80
+      },
       "FALLING WATER B": {
-        "total": 166,
-        "republican": 105,
-        "democrat": 43,
-        "general": 18
+        "total": 179,
+        "republican": 114,
+        "democrat": 45,
+        "general": 20
       },
       "FLAT TOP MOUNTAIN": {
-        "total": 47,
-        "republican": 35,
+        "total": 48,
+        "republican": 36,
         "democrat": 10,
         "general": 2
       },
       "GANNS": {
-        "total": 831,
-        "republican": 493,
-        "democrat": 214,
-        "general": 124
+        "total": 891,
+        "republican": 520,
+        "democrat": 229,
+        "general": 142
       },
       "GLENWOOD": {
-        "total": 348,
+        "total": 378,
         "republican": 47,
-        "democrat": 254,
-        "general": 47
+        "democrat": 277,
+        "general": 54
       },
       "HARRISON": {
-        "total": 739,
-        "republican": 320,
-        "democrat": 292,
-        "general": 127
+        "total": 805,
+        "republican": 336,
+        "democrat": 322,
+        "general": 147
       },
       "HARRISON BAY": {
-        "total": 907,
-        "republican": 561,
-        "democrat": 195,
-        "general": 151
+        "total": 974,
+        "republican": 591,
+        "democrat": 221,
+        "general": 162
       },
       "HIXSON": {
-        "total": 485,
-        "republican": 225,
-        "democrat": 190,
-        "general": 70
+        "total": 519,
+        "republican": 234,
+        "democrat": 205,
+        "general": 80
       },
       "HUNTER": {
-        "total": 829,
-        "republican": 457,
-        "democrat": 234,
-        "general": 138
+        "total": 914,
+        "republican": 492,
+        "democrat": 264,
+        "general": 158
       },
       "HURRICANE CREEK": {
-        "total": 970,
-        "republican": 506,
-        "democrat": 301,
-        "general": 163
+        "total": 1030,
+        "republican": 529,
+        "democrat": 329,
+        "general": 172
       },
       "KINGSPOINT": {
-        "total": 351,
-        "republican": 57,
-        "democrat": 236,
-        "general": 58
+        "total": 374,
+        "republican": 58,
+        "democrat": 255,
+        "general": 61
       },
       "LAKE HILLS": {
-        "total": 268,
+        "total": 295,
         "republican": 28,
-        "democrat": 198,
-        "general": 42
+        "democrat": 214,
+        "general": 53
       },
       "LAKESITE": {
-        "total": 166,
-        "republican": 94,
-        "democrat": 38,
-        "general": 34
+        "total": 185,
+        "republican": 105,
+        "democrat": 43,
+        "general": 37
       },
       "LOOKOUT MOUNTAIN": {
-        "total": 180,
-        "republican": 107,
-        "democrat": 61,
+        "total": 188,
+        "republican": 112,
+        "democrat": 64,
         "general": 12
       },
       "LOOKOUT VALLEY": {
-        "total": 618,
-        "republican": 331,
-        "democrat": 190,
-        "general": 97
+        "total": 655,
+        "republican": 348,
+        "democrat": 202,
+        "general": 105
       },
       "LUPTON CITY": {
-        "total": 455,
-        "republican": 145,
-        "democrat": 238,
-        "general": 72
+        "total": 499,
+        "republican": 159,
+        "democrat": 260,
+        "general": 80
       },
       "MEADOWVIEW": {
-        "total": 523,
-        "republican": 318,
-        "democrat": 95,
-        "general": 110
+        "total": 576,
+        "republican": 341,
+        "democrat": 106,
+        "general": 129
       },
       "MIDDLE VALLEY": {
-        "total": 293,
-        "republican": 161,
-        "democrat": 92,
-        "general": 40
+        "total": 321,
+        "republican": 169,
+        "democrat": 106,
+        "general": 46
       },
       "MISSIONARY RIDGE": {
-        "total": 261,
-        "republican": 81,
-        "democrat": 135,
-        "general": 45
+        "total": 286,
+        "republican": 82,
+        "democrat": 155,
+        "general": 49
       },
       "MOUNTAIN CREEK A": {
-        "total": 728,
-        "republican": 300,
-        "democrat": 302,
-        "general": 126
+        "total": 778,
+        "republican": 315,
+        "democrat": 330,
+        "general": 133
       },
       "MOUNTAIN CREEK B": {
-        "total": 264,
-        "republican": 101,
+        "total": 273,
+        "republican": 106,
         "democrat": 107,
-        "general": 56
+        "general": 60
       },
       "MOWBRAY B": {
-        "total": 112,
-        "republican": 79,
+        "total": 117,
+        "republican": 81,
         "democrat": 24,
-        "general": 9
+        "general": 12
       },
       "MURRAY HILLS": {
-        "total": 344,
-        "republican": 79,
-        "democrat": 210,
-        "general": 55
+        "total": 383,
+        "republican": 82,
+        "democrat": 237,
+        "general": 64
       },
       "NORTH CHATTANOOGA A": {
-        "total": 315,
-        "republican": 72,
-        "democrat": 166,
-        "general": 77
+        "total": 342,
+        "republican": 75,
+        "democrat": 184,
+        "general": 83
       },
       "NORTH CHATTANOOGA B": {
-        "total": 169,
-        "republican": 52,
-        "democrat": 74,
-        "general": 43
+        "total": 192,
+        "republican": 59,
+        "democrat": 79,
+        "general": 54
       },
       "NORTHGATE": {
-        "total": 601,
-        "republican": 277,
-        "democrat": 203,
-        "general": 121
+        "total": 642,
+        "republican": 289,
+        "democrat": 217,
+        "general": 136
       },
       "NORTHSHORE": {
-        "total": 695,
-        "republican": 201,
-        "democrat": 383,
-        "general": 111
+        "total": 761,
+        "republican": 218,
+        "democrat": 421,
+        "general": 122
       },
       "NORTHWOODS": {
-        "total": 800,
-        "republican": 333,
-        "democrat": 328,
-        "general": 139
+        "total": 861,
+        "republican": 350,
+        "democrat": 358,
+        "general": 153
       },
       "OOLTEWAH": {
-        "total": 930,
-        "republican": 524,
-        "democrat": 211,
-        "general": 195
+        "total": 1003,
+        "republican": 554,
+        "democrat": 227,
+        "general": 222
       },
       "OOLTEWAH GEORGETOWN": {
-        "total": 453,
-        "republican": 287,
-        "democrat": 76,
-        "general": 90
-      },
-      "OOLTEWAH RINGGOLD": {
-        "total": 1094,
-        "republican": 564,
-        "democrat": 309,
-        "general": 221
-      },
-      "PLEASANT GROVE A": {
-        "total": 622,
-        "republican": 351,
-        "democrat": 187,
-        "general": 84
-      },
-      "POSSUM CREEK": {
-        "total": 724,
-        "republican": 456,
-        "democrat": 157,
-        "general": 111
-      },
-      "RED BANK A": {
-        "total": 463,
-        "republican": 111,
-        "democrat": 249,
+        "total": 495,
+        "republican": 299,
+        "democrat": 93,
         "general": 103
       },
+      "OOLTEWAH RINGGOLD": {
+        "total": 1174,
+        "republican": 590,
+        "democrat": 337,
+        "general": 247
+      },
+      "PLEASANT GROVE A": {
+        "total": 660,
+        "republican": 364,
+        "democrat": 202,
+        "general": 94
+      },
+      "POSSUM CREEK": {
+        "total": 779,
+        "republican": 487,
+        "democrat": 166,
+        "general": 126
+      },
+      "RED BANK A": {
+        "total": 508,
+        "republican": 119,
+        "democrat": 275,
+        "general": 114
+      },
       "RED BANK B": {
-        "total": 407,
-        "republican": 181,
-        "democrat": 158,
-        "general": 68
+        "total": 444,
+        "republican": 192,
+        "democrat": 171,
+        "general": 81
       },
       "RED BANK C": {
-        "total": 324,
-        "republican": 118,
-        "democrat": 156,
-        "general": 50
+        "total": 363,
+        "republican": 132,
+        "democrat": 174,
+        "general": 57
       },
       "RIDGEDALE": {
-        "total": 354,
-        "republican": 31,
-        "democrat": 273,
-        "general": 50
+        "total": 405,
+        "republican": 33,
+        "democrat": 307,
+        "general": 65
       },
       "RIDGESIDE": {
-        "total": 50,
+        "total": 52,
         "republican": 15,
-        "democrat": 26,
+        "democrat": 28,
         "general": 9
       },
       "RIVERVIEW": {
-        "total": 335,
-        "republican": 94,
-        "democrat": 195,
-        "general": 46
+        "total": 382,
+        "republican": 105,
+        "democrat": 222,
+        "general": 55
       },
       "SALE CREEK": {
-        "total": 290,
-        "republican": 196,
-        "democrat": 50,
-        "general": 44
+        "total": 313,
+        "republican": 208,
+        "democrat": 58,
+        "general": 47
       },
       "SAVANNAH BAY": {
-        "total": 659,
-        "republican": 408,
-        "democrat": 140,
-        "general": 111
+        "total": 713,
+        "republican": 433,
+        "democrat": 150,
+        "general": 130
       },
       "SEQUOYAH": {
-        "total": 450,
-        "republican": 293,
-        "democrat": 83,
-        "general": 74
+        "total": 478,
+        "republican": 313,
+        "democrat": 87,
+        "general": 78
       },
       "SIGNAL MOUNTAIN A": {
-        "total": 401,
-        "republican": 204,
-        "democrat": 146,
-        "general": 51
-      },
-      "SIGNAL MOUNTAIN B": {
-        "total": 732,
-        "republican": 416,
-        "democrat": 240,
-        "general": 76
-      },
-      "SILVERDALE": {
-        "total": 272,
-        "republican": 118,
-        "democrat": 108,
-        "general": 46
-      },
-      "SODDY DAISY A": {
-        "total": 575,
-        "republican": 359,
-        "democrat": 130,
-        "general": 86
-      },
-      "SODDY DAISY B": {
-        "total": 526,
-        "republican": 323,
-        "democrat": 117,
-        "general": 86
-      },
-      "SODDY DAISY C": {
-        "total": 365,
-        "republican": 252,
-        "democrat": 68,
-        "general": 45
-      },
-      "ST ELMO": {
-        "total": 402,
-        "republican": 76,
-        "democrat": 269,
+        "total": 429,
+        "republican": 215,
+        "democrat": 157,
         "general": 57
       },
+      "SIGNAL MOUNTAIN B": {
+        "total": 776,
+        "republican": 429,
+        "democrat": 259,
+        "general": 88
+      },
+      "SILVERDALE": {
+        "total": 292,
+        "republican": 124,
+        "democrat": 116,
+        "general": 52
+      },
+      "SODDY DAISY A": {
+        "total": 608,
+        "republican": 379,
+        "democrat": 138,
+        "general": 91
+      },
+      "SODDY DAISY B": {
+        "total": 559,
+        "republican": 338,
+        "democrat": 125,
+        "general": 96
+      },
+      "SODDY DAISY C": {
+        "total": 382,
+        "republican": 265,
+        "democrat": 69,
+        "general": 48
+      },
+      "ST ELMO": {
+        "total": 428,
+        "republican": 82,
+        "democrat": 283,
+        "general": 63
+      },
       "STUART HEIGHTS": {
-        "total": 614,
-        "republican": 232,
-        "democrat": 318,
-        "general": 64
+        "total": 677,
+        "republican": 260,
+        "democrat": 340,
+        "general": 77
       },
       "SUMMIT": {
-        "total": 615,
-        "republican": 231,
-        "democrat": 250,
-        "general": 134
+        "total": 673,
+        "republican": 251,
+        "democrat": 272,
+        "general": 150
       },
       "TYNER": {
-        "total": 474,
-        "republican": 152,
-        "democrat": 230,
-        "general": 92
+        "total": 518,
+        "republican": 161,
+        "democrat": 256,
+        "general": 101
       },
       "VALLEYBROOK": {
-        "total": 1216,
-        "republican": 707,
-        "democrat": 346,
-        "general": 163
+        "total": 1309,
+        "republican": 750,
+        "democrat": 384,
+        "general": 175
       },
       "WALDEN": {
-        "total": 227,
-        "republican": 140,
-        "democrat": 59,
-        "general": 28
+        "total": 242,
+        "republican": 149,
+        "democrat": 61,
+        "general": 32
       },
       "WESTVIEW A": {
-        "total": 311,
-        "republican": 150,
-        "democrat": 108,
-        "general": 53
+        "total": 338,
+        "republican": 162,
+        "democrat": 114,
+        "general": 62
       },
       "WESTVIEW B": {
-        "total": 595,
-        "republican": 284,
-        "democrat": 222,
-        "general": 89
+        "total": 653,
+        "republican": 307,
+        "democrat": 239,
+        "general": 107
       },
       "WOLFTEVER": {
-        "total": 935,
-        "republican": 429,
-        "democrat": 328,
-        "general": 178
+        "total": 1030,
+        "republican": 457,
+        "democrat": 370,
+        "general": 203
       },
       "WOODMORE": {
-        "total": 414,
-        "republican": 19,
-        "democrat": 360,
-        "general": 35
+        "total": 458,
+        "republican": 21,
+        "democrat": 397,
+        "general": 40
       },
       "FALLING WATER A": {
-        "total": 92,
-        "republican": 54,
-        "democrat": 23,
-        "general": 15
+        "total": 103,
+        "republican": 59,
+        "democrat": 27,
+        "general": 17
       },
       "MOWBRAY A": {
-        "total": 44,
+        "total": 45,
         "republican": 21,
         "democrat": 13,
-        "general": 10
+        "general": 11
       },
       "MOUNTAIN CREEK C": {
-        "total": 15,
+        "total": 17,
         "republican": 3,
-        "democrat": 10,
+        "democrat": 12,
         "general": 2
       },
       "PLEASANT GROVE B": {
-        "total": 38,
+        "total": 45,
         "republican": 22,
-        "democrat": 14,
+        "democrat": 21,
         "general": 2
       }
     },
@@ -4480,22 +4522,22 @@ var TURNOUT_DATA = {
       },
       "Brainerd": {
         "AIRPORT A": {
-          "total": 35,
+          "total": 38,
           "republican": 6,
-          "democrat": 23,
+          "democrat": 26,
           "general": 6
         },
         "AIRPORT B": {
-          "total": 126,
+          "total": 139,
           "republican": 18,
-          "democrat": 78,
-          "general": 30
+          "democrat": 86,
+          "general": 35
         },
         "ALTON PARK": {
-          "total": 52,
+          "total": 60,
           "republican": 3,
-          "democrat": 34,
-          "general": 15
+          "democrat": 40,
+          "general": 17
         },
         "APISON A": {
           "total": 2,
@@ -4510,118 +4552,118 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "AVONDALE": {
-          "total": 32,
+          "total": 38,
           "republican": 1,
-          "democrat": 25,
-          "general": 6
+          "democrat": 29,
+          "general": 8
         },
         "BONNY OAKS": {
-          "total": 155,
+          "total": 169,
           "republican": 8,
-          "democrat": 138,
-          "general": 9
+          "democrat": 150,
+          "general": 11
         },
         "BRAINERD": {
-          "total": 314,
-          "republican": 71,
-          "democrat": 206,
-          "general": 37
-        },
-        "BRAINERD HILLS": {
-          "total": 171,
-          "republican": 41,
-          "democrat": 91,
-          "general": 39
-        },
-        "BUSHTOWN": {
-          "total": 85,
-          "republican": 2,
-          "democrat": 73,
-          "general": 10
-        },
-        "CONCORD A": {
-          "total": 112,
-          "republican": 20,
-          "democrat": 70,
-          "general": 22
-        },
-        "CONCORD B": {
-          "total": 194,
-          "republican": 51,
-          "democrat": 112,
-          "general": 31
-        },
-        "COURTHOUSE": {
-          "total": 10,
-          "republican": 0,
-          "democrat": 8,
-          "general": 2
-        },
-        "DALEWOOD": {
-          "total": 442,
-          "republican": 6,
-          "democrat": 387,
-          "general": 49
-        },
-        "EAST BRAINERD A": {
-          "total": 257,
-          "republican": 104,
-          "democrat": 108,
+          "total": 359,
+          "republican": 87,
+          "democrat": 227,
           "general": 45
         },
-        "EAST BRAINERD B": {
-          "total": 244,
-          "republican": 76,
-          "democrat": 130,
-          "general": 38
-        },
-        "EAST CHATTANOOGA": {
-          "total": 167,
-          "republican": 8,
-          "democrat": 139,
-          "general": 20
-        },
-        "EAST LAKE": {
-          "total": 42,
-          "republican": 6,
-          "democrat": 26,
-          "general": 10
-        },
-        "EAST RIDGE A": {
-          "total": 362,
-          "republican": 136,
-          "democrat": 164,
-          "general": 62
-        },
-        "EAST RIDGE B": {
-          "total": 400,
-          "republican": 139,
-          "democrat": 214,
-          "general": 47
-        },
-        "EAST RIDGE C": {
-          "total": 161,
-          "republican": 60,
-          "democrat": 75,
-          "general": 26
-        },
-        "EAST RIDGE D": {
-          "total": 296,
-          "republican": 122,
-          "democrat": 115,
-          "general": 59
-        },
-        "EASTGATE": {
-          "total": 379,
-          "republican": 33,
-          "democrat": 303,
+        "BRAINERD HILLS": {
+          "total": 193,
+          "republican": 43,
+          "democrat": 107,
           "general": 43
         },
-        "EASTSIDE": {
-          "total": 69,
-          "republican": 4,
-          "democrat": 50,
+        "BUSHTOWN": {
+          "total": 100,
+          "republican": 2,
+          "democrat": 83,
           "general": 15
+        },
+        "CONCORD A": {
+          "total": 125,
+          "republican": 20,
+          "democrat": 81,
+          "general": 24
+        },
+        "CONCORD B": {
+          "total": 210,
+          "republican": 51,
+          "democrat": 120,
+          "general": 39
+        },
+        "COURTHOUSE": {
+          "total": 15,
+          "republican": 0,
+          "democrat": 11,
+          "general": 4
+        },
+        "DALEWOOD": {
+          "total": 474,
+          "republican": 9,
+          "democrat": 406,
+          "general": 59
+        },
+        "EAST BRAINERD A": {
+          "total": 273,
+          "republican": 110,
+          "democrat": 115,
+          "general": 48
+        },
+        "EAST BRAINERD B": {
+          "total": 281,
+          "republican": 84,
+          "democrat": 149,
+          "general": 48
+        },
+        "EAST CHATTANOOGA": {
+          "total": 201,
+          "republican": 8,
+          "democrat": 170,
+          "general": 23
+        },
+        "EAST LAKE": {
+          "total": 50,
+          "republican": 6,
+          "democrat": 29,
+          "general": 15
+        },
+        "EAST RIDGE A": {
+          "total": 396,
+          "republican": 141,
+          "democrat": 186,
+          "general": 69
+        },
+        "EAST RIDGE B": {
+          "total": 445,
+          "republican": 147,
+          "democrat": 241,
+          "general": 57
+        },
+        "EAST RIDGE C": {
+          "total": 181,
+          "republican": 66,
+          "democrat": 86,
+          "general": 29
+        },
+        "EAST RIDGE D": {
+          "total": 320,
+          "republican": 130,
+          "democrat": 126,
+          "general": 64
+        },
+        "EASTGATE": {
+          "total": 428,
+          "republican": 36,
+          "democrat": 336,
+          "general": 56
+        },
+        "EASTSIDE": {
+          "total": 82,
+          "republican": 5,
+          "democrat": 58,
+          "general": 19
         },
         "FALLING WATER B": {
           "total": 2,
@@ -4630,46 +4672,46 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "GLENWOOD": {
-          "total": 181,
+          "total": 196,
           "republican": 15,
-          "democrat": 146,
-          "general": 20
+          "democrat": 158,
+          "general": 23
         },
         "HARRISON": {
-          "total": 37,
+          "total": 43,
           "republican": 6,
-          "democrat": 25,
-          "general": 6
+          "democrat": 30,
+          "general": 7
         },
         "HARRISON BAY": {
-          "total": 12,
+          "total": 13,
           "republican": 7,
-          "democrat": 3,
+          "democrat": 4,
           "general": 2
         },
         "HUNTER": {
-          "total": 13,
+          "total": 18,
           "republican": 2,
-          "democrat": 10,
+          "democrat": 15,
           "general": 1
         },
         "HURRICANE CREEK": {
-          "total": 131,
-          "republican": 23,
-          "democrat": 85,
-          "general": 23
+          "total": 146,
+          "republican": 26,
+          "democrat": 95,
+          "general": 25
         },
         "KINGSPOINT": {
-          "total": 74,
+          "total": 84,
           "republican": 5,
-          "democrat": 56,
-          "general": 13
+          "democrat": 64,
+          "general": 15
         },
         "LAKE HILLS": {
-          "total": 69,
+          "total": 76,
           "republican": 0,
-          "democrat": 62,
-          "general": 7
+          "democrat": 66,
+          "general": 10
         },
         "LOOKOUT MOUNTAIN": {
           "total": 11,
@@ -4684,16 +4726,16 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "MISSIONARY RIDGE": {
-          "total": 177,
+          "total": 190,
           "republican": 53,
-          "democrat": 91,
+          "democrat": 104,
           "general": 33
         },
         "MOUNTAIN CREEK A": {
-          "total": 9,
-          "republican": 1,
+          "total": 11,
+          "republican": 2,
           "democrat": 5,
-          "general": 3
+          "general": 4
         },
         "MOUNTAIN CREEK B": {
           "total": 6,
@@ -4708,10 +4750,10 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "MURRAY HILLS": {
-          "total": 39,
+          "total": 47,
           "republican": 4,
-          "democrat": 30,
-          "general": 5
+          "democrat": 37,
+          "general": 6
         },
         "NORTH CHATTANOOGA A": {
           "total": 11,
@@ -4720,27 +4762,27 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "NORTHGATE": {
-          "total": 7,
+          "total": 8,
           "republican": 2,
           "democrat": 2,
-          "general": 3
+          "general": 4
         },
         "OOLTEWAH": {
-          "total": 13,
-          "republican": 3,
-          "democrat": 5,
-          "general": 5
+          "total": 19,
+          "republican": 5,
+          "democrat": 6,
+          "general": 8
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 6,
+          "total": 9,
           "republican": 1,
-          "democrat": 3,
+          "democrat": 6,
           "general": 2
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 45,
-          "republican": 9,
-          "democrat": 28,
+          "total": 51,
+          "republican": 10,
+          "democrat": 33,
           "general": 8
         },
         "RED BANK B": {
@@ -4750,21 +4792,21 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "RED BANK C": {
-          "total": 4,
+          "total": 5,
           "republican": 1,
           "democrat": 1,
-          "general": 2
+          "general": 3
         },
         "RIDGEDALE": {
-          "total": 70,
+          "total": 86,
           "republican": 3,
-          "democrat": 56,
-          "general": 11
+          "democrat": 68,
+          "general": 15
         },
         "RIDGESIDE": {
-          "total": 27,
+          "total": 28,
           "republican": 10,
-          "democrat": 13,
+          "democrat": 14,
           "general": 4
         },
         "RIVERVIEW": {
@@ -4774,21 +4816,21 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 3,
+          "total": 4,
           "republican": 1,
-          "democrat": 2,
+          "democrat": 3,
           "general": 0
         },
         "SILVERDALE": {
-          "total": 104,
-          "republican": 26,
-          "democrat": 54,
-          "general": 24
+          "total": 110,
+          "republican": 28,
+          "democrat": 55,
+          "general": 27
         },
         "ST ELMO": {
-          "total": 37,
-          "republican": 5,
-          "democrat": 30,
+          "total": 42,
+          "republican": 7,
+          "democrat": 33,
           "general": 2
         },
         "STUART HEIGHTS": {
@@ -4798,52 +4840,52 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "SUMMIT": {
-          "total": 60,
+          "total": 69,
           "republican": 11,
-          "democrat": 41,
-          "general": 8
+          "democrat": 48,
+          "general": 10
         },
         "TYNER": {
-          "total": 212,
-          "republican": 42,
-          "democrat": 142,
-          "general": 28
+          "total": 236,
+          "republican": 47,
+          "democrat": 159,
+          "general": 30
         },
         "WESTVIEW A": {
-          "total": 38,
+          "total": 43,
           "republican": 7,
-          "democrat": 20,
-          "general": 11
+          "democrat": 21,
+          "general": 15
         },
         "WESTVIEW B": {
-          "total": 56,
-          "republican": 18,
-          "democrat": 30,
+          "total": 60,
+          "republican": 19,
+          "democrat": 33,
           "general": 8
         },
         "WOLFTEVER": {
-          "total": 18,
+          "total": 27,
           "republican": 3,
-          "democrat": 14,
-          "general": 1
+          "democrat": 20,
+          "general": 4
         },
         "WOODMORE": {
-          "total": 379,
-          "republican": 17,
-          "democrat": 333,
-          "general": 29
+          "total": 419,
+          "republican": 19,
+          "democrat": 367,
+          "general": 33
         },
         "COLLEGEDALE A": {
-          "total": 8,
+          "total": 11,
           "republican": 0,
-          "democrat": 6,
-          "general": 2
+          "democrat": 8,
+          "general": 3
         },
         "DOWNTOWN": {
-          "total": 10,
+          "total": 13,
           "republican": 1,
-          "democrat": 5,
-          "general": 4
+          "democrat": 6,
+          "general": 6
         },
         "GANNS": {
           "total": 2,
@@ -4852,22 +4894,22 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "LOOKOUT VALLEY": {
-          "total": 31,
-          "republican": 11,
-          "democrat": 14,
-          "general": 6
+          "total": 39,
+          "republican": 12,
+          "democrat": 16,
+          "general": 11
         },
         "LUPTON CITY": {
-          "total": 8,
-          "republican": 1,
-          "democrat": 3,
+          "total": 11,
+          "republican": 2,
+          "democrat": 5,
           "general": 4
         },
         "NORTH CHATTANOOGA B": {
-          "total": 3,
+          "total": 5,
           "republican": 0,
-          "democrat": 2,
-          "general": 1
+          "democrat": 3,
+          "general": 2
         },
         "NORTHSHORE": {
           "total": 11,
@@ -4882,21 +4924,21 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "POSSUM CREEK": {
-          "total": 1,
-          "republican": 1,
+          "total": 2,
+          "republican": 2,
           "democrat": 0,
           "general": 0
         },
         "RED BANK A": {
-          "total": 10,
+          "total": 11,
           "republican": 2,
           "democrat": 4,
-          "general": 4
+          "general": 5
         },
         "SAVANNAH BAY": {
-          "total": 17,
+          "total": 19,
           "republican": 4,
-          "democrat": 8,
+          "democrat": 10,
           "general": 5
         },
         "VALLEYBROOK": {
@@ -4912,9 +4954,9 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "NORTHWOODS": {
-          "total": 4,
+          "total": 7,
           "republican": 0,
-          "democrat": 3,
+          "democrat": 6,
           "general": 1
         },
         "SODDY DAISY C": {
@@ -4924,9 +4966,9 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "WALDEN": {
-          "total": 2,
+          "total": 3,
           "republican": 1,
-          "democrat": 1,
+          "democrat": 2,
           "general": 0
         },
         "BIRCHWOOD": {
@@ -4936,9 +4978,9 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "DUPONT": {
-          "total": 4,
+          "total": 5,
           "republican": 1,
-          "democrat": 1,
+          "democrat": 2,
           "general": 2
         },
         "DALLAS": {
@@ -4992,70 +5034,70 @@ var TURNOUT_DATA = {
       },
       "Collegedale": {
         "APISON A": {
-          "total": 251,
-          "republican": 157,
-          "democrat": 42,
-          "general": 52
+          "total": 276,
+          "republican": 168,
+          "democrat": 47,
+          "general": 61
         },
         "APISON B": {
-          "total": 499,
-          "republican": 271,
-          "democrat": 107,
-          "general": 121
+          "total": 521,
+          "republican": 278,
+          "democrat": 116,
+          "general": 127
         },
         "BIRCHWOOD": {
-          "total": 36,
+          "total": 39,
           "republican": 27,
-          "democrat": 6,
-          "general": 3
-        },
-        "BRAINERD HILLS": {
-          "total": 20,
-          "republican": 5,
-          "democrat": 11,
+          "democrat": 8,
           "general": 4
         },
+        "BRAINERD HILLS": {
+          "total": 23,
+          "republican": 6,
+          "democrat": 12,
+          "general": 5
+        },
         "COLLEGEDALE A": {
-          "total": 325,
-          "republican": 147,
-          "democrat": 99,
-          "general": 79
+          "total": 351,
+          "republican": 154,
+          "democrat": 112,
+          "general": 85
         },
         "COLLEGEDALE B": {
-          "total": 337,
-          "republican": 204,
-          "democrat": 61,
-          "general": 72
+          "total": 352,
+          "republican": 211,
+          "democrat": 68,
+          "general": 73
         },
         "CONCORD A": {
-          "total": 44,
+          "total": 46,
           "republican": 23,
           "democrat": 14,
-          "general": 7
+          "general": 9
         },
         "CONCORD B": {
-          "total": 141,
-          "republican": 77,
-          "democrat": 32,
-          "general": 32
+          "total": 149,
+          "republican": 80,
+          "democrat": 34,
+          "general": 35
         },
         "EAST BRAINERD A": {
-          "total": 151,
-          "republican": 79,
-          "democrat": 44,
-          "general": 28
+          "total": 173,
+          "republican": 92,
+          "democrat": 48,
+          "general": 33
         },
         "EAST BRAINERD B": {
-          "total": 410,
-          "republican": 229,
-          "democrat": 87,
-          "general": 94
+          "total": 443,
+          "republican": 247,
+          "democrat": 94,
+          "general": 102
         },
         "EAST RIDGE B": {
-          "total": 6,
+          "total": 7,
           "republican": 3,
           "democrat": 3,
-          "general": 0
+          "general": 1
         },
         "EASTSIDE": {
           "total": 3,
@@ -5064,28 +5106,28 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "HARRISON": {
-          "total": 17,
-          "republican": 5,
+          "total": 18,
+          "republican": 6,
           "democrat": 8,
           "general": 4
         },
         "HARRISON BAY": {
-          "total": 182,
-          "republican": 125,
-          "democrat": 33,
-          "general": 24
+          "total": 190,
+          "republican": 127,
+          "democrat": 37,
+          "general": 26
         },
         "HUNTER": {
-          "total": 509,
-          "republican": 288,
-          "democrat": 135,
-          "general": 86
+          "total": 571,
+          "republican": 314,
+          "democrat": 155,
+          "general": 102
         },
         "HURRICANE CREEK": {
-          "total": 625,
-          "republican": 398,
-          "democrat": 133,
-          "general": 94
+          "total": 656,
+          "republican": 415,
+          "democrat": 141,
+          "general": 100
         },
         "LAKE HILLS": {
           "total": 5,
@@ -5094,75 +5136,75 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "MEADOWVIEW": {
-          "total": 45,
-          "republican": 27,
-          "democrat": 11,
-          "general": 7
+          "total": 54,
+          "republican": 29,
+          "democrat": 13,
+          "general": 12
         },
         "OOLTEWAH": {
-          "total": 839,
-          "republican": 485,
-          "democrat": 183,
-          "general": 171
+          "total": 900,
+          "republican": 513,
+          "democrat": 193,
+          "general": 194
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 274,
-          "republican": 179,
-          "democrat": 38,
-          "general": 57
+          "total": 304,
+          "republican": 188,
+          "democrat": 48,
+          "general": 68
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 935,
-          "republican": 523,
-          "democrat": 223,
-          "general": 189
+          "total": 1002,
+          "republican": 546,
+          "democrat": 243,
+          "general": 213
         },
         "SAVANNAH BAY": {
-          "total": 368,
-          "republican": 240,
-          "democrat": 65,
-          "general": 63
+          "total": 413,
+          "republican": 264,
+          "democrat": 73,
+          "general": 76
         },
         "SILVERDALE": {
-          "total": 63,
-          "republican": 41,
-          "democrat": 15,
-          "general": 7
+          "total": 70,
+          "republican": 45,
+          "democrat": 17,
+          "general": 8
         },
         "SUMMIT": {
-          "total": 453,
-          "republican": 188,
-          "democrat": 161,
-          "general": 104
+          "total": 495,
+          "republican": 207,
+          "democrat": 172,
+          "general": 116
         },
         "TYNER": {
-          "total": 84,
-          "republican": 45,
-          "democrat": 15,
-          "general": 24
+          "total": 94,
+          "republican": 48,
+          "democrat": 19,
+          "general": 27
         },
         "WESTVIEW A": {
-          "total": 214,
-          "republican": 120,
-          "democrat": 63,
-          "general": 31
+          "total": 234,
+          "republican": 132,
+          "democrat": 66,
+          "general": 36
         },
         "WESTVIEW B": {
-          "total": 416,
-          "republican": 215,
-          "democrat": 139,
-          "general": 62
+          "total": 462,
+          "republican": 236,
+          "democrat": 146,
+          "general": 80
         },
         "WOLFTEVER": {
-          "total": 209,
-          "republican": 107,
-          "democrat": 52,
-          "general": 50
+          "total": 233,
+          "republican": 115,
+          "democrat": 60,
+          "general": 58
         },
         "AIRPORT A": {
-          "total": 2,
+          "total": 3,
           "republican": 0,
-          "democrat": 0,
+          "democrat": 1,
           "general": 2
         },
         "AIRPORT B": {
@@ -5172,8 +5214,8 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "BONNY OAKS": {
-          "total": 8,
-          "republican": 3,
+          "total": 9,
+          "republican": 4,
           "democrat": 3,
           "general": 2
         },
@@ -5190,8 +5232,8 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "EAST RIDGE D": {
-          "total": 13,
-          "republican": 10,
+          "total": 15,
+          "republican": 12,
           "democrat": 2,
           "general": 1
         },
@@ -5244,10 +5286,10 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "DOWNTOWN": {
-          "total": 3,
+          "total": 6,
           "republican": 0,
           "democrat": 1,
-          "general": 2
+          "general": 5
         },
         "EAST RIDGE C": {
           "total": 4,
@@ -5310,8 +5352,8 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "DUPONT": {
-          "total": 3,
-          "republican": 1,
+          "total": 4,
+          "republican": 2,
           "democrat": 2,
           "general": 0
         },
@@ -5370,22 +5412,22 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "WOODMORE": {
-          "total": 2,
+          "total": 3,
           "republican": 0,
           "democrat": 1,
-          "general": 1
+          "general": 2
         },
         "DALEWOOD": {
-          "total": 2,
+          "total": 4,
           "republican": 0,
-          "democrat": 1,
+          "democrat": 3,
           "general": 1
         },
         "DALLAS": {
-          "total": 1,
+          "total": 3,
           "republican": 1,
-          "democrat": 0,
-          "general": 0
+          "democrat": 1,
+          "general": 1
         },
         "FAIRMOUNT": {
           "total": 1,
@@ -5412,9 +5454,9 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "RED BANK A": {
-          "total": 1,
+          "total": 3,
           "republican": 1,
-          "democrat": 0,
+          "democrat": 2,
           "general": 0
         },
         "RIDGEDALE": {
@@ -5426,21 +5468,21 @@ var TURNOUT_DATA = {
       },
       "Election Comm.": {
         "AIRPORT B": {
-          "total": 65,
-          "republican": 22,
-          "democrat": 31,
-          "general": 12
+          "total": 71,
+          "republican": 23,
+          "democrat": 33,
+          "general": 15
         },
         "ALTON PARK": {
-          "total": 123,
-          "republican": 6,
-          "democrat": 96,
-          "general": 21
+          "total": 134,
+          "republican": 7,
+          "democrat": 102,
+          "general": 25
         },
         "APISON A": {
-          "total": 6,
+          "total": 7,
           "republican": 1,
-          "democrat": 4,
+          "democrat": 5,
           "general": 1
         },
         "APISON B": {
@@ -5450,130 +5492,130 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "AVONDALE": {
-          "total": 149,
+          "total": 157,
           "republican": 5,
-          "democrat": 120,
-          "general": 24
+          "democrat": 127,
+          "general": 25
         },
         "BONNY OAKS": {
-          "total": 203,
+          "total": 223,
           "republican": 15,
-          "democrat": 170,
-          "general": 18
+          "democrat": 189,
+          "general": 19
         },
         "BRAINERD": {
-          "total": 37,
+          "total": 41,
           "republican": 9,
-          "democrat": 22,
-          "general": 6
+          "democrat": 25,
+          "general": 7
         },
         "BRAINERD HILLS": {
-          "total": 51,
-          "republican": 10,
-          "democrat": 23,
+          "total": 57,
+          "republican": 13,
+          "democrat": 26,
           "general": 18
         },
         "BUSHTOWN": {
-          "total": 267,
-          "republican": 13,
-          "democrat": 203,
-          "general": 51
+          "total": 295,
+          "republican": 15,
+          "democrat": 225,
+          "general": 55
         },
         "COLLEGEDALE A": {
-          "total": 12,
+          "total": 13,
           "republican": 2,
           "democrat": 6,
-          "general": 4
-        },
-        "CONCORD A": {
-          "total": 64,
-          "republican": 16,
-          "democrat": 31,
-          "general": 17
-        },
-        "CONCORD B": {
-          "total": 135,
-          "republican": 44,
-          "democrat": 59,
-          "general": 32
-        },
-        "COURTHOUSE": {
-          "total": 147,
-          "republican": 16,
-          "democrat": 87,
-          "general": 44
-        },
-        "DALEWOOD": {
-          "total": 48,
-          "republican": 1,
-          "democrat": 40,
-          "general": 7
-        },
-        "DALLAS": {
-          "total": 32,
-          "republican": 13,
-          "democrat": 11,
-          "general": 8
-        },
-        "DOWNTOWN": {
-          "total": 335,
-          "republican": 83,
-          "democrat": 165,
-          "general": 87
-        },
-        "DUPONT": {
-          "total": 135,
-          "republican": 48,
-          "democrat": 66,
-          "general": 21
-        },
-        "EAST BRAINERD A": {
-          "total": 136,
-          "republican": 59,
-          "democrat": 53,
-          "general": 24
-        },
-        "EAST BRAINERD B": {
-          "total": 206,
-          "republican": 78,
-          "democrat": 92,
-          "general": 36
-        },
-        "EAST CHATTANOOGA": {
-          "total": 159,
-          "republican": 11,
-          "democrat": 120,
-          "general": 28
-        },
-        "EAST LAKE": {
-          "total": 64,
-          "republican": 12,
-          "democrat": 30,
-          "general": 22
-        },
-        "EAST RIDGE A": {
-          "total": 116,
-          "republican": 54,
-          "democrat": 45,
-          "general": 17
-        },
-        "EAST RIDGE B": {
-          "total": 67,
-          "republican": 21,
-          "democrat": 32,
-          "general": 14
-        },
-        "EAST RIDGE C": {
-          "total": 11,
-          "republican": 3,
-          "democrat": 3,
           "general": 5
         },
-        "EAST RIDGE D": {
-          "total": 62,
-          "republican": 30,
-          "democrat": 25,
+        "CONCORD A": {
+          "total": 68,
+          "republican": 16,
+          "democrat": 33,
+          "general": 19
+        },
+        "CONCORD B": {
+          "total": 144,
+          "republican": 48,
+          "democrat": 62,
+          "general": 34
+        },
+        "COURTHOUSE": {
+          "total": 166,
+          "republican": 16,
+          "democrat": 99,
+          "general": 51
+        },
+        "DALEWOOD": {
+          "total": 54,
+          "republican": 1,
+          "democrat": 45,
+          "general": 8
+        },
+        "DALLAS": {
+          "total": 34,
+          "republican": 14,
+          "democrat": 11,
+          "general": 9
+        },
+        "DOWNTOWN": {
+          "total": 362,
+          "republican": 90,
+          "democrat": 175,
+          "general": 97
+        },
+        "DUPONT": {
+          "total": 145,
+          "republican": 53,
+          "democrat": 69,
+          "general": 23
+        },
+        "EAST BRAINERD A": {
+          "total": 152,
+          "republican": 66,
+          "democrat": 59,
+          "general": 27
+        },
+        "EAST BRAINERD B": {
+          "total": 214,
+          "republican": 79,
+          "democrat": 97,
+          "general": 38
+        },
+        "EAST CHATTANOOGA": {
+          "total": 175,
+          "republican": 16,
+          "democrat": 125,
+          "general": 34
+        },
+        "EAST LAKE": {
+          "total": 77,
+          "republican": 15,
+          "democrat": 38,
+          "general": 24
+        },
+        "EAST RIDGE A": {
+          "total": 127,
+          "republican": 56,
+          "democrat": 53,
+          "general": 18
+        },
+        "EAST RIDGE B": {
+          "total": 72,
+          "republican": 21,
+          "democrat": 35,
+          "general": 16
+        },
+        "EAST RIDGE C": {
+          "total": 14,
+          "republican": 3,
+          "democrat": 4,
           "general": 7
+        },
+        "EAST RIDGE D": {
+          "total": 72,
+          "republican": 36,
+          "democrat": 28,
+          "general": 8
         },
         "EASTGATE": {
           "total": 26,
@@ -5582,52 +5624,52 @@ var TURNOUT_DATA = {
           "general": 7
         },
         "EASTSIDE": {
-          "total": 308,
-          "republican": 54,
-          "democrat": 192,
-          "general": 62
+          "total": 346,
+          "republican": 62,
+          "democrat": 213,
+          "general": 71
         },
         "FAIRMOUNT": {
-          "total": 142,
+          "total": 145,
           "republican": 66,
-          "democrat": 52,
-          "general": 24
+          "democrat": 53,
+          "general": 26
         },
         "FALLING WATER B": {
-          "total": 13,
-          "republican": 7,
+          "total": 17,
+          "republican": 11,
           "democrat": 3,
           "general": 3
         },
         "GANNS": {
-          "total": 79,
-          "republican": 41,
-          "democrat": 28,
+          "total": 85,
+          "republican": 45,
+          "democrat": 30,
           "general": 10
         },
         "GLENWOOD": {
-          "total": 123,
+          "total": 137,
           "republican": 21,
-          "democrat": 80,
-          "general": 22
+          "democrat": 91,
+          "general": 25
         },
         "HARRISON": {
-          "total": 199,
-          "republican": 66,
-          "democrat": 104,
-          "general": 29
+          "total": 218,
+          "republican": 73,
+          "democrat": 112,
+          "general": 33
         },
         "HARRISON BAY": {
-          "total": 50,
+          "total": 58,
           "republican": 28,
-          "democrat": 13,
-          "general": 9
+          "democrat": 20,
+          "general": 10
         },
         "HIXSON": {
-          "total": 23,
+          "total": 24,
           "republican": 3,
           "democrat": 14,
-          "general": 6
+          "general": 7
         },
         "HUNTER": {
           "total": 55,
@@ -5636,22 +5678,22 @@ var TURNOUT_DATA = {
           "general": 9
         },
         "HURRICANE CREEK": {
-          "total": 138,
-          "republican": 47,
-          "democrat": 64,
-          "general": 27
+          "total": 148,
+          "republican": 50,
+          "democrat": 70,
+          "general": 28
         },
         "KINGSPOINT": {
-          "total": 235,
-          "republican": 41,
-          "democrat": 160,
+          "total": 245,
+          "republican": 42,
+          "democrat": 169,
           "general": 34
         },
         "LAKE HILLS": {
-          "total": 125,
+          "total": 142,
           "republican": 15,
-          "democrat": 99,
-          "general": 11
+          "democrat": 109,
+          "general": 18
         },
         "LAKESITE": {
           "total": 17,
@@ -5660,52 +5702,52 @@ var TURNOUT_DATA = {
           "general": 5
         },
         "LOOKOUT MOUNTAIN": {
-          "total": 151,
-          "republican": 89,
-          "democrat": 54,
+          "total": 159,
+          "republican": 94,
+          "democrat": 57,
           "general": 8
         },
         "LOOKOUT VALLEY": {
-          "total": 520,
-          "republican": 288,
-          "democrat": 161,
-          "general": 71
+          "total": 548,
+          "republican": 304,
+          "democrat": 171,
+          "general": 73
         },
         "LUPTON CITY": {
-          "total": 168,
-          "republican": 38,
-          "democrat": 102,
-          "general": 28
+          "total": 178,
+          "republican": 40,
+          "democrat": 106,
+          "general": 32
         },
         "MEADOWVIEW": {
-          "total": 33,
+          "total": 35,
           "republican": 15,
           "democrat": 15,
-          "general": 3
+          "general": 5
         },
         "MIDDLE VALLEY": {
-          "total": 22,
-          "republican": 11,
-          "democrat": 9,
-          "general": 2
+          "total": 28,
+          "republican": 12,
+          "democrat": 13,
+          "general": 3
         },
         "MISSIONARY RIDGE": {
-          "total": 70,
-          "republican": 19,
-          "democrat": 40,
-          "general": 11
+          "total": 80,
+          "republican": 20,
+          "democrat": 45,
+          "general": 15
         },
         "MOUNTAIN CREEK A": {
-          "total": 303,
-          "republican": 107,
-          "democrat": 148,
-          "general": 48
+          "total": 326,
+          "republican": 116,
+          "democrat": 159,
+          "general": 51
         },
         "MOUNTAIN CREEK B": {
-          "total": 126,
-          "republican": 41,
+          "total": 128,
+          "republican": 42,
           "democrat": 59,
-          "general": 26
+          "general": 27
         },
         "MOWBRAY B": {
           "total": 6,
@@ -5714,112 +5756,112 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "MURRAY HILLS": {
-          "total": 189,
+          "total": 208,
           "republican": 41,
-          "democrat": 119,
-          "general": 29
+          "democrat": 132,
+          "general": 35
         },
         "NORTH CHATTANOOGA A": {
-          "total": 264,
-          "republican": 59,
-          "democrat": 144,
-          "general": 61
+          "total": 283,
+          "republican": 60,
+          "democrat": 158,
+          "general": 65
         },
         "NORTH CHATTANOOGA B": {
-          "total": 126,
-          "republican": 36,
-          "democrat": 58,
-          "general": 32
+          "total": 142,
+          "republican": 41,
+          "democrat": 62,
+          "general": 39
         },
         "NORTHGATE": {
-          "total": 99,
-          "republican": 35,
-          "democrat": 46,
+          "total": 103,
+          "republican": 38,
+          "democrat": 47,
           "general": 18
         },
         "NORTHSHORE": {
-          "total": 600,
-          "republican": 171,
-          "democrat": 340,
-          "general": 89
+          "total": 660,
+          "republican": 187,
+          "democrat": 373,
+          "general": 100
         },
         "NORTHWOODS": {
-          "total": 111,
-          "republican": 33,
-          "democrat": 58,
-          "general": 20
+          "total": 121,
+          "republican": 35,
+          "democrat": 64,
+          "general": 22
         },
         "OOLTEWAH": {
-          "total": 33,
+          "total": 35,
           "republican": 15,
-          "democrat": 12,
+          "democrat": 14,
           "general": 6
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 22,
+          "total": 24,
           "republican": 10,
-          "democrat": 11,
+          "democrat": 13,
           "general": 1
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 64,
-          "republican": 17,
-          "democrat": 34,
-          "general": 13
+          "total": 71,
+          "republican": 19,
+          "democrat": 37,
+          "general": 15
         },
         "PLEASANT GROVE A": {
-          "total": 43,
+          "total": 46,
           "republican": 16,
-          "democrat": 21,
-          "general": 6
+          "democrat": 23,
+          "general": 7
         },
         "POSSUM CREEK": {
-          "total": 30,
-          "republican": 17,
+          "total": 32,
+          "republican": 19,
           "democrat": 10,
           "general": 3
         },
         "RED BANK A": {
-          "total": 280,
-          "republican": 49,
-          "democrat": 173,
-          "general": 58
+          "total": 309,
+          "republican": 53,
+          "democrat": 190,
+          "general": 66
         },
         "RED BANK B": {
-          "total": 117,
-          "republican": 40,
-          "democrat": 58,
-          "general": 19
+          "total": 123,
+          "republican": 41,
+          "democrat": 61,
+          "general": 21
         },
         "RED BANK C": {
-          "total": 101,
-          "republican": 24,
+          "total": 104,
+          "republican": 25,
           "democrat": 60,
-          "general": 17
+          "general": 19
         },
         "RIDGEDALE": {
-          "total": 254,
-          "republican": 24,
-          "democrat": 198,
-          "general": 32
+          "total": 286,
+          "republican": 26,
+          "democrat": 218,
+          "general": 42
         },
         "RIDGESIDE": {
-          "total": 21,
+          "total": 22,
           "republican": 5,
-          "democrat": 12,
+          "democrat": 13,
           "general": 4
         },
         "RIVERVIEW": {
-          "total": 268,
-          "republican": 80,
-          "democrat": 155,
-          "general": 33
+          "total": 305,
+          "republican": 89,
+          "democrat": 176,
+          "general": 40
         },
         "SAVANNAH BAY": {
-          "total": 16,
+          "total": 18,
           "republican": 8,
           "democrat": 5,
-          "general": 3
+          "general": 5
         },
         "SEQUOYAH": {
           "total": 26,
@@ -5828,21 +5870,21 @@ var TURNOUT_DATA = {
           "general": 4
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 317,
-          "republican": 173,
-          "democrat": 111,
-          "general": 33
-        },
-        "SIGNAL MOUNTAIN B": {
-          "total": 407,
-          "republican": 237,
-          "democrat": 133,
+          "total": 337,
+          "republican": 181,
+          "democrat": 119,
           "general": 37
         },
+        "SIGNAL MOUNTAIN B": {
+          "total": 439,
+          "republican": 244,
+          "democrat": 151,
+          "general": 44
+        },
         "SILVERDALE": {
-          "total": 71,
+          "total": 76,
           "republican": 33,
-          "democrat": 27,
+          "democrat": 32,
           "general": 11
         },
         "SODDY DAISY A": {
@@ -5852,69 +5894,69 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "SODDY DAISY B": {
-          "total": 18,
+          "total": 20,
           "republican": 10,
           "democrat": 6,
-          "general": 2
+          "general": 4
         },
         "ST ELMO": {
-          "total": 334,
-          "republican": 66,
-          "democrat": 225,
-          "general": 43
+          "total": 355,
+          "republican": 70,
+          "democrat": 236,
+          "general": 49
         },
         "STUART HEIGHTS": {
-          "total": 359,
-          "republican": 114,
-          "democrat": 209,
-          "general": 36
+          "total": 401,
+          "republican": 132,
+          "democrat": 227,
+          "general": 42
         },
         "SUMMIT": {
-          "total": 58,
-          "republican": 18,
-          "democrat": 29,
+          "total": 62,
+          "republican": 19,
+          "democrat": 32,
           "general": 11
         },
         "TYNER": {
-          "total": 108,
+          "total": 116,
           "republican": 33,
-          "democrat": 50,
-          "general": 25
+          "democrat": 55,
+          "general": 28
         },
         "VALLEYBROOK": {
-          "total": 149,
-          "republican": 60,
-          "democrat": 70,
-          "general": 19
+          "total": 161,
+          "republican": 61,
+          "democrat": 79,
+          "general": 21
         },
         "WALDEN": {
-          "total": 144,
-          "republican": 88,
-          "democrat": 43,
-          "general": 13
+          "total": 151,
+          "republican": 92,
+          "democrat": 44,
+          "general": 15
         },
         "WESTVIEW A": {
-          "total": 42,
+          "total": 44,
           "republican": 14,
-          "democrat": 21,
+          "democrat": 23,
           "general": 7
         },
         "WESTVIEW B": {
-          "total": 84,
-          "republican": 28,
-          "democrat": 43,
+          "total": 92,
+          "republican": 29,
+          "democrat": 50,
           "general": 13
         },
         "WOLFTEVER": {
-          "total": 94,
+          "total": 99,
           "republican": 32,
-          "democrat": 44,
-          "general": 18
+          "democrat": 48,
+          "general": 19
         },
         "WOODMORE": {
-          "total": 22,
+          "total": 25,
           "republican": 1,
-          "democrat": 17,
+          "democrat": 20,
           "general": 4
         },
         "AIRPORT A": {
@@ -5948,15 +5990,15 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "SODDY DAISY C": {
-          "total": 4,
-          "republican": 1,
+          "total": 5,
+          "republican": 2,
           "democrat": 2,
           "general": 1
         },
         "MOUNTAIN CREEK C": {
-          "total": 10,
+          "total": 12,
           "republican": 3,
-          "democrat": 7,
+          "democrat": 9,
           "general": 0
         },
         "COLLEGEDALE B": {
@@ -5986,16 +6028,16 @@ var TURNOUT_DATA = {
           "general": 5
         },
         "BIRCHWOOD": {
-          "total": 224,
-          "republican": 147,
+          "total": 238,
+          "republican": 159,
           "democrat": 36,
-          "general": 41
+          "general": 43
         },
         "BONNY OAKS": {
-          "total": 58,
-          "republican": 12,
-          "democrat": 33,
-          "general": 13
+          "total": 64,
+          "republican": 13,
+          "democrat": 36,
+          "general": 15
         },
         "DUPONT": {
           "total": 5,
@@ -6004,27 +6046,27 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "EAST BRAINERD A": {
-          "total": 7,
-          "republican": 2,
+          "total": 8,
+          "republican": 3,
           "democrat": 1,
           "general": 4
         },
         "EAST BRAINERD B": {
-          "total": 18,
+          "total": 19,
           "republican": 9,
           "democrat": 3,
-          "general": 6
+          "general": 7
         },
         "EAST RIDGE A": {
-          "total": 1,
+          "total": 3,
           "republican": 1,
-          "democrat": 0,
+          "democrat": 2,
           "general": 0
         },
         "EAST RIDGE B": {
-          "total": 5,
+          "total": 6,
           "republican": 4,
-          "democrat": 1,
+          "democrat": 2,
           "general": 0
         },
         "FALLING WATER B": {
@@ -6034,28 +6076,28 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "HARRISON": {
-          "total": 435,
-          "republican": 225,
-          "democrat": 138,
-          "general": 72
+          "total": 472,
+          "republican": 233,
+          "democrat": 154,
+          "general": 85
         },
         "HARRISON BAY": {
-          "total": 623,
-          "republican": 381,
-          "democrat": 134,
-          "general": 108
+          "total": 673,
+          "republican": 409,
+          "democrat": 148,
+          "general": 116
         },
         "HUNTER": {
-          "total": 204,
-          "republican": 124,
-          "democrat": 50,
-          "general": 30
+          "total": 220,
+          "republican": 133,
+          "democrat": 54,
+          "general": 33
         },
         "LAKE HILLS": {
-          "total": 48,
+          "total": 51,
           "republican": 7,
-          "democrat": 28,
-          "general": 13
+          "democrat": 30,
+          "general": 14
         },
         "LUPTON CITY": {
           "total": 3,
@@ -6064,28 +6106,28 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "MEADOWVIEW": {
-          "total": 426,
-          "republican": 268,
-          "democrat": 66,
-          "general": 92
+          "total": 468,
+          "republican": 289,
+          "democrat": 75,
+          "general": 104
         },
         "MURRAY HILLS": {
-          "total": 82,
-          "republican": 24,
-          "democrat": 41,
-          "general": 17
+          "total": 91,
+          "republican": 26,
+          "democrat": 47,
+          "general": 18
         },
         "OOLTEWAH": {
-          "total": 22,
+          "total": 26,
           "republican": 10,
-          "democrat": 6,
-          "general": 6
+          "democrat": 9,
+          "general": 7
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 137,
-          "republican": 94,
-          "democrat": 23,
-          "general": 20
+          "total": 143,
+          "republican": 97,
+          "democrat": 24,
+          "general": 22
         },
         "RIVERVIEW": {
           "total": 3,
@@ -6094,10 +6136,10 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "SAVANNAH BAY": {
-          "total": 232,
-          "republican": 140,
+          "total": 237,
+          "republican": 141,
           "democrat": 54,
-          "general": 38
+          "general": 42
         },
         "ST ELMO": {
           "total": 1,
@@ -6112,16 +6154,16 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "WOLFTEVER": {
-          "total": 569,
-          "republican": 267,
-          "democrat": 199,
-          "general": 103
+          "total": 625,
+          "republican": 287,
+          "democrat": 222,
+          "general": 116
         },
         "APISON B": {
-          "total": 1,
+          "total": 2,
           "republican": 1,
           "democrat": 0,
-          "general": 0
+          "general": 1
         },
         "COLLEGEDALE A": {
           "total": 3,
@@ -6130,16 +6172,16 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "CONCORD B": {
-          "total": 14,
-          "republican": 4,
+          "total": 16,
+          "republican": 5,
           "democrat": 7,
-          "general": 3
+          "general": 4
         },
         "KINGSPOINT": {
-          "total": 11,
+          "total": 14,
           "republican": 5,
-          "democrat": 4,
-          "general": 2
+          "democrat": 6,
+          "general": 3
         },
         "LAKESITE": {
           "total": 2,
@@ -6166,16 +6208,16 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "SUMMIT": {
-          "total": 7,
+          "total": 10,
           "republican": 3,
-          "democrat": 2,
-          "general": 2
+          "democrat": 3,
+          "general": 4
         },
         "TYNER": {
-          "total": 27,
-          "republican": 7,
+          "total": 29,
+          "republican": 8,
           "democrat": 11,
-          "general": 9
+          "general": 10
         },
         "WESTVIEW A": {
           "total": 4,
@@ -6232,16 +6274,16 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "SILVERDALE": {
-          "total": 6,
+          "total": 8,
           "republican": 4,
           "democrat": 1,
-          "general": 1
+          "general": 3
         },
         "EAST CHATTANOOGA": {
-          "total": 2,
+          "total": 4,
           "republican": 0,
-          "democrat": 1,
-          "general": 1
+          "democrat": 2,
+          "general": 2
         },
         "HIXSON": {
           "total": 1,
@@ -6286,10 +6328,10 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "RIDGEDALE": {
-          "total": 3,
+          "total": 4,
           "republican": 1,
           "democrat": 2,
-          "general": 0
+          "general": 1
         },
         "VALLEYBROOK": {
           "total": 3,
@@ -6316,10 +6358,10 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 2,
+          "total": 3,
           "republican": 2,
           "democrat": 0,
-          "general": 0
+          "general": 1
         },
         "BRAINERD HILLS": {
           "total": 2,
@@ -6332,14 +6374,26 @@ var TURNOUT_DATA = {
           "republican": 0,
           "democrat": 1,
           "general": 0
+        },
+        "GLENWOOD": {
+          "total": 1,
+          "republican": 0,
+          "democrat": 0,
+          "general": 1
+        },
+        "LOOKOUT VALLEY": {
+          "total": 1,
+          "republican": 0,
+          "democrat": 0,
+          "general": 1
         }
       },
       "Hixson": {
         "BONNY OAKS": {
-          "total": 13,
+          "total": 17,
           "republican": 5,
-          "democrat": 3,
-          "general": 5
+          "democrat": 5,
+          "general": 7
         },
         "BRAINERD": {
           "total": 4,
@@ -6360,81 +6414,81 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "DALLAS": {
-          "total": 235,
-          "republican": 120,
-          "democrat": 83,
-          "general": 32
+          "total": 256,
+          "republican": 136,
+          "democrat": 85,
+          "general": 35
         },
         "DUPONT": {
-          "total": 423,
-          "republican": 234,
-          "democrat": 124,
-          "general": 65
+          "total": 466,
+          "republican": 252,
+          "democrat": 135,
+          "general": 79
         },
         "EAST BRAINERD A": {
-          "total": 7,
-          "republican": 1,
-          "democrat": 5,
+          "total": 10,
+          "republican": 3,
+          "democrat": 6,
           "general": 1
         },
         "EAST BRAINERD B": {
-          "total": 17,
+          "total": 18,
           "republican": 9,
           "democrat": 3,
-          "general": 5
+          "general": 6
         },
         "EAST RIDGE A": {
-          "total": 5,
+          "total": 6,
           "republican": 2,
           "democrat": 1,
-          "general": 2
+          "general": 3
         },
         "EASTSIDE": {
-          "total": 10,
+          "total": 11,
           "republican": 0,
-          "democrat": 6,
+          "democrat": 7,
           "general": 4
         },
         "FAIRMOUNT": {
-          "total": 192,
-          "republican": 99,
-          "democrat": 54,
-          "general": 39
+          "total": 208,
+          "republican": 106,
+          "democrat": 61,
+          "general": 41
         },
         "FALLING WATER A": {
-          "total": 71,
-          "republican": 41,
-          "democrat": 17,
-          "general": 13
+          "total": 80,
+          "republican": 44,
+          "democrat": 21,
+          "general": 15
         },
         "FALLING WATER B": {
-          "total": 114,
-          "republican": 68,
-          "democrat": 35,
-          "general": 11
+          "total": 123,
+          "republican": 73,
+          "democrat": 37,
+          "general": 13
         },
         "GANNS": {
-          "total": 673,
-          "republican": 404,
-          "democrat": 169,
-          "general": 100
+          "total": 721,
+          "republican": 425,
+          "democrat": 181,
+          "general": 115
         },
         "HARRISON": {
-          "total": 20,
+          "total": 23,
           "republican": 6,
-          "democrat": 8,
-          "general": 6
+          "democrat": 9,
+          "general": 8
         },
         "HIXSON": {
-          "total": 437,
-          "republican": 211,
-          "democrat": 167,
-          "general": 59
+          "total": 470,
+          "republican": 220,
+          "democrat": 182,
+          "general": 68
         },
         "HURRICANE CREEK": {
-          "total": 12,
+          "total": 16,
           "republican": 7,
-          "democrat": 2,
+          "democrat": 6,
           "general": 3
         },
         "KINGSPOINT": {
@@ -6450,10 +6504,10 @@ var TURNOUT_DATA = {
           "general": 5
         },
         "LAKESITE": {
-          "total": 73,
-          "republican": 45,
-          "democrat": 19,
-          "general": 9
+          "total": 81,
+          "republican": 51,
+          "democrat": 20,
+          "general": 10
         },
         "LOOKOUT VALLEY": {
           "total": 18,
@@ -6462,10 +6516,10 @@ var TURNOUT_DATA = {
           "general": 4
         },
         "LUPTON CITY": {
-          "total": 249,
-          "republican": 102,
-          "democrat": 114,
-          "general": 33
+          "total": 278,
+          "republican": 111,
+          "democrat": 130,
+          "general": 37
         },
         "MEADOWVIEW": {
           "total": 3,
@@ -6474,22 +6528,22 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "MIDDLE VALLEY": {
-          "total": 203,
-          "republican": 102,
-          "democrat": 70,
-          "general": 31
+          "total": 221,
+          "republican": 109,
+          "democrat": 79,
+          "general": 33
         },
         "MOUNTAIN CREEK A": {
-          "total": 301,
-          "republican": 136,
-          "democrat": 117,
-          "general": 48
+          "total": 320,
+          "republican": 139,
+          "democrat": 132,
+          "general": 49
         },
         "MOUNTAIN CREEK B": {
-          "total": 84,
-          "republican": 40,
+          "total": 91,
+          "republican": 44,
           "democrat": 31,
-          "general": 13
+          "general": 16
         },
         "MOWBRAY B": {
           "total": 12,
@@ -6498,28 +6552,28 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "NORTH CHATTANOOGA B": {
-          "total": 29,
-          "republican": 10,
+          "total": 32,
+          "republican": 12,
           "democrat": 11,
-          "general": 8
+          "general": 9
         },
         "NORTHGATE": {
-          "total": 447,
-          "republican": 216,
-          "democrat": 141,
-          "general": 90
+          "total": 483,
+          "republican": 225,
+          "democrat": 154,
+          "general": 104
         },
         "NORTHSHORE": {
-          "total": 42,
-          "republican": 14,
-          "democrat": 18,
+          "total": 48,
+          "republican": 15,
+          "democrat": 23,
           "general": 10
         },
         "NORTHWOODS": {
-          "total": 632,
-          "republican": 280,
-          "democrat": 244,
-          "general": 108
+          "total": 676,
+          "republican": 292,
+          "democrat": 264,
+          "general": 120
         },
         "OOLTEWAH RINGGOLD": {
           "total": 6,
@@ -6528,40 +6582,40 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "PLEASANT GROVE A": {
-          "total": 522,
-          "republican": 305,
-          "democrat": 154,
-          "general": 63
+          "total": 550,
+          "republican": 318,
+          "democrat": 163,
+          "general": 69
         },
         "POSSUM CREEK": {
-          "total": 41,
+          "total": 42,
           "republican": 22,
-          "democrat": 14,
+          "democrat": 15,
           "general": 5
         },
         "RED BANK A": {
-          "total": 149,
-          "republican": 49,
-          "democrat": 65,
-          "general": 35
+          "total": 162,
+          "republican": 53,
+          "democrat": 72,
+          "general": 37
         },
         "RED BANK B": {
-          "total": 249,
-          "republican": 116,
-          "democrat": 87,
-          "general": 46
+          "total": 279,
+          "republican": 126,
+          "democrat": 97,
+          "general": 56
         },
         "RED BANK C": {
-          "total": 193,
-          "republican": 76,
-          "democrat": 89,
-          "general": 28
+          "total": 228,
+          "republican": 89,
+          "democrat": 107,
+          "general": 32
         },
         "RIVERVIEW": {
-          "total": 38,
-          "republican": 5,
-          "democrat": 24,
-          "general": 9
+          "total": 48,
+          "republican": 7,
+          "democrat": 30,
+          "general": 11
         },
         "SALE CREEK": {
           "total": 18,
@@ -6570,22 +6624,22 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "SEQUOYAH": {
-          "total": 93,
-          "republican": 64,
-          "democrat": 12,
+          "total": 98,
+          "republican": 68,
+          "democrat": 13,
           "general": 17
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 40,
-          "republican": 17,
-          "democrat": 17,
-          "general": 6
+          "total": 46,
+          "republican": 20,
+          "democrat": 19,
+          "general": 7
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 93,
-          "republican": 56,
-          "democrat": 27,
-          "general": 10
+          "total": 103,
+          "republican": 61,
+          "democrat": 28,
+          "general": 14
         },
         "SILVERDALE": {
           "total": 2,
@@ -6594,14 +6648,14 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "SODDY DAISY A": {
-          "total": 120,
-          "republican": 64,
-          "democrat": 37,
-          "general": 19
+          "total": 132,
+          "republican": 69,
+          "democrat": 41,
+          "general": 22
         },
         "SODDY DAISY B": {
-          "total": 34,
-          "republican": 19,
+          "total": 35,
+          "republican": 20,
           "democrat": 11,
           "general": 4
         },
@@ -6612,10 +6666,10 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "STUART HEIGHTS": {
-          "total": 205,
-          "republican": 92,
-          "democrat": 91,
-          "general": 22
+          "total": 226,
+          "republican": 102,
+          "democrat": 95,
+          "general": 29
         },
         "TYNER": {
           "total": 9,
@@ -6624,27 +6678,27 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "VALLEYBROOK": {
-          "total": 957,
-          "republican": 590,
-          "democrat": 245,
-          "general": 122
+          "total": 1036,
+          "republican": 630,
+          "democrat": 274,
+          "general": 132
         },
         "AIRPORT B": {
-          "total": 6,
+          "total": 10,
           "republican": 5,
           "democrat": 1,
-          "general": 0
+          "general": 4
         },
         "ALTON PARK": {
-          "total": 3,
+          "total": 4,
           "republican": 0,
           "democrat": 1,
-          "general": 2
+          "general": 3
         },
         "BRAINERD HILLS": {
-          "total": 5,
-          "republican": 2,
-          "democrat": 1,
+          "total": 8,
+          "republican": 4,
+          "democrat": 2,
           "general": 2
         },
         "EAST LAKE": {
@@ -6666,9 +6720,9 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "MISSIONARY RIDGE": {
-          "total": 1,
+          "total": 2,
           "republican": 1,
-          "democrat": 0,
+          "democrat": 1,
           "general": 0
         },
         "MOUNTAIN CREEK C": {
@@ -6684,21 +6738,21 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "MURRAY HILLS": {
-          "total": 16,
-          "republican": 3,
-          "democrat": 9,
-          "general": 4
+          "total": 19,
+          "republican": 4,
+          "democrat": 10,
+          "general": 5
         },
         "NORTH CHATTANOOGA A": {
-          "total": 17,
-          "republican": 3,
-          "democrat": 7,
-          "general": 7
+          "total": 25,
+          "republican": 5,
+          "democrat": 11,
+          "general": 9
         },
         "PLEASANT GROVE B": {
-          "total": 25,
+          "total": 32,
           "republican": 12,
-          "democrat": 12,
+          "democrat": 19,
           "general": 1
         },
         "SAVANNAH BAY": {
@@ -6708,10 +6762,10 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "WALDEN": {
-          "total": 50,
-          "republican": 32,
+          "total": 55,
+          "republican": 36,
           "democrat": 11,
-          "general": 7
+          "general": 8
         },
         "WESTVIEW B": {
           "total": 6,
@@ -6720,9 +6774,9 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "WOLFTEVER": {
-          "total": 7,
+          "total": 8,
           "republican": 1,
-          "democrat": 5,
+          "democrat": 6,
           "general": 1
         },
         "APISON A": {
@@ -6732,10 +6786,10 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "BIRCHWOOD": {
-          "total": 2,
+          "total": 3,
           "republican": 0,
           "democrat": 2,
-          "general": 0
+          "general": 1
         },
         "EAST RIDGE B": {
           "total": 5,
@@ -6750,10 +6804,10 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "HUNTER": {
-          "total": 5,
+          "total": 7,
           "republican": 3,
-          "democrat": 1,
-          "general": 1
+          "democrat": 2,
+          "general": 2
         },
         "ST ELMO": {
           "total": 8,
@@ -6780,9 +6834,9 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "DALEWOOD": {
-          "total": 2,
+          "total": 3,
           "republican": 0,
-          "democrat": 2,
+          "democrat": 3,
           "general": 0
         },
         "GLENWOOD": {
@@ -6828,8 +6882,8 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "EAST CHATTANOOGA": {
-          "total": 2,
-          "republican": 0,
+          "total": 3,
+          "republican": 1,
           "democrat": 0,
           "general": 2
         },
@@ -6844,18 +6898,24 @@ var TURNOUT_DATA = {
           "republican": 3,
           "democrat": 0,
           "general": 0
+        },
+        "DOWNTOWN": {
+          "total": 5,
+          "republican": 0,
+          "democrat": 3,
+          "general": 2
         }
       },
       "Soddy Daisy": {
         "DALLAS": {
-          "total": 269,
-          "republican": 155,
-          "democrat": 66,
-          "general": 48
+          "total": 312,
+          "republican": 179,
+          "democrat": 71,
+          "general": 62
         },
         "FALLING WATER A": {
-          "total": 17,
-          "republican": 12,
+          "total": 19,
+          "republican": 14,
           "democrat": 3,
           "general": 2
         },
@@ -6866,16 +6926,16 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "FLAT TOP MOUNTAIN": {
-          "total": 36,
-          "republican": 29,
+          "total": 37,
+          "republican": 30,
           "democrat": 6,
           "general": 1
         },
         "GANNS": {
-          "total": 37,
-          "republican": 29,
-          "democrat": 4,
-          "general": 4
+          "total": 43,
+          "republican": 31,
+          "democrat": 5,
+          "general": 7
         },
         "HUNTER": {
           "total": 1,
@@ -6884,28 +6944,28 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "LAKESITE": {
-          "total": 65,
-          "republican": 36,
-          "democrat": 15,
-          "general": 14
+          "total": 76,
+          "republican": 41,
+          "democrat": 19,
+          "general": 16
         },
         "LUPTON CITY": {
-          "total": 4,
-          "republican": 2,
+          "total": 6,
+          "republican": 4,
           "democrat": 2,
           "general": 0
         },
         "MIDDLE VALLEY": {
-          "total": 48,
+          "total": 52,
           "republican": 35,
-          "democrat": 9,
-          "general": 4
+          "democrat": 10,
+          "general": 7
         },
         "MOUNTAIN CREEK A": {
-          "total": 30,
-          "republican": 16,
-          "democrat": 10,
-          "general": 4
+          "total": 36,
+          "republican": 18,
+          "democrat": 12,
+          "general": 6
         },
         "MOUNTAIN CREEK B": {
           "total": 10,
@@ -6914,34 +6974,34 @@ var TURNOUT_DATA = {
           "general": 6
         },
         "MOWBRAY A": {
-          "total": 37,
+          "total": 38,
           "republican": 18,
           "democrat": 9,
-          "general": 10
+          "general": 11
         },
         "MOWBRAY B": {
-          "total": 87,
-          "republican": 65,
+          "total": 92,
+          "republican": 67,
           "democrat": 18,
-          "general": 4
+          "general": 7
         },
         "NORTHWOODS": {
-          "total": 18,
-          "republican": 10,
-          "democrat": 5,
+          "total": 22,
+          "republican": 13,
+          "democrat": 6,
           "general": 3
         },
         "PLEASANT GROVE A": {
-          "total": 39,
+          "total": 46,
           "republican": 24,
-          "democrat": 2,
-          "general": 13
+          "democrat": 6,
+          "general": 16
         },
         "POSSUM CREEK": {
-          "total": 620,
-          "republican": 402,
-          "democrat": 123,
-          "general": 95
+          "total": 671,
+          "republican": 430,
+          "democrat": 131,
+          "general": 110
         },
         "RED BANK A": {
           "total": 8,
@@ -6956,52 +7016,52 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "SALE CREEK": {
-          "total": 250,
-          "republican": 178,
-          "democrat": 33,
-          "general": 39
+          "total": 273,
+          "republican": 190,
+          "democrat": 41,
+          "general": 42
         },
         "SEQUOYAH": {
-          "total": 313,
-          "republican": 205,
-          "democrat": 62,
-          "general": 46
+          "total": 336,
+          "republican": 221,
+          "democrat": 65,
+          "general": 50
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 10,
+          "total": 11,
           "republican": 2,
           "democrat": 3,
-          "general": 5
+          "general": 6
         },
         "SODDY DAISY A": {
-          "total": 395,
-          "republican": 265,
-          "democrat": 66,
-          "general": 64
+          "total": 416,
+          "republican": 280,
+          "democrat": 70,
+          "general": 66
         },
         "SODDY DAISY B": {
-          "total": 454,
-          "republican": 286,
-          "democrat": 94,
-          "general": 74
+          "total": 484,
+          "republican": 300,
+          "democrat": 102,
+          "general": 82
         },
         "SODDY DAISY C": {
-          "total": 334,
-          "republican": 240,
-          "democrat": 56,
-          "general": 38
+          "total": 350,
+          "republican": 252,
+          "democrat": 57,
+          "general": 41
         },
         "VALLEYBROOK": {
-          "total": 13,
-          "republican": 10,
+          "total": 15,
+          "republican": 12,
           "democrat": 2,
           "general": 1
         },
         "WALDEN": {
-          "total": 17,
-          "republican": 11,
+          "total": 19,
+          "republican": 12,
           "democrat": 4,
-          "general": 2
+          "general": 3
         },
         "BIRCHWOOD": {
           "total": 9,
@@ -7028,9 +7088,9 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "FAIRMOUNT": {
-          "total": 40,
+          "total": 41,
           "republican": 25,
-          "democrat": 9,
+          "democrat": 10,
           "general": 6
         },
         "HIXSON": {
@@ -7076,10 +7136,10 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "RED BANK B": {
-          "total": 7,
+          "total": 8,
           "republican": 5,
           "democrat": 2,
-          "general": 0
+          "general": 1
         },
         "AIRPORT A": {
           "total": 1,
@@ -7118,10 +7178,10 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "EAST BRAINERD B": {
-          "total": 2,
+          "total": 3,
           "republican": 1,
           "democrat": 0,
-          "general": 1
+          "general": 2
         },
         "EAST RIDGE A": {
           "total": 1,
@@ -7142,8 +7202,8 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 10,
-          "republican": 9,
+          "total": 11,
+          "republican": 10,
           "democrat": 0,
           "general": 1
         },
@@ -7160,10 +7220,10 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "NORTH CHATTANOOGA B": {
-          "total": 4,
+          "total": 6,
           "republican": 2,
           "democrat": 0,
-          "general": 2
+          "general": 4
         },
         "EAST BRAINERD A": {
           "total": 2,
@@ -7182,201 +7242,225 @@ var TURNOUT_DATA = {
           "republican": 1,
           "democrat": 0,
           "general": 0
+        },
+        "COURTHOUSE": {
+          "total": 1,
+          "republican": 1,
+          "democrat": 0,
+          "general": 0
+        },
+        "MISSIONARY RIDGE": {
+          "total": 1,
+          "republican": 0,
+          "democrat": 1,
+          "general": 0
+        },
+        "OOLTEWAH GEORGETOWN": {
+          "total": 1,
+          "republican": 0,
+          "democrat": 1,
+          "general": 0
+        },
+        "RIDGEDALE": {
+          "total": 2,
+          "republican": 0,
+          "democrat": 2,
+          "general": 0
         }
       }
     },
     "precinctsByAgeGroup": {
       "65+": {
         "AIRPORT A": {
-          "total": 30,
+          "total": 31,
           "republican": 8,
-          "democrat": 21,
+          "democrat": 22,
           "general": 1
         },
         "AIRPORT B": {
-          "total": 160,
-          "republican": 65,
-          "democrat": 79,
-          "general": 16
+          "total": 165,
+          "republican": 66,
+          "democrat": 82,
+          "general": 17
         },
         "ALTON PARK": {
-          "total": 83,
+          "total": 85,
           "republican": 6,
-          "democrat": 66,
+          "democrat": 68,
           "general": 11
         },
         "APISON A": {
-          "total": 144,
-          "republican": 107,
-          "democrat": 17,
-          "general": 20
+          "total": 148,
+          "republican": 108,
+          "democrat": 19,
+          "general": 21
         },
         "APISON B": {
-          "total": 283,
-          "republican": 186,
+          "total": 285,
+          "republican": 187,
           "democrat": 55,
-          "general": 42
+          "general": 43
         },
         "AVONDALE": {
-          "total": 97,
+          "total": 100,
           "republican": 3,
-          "democrat": 82,
+          "democrat": 85,
           "general": 12
         },
         "BIRCHWOOD": {
-          "total": 183,
-          "republican": 131,
-          "democrat": 31,
+          "total": 185,
+          "republican": 132,
+          "democrat": 32,
           "general": 21
         },
         "BONNY OAKS": {
-          "total": 237,
+          "total": 243,
           "republican": 33,
-          "democrat": 192,
+          "democrat": 198,
           "general": 12
         },
         "BRAINERD": {
-          "total": 186,
-          "republican": 62,
-          "democrat": 109,
+          "total": 197,
+          "republican": 67,
+          "democrat": 115,
           "general": 15
         },
         "BRAINERD HILLS": {
-          "total": 112,
-          "republican": 46,
-          "democrat": 51,
+          "total": 117,
+          "republican": 47,
+          "democrat": 55,
           "general": 15
         },
         "BUSHTOWN": {
-          "total": 179,
+          "total": 189,
           "republican": 5,
-          "democrat": 161,
-          "general": 13
+          "democrat": 170,
+          "general": 14
         },
         "COLLEGEDALE A": {
-          "total": 145,
-          "republican": 86,
-          "democrat": 37,
-          "general": 22
+          "total": 149,
+          "republican": 88,
+          "democrat": 38,
+          "general": 23
         },
         "COLLEGEDALE B": {
-          "total": 268,
-          "republican": 183,
-          "democrat": 43,
+          "total": 272,
+          "republican": 185,
+          "democrat": 45,
           "general": 42
         },
         "CONCORD A": {
-          "total": 119,
+          "total": 124,
           "republican": 45,
-          "democrat": 48,
-          "general": 26
+          "democrat": 52,
+          "general": 27
         },
         "CONCORD B": {
-          "total": 325,
-          "republican": 154,
-          "democrat": 121,
-          "general": 50
+          "total": 330,
+          "republican": 155,
+          "democrat": 124,
+          "general": 51
         },
         "COURTHOUSE": {
-          "total": 53,
+          "total": 63,
           "republican": 13,
-          "democrat": 35,
-          "general": 5
+          "democrat": 43,
+          "general": 7
         },
         "DALEWOOD": {
-          "total": 331,
-          "republican": 8,
-          "democrat": 302,
-          "general": 21
-        },
-        "DALLAS": {
-          "total": 279,
-          "republican": 191,
-          "democrat": 63,
+          "total": 349,
+          "republican": 11,
+          "democrat": 313,
           "general": 25
         },
+        "DALLAS": {
+          "total": 292,
+          "republican": 198,
+          "democrat": 64,
+          "general": 30
+        },
         "DOWNTOWN": {
-          "total": 153,
-          "republican": 47,
-          "democrat": 75,
+          "total": 157,
+          "republican": 50,
+          "democrat": 76,
           "general": 31
         },
         "DUPONT": {
-          "total": 342,
-          "republican": 217,
-          "democrat": 92,
-          "general": 33
+          "total": 350,
+          "republican": 222,
+          "democrat": 93,
+          "general": 35
         },
         "EAST BRAINERD A": {
-          "total": 341,
-          "republican": 188,
-          "democrat": 107,
-          "general": 46
+          "total": 355,
+          "republican": 196,
+          "democrat": 111,
+          "general": 48
         },
         "EAST BRAINERD B": {
-          "total": 624,
-          "republican": 334,
-          "democrat": 198,
-          "general": 92
+          "total": 637,
+          "republican": 342,
+          "democrat": 202,
+          "general": 93
         },
         "EAST CHATTANOOGA": {
-          "total": 194,
+          "total": 210,
           "republican": 11,
-          "democrat": 170,
-          "general": 13
+          "democrat": 184,
+          "general": 15
         },
         "EAST LAKE": {
-          "total": 49,
-          "republican": 14,
-          "democrat": 29,
+          "total": 52,
+          "republican": 15,
+          "democrat": 31,
           "general": 6
         },
         "EAST RIDGE A": {
-          "total": 224,
-          "republican": 125,
-          "democrat": 76,
+          "total": 227,
+          "republican": 127,
+          "democrat": 77,
           "general": 23
         },
         "EAST RIDGE B": {
-          "total": 230,
-          "republican": 109,
-          "democrat": 104,
-          "general": 17
+          "total": 243,
+          "republican": 113,
+          "democrat": 112,
+          "general": 18
         },
         "EAST RIDGE C": {
-          "total": 96,
-          "republican": 49,
-          "democrat": 34,
+          "total": 105,
+          "republican": 54,
+          "democrat": 38,
           "general": 13
         },
         "EAST RIDGE D": {
-          "total": 196,
-          "republican": 109,
-          "democrat": 60,
+          "total": 203,
+          "republican": 115,
+          "democrat": 61,
           "general": 27
         },
         "EASTGATE": {
-          "total": 200,
-          "republican": 29,
-          "democrat": 155,
-          "general": 16
+          "total": 204,
+          "republican": 31,
+          "democrat": 156,
+          "general": 17
         },
         "EASTSIDE": {
-          "total": 134,
-          "republican": 31,
-          "democrat": 85,
-          "general": 18
+          "total": 143,
+          "republican": 34,
+          "democrat": 89,
+          "general": 20
         },
         "FAIRMOUNT": {
-          "total": 218,
-          "republican": 126,
-          "democrat": 60,
+          "total": 223,
+          "republican": 127,
+          "democrat": 64,
           "general": 32
         },
         "FALLING WATER B": {
-          "total": 99,
-          "republican": 63,
-          "democrat": 28,
+          "total": 102,
+          "republican": 65,
+          "democrat": 29,
           "general": 8
         },
         "FLAT TOP MOUNTAIN": {
@@ -7386,328 +7470,328 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "GANNS": {
-          "total": 532,
-          "republican": 367,
-          "democrat": 116,
-          "general": 49
+          "total": 545,
+          "republican": 374,
+          "democrat": 118,
+          "general": 53
         },
         "GLENWOOD": {
-          "total": 178,
+          "total": 187,
           "republican": 34,
-          "democrat": 130,
-          "general": 14
+          "democrat": 135,
+          "general": 18
         },
         "HARRISON": {
-          "total": 419,
-          "republican": 231,
-          "democrat": 140,
-          "general": 48
+          "total": 435,
+          "republican": 237,
+          "democrat": 148,
+          "general": 50
         },
         "HARRISON BAY": {
-          "total": 518,
-          "republican": 369,
-          "democrat": 98,
+          "total": 538,
+          "republican": 381,
+          "democrat": 106,
           "general": 51
         },
         "HIXSON": {
-          "total": 219,
-          "republican": 129,
-          "democrat": 72,
+          "total": 224,
+          "republican": 131,
+          "democrat": 75,
           "general": 18
         },
         "HUNTER": {
-          "total": 449,
-          "republican": 311,
-          "democrat": 80,
+          "total": 463,
+          "republican": 322,
+          "democrat": 83,
           "general": 58
         },
         "HURRICANE CREEK": {
-          "total": 617,
-          "republican": 381,
-          "democrat": 163,
-          "general": 73
+          "total": 637,
+          "republican": 390,
+          "democrat": 173,
+          "general": 74
         },
         "KINGSPOINT": {
-          "total": 192,
+          "total": 195,
           "republican": 37,
-          "democrat": 137,
+          "democrat": 140,
           "general": 18
         },
         "LAKE HILLS": {
-          "total": 141,
+          "total": 144,
           "republican": 17,
-          "democrat": 110,
-          "general": 14
+          "democrat": 112,
+          "general": 15
         },
         "LAKESITE": {
-          "total": 87,
-          "republican": 59,
-          "democrat": 16,
+          "total": 92,
+          "republican": 63,
+          "democrat": 17,
           "general": 12
         },
         "LOOKOUT MOUNTAIN": {
-          "total": 135,
+          "total": 136,
           "republican": 81,
-          "democrat": 48,
+          "democrat": 49,
           "general": 6
         },
         "LOOKOUT VALLEY": {
-          "total": 366,
-          "republican": 225,
-          "democrat": 92,
+          "total": 377,
+          "republican": 233,
+          "democrat": 95,
           "general": 49
         },
         "LUPTON CITY": {
-          "total": 198,
-          "republican": 92,
-          "democrat": 80,
-          "general": 26
+          "total": 205,
+          "republican": 94,
+          "democrat": 84,
+          "general": 27
         },
         "MEADOWVIEW": {
-          "total": 312,
-          "republican": 217,
-          "democrat": 46,
-          "general": 49
+          "total": 328,
+          "republican": 228,
+          "democrat": 48,
+          "general": 52
         },
         "MIDDLE VALLEY": {
-          "total": 152,
-          "republican": 102,
-          "democrat": 38,
-          "general": 12
+          "total": 158,
+          "republican": 104,
+          "democrat": 39,
+          "general": 15
         },
         "MISSIONARY RIDGE": {
-          "total": 132,
-          "republican": 62,
-          "democrat": 53,
-          "general": 17
+          "total": 135,
+          "republican": 63,
+          "democrat": 54,
+          "general": 18
         },
         "MOUNTAIN CREEK A": {
-          "total": 436,
-          "republican": 234,
-          "democrat": 156,
+          "total": 442,
+          "republican": 238,
+          "democrat": 158,
           "general": 46
         },
         "MOUNTAIN CREEK B": {
-          "total": 139,
-          "republican": 74,
+          "total": 142,
+          "republican": 77,
           "democrat": 47,
           "general": 18
         },
         "MOWBRAY B": {
-          "total": 64,
-          "republican": 52,
+          "total": 65,
+          "republican": 53,
           "democrat": 11,
           "general": 1
         },
         "MURRAY HILLS": {
-          "total": 167,
-          "republican": 49,
-          "democrat": 102,
+          "total": 173,
+          "republican": 50,
+          "democrat": 107,
           "general": 16
         },
         "NORTH CHATTANOOGA A": {
-          "total": 137,
-          "republican": 43,
-          "democrat": 66,
-          "general": 28
+          "total": 145,
+          "republican": 45,
+          "democrat": 71,
+          "general": 29
         },
         "NORTH CHATTANOOGA B": {
-          "total": 68,
-          "republican": 25,
+          "total": 70,
+          "republican": 27,
           "democrat": 28,
           "general": 15
         },
         "NORTHGATE": {
-          "total": 376,
-          "republican": 228,
-          "democrat": 100,
-          "general": 48
+          "total": 386,
+          "republican": 234,
+          "democrat": 103,
+          "general": 49
         },
         "NORTHSHORE": {
-          "total": 321,
-          "republican": 127,
-          "democrat": 160,
-          "general": 34
+          "total": 331,
+          "republican": 132,
+          "democrat": 164,
+          "general": 35
         },
         "NORTHWOODS": {
-          "total": 414,
-          "republican": 245,
-          "democrat": 126,
-          "general": 43
+          "total": 427,
+          "republican": 250,
+          "democrat": 131,
+          "general": 46
         },
         "OOLTEWAH": {
-          "total": 530,
-          "republican": 350,
-          "democrat": 98,
-          "general": 82
+          "total": 544,
+          "republican": 359,
+          "democrat": 100,
+          "general": 85
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 278,
-          "republican": 185,
-          "democrat": 43,
-          "general": 50
+          "total": 286,
+          "republican": 188,
+          "democrat": 44,
+          "general": 54
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 589,
-          "republican": 387,
-          "democrat": 111,
-          "general": 91
+          "total": 598,
+          "republican": 389,
+          "democrat": 114,
+          "general": 95
         },
         "PLEASANT GROVE A": {
-          "total": 355,
-          "republican": 254,
-          "democrat": 76,
+          "total": 362,
+          "republican": 257,
+          "democrat": 80,
           "general": 25
         },
         "POSSUM CREEK": {
-          "total": 438,
-          "republican": 320,
-          "democrat": 83,
-          "general": 35
+          "total": 449,
+          "republican": 328,
+          "democrat": 84,
+          "general": 37
         },
         "RED BANK A": {
-          "total": 135,
-          "republican": 60,
-          "democrat": 61,
-          "general": 14
+          "total": 143,
+          "republican": 65,
+          "democrat": 63,
+          "general": 15
         },
         "RED BANK B": {
-          "total": 200,
-          "republican": 125,
-          "democrat": 59,
-          "general": 16
+          "total": 209,
+          "republican": 129,
+          "democrat": 61,
+          "general": 19
         },
         "RED BANK C": {
-          "total": 164,
-          "republican": 76,
-          "democrat": 71,
-          "general": 17
+          "total": 171,
+          "republican": 81,
+          "democrat": 72,
+          "general": 18
         },
         "RIDGEDALE": {
-          "total": 99,
+          "total": 102,
           "republican": 12,
-          "democrat": 78,
+          "democrat": 81,
           "general": 9
         },
         "RIVERVIEW": {
-          "total": 129,
-          "republican": 35,
-          "democrat": 80,
+          "total": 135,
+          "republican": 37,
+          "democrat": 84,
           "general": 14
         },
         "SALE CREEK": {
-          "total": 185,
-          "republican": 136,
-          "democrat": 29,
+          "total": 190,
+          "republican": 140,
+          "democrat": 30,
           "general": 20
         },
         "SAVANNAH BAY": {
-          "total": 412,
-          "republican": 294,
-          "democrat": 81,
-          "general": 37
+          "total": 431,
+          "republican": 308,
+          "democrat": 85,
+          "general": 38
         },
         "SEQUOYAH": {
-          "total": 279,
-          "republican": 195,
+          "total": 285,
+          "republican": 201,
           "democrat": 44,
           "general": 40
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 248,
-          "republican": 145,
+          "total": 254,
+          "republican": 151,
           "democrat": 80,
           "general": 23
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 466,
-          "republican": 292,
-          "democrat": 140,
+          "total": 473,
+          "republican": 296,
+          "democrat": 143,
           "general": 34
         },
         "SILVERDALE": {
-          "total": 170,
-          "republican": 91,
-          "democrat": 55,
-          "general": 24
+          "total": 179,
+          "republican": 94,
+          "democrat": 57,
+          "general": 28
         },
         "SODDY DAISY A": {
-          "total": 333,
-          "republican": 251,
-          "democrat": 57,
+          "total": 350,
+          "republican": 265,
+          "democrat": 60,
           "general": 25
         },
         "SODDY DAISY B": {
-          "total": 290,
-          "republican": 209,
-          "democrat": 49,
-          "general": 32
+          "total": 299,
+          "republican": 215,
+          "democrat": 51,
+          "general": 33
         },
         "SODDY DAISY C": {
-          "total": 230,
-          "republican": 178,
+          "total": 232,
+          "republican": 180,
           "democrat": 34,
           "general": 18
         },
         "ST ELMO": {
-          "total": 144,
-          "republican": 38,
-          "democrat": 91,
+          "total": 147,
+          "republican": 40,
+          "democrat": 92,
           "general": 15
         },
         "STUART HEIGHTS": {
-          "total": 297,
-          "republican": 147,
-          "democrat": 129,
-          "general": 21
+          "total": 313,
+          "republican": 156,
+          "democrat": 134,
+          "general": 23
         },
         "SUMMIT": {
-          "total": 331,
-          "republican": 168,
-          "democrat": 122,
-          "general": 41
+          "total": 342,
+          "republican": 175,
+          "democrat": 125,
+          "general": 42
         },
         "TYNER": {
-          "total": 272,
-          "republican": 120,
-          "democrat": 116,
-          "general": 36
+          "total": 281,
+          "republican": 125,
+          "democrat": 118,
+          "general": 38
         },
         "VALLEYBROOK": {
-          "total": 766,
-          "republican": 517,
-          "democrat": 180,
-          "general": 69
+          "total": 791,
+          "republican": 533,
+          "democrat": 187,
+          "general": 71
         },
         "WALDEN": {
-          "total": 130,
-          "republican": 87,
+          "total": 132,
+          "republican": 89,
           "democrat": 34,
           "general": 9
         },
         "WESTVIEW A": {
-          "total": 186,
-          "republican": 121,
+          "total": 192,
+          "republican": 125,
           "democrat": 48,
-          "general": 17
+          "general": 19
         },
         "WESTVIEW B": {
-          "total": 341,
-          "republican": 201,
+          "total": 348,
+          "republican": 207,
           "democrat": 106,
-          "general": 34
+          "general": 35
         },
         "WOLFTEVER": {
-          "total": 450,
-          "republican": 264,
-          "democrat": 141,
-          "general": 45
+          "total": 468,
+          "republican": 274,
+          "democrat": 145,
+          "general": 49
         },
         "WOODMORE": {
-          "total": 227,
-          "republican": 14,
-          "democrat": 200,
-          "general": 13
+          "total": 242,
+          "republican": 15,
+          "democrat": 213,
+          "general": 14
         },
         "RIDGESIDE": {
           "total": 21,
@@ -7716,16 +7800,16 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "FALLING WATER A": {
-          "total": 59,
-          "republican": 38,
+          "total": 60,
+          "republican": 39,
           "democrat": 15,
           "general": 6
         },
         "MOWBRAY A": {
-          "total": 22,
+          "total": 23,
           "republican": 12,
           "democrat": 7,
-          "general": 3
+          "general": 4
         },
         "MOUNTAIN CREEK C": {
           "total": 6,
@@ -7742,418 +7826,418 @@ var TURNOUT_DATA = {
       },
       "50-64": {
         "ALTON PARK": {
-          "total": 49,
-          "republican": 5,
-          "democrat": 37,
-          "general": 7
-        },
-        "APISON B": {
-          "total": 129,
-          "republican": 60,
-          "democrat": 26,
-          "general": 43
-        },
-        "BIRCHWOOD": {
-          "total": 86,
-          "republican": 56,
-          "democrat": 10,
-          "general": 20
-        },
-        "BONNY OAKS": {
-          "total": 108,
-          "republican": 8,
-          "democrat": 90,
+          "total": 57,
+          "republican": 6,
+          "democrat": 41,
           "general": 10
         },
-        "BUSHTOWN": {
-          "total": 97,
-          "republican": 4,
-          "democrat": 77,
-          "general": 16
+        "APISON B": {
+          "total": 136,
+          "republican": 64,
+          "democrat": 28,
+          "general": 44
         },
-        "COLLEGEDALE A": {
-          "total": 87,
-          "republican": 37,
-          "democrat": 32,
+        "BIRCHWOOD": {
+          "total": 97,
+          "republican": 64,
+          "democrat": 11,
+          "general": 22
+        },
+        "BONNY OAKS": {
+          "total": 122,
+          "republican": 9,
+          "democrat": 101,
+          "general": 12
+        },
+        "BUSHTOWN": {
+          "total": 109,
+          "republican": 4,
+          "democrat": 87,
           "general": 18
         },
+        "COLLEGEDALE A": {
+          "total": 102,
+          "republican": 41,
+          "democrat": 40,
+          "general": 21
+        },
         "COLLEGEDALE B": {
-          "total": 61,
-          "republican": 29,
-          "democrat": 15,
-          "general": 17
+          "total": 70,
+          "republican": 33,
+          "democrat": 19,
+          "general": 18
         },
         "CONCORD B": {
-          "total": 113,
-          "republican": 40,
-          "democrat": 52,
-          "general": 21
-        },
-        "COURTHOUSE": {
-          "total": 26,
-          "republican": 3,
-          "democrat": 19,
-          "general": 4
-        },
-        "DOWNTOWN": {
-          "total": 83,
-          "republican": 23,
-          "democrat": 36,
+          "total": 126,
+          "republican": 43,
+          "democrat": 59,
           "general": 24
         },
+        "COURTHOUSE": {
+          "total": 30,
+          "republican": 3,
+          "democrat": 22,
+          "general": 5
+        },
+        "DOWNTOWN": {
+          "total": 93,
+          "republican": 24,
+          "democrat": 41,
+          "general": 28
+        },
         "DUPONT": {
-          "total": 111,
-          "republican": 52,
-          "democrat": 38,
-          "general": 21
+          "total": 132,
+          "republican": 65,
+          "democrat": 44,
+          "general": 23
         },
         "EAST BRAINERD A": {
-          "total": 131,
-          "republican": 55,
-          "democrat": 50,
-          "general": 26
+          "total": 152,
+          "republican": 68,
+          "democrat": 55,
+          "general": 29
         },
         "EAST BRAINERD B": {
-          "total": 196,
-          "republican": 75,
-          "democrat": 74,
-          "general": 47
+          "total": 230,
+          "republican": 86,
+          "democrat": 89,
+          "general": 55
         },
         "EAST CHATTANOOGA": {
-          "total": 82,
-          "republican": 8,
-          "democrat": 57,
-          "general": 17
+          "total": 98,
+          "republican": 13,
+          "democrat": 65,
+          "general": 20
         },
         "EAST RIDGE A": {
-          "total": 119,
-          "republican": 55,
-          "democrat": 45,
-          "general": 19
+          "total": 133,
+          "republican": 57,
+          "democrat": 56,
+          "general": 20
         },
         "EASTSIDE": {
-          "total": 99,
-          "republican": 17,
-          "democrat": 64,
+          "total": 120,
+          "republican": 21,
+          "democrat": 81,
           "general": 18
         },
         "FAIRMOUNT": {
-          "total": 97,
-          "republican": 55,
-          "democrat": 26,
-          "general": 16
+          "total": 103,
+          "republican": 58,
+          "democrat": 28,
+          "general": 17
         },
         "GANNS": {
-          "total": 165,
-          "republican": 90,
-          "democrat": 49,
-          "general": 26
+          "total": 187,
+          "republican": 102,
+          "democrat": 52,
+          "general": 33
         },
         "GLENWOOD": {
-          "total": 83,
+          "total": 90,
           "republican": 11,
-          "democrat": 62,
-          "general": 10
+          "democrat": 67,
+          "general": 12
         },
         "HARRISON BAY": {
-          "total": 250,
-          "republican": 143,
-          "democrat": 56,
-          "general": 51
+          "total": 278,
+          "republican": 157,
+          "democrat": 66,
+          "general": 55
         },
         "HUNTER": {
-          "total": 194,
-          "republican": 103,
-          "democrat": 63,
-          "general": 28
+          "total": 240,
+          "republican": 122,
+          "democrat": 76,
+          "general": 42
         },
         "HURRICANE CREEK": {
-          "total": 195,
-          "republican": 89,
-          "democrat": 65,
-          "general": 41
+          "total": 213,
+          "republican": 97,
+          "democrat": 73,
+          "general": 43
         },
         "LAKESITE": {
-          "total": 41,
-          "republican": 27,
-          "democrat": 9,
-          "general": 5
+          "total": 50,
+          "republican": 32,
+          "democrat": 11,
+          "general": 7
         },
         "LOOKOUT MOUNTAIN": {
-          "total": 29,
-          "republican": 19,
-          "democrat": 8,
+          "total": 34,
+          "republican": 23,
+          "democrat": 9,
           "general": 2
         },
         "LOOKOUT VALLEY": {
-          "total": 146,
-          "republican": 81,
-          "democrat": 42,
-          "general": 23
+          "total": 156,
+          "republican": 88,
+          "democrat": 43,
+          "general": 25
         },
         "MEADOWVIEW": {
-          "total": 140,
-          "republican": 75,
-          "democrat": 25,
-          "general": 40
+          "total": 160,
+          "republican": 85,
+          "democrat": 28,
+          "general": 47
         },
         "MIDDLE VALLEY": {
-          "total": 69,
-          "republican": 40,
-          "democrat": 24,
+          "total": 73,
+          "republican": 43,
+          "democrat": 25,
           "general": 5
         },
         "MISSIONARY RIDGE": {
-          "total": 54,
+          "total": 59,
           "republican": 13,
-          "democrat": 32,
-          "general": 9
+          "democrat": 35,
+          "general": 11
         },
         "MOUNTAIN CREEK A": {
-          "total": 122,
-          "republican": 47,
-          "democrat": 50,
-          "general": 25
+          "total": 136,
+          "republican": 53,
+          "democrat": 56,
+          "general": 27
         },
         "MOUNTAIN CREEK B": {
-          "total": 59,
-          "republican": 18,
+          "total": 60,
+          "republican": 19,
           "democrat": 27,
           "general": 14
         },
         "NORTH CHATTANOOGA A": {
-          "total": 77,
-          "republican": 19,
-          "democrat": 39,
-          "general": 19
+          "total": 80,
+          "republican": 20,
+          "democrat": 40,
+          "general": 20
         },
         "NORTH CHATTANOOGA B": {
-          "total": 34,
-          "republican": 18,
-          "democrat": 10,
-          "general": 6
-        },
-        "NORTHSHORE": {
-          "total": 178,
-          "republican": 49,
-          "democrat": 92,
-          "general": 37
-        },
-        "OOLTEWAH": {
-          "total": 254,
-          "republican": 131,
-          "democrat": 60,
-          "general": 63
-        },
-        "POSSUM CREEK": {
-          "total": 195,
-          "republican": 111,
-          "democrat": 38,
-          "general": 46
-        },
-        "RED BANK C": {
-          "total": 60,
-          "republican": 22,
-          "democrat": 26,
-          "general": 12
-        },
-        "RIDGEDALE": {
-          "total": 69,
-          "republican": 9,
-          "democrat": 51,
-          "general": 9
-        },
-        "RIVERVIEW": {
-          "total": 83,
-          "republican": 36,
-          "democrat": 40,
-          "general": 7
-        },
-        "SAVANNAH BAY": {
-          "total": 152,
-          "republican": 88,
-          "democrat": 28,
-          "general": 36
-        },
-        "SIGNAL MOUNTAIN A": {
-          "total": 88,
-          "republican": 40,
-          "democrat": 31,
-          "general": 17
-        },
-        "SIGNAL MOUNTAIN B": {
-          "total": 142,
-          "republican": 81,
-          "democrat": 44,
-          "general": 17
-        },
-        "SILVERDALE": {
-          "total": 63,
-          "republican": 18,
-          "democrat": 34,
-          "general": 11
-        },
-        "SODDY DAISY A": {
-          "total": 138,
-          "republican": 82,
-          "democrat": 28,
-          "general": 28
-        },
-        "SODDY DAISY B": {
-          "total": 136,
-          "republican": 85,
-          "democrat": 32,
-          "general": 19
-        },
-        "ST ELMO": {
-          "total": 93,
-          "republican": 21,
-          "democrat": 63,
-          "general": 9
-        },
-        "STUART HEIGHTS": {
-          "total": 148,
-          "republican": 51,
-          "democrat": 73,
-          "general": 24
-        },
-        "SUMMIT": {
-          "total": 130,
-          "republican": 38,
-          "democrat": 64,
-          "general": 28
-        },
-        "VALLEYBROOK": {
-          "total": 256,
-          "republican": 134,
-          "democrat": 74,
-          "general": 48
-        },
-        "WALDEN": {
-          "total": 65,
-          "republican": 41,
-          "democrat": 14,
-          "general": 10
-        },
-        "AIRPORT A": {
-          "total": 11,
-          "republican": 3,
-          "democrat": 6,
-          "general": 2
-        },
-        "AIRPORT B": {
-          "total": 61,
-          "republican": 13,
-          "democrat": 33,
-          "general": 15
-        },
-        "APISON A": {
-          "total": 75,
-          "republican": 45,
-          "democrat": 15,
-          "general": 15
-        },
-        "AVONDALE": {
-          "total": 45,
-          "republican": 0,
-          "democrat": 38,
-          "general": 7
-        },
-        "BRAINERD": {
-          "total": 81,
-          "republican": 14,
-          "democrat": 59,
-          "general": 8
-        },
-        "BRAINERD HILLS": {
-          "total": 60,
-          "republican": 13,
-          "democrat": 28,
-          "general": 19
-        },
-        "CONCORD A": {
-          "total": 62,
-          "republican": 22,
-          "democrat": 32,
-          "general": 8
-        },
-        "DALEWOOD": {
-          "total": 104,
-          "republican": 3,
-          "democrat": 84,
-          "general": 17
-        },
-        "EAST LAKE": {
-          "total": 30,
-          "republican": 6,
-          "democrat": 16,
-          "general": 8
-        },
-        "EAST RIDGE B": {
-          "total": 130,
-          "republican": 52,
-          "democrat": 60,
-          "general": 18
-        },
-        "EAST RIDGE C": {
-          "total": 34,
-          "republican": 15,
+          "total": 39,
+          "republican": 20,
           "democrat": 11,
           "general": 8
         },
-        "EAST RIDGE D": {
-          "total": 105,
-          "republican": 50,
+        "NORTHSHORE": {
+          "total": 203,
+          "republican": 58,
+          "democrat": 105,
+          "general": 40
+        },
+        "OOLTEWAH": {
+          "total": 279,
+          "republican": 143,
+          "democrat": 65,
+          "general": 71
+        },
+        "POSSUM CREEK": {
+          "total": 219,
+          "republican": 127,
+          "democrat": 44,
+          "general": 48
+        },
+        "RED BANK C": {
+          "total": 70,
+          "republican": 26,
+          "democrat": 30,
+          "general": 14
+        },
+        "RIDGEDALE": {
+          "total": 73,
+          "republican": 9,
+          "democrat": 53,
+          "general": 11
+        },
+        "RIVERVIEW": {
+          "total": 96,
+          "republican": 42,
+          "democrat": 46,
+          "general": 8
+        },
+        "SAVANNAH BAY": {
+          "total": 172,
+          "republican": 97,
+          "democrat": 30,
+          "general": 45
+        },
+        "SIGNAL MOUNTAIN A": {
+          "total": 94,
+          "republican": 42,
+          "democrat": 34,
+          "general": 18
+        },
+        "SIGNAL MOUNTAIN B": {
+          "total": 158,
+          "republican": 87,
+          "democrat": 53,
+          "general": 18
+        },
+        "SILVERDALE": {
+          "total": 68,
+          "republican": 21,
+          "democrat": 35,
+          "general": 12
+        },
+        "SODDY DAISY A": {
+          "total": 146,
+          "republican": 88,
+          "democrat": 29,
+          "general": 29
+        },
+        "SODDY DAISY B": {
+          "total": 142,
+          "republican": 90,
+          "democrat": 33,
+          "general": 19
+        },
+        "ST ELMO": {
+          "total": 99,
+          "republican": 21,
+          "democrat": 67,
+          "general": 11
+        },
+        "STUART HEIGHTS": {
+          "total": 175,
+          "republican": 65,
+          "democrat": 83,
+          "general": 27
+        },
+        "SUMMIT": {
+          "total": 157,
+          "republican": 47,
+          "democrat": 77,
+          "general": 33
+        },
+        "VALLEYBROOK": {
+          "total": 286,
+          "republican": 151,
+          "democrat": 86,
+          "general": 49
+        },
+        "WALDEN": {
+          "total": 72,
+          "republican": 44,
+          "democrat": 16,
+          "general": 12
+        },
+        "AIRPORT A": {
+          "total": 14,
+          "republican": 3,
+          "democrat": 9,
+          "general": 2
+        },
+        "AIRPORT B": {
+          "total": 63,
+          "republican": 13,
+          "democrat": 35,
+          "general": 15
+        },
+        "APISON A": {
+          "total": 82,
+          "republican": 49,
+          "democrat": 16,
+          "general": 17
+        },
+        "AVONDALE": {
+          "total": 48,
+          "republican": 0,
           "democrat": 40,
+          "general": 8
+        },
+        "BRAINERD": {
+          "total": 94,
+          "republican": 21,
+          "democrat": 65,
+          "general": 8
+        },
+        "BRAINERD HILLS": {
+          "total": 71,
+          "republican": 18,
+          "democrat": 32,
+          "general": 21
+        },
+        "CONCORD A": {
+          "total": 69,
+          "republican": 22,
+          "democrat": 37,
+          "general": 10
+        },
+        "DALEWOOD": {
+          "total": 109,
+          "republican": 3,
+          "democrat": 86,
+          "general": 20
+        },
+        "EAST LAKE": {
+          "total": 34,
+          "republican": 8,
+          "democrat": 18,
+          "general": 8
+        },
+        "EAST RIDGE B": {
+          "total": 144,
+          "republican": 55,
+          "democrat": 68,
+          "general": 21
+        },
+        "EAST RIDGE C": {
+          "total": 36,
+          "republican": 16,
+          "democrat": 12,
+          "general": 8
+        },
+        "EAST RIDGE D": {
+          "total": 119,
+          "republican": 58,
+          "democrat": 46,
           "general": 15
         },
         "EASTGATE": {
-          "total": 103,
-          "republican": 9,
-          "democrat": 82,
-          "general": 12
+          "total": 120,
+          "republican": 10,
+          "democrat": 94,
+          "general": 16
         },
         "KINGSPOINT": {
-          "total": 73,
-          "republican": 12,
-          "democrat": 48,
-          "general": 13
+          "total": 80,
+          "republican": 13,
+          "democrat": 53,
+          "general": 14
         },
         "LAKE HILLS": {
-          "total": 72,
+          "total": 79,
           "republican": 8,
-          "democrat": 51,
-          "general": 13
+          "democrat": 55,
+          "general": 16
         },
         "MURRAY HILLS": {
-          "total": 93,
+          "total": 109,
           "republican": 24,
-          "democrat": 53,
-          "general": 16
+          "democrat": 66,
+          "general": 19
         },
         "NORTHGATE": {
-          "total": 107,
-          "republican": 36,
-          "democrat": 45,
-          "general": 26
+          "total": 117,
+          "republican": 38,
+          "democrat": 49,
+          "general": 30
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 125,
-          "republican": 85,
-          "democrat": 13,
-          "general": 27
+          "total": 142,
+          "republican": 94,
+          "democrat": 17,
+          "general": 31
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 260,
-          "republican": 130,
-          "democrat": 77,
-          "general": 53
+          "total": 296,
+          "republican": 150,
+          "democrat": 85,
+          "general": 61
         },
         "RED BANK B": {
-          "total": 71,
-          "republican": 29,
-          "democrat": 26,
-          "general": 16
+          "total": 85,
+          "republican": 34,
+          "democrat": 31,
+          "general": 20
         },
         "RIDGESIDE": {
           "total": 15,
@@ -8162,100 +8246,100 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "TYNER": {
-          "total": 73,
-          "republican": 22,
-          "democrat": 40,
-          "general": 11
+          "total": 85,
+          "republican": 25,
+          "democrat": 48,
+          "general": 12
         },
         "WESTVIEW B": {
-          "total": 124,
-          "republican": 52,
-          "democrat": 55,
-          "general": 17
+          "total": 140,
+          "republican": 61,
+          "democrat": 58,
+          "general": 21
         },
         "WOLFTEVER": {
-          "total": 239,
-          "republican": 109,
-          "democrat": 85,
-          "general": 45
+          "total": 282,
+          "republican": 125,
+          "democrat": 103,
+          "general": 54
         },
         "WOODMORE": {
-          "total": 96,
+          "total": 109,
           "republican": 3,
-          "democrat": 87,
+          "democrat": 100,
           "general": 6
         },
         "WESTVIEW A": {
-          "total": 54,
-          "republican": 16,
-          "democrat": 22,
-          "general": 16
+          "total": 63,
+          "republican": 20,
+          "democrat": 23,
+          "general": 20
         },
         "DALLAS": {
-          "total": 140,
-          "republican": 73,
-          "democrat": 36,
-          "general": 31
+          "total": 164,
+          "republican": 89,
+          "democrat": 38,
+          "general": 37
         },
         "FALLING WATER B": {
-          "total": 35,
-          "republican": 26,
+          "total": 38,
+          "republican": 29,
           "democrat": 5,
           "general": 4
         },
         "HARRISON": {
-          "total": 162,
-          "republican": 63,
-          "democrat": 66,
-          "general": 33
+          "total": 184,
+          "republican": 69,
+          "democrat": 77,
+          "general": 38
         },
         "HIXSON": {
-          "total": 132,
-          "republican": 70,
-          "democrat": 39,
-          "general": 23
+          "total": 141,
+          "republican": 75,
+          "democrat": 40,
+          "general": 26
         },
         "LUPTON CITY": {
-          "total": 97,
-          "republican": 36,
-          "democrat": 53,
-          "general": 8
+          "total": 111,
+          "republican": 41,
+          "democrat": 59,
+          "general": 11
         },
         "NORTHWOODS": {
-          "total": 173,
-          "republican": 54,
-          "democrat": 78,
-          "general": 41
+          "total": 193,
+          "republican": 63,
+          "democrat": 84,
+          "general": 46
         },
         "PLEASANT GROVE A": {
-          "total": 115,
-          "republican": 54,
-          "democrat": 40,
-          "general": 21
+          "total": 130,
+          "republican": 61,
+          "democrat": 45,
+          "general": 24
         },
         "RED BANK A": {
-          "total": 90,
-          "republican": 20,
-          "democrat": 45,
-          "general": 25
+          "total": 99,
+          "republican": 21,
+          "democrat": 51,
+          "general": 27
         },
         "SEQUOYAH": {
-          "total": 111,
-          "republican": 78,
-          "democrat": 21,
+          "total": 125,
+          "republican": 89,
+          "democrat": 24,
           "general": 12
         },
         "FALLING WATER A": {
-          "total": 19,
-          "republican": 11,
+          "total": 21,
+          "republican": 12,
           "democrat": 5,
-          "general": 3
+          "general": 4
         },
         "SALE CREEK": {
-          "total": 66,
-          "republican": 46,
-          "democrat": 11,
-          "general": 9
+          "total": 77,
+          "republican": 52,
+          "democrat": 13,
+          "general": 12
         },
         "MOWBRAY A": {
           "total": 16,
@@ -8264,21 +8348,21 @@ var TURNOUT_DATA = {
           "general": 4
         },
         "SODDY DAISY C": {
-          "total": 82,
-          "republican": 62,
+          "total": 89,
+          "republican": 67,
           "democrat": 13,
-          "general": 7
+          "general": 9
         },
         "MOWBRAY B": {
-          "total": 28,
+          "total": 29,
           "republican": 20,
           "democrat": 6,
-          "general": 2
+          "general": 3
         },
         "PLEASANT GROVE B": {
-          "total": 6,
+          "total": 8,
           "republican": 4,
-          "democrat": 1,
+          "democrat": 3,
           "general": 1
         },
         "FLAT TOP MOUNTAIN": {
@@ -8296,160 +8380,160 @@ var TURNOUT_DATA = {
       },
       "30-49": {
         "APISON B": {
-          "total": 99,
-          "republican": 32,
-          "democrat": 36,
-          "general": 31
+          "total": 106,
+          "republican": 33,
+          "democrat": 41,
+          "general": 32
         },
         "BONNY OAKS": {
-          "total": 93,
-          "republican": 5,
-          "democrat": 75,
-          "general": 13
-        },
-        "BUSHTOWN": {
-          "total": 67,
+          "total": 111,
           "republican": 6,
-          "democrat": 46,
+          "democrat": 90,
           "general": 15
         },
-        "CONCORD B": {
-          "total": 71,
-          "republican": 10,
-          "democrat": 34,
-          "general": 27
-        },
-        "DALLAS": {
-          "total": 104,
-          "republican": 21,
+        "BUSHTOWN": {
+          "total": 80,
+          "republican": 8,
           "democrat": 55,
-          "general": 28
-        },
-        "DOWNTOWN": {
-          "total": 73,
-          "republican": 9,
-          "democrat": 42,
-          "general": 22
-        },
-        "DUPONT": {
-          "total": 117,
-          "republican": 25,
-          "democrat": 63,
-          "general": 29
-        },
-        "EAST CHATTANOOGA": {
-          "total": 52,
-          "republican": 0,
-          "democrat": 36,
-          "general": 16
-        },
-        "EAST LAKE": {
-          "total": 22,
-          "republican": 2,
-          "democrat": 12,
-          "general": 8
-        },
-        "EAST RIDGE B": {
-          "total": 124,
-          "republican": 17,
-          "democrat": 90,
           "general": 17
         },
-        "EAST RIDGE C": {
-          "total": 47,
-          "republican": 7,
-          "democrat": 29,
-          "general": 11
-        },
-        "EASTSIDE": {
-          "total": 118,
-          "republican": 12,
-          "democrat": 79,
-          "general": 27
-        },
-        "GANNS": {
-          "total": 103,
-          "republican": 33,
-          "democrat": 35,
+        "CONCORD B": {
+          "total": 85,
+          "republican": 13,
+          "democrat": 37,
           "general": 35
         },
-        "GLENWOOD": {
-          "total": 60,
-          "republican": 2,
-          "democrat": 50,
-          "general": 8
-        },
-        "HARRISON BAY": {
-          "total": 103,
-          "republican": 39,
-          "democrat": 30,
-          "general": 34
-        },
-        "HUNTER": {
-          "total": 146,
-          "republican": 37,
-          "democrat": 75,
-          "general": 34
-        },
-        "HURRICANE CREEK": {
-          "total": 116,
-          "republican": 27,
-          "democrat": 55,
-          "general": 34
-        },
-        "LUPTON CITY": {
+        "DALLAS": {
           "total": 129,
-          "republican": 12,
-          "democrat": 87,
-          "general": 30
+          "republican": 38,
+          "democrat": 59,
+          "general": 32
         },
-        "MIDDLE VALLEY": {
-          "total": 54,
-          "republican": 15,
-          "democrat": 25,
+        "DOWNTOWN": {
+          "total": 88,
+          "republican": 9,
+          "democrat": 50,
+          "general": 29
+        },
+        "DUPONT": {
+          "total": 136,
+          "republican": 28,
+          "democrat": 69,
+          "general": 39
+        },
+        "EAST CHATTANOOGA": {
+          "total": 66,
+          "republican": 0,
+          "democrat": 46,
+          "general": 20
+        },
+        "EAST LAKE": {
+          "total": 28,
+          "republican": 2,
+          "democrat": 16,
+          "general": 10
+        },
+        "EAST RIDGE B": {
+          "total": 141,
+          "republican": 18,
+          "democrat": 102,
+          "general": 21
+        },
+        "EAST RIDGE C": {
+          "total": 55,
+          "republican": 7,
+          "democrat": 34,
           "general": 14
         },
+        "EASTSIDE": {
+          "total": 133,
+          "republican": 13,
+          "democrat": 84,
+          "general": 36
+        },
+        "GANNS": {
+          "total": 120,
+          "republican": 41,
+          "democrat": 40,
+          "general": 39
+        },
+        "GLENWOOD": {
+          "total": 70,
+          "republican": 2,
+          "democrat": 59,
+          "general": 9
+        },
+        "HARRISON BAY": {
+          "total": 115,
+          "republican": 42,
+          "democrat": 35,
+          "general": 38
+        },
+        "HUNTER": {
+          "total": 165,
+          "republican": 40,
+          "democrat": 88,
+          "general": 37
+        },
+        "HURRICANE CREEK": {
+          "total": 133,
+          "republican": 33,
+          "democrat": 60,
+          "general": 40
+        },
+        "LUPTON CITY": {
+          "total": 151,
+          "republican": 19,
+          "democrat": 98,
+          "general": 34
+        },
+        "MIDDLE VALLEY": {
+          "total": 69,
+          "republican": 18,
+          "democrat": 35,
+          "general": 16
+        },
         "MISSIONARY RIDGE": {
-          "total": 58,
+          "total": 71,
           "republican": 5,
-          "democrat": 42,
+          "democrat": 55,
           "general": 11
         },
         "MOUNTAIN CREEK B": {
-          "total": 46,
-          "republican": 7,
+          "total": 47,
+          "republican": 8,
           "democrat": 25,
           "general": 14
         },
         "NORTHSHORE": {
-          "total": 155,
-          "republican": 23,
-          "democrat": 107,
-          "general": 25
+          "total": 183,
+          "republican": 25,
+          "democrat": 127,
+          "general": 31
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 189,
-          "republican": 37,
-          "democrat": 97,
-          "general": 55
+          "total": 211,
+          "republican": 40,
+          "democrat": 110,
+          "general": 61
         },
         "RED BANK A": {
-          "total": 167,
-          "republican": 25,
-          "democrat": 107,
-          "general": 35
+          "total": 188,
+          "republican": 27,
+          "democrat": 123,
+          "general": 38
         },
         "RED BANK B": {
-          "total": 105,
-          "republican": 24,
-          "democrat": 59,
-          "general": 22
+          "total": 116,
+          "republican": 26,
+          "democrat": 65,
+          "general": 25
         },
         "RED BANK C": {
-          "total": 83,
-          "republican": 18,
-          "democrat": 51,
-          "general": 14
+          "total": 100,
+          "republican": 23,
+          "democrat": 61,
+          "general": 16
         },
         "RIDGESIDE": {
           "total": 6,
@@ -8458,358 +8542,358 @@ var TURNOUT_DATA = {
           "general": 4
         },
         "SAVANNAH BAY": {
-          "total": 76,
+          "total": 85,
           "republican": 24,
-          "democrat": 24,
-          "general": 28
+          "democrat": 27,
+          "general": 34
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 53,
-          "republican": 19,
-          "democrat": 28,
-          "general": 6
+          "total": 60,
+          "republican": 21,
+          "democrat": 32,
+          "general": 7
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 92,
-          "republican": 33,
-          "democrat": 43,
-          "general": 16
+          "total": 102,
+          "republican": 34,
+          "democrat": 47,
+          "general": 21
         },
         "STUART HEIGHTS": {
-          "total": 132,
-          "republican": 30,
-          "democrat": 93,
-          "general": 9
+          "total": 146,
+          "republican": 34,
+          "democrat": 96,
+          "general": 16
         },
         "SUMMIT": {
-          "total": 106,
-          "republican": 22,
-          "democrat": 47,
-          "general": 37
+          "total": 121,
+          "republican": 26,
+          "democrat": 52,
+          "general": 43
         },
         "VALLEYBROOK": {
-          "total": 148,
-          "republican": 48,
-          "democrat": 70,
-          "general": 30
+          "total": 171,
+          "republican": 55,
+          "democrat": 82,
+          "general": 34
         },
         "WOLFTEVER": {
-          "total": 188,
-          "republican": 50,
-          "democrat": 81,
-          "general": 57
+          "total": 214,
+          "republican": 52,
+          "democrat": 97,
+          "general": 65
         },
         "AIRPORT B": {
-          "total": 36,
-          "republican": 2,
-          "democrat": 20,
-          "general": 14
-        },
-        "ALTON PARK": {
           "total": 47,
-          "republican": 1,
-          "democrat": 31,
-          "general": 15
-        },
-        "BRAINERD": {
-          "total": 78,
-          "republican": 11,
-          "democrat": 54,
-          "general": 13
-        },
-        "BRAINERD HILLS": {
-          "total": 59,
-          "republican": 4,
-          "democrat": 42,
-          "general": 13
-        },
-        "CONCORD A": {
-          "total": 54,
-          "republican": 5,
-          "democrat": 37,
-          "general": 12
-        },
-        "DALEWOOD": {
-          "total": 67,
-          "republican": 1,
-          "democrat": 55,
-          "general": 11
-        },
-        "EAST BRAINERD A": {
-          "total": 91,
-          "republican": 14,
-          "democrat": 55,
-          "general": 22
-        },
-        "EAST RIDGE A": {
-          "total": 127,
-          "republican": 20,
-          "democrat": 75,
-          "general": 32
-        },
-        "EAST RIDGE D": {
-          "total": 68,
-          "republican": 10,
-          "democrat": 46,
-          "general": 12
-        },
-        "EASTGATE": {
-          "total": 95,
-          "republican": 3,
-          "democrat": 73,
-          "general": 19
-        },
-        "HARRISON": {
-          "total": 128,
-          "republican": 26,
-          "democrat": 75,
-          "general": 27
-        },
-        "KINGSPOINT": {
-          "total": 68,
-          "republican": 8,
-          "democrat": 40,
+          "republican": 2,
+          "democrat": 25,
           "general": 20
         },
-        "LAKE HILLS": {
-          "total": 42,
-          "republican": 3,
-          "democrat": 27,
-          "general": 12
-        },
-        "MEADOWVIEW": {
-          "total": 54,
-          "republican": 24,
-          "democrat": 18,
-          "general": 12
-        },
-        "MOWBRAY B": {
-          "total": 14,
-          "republican": 7,
-          "democrat": 5,
-          "general": 2
-        },
-        "NORTHGATE": {
-          "total": 82,
-          "republican": 11,
-          "democrat": 43,
-          "general": 28
-        },
-        "RIDGEDALE": {
-          "total": 142,
-          "republican": 8,
-          "democrat": 117,
-          "general": 17
-        },
-        "SILVERDALE": {
-          "total": 24,
-          "republican": 6,
-          "democrat": 12,
-          "general": 6
-        },
-        "ST ELMO": {
-          "total": 135,
-          "republican": 17,
-          "democrat": 100,
+        "ALTON PARK": {
+          "total": 55,
+          "republican": 1,
+          "democrat": 36,
           "general": 18
         },
-        "TYNER": {
-          "total": 80,
-          "republican": 10,
-          "democrat": 51,
+        "BRAINERD": {
+          "total": 95,
+          "republican": 14,
+          "democrat": 62,
           "general": 19
         },
-        "WESTVIEW A": {
-          "total": 62,
+        "BRAINERD HILLS": {
+          "total": 72,
+          "republican": 6,
+          "democrat": 51,
+          "general": 15
+        },
+        "CONCORD A": {
+          "total": 61,
+          "republican": 5,
+          "democrat": 41,
+          "general": 15
+        },
+        "DALEWOOD": {
+          "total": 82,
+          "republican": 1,
+          "democrat": 67,
+          "general": 14
+        },
+        "EAST BRAINERD A": {
+          "total": 111,
+          "republican": 21,
+          "democrat": 63,
+          "general": 27
+        },
+        "EAST RIDGE A": {
+          "total": 148,
+          "republican": 21,
+          "democrat": 91,
+          "general": 36
+        },
+        "EAST RIDGE D": {
+          "total": 80,
           "republican": 12,
-          "democrat": 33,
+          "democrat": 51,
           "general": 17
         },
+        "EASTGATE": {
+          "total": 120,
+          "republican": 3,
+          "democrat": 91,
+          "general": 26
+        },
+        "HARRISON": {
+          "total": 148,
+          "republican": 29,
+          "democrat": 84,
+          "general": 35
+        },
+        "KINGSPOINT": {
+          "total": 77,
+          "republican": 8,
+          "democrat": 48,
+          "general": 21
+        },
+        "LAKE HILLS": {
+          "total": 57,
+          "republican": 3,
+          "democrat": 37,
+          "general": 17
+        },
+        "MEADOWVIEW": {
+          "total": 66,
+          "republican": 26,
+          "democrat": 24,
+          "general": 16
+        },
+        "MOWBRAY B": {
+          "total": 15,
+          "republican": 7,
+          "democrat": 5,
+          "general": 3
+        },
+        "NORTHGATE": {
+          "total": 92,
+          "republican": 12,
+          "democrat": 46,
+          "general": 34
+        },
+        "RIDGEDALE": {
+          "total": 174,
+          "republican": 10,
+          "democrat": 139,
+          "general": 25
+        },
+        "SILVERDALE": {
+          "total": 28,
+          "republican": 6,
+          "democrat": 15,
+          "general": 7
+        },
+        "ST ELMO": {
+          "total": 147,
+          "republican": 21,
+          "democrat": 106,
+          "general": 20
+        },
+        "TYNER": {
+          "total": 94,
+          "republican": 11,
+          "democrat": 61,
+          "general": 22
+        },
+        "WESTVIEW A": {
+          "total": 72,
+          "republican": 16,
+          "democrat": 38,
+          "general": 18
+        },
         "WOODMORE": {
-          "total": 73,
-          "republican": 1,
-          "democrat": 62,
+          "total": 84,
+          "republican": 2,
+          "democrat": 72,
           "general": 10
         },
         "APISON A": {
-          "total": 37,
-          "republican": 9,
-          "democrat": 14,
-          "general": 14
+          "total": 50,
+          "republican": 14,
+          "democrat": 17,
+          "general": 19
         },
         "COLLEGEDALE A": {
-          "total": 82,
-          "republican": 24,
-          "democrat": 31,
-          "general": 27
+          "total": 89,
+          "republican": 25,
+          "democrat": 36,
+          "general": 28
         },
         "COLLEGEDALE B": {
-          "total": 35,
-          "republican": 7,
+          "total": 36,
+          "republican": 8,
           "democrat": 15,
           "general": 13
         },
         "EAST BRAINERD B": {
-          "total": 123,
-          "republican": 28,
-          "democrat": 56,
-          "general": 39
+          "total": 151,
+          "republican": 35,
+          "democrat": 66,
+          "general": 50
         },
         "OOLTEWAH": {
-          "total": 125,
-          "republican": 39,
-          "democrat": 45,
-          "general": 41
+          "total": 148,
+          "republican": 48,
+          "democrat": 53,
+          "general": 47
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 39,
+          "total": 50,
           "republican": 14,
-          "democrat": 17,
-          "general": 8
-        },
-        "WESTVIEW B": {
-          "total": 98,
-          "republican": 29,
-          "democrat": 47,
-          "general": 22
-        },
-        "AVONDALE": {
-          "total": 32,
-          "republican": 3,
-          "democrat": 22,
-          "general": 7
-        },
-        "COURTHOUSE": {
-          "total": 33,
-          "republican": 2,
-          "democrat": 21,
-          "general": 10
-        },
-        "FAIRMOUNT": {
-          "total": 73,
-          "republican": 21,
-          "democrat": 33,
-          "general": 19
-        },
-        "HIXSON": {
-          "total": 107,
-          "republican": 24,
-          "democrat": 63,
-          "general": 20
-        },
-        "LAKESITE": {
-          "total": 28,
-          "republican": 7,
-          "democrat": 10,
-          "general": 11
-        },
-        "LOOKOUT VALLEY": {
-          "total": 87,
-          "republican": 23,
-          "democrat": 43,
-          "general": 21
-        },
-        "MOUNTAIN CREEK A": {
-          "total": 114,
-          "republican": 15,
-          "democrat": 67,
-          "general": 32
-        },
-        "MURRAY HILLS": {
-          "total": 69,
-          "republican": 5,
-          "democrat": 51,
-          "general": 13
-        },
-        "NORTH CHATTANOOGA A": {
-          "total": 75,
-          "republican": 9,
-          "democrat": 47,
-          "general": 19
-        },
-        "NORTH CHATTANOOGA B": {
-          "total": 43,
-          "republican": 7,
           "democrat": 25,
           "general": 11
         },
-        "RIVERVIEW": {
-          "total": 92,
-          "republican": 20,
-          "democrat": 60,
+        "WESTVIEW B": {
+          "total": 123,
+          "republican": 36,
+          "democrat": 59,
+          "general": 28
+        },
+        "AVONDALE": {
+          "total": 38,
+          "republican": 3,
+          "democrat": 26,
+          "general": 9
+        },
+        "COURTHOUSE": {
+          "total": 36,
+          "republican": 3,
+          "democrat": 22,
+          "general": 11
+        },
+        "FAIRMOUNT": {
+          "total": 80,
+          "republican": 24,
+          "democrat": 36,
+          "general": 20
+        },
+        "HIXSON": {
+          "total": 120,
+          "republican": 25,
+          "democrat": 72,
+          "general": 23
+        },
+        "LAKESITE": {
+          "total": 32,
+          "republican": 8,
+          "democrat": 12,
           "general": 12
         },
-        "SODDY DAISY B": {
-          "total": 76,
+        "LOOKOUT VALLEY": {
+          "total": 96,
+          "republican": 24,
+          "democrat": 49,
+          "general": 23
+        },
+        "MOUNTAIN CREEK A": {
+          "total": 138,
+          "republican": 18,
+          "democrat": 83,
+          "general": 37
+        },
+        "MURRAY HILLS": {
+          "total": 82,
+          "republican": 7,
+          "democrat": 57,
+          "general": 18
+        },
+        "NORTH CHATTANOOGA A": {
+          "total": 87,
+          "republican": 9,
+          "democrat": 57,
+          "general": 21
+        },
+        "NORTH CHATTANOOGA B": {
+          "total": 51,
+          "republican": 10,
+          "democrat": 27,
+          "general": 14
+        },
+        "RIVERVIEW": {
+          "total": 110,
           "republican": 22,
-          "democrat": 30,
-          "general": 24
+          "democrat": 73,
+          "general": 15
+        },
+        "SODDY DAISY B": {
+          "total": 86,
+          "republican": 23,
+          "democrat": 33,
+          "general": 30
         },
         "WALDEN": {
-          "total": 26,
-          "republican": 10,
+          "total": 30,
+          "republican": 13,
           "democrat": 11,
-          "general": 5
+          "general": 6
         },
         "BIRCHWOOD": {
-          "total": 28,
-          "republican": 9,
+          "total": 30,
+          "republican": 11,
           "democrat": 12,
           "general": 7
         },
         "FALLING WATER B": {
-          "total": 28,
-          "republican": 15,
+          "total": 33,
+          "republican": 19,
           "democrat": 8,
-          "general": 5
+          "general": 6
         },
         "NORTHWOODS": {
-          "total": 151,
-          "republican": 25,
-          "democrat": 100,
-          "general": 26
+          "total": 173,
+          "republican": 26,
+          "democrat": 117,
+          "general": 30
         },
         "PLEASANT GROVE A": {
-          "total": 119,
-          "republican": 31,
-          "democrat": 63,
-          "general": 25
+          "total": 130,
+          "republican": 34,
+          "democrat": 67,
+          "general": 29
         },
         "SEQUOYAH": {
-          "total": 44,
-          "republican": 16,
-          "democrat": 14,
-          "general": 14
+          "total": 52,
+          "republican": 19,
+          "democrat": 15,
+          "general": 18
         },
         "SODDY DAISY A": {
-          "total": 70,
+          "total": 72,
           "republican": 20,
-          "democrat": 35,
-          "general": 15
-        },
-        "POSSUM CREEK": {
-          "total": 65,
-          "republican": 21,
-          "democrat": 28,
+          "democrat": 36,
           "general": 16
         },
+        "POSSUM CREEK": {
+          "total": 82,
+          "republican": 28,
+          "democrat": 29,
+          "general": 25
+        },
         "SODDY DAISY C": {
-          "total": 40,
-          "republican": 11,
-          "democrat": 19,
+          "total": 46,
+          "republican": 16,
+          "democrat": 20,
           "general": 10
         },
         "LOOKOUT MOUNTAIN": {
-          "total": 10,
-          "republican": 5,
+          "total": 11,
+          "republican": 6,
           "democrat": 4,
           "general": 1
         },
         "FALLING WATER A": {
-          "total": 7,
-          "republican": 3,
-          "democrat": 3,
-          "general": 1
+          "total": 14,
+          "republican": 5,
+          "democrat": 7,
+          "general": 2
         },
         "MOWBRAY A": {
           "total": 4,
@@ -8818,15 +8902,15 @@ var TURNOUT_DATA = {
           "general": 2
         },
         "SALE CREEK": {
-          "total": 31,
-          "republican": 13,
-          "democrat": 8,
+          "total": 36,
+          "republican": 15,
+          "democrat": 11,
           "general": 10
         },
         "PLEASANT GROVE B": {
-          "total": 8,
+          "total": 11,
           "republican": 1,
-          "democrat": 7,
+          "democrat": 10,
           "general": 0
         },
         "AIRPORT A": {
@@ -8836,8 +8920,8 @@ var TURNOUT_DATA = {
           "general": 3
         },
         "FLAT TOP MOUNTAIN": {
-          "total": 1,
-          "republican": 0,
+          "total": 2,
+          "republican": 1,
           "democrat": 1,
           "general": 0
         },
@@ -8856,465 +8940,465 @@ var TURNOUT_DATA = {
           "general": 9
         },
         "EAST RIDGE A": {
-          "total": 35,
-          "republican": 2,
-          "democrat": 18,
-          "general": 15
+          "total": 45,
+          "republican": 4,
+          "democrat": 22,
+          "general": 19
         },
         "FAIRMOUNT": {
-          "total": 13,
+          "total": 15,
           "republican": 1,
           "democrat": 3,
-          "general": 9
+          "general": 11
         },
         "HIXSON": {
-          "total": 27,
-          "republican": 2,
-          "democrat": 16,
-          "general": 9
+          "total": 34,
+          "republican": 3,
+          "democrat": 18,
+          "general": 13
         },
         "HUNTER": {
-          "total": 40,
-          "republican": 6,
-          "democrat": 16,
-          "general": 18
+          "total": 46,
+          "republican": 8,
+          "democrat": 17,
+          "general": 21
         },
         "LOOKOUT MOUNTAIN": {
-          "total": 6,
+          "total": 7,
           "republican": 2,
-          "democrat": 1,
+          "democrat": 2,
           "general": 3
         },
         "SIGNAL MOUNTAIN B": {
-          "total": 32,
-          "republican": 10,
-          "democrat": 13,
-          "general": 9
+          "total": 43,
+          "republican": 12,
+          "democrat": 16,
+          "general": 15
         },
         "STUART HEIGHTS": {
-          "total": 37,
-          "republican": 4,
-          "democrat": 23,
-          "general": 10
+          "total": 43,
+          "republican": 5,
+          "democrat": 27,
+          "general": 11
         },
         "BONNY OAKS": {
-          "total": 27,
+          "total": 34,
           "republican": 0,
-          "democrat": 15,
-          "general": 12
+          "democrat": 19,
+          "general": 15
         },
         "BRAINERD": {
-          "total": 35,
-          "republican": 1,
-          "democrat": 18,
-          "general": 16
-        },
-        "DALEWOOD": {
-          "total": 26,
-          "republican": 1,
-          "democrat": 12,
-          "general": 13
-        },
-        "EAST LAKE": {
-          "total": 21,
-          "republican": 0,
-          "democrat": 8,
-          "general": 13
-        },
-        "EAST RIDGE B": {
-          "total": 34,
-          "republican": 3,
-          "democrat": 17,
-          "general": 14
-        },
-        "EAST RIDGE C": {
-          "total": 19,
-          "republican": 0,
-          "democrat": 12,
-          "general": 7
-        },
-        "EAST RIDGE D": {
-          "total": 35,
-          "republican": 4,
-          "democrat": 12,
+          "total": 43,
+          "republican": 2,
+          "democrat": 22,
           "general": 19
         },
-        "EASTSIDE": {
-          "total": 58,
+        "DALEWOOD": {
+          "total": 29,
+          "republican": 1,
+          "democrat": 14,
+          "general": 14
+        },
+        "EAST LAKE": {
+          "total": 29,
+          "republican": 0,
+          "democrat": 11,
+          "general": 18
+        },
+        "EAST RIDGE B": {
+          "total": 42,
           "republican": 3,
-          "democrat": 33,
-          "general": 22
+          "democrat": 20,
+          "general": 19
+        },
+        "EAST RIDGE C": {
+          "total": 23,
+          "republican": 0,
+          "democrat": 14,
+          "general": 9
+        },
+        "EAST RIDGE D": {
+          "total": 38,
+          "republican": 4,
+          "democrat": 14,
+          "general": 20
+        },
+        "EASTSIDE": {
+          "total": 65,
+          "republican": 4,
+          "democrat": 37,
+          "general": 24
         },
         "FALLING WATER B": {
-          "total": 4,
+          "total": 6,
           "republican": 1,
-          "democrat": 2,
-          "general": 1
+          "democrat": 3,
+          "general": 2
         },
         "GLENWOOD": {
-          "total": 27,
+          "total": 31,
           "republican": 0,
-          "democrat": 12,
+          "democrat": 16,
           "general": 15
         },
         "HARRISON": {
-          "total": 30,
-          "republican": 0,
-          "democrat": 11,
-          "general": 19
+          "total": 38,
+          "republican": 1,
+          "democrat": 13,
+          "general": 24
         },
         "MOUNTAIN CREEK A": {
-          "total": 56,
-          "republican": 4,
-          "democrat": 29,
+          "total": 62,
+          "republican": 6,
+          "democrat": 33,
           "general": 23
         },
         "MURRAY HILLS": {
-          "total": 15,
+          "total": 19,
           "republican": 1,
-          "democrat": 4,
-          "general": 10
+          "democrat": 7,
+          "general": 11
         },
         "OOLTEWAH RINGGOLD": {
-          "total": 56,
-          "republican": 10,
-          "democrat": 24,
-          "general": 22
+          "total": 69,
+          "republican": 11,
+          "democrat": 28,
+          "general": 30
         },
         "RED BANK B": {
-          "total": 31,
+          "total": 34,
           "republican": 3,
           "democrat": 14,
-          "general": 14
+          "general": 17
         },
         "SILVERDALE": {
-          "total": 15,
+          "total": 17,
           "republican": 3,
-          "democrat": 7,
+          "democrat": 9,
           "general": 5
         },
         "TYNER": {
-          "total": 49,
+          "total": 58,
           "republican": 0,
-          "democrat": 23,
-          "general": 26
+          "democrat": 29,
+          "general": 29
         },
         "WESTVIEW B": {
-          "total": 32,
-          "republican": 2,
-          "democrat": 14,
-          "general": 16
+          "total": 42,
+          "republican": 3,
+          "democrat": 16,
+          "general": 23
         },
         "WOLFTEVER": {
-          "total": 58,
+          "total": 66,
           "republican": 6,
-          "democrat": 21,
-          "general": 31
+          "democrat": 25,
+          "general": 35
         },
         "WOODMORE": {
-          "total": 18,
+          "total": 23,
           "republican": 1,
-          "democrat": 11,
-          "general": 6
+          "democrat": 12,
+          "general": 10
         },
         "APISON B": {
-          "total": 29,
-          "republican": 4,
-          "democrat": 7,
-          "general": 18
+          "total": 36,
+          "republican": 5,
+          "democrat": 9,
+          "general": 22
         },
         "COLLEGEDALE A": {
-          "total": 38,
+          "total": 42,
           "republican": 7,
-          "democrat": 12,
-          "general": 19
+          "democrat": 13,
+          "general": 22
         },
         "COLLEGEDALE B": {
-          "total": 8,
+          "total": 9,
           "republican": 1,
-          "democrat": 4,
+          "democrat": 5,
           "general": 3
         },
         "EAST BRAINERD B": {
-          "total": 39,
-          "republican": 3,
-          "democrat": 16,
-          "general": 20
+          "total": 45,
+          "republican": 4,
+          "democrat": 18,
+          "general": 23
         },
         "MEADOWVIEW": {
-          "total": 17,
+          "total": 22,
           "republican": 2,
           "democrat": 6,
-          "general": 9
+          "general": 14
         },
         "SAVANNAH BAY": {
-          "total": 19,
-          "republican": 2,
-          "democrat": 7,
-          "general": 10
+          "total": 25,
+          "republican": 4,
+          "democrat": 8,
+          "general": 13
         },
         "SUMMIT": {
-          "total": 48,
+          "total": 53,
           "republican": 3,
-          "democrat": 17,
-          "general": 28
+          "democrat": 18,
+          "general": 32
         },
         "AIRPORT B": {
-          "total": 9,
+          "total": 14,
           "republican": 2,
           "democrat": 3,
-          "general": 4
+          "general": 9
         },
         "ALTON PARK": {
-          "total": 31,
+          "total": 33,
           "republican": 2,
-          "democrat": 14,
-          "general": 15
+          "democrat": 15,
+          "general": 16
         },
         "AVONDALE": {
-          "total": 17,
+          "total": 19,
           "republican": 0,
-          "democrat": 11,
+          "democrat": 13,
           "general": 6
         },
         "BRAINERD HILLS": {
-          "total": 34,
+          "total": 39,
           "republican": 1,
-          "democrat": 13,
-          "general": 20
+          "democrat": 17,
+          "general": 21
         },
         "BUSHTOWN": {
-          "total": 42,
+          "total": 50,
           "republican": 1,
-          "democrat": 18,
-          "general": 23
+          "democrat": 22,
+          "general": 27
         },
         "COURTHOUSE": {
-          "total": 55,
+          "total": 63,
           "republican": 1,
-          "democrat": 24,
-          "general": 30
+          "democrat": 27,
+          "general": 35
         },
         "DOWNTOWN": {
-          "total": 57,
-          "republican": 6,
+          "total": 66,
+          "republican": 9,
           "democrat": 28,
-          "general": 23
+          "general": 29
         },
         "DUPONT": {
-          "total": 33,
-          "republican": 4,
-          "democrat": 15,
-          "general": 14
+          "total": 40,
+          "republican": 7,
+          "democrat": 17,
+          "general": 16
         },
         "EAST BRAINERD A": {
-          "total": 26,
-          "republican": 2,
-          "democrat": 10,
-          "general": 14
+          "total": 29,
+          "republican": 3,
+          "democrat": 11,
+          "general": 15
         },
         "EAST CHATTANOOGA": {
-          "total": 17,
-          "republican": 1,
-          "democrat": 5,
-          "general": 11
+          "total": 24,
+          "republican": 2,
+          "democrat": 10,
+          "general": 12
         },
         "KINGSPOINT": {
-          "total": 18,
+          "total": 22,
           "republican": 0,
-          "democrat": 11,
-          "general": 7
+          "democrat": 14,
+          "general": 8
         },
         "LUPTON CITY": {
-          "total": 31,
+          "total": 32,
           "republican": 5,
-          "democrat": 18,
+          "democrat": 19,
           "general": 8
         },
         "MOUNTAIN CREEK B": {
-          "total": 20,
-          "republican": 2,
-          "democrat": 8,
-          "general": 10
-        },
-        "NORTH CHATTANOOGA A": {
-          "total": 26,
-          "republican": 1,
-          "democrat": 14,
-          "general": 11
-        },
-        "NORTH CHATTANOOGA B": {
           "total": 24,
           "republican": 2,
-          "democrat": 11,
-          "general": 11
+          "democrat": 8,
+          "general": 14
         },
-        "NORTHGATE": {
-          "total": 36,
-          "republican": 2,
-          "democrat": 15,
-          "general": 19
-        },
-        "NORTHSHORE": {
-          "total": 41,
-          "republican": 2,
-          "democrat": 24,
-          "general": 15
-        },
-        "RED BANK A": {
-          "total": 71,
-          "republican": 6,
-          "democrat": 36,
-          "general": 29
-        },
-        "RIVERVIEW": {
-          "total": 31,
-          "republican": 3,
-          "democrat": 15,
+        "NORTH CHATTANOOGA A": {
+          "total": 30,
+          "republican": 1,
+          "democrat": 16,
           "general": 13
         },
-        "SODDY DAISY A": {
-          "total": 34,
-          "republican": 6,
-          "democrat": 10,
-          "general": 18
-        },
-        "ST ELMO": {
-          "total": 30,
-          "republican": 0,
-          "democrat": 15,
-          "general": 15
-        },
-        "BIRCHWOOD": {
-          "total": 14,
-          "republican": 3,
-          "democrat": 5,
-          "general": 6
-        },
-        "HARRISON BAY": {
-          "total": 36,
-          "republican": 10,
-          "democrat": 11,
-          "general": 15
-        },
-        "OOLTEWAH": {
-          "total": 21,
-          "republican": 4,
-          "democrat": 8,
-          "general": 9
-        },
-        "DALLAS": {
-          "total": 38,
-          "republican": 9,
+        "NORTH CHATTANOOGA B": {
+          "total": 32,
+          "republican": 2,
           "democrat": 13,
+          "general": 17
+        },
+        "NORTHGATE": {
+          "total": 47,
+          "republican": 5,
+          "democrat": 19,
+          "general": 23
+        },
+        "NORTHSHORE": {
+          "total": 44,
+          "republican": 3,
+          "democrat": 25,
           "general": 16
         },
+        "RED BANK A": {
+          "total": 78,
+          "republican": 6,
+          "democrat": 38,
+          "general": 34
+        },
+        "RIVERVIEW": {
+          "total": 41,
+          "republican": 4,
+          "democrat": 19,
+          "general": 18
+        },
+        "SODDY DAISY A": {
+          "total": 40,
+          "republican": 6,
+          "democrat": 13,
+          "general": 21
+        },
+        "ST ELMO": {
+          "total": 35,
+          "republican": 0,
+          "democrat": 18,
+          "general": 17
+        },
+        "BIRCHWOOD": {
+          "total": 17,
+          "republican": 4,
+          "democrat": 5,
+          "general": 8
+        },
+        "HARRISON BAY": {
+          "total": 43,
+          "republican": 11,
+          "democrat": 14,
+          "general": 18
+        },
+        "OOLTEWAH": {
+          "total": 32,
+          "republican": 4,
+          "democrat": 9,
+          "general": 19
+        },
+        "DALLAS": {
+          "total": 44,
+          "republican": 10,
+          "democrat": 14,
+          "general": 20
+        },
         "FALLING WATER A": {
-          "total": 7,
-          "republican": 2,
+          "total": 8,
+          "republican": 3,
           "democrat": 0,
           "general": 5
         },
         "LAKESITE": {
-          "total": 10,
-          "republican": 1,
+          "total": 11,
+          "republican": 2,
           "democrat": 3,
           "general": 6
         },
         "MIDDLE VALLEY": {
-          "total": 18,
+          "total": 21,
           "republican": 4,
-          "democrat": 5,
-          "general": 9
-        },
-        "NORTHWOODS": {
-          "total": 62,
-          "republican": 9,
-          "democrat": 24,
-          "general": 29
-        },
-        "PLEASANT GROVE A": {
-          "total": 33,
-          "republican": 12,
-          "democrat": 8,
-          "general": 13
-        },
-        "POSSUM CREEK": {
-          "total": 26,
-          "republican": 4,
-          "democrat": 8,
-          "general": 14
-        },
-        "VALLEYBROOK": {
-          "total": 46,
-          "republican": 8,
-          "democrat": 22,
-          "general": 16
-        },
-        "SODDY DAISY C": {
-          "total": 13,
-          "republican": 1,
-          "democrat": 2,
+          "democrat": 7,
           "general": 10
         },
+        "NORTHWOODS": {
+          "total": 68,
+          "republican": 11,
+          "democrat": 26,
+          "general": 31
+        },
+        "PLEASANT GROVE A": {
+          "total": 38,
+          "republican": 12,
+          "democrat": 10,
+          "general": 16
+        },
+        "POSSUM CREEK": {
+          "total": 29,
+          "republican": 4,
+          "democrat": 9,
+          "general": 16
+        },
+        "VALLEYBROOK": {
+          "total": 61,
+          "republican": 11,
+          "democrat": 29,
+          "general": 21
+        },
+        "SODDY DAISY C": {
+          "total": 15,
+          "republican": 2,
+          "democrat": 2,
+          "general": 11
+        },
         "CONCORD B": {
-          "total": 33,
-          "republican": 3,
+          "total": 36,
+          "republican": 4,
           "democrat": 21,
-          "general": 9
+          "general": 11
         },
         "EASTGATE": {
-          "total": 26,
+          "total": 29,
           "republican": 0,
-          "democrat": 20,
-          "general": 6
+          "democrat": 22,
+          "general": 7
         },
         "MISSIONARY RIDGE": {
-          "total": 17,
+          "total": 21,
           "republican": 1,
-          "democrat": 8,
-          "general": 8
+          "democrat": 11,
+          "general": 9
         },
         "OOLTEWAH GEORGETOWN": {
-          "total": 11,
+          "total": 17,
           "republican": 3,
-          "democrat": 3,
-          "general": 5
+          "democrat": 7,
+          "general": 7
         },
         "HURRICANE CREEK": {
-          "total": 42,
+          "total": 47,
           "republican": 9,
-          "democrat": 18,
+          "democrat": 23,
           "general": 15
         },
         "GANNS": {
-          "total": 31,
+          "total": 39,
           "republican": 3,
-          "democrat": 14,
-          "general": 14
+          "democrat": 19,
+          "general": 17
         },
         "LOOKOUT VALLEY": {
-          "total": 19,
-          "republican": 2,
-          "democrat": 13,
-          "general": 4
+          "total": 26,
+          "republican": 3,
+          "democrat": 15,
+          "general": 8
         },
         "RED BANK C": {
-          "total": 17,
+          "total": 22,
           "republican": 2,
-          "democrat": 8,
-          "general": 7
+          "democrat": 11,
+          "general": 9
         },
         "RIDGEDALE": {
-          "total": 44,
+          "total": 56,
           "republican": 2,
-          "democrat": 27,
-          "general": 15
+          "democrat": 34,
+          "general": 20
         },
         "SALE CREEK": {
-          "total": 8,
+          "total": 10,
           "republican": 1,
-          "democrat": 2,
+          "democrat": 4,
           "general": 5
         },
         "SEQUOYAH": {
@@ -9324,22 +9408,22 @@ var TURNOUT_DATA = {
           "general": 8
         },
         "SIGNAL MOUNTAIN A": {
-          "total": 12,
-          "republican": 0,
-          "democrat": 7,
-          "general": 5
+          "total": 21,
+          "republican": 1,
+          "democrat": 11,
+          "general": 9
         },
         "SODDY DAISY B": {
-          "total": 24,
-          "republican": 7,
-          "democrat": 6,
-          "general": 11
+          "total": 32,
+          "republican": 10,
+          "democrat": 8,
+          "general": 14
         },
         "WALDEN": {
-          "total": 6,
-          "republican": 2,
+          "total": 8,
+          "republican": 3,
           "democrat": 0,
-          "general": 4
+          "general": 5
         },
         "MOWBRAY A": {
           "total": 2,
@@ -9348,33 +9432,33 @@ var TURNOUT_DATA = {
           "general": 1
         },
         "MOWBRAY B": {
-          "total": 6,
-          "republican": 0,
+          "total": 8,
+          "republican": 1,
           "democrat": 2,
-          "general": 4
+          "general": 5
         },
         "LAKE HILLS": {
-          "total": 13,
+          "total": 15,
           "republican": 0,
           "democrat": 10,
-          "general": 3
+          "general": 5
         },
         "WESTVIEW A": {
-          "total": 9,
-          "republican": 1,
-          "democrat": 5,
-          "general": 3
-        },
-        "APISON A": {
           "total": 11,
           "republican": 1,
+          "democrat": 5,
+          "general": 5
+        },
+        "APISON A": {
+          "total": 13,
+          "republican": 2,
           "democrat": 4,
-          "general": 6
+          "general": 7
         },
         "PLEASANT GROVE B": {
-          "total": 2,
+          "total": 4,
           "republican": 0,
-          "democrat": 2,
+          "democrat": 4,
           "general": 0
         },
         "FLAT TOP MOUNTAIN": {
@@ -9384,9 +9468,9 @@ var TURNOUT_DATA = {
           "general": 0
         },
         "RIDGESIDE": {
-          "total": 8,
+          "total": 10,
           "republican": 1,
-          "democrat": 4,
+          "democrat": 6,
           "general": 3
         },
         "AIRPORT A": {
@@ -9396,9 +9480,9 @@ var TURNOUT_DATA = {
           "general": 8
         },
         "MOUNTAIN CREEK C": {
-          "total": 2,
+          "total": 4,
           "republican": 0,
-          "democrat": 1,
+          "democrat": 3,
           "general": 1
         }
       }
@@ -9407,1133 +9491,1133 @@ var TURNOUT_DATA = {
       "commission": {
         "5": {
           "AIRPORT A": {
-            "total": 61,
+            "total": 65,
             "republican": 11,
-            "democrat": 36,
+            "democrat": 40,
             "general": 14
           },
           "AIRPORT B": {
-            "total": 266,
-            "republican": 82,
-            "democrat": 135,
-            "general": 49
+            "total": 289,
+            "republican": 83,
+            "democrat": 145,
+            "general": 61
           },
           "BONNY OAKS": {
-            "total": 465,
-            "republican": 46,
-            "democrat": 372,
-            "general": 47
+            "total": 510,
+            "republican": 48,
+            "democrat": 408,
+            "general": 54
           },
           "BRAINERD": {
-            "total": 380,
-            "republican": 88,
-            "democrat": 240,
-            "general": 52
+            "total": 429,
+            "republican": 104,
+            "democrat": 264,
+            "general": 61
           },
           "DALEWOOD": {
-            "total": 528,
-            "republican": 13,
-            "democrat": 453,
-            "general": 62
+            "total": 569,
+            "republican": 16,
+            "democrat": 480,
+            "general": 73
           },
           "EASTGATE": {
-            "total": 424,
-            "republican": 41,
-            "democrat": 330,
-            "general": 53
+            "total": 473,
+            "republican": 44,
+            "democrat": 363,
+            "general": 66
           },
           "GLENWOOD": {
-            "total": 348,
+            "total": 378,
             "republican": 47,
-            "democrat": 254,
-            "general": 47
+            "democrat": 277,
+            "general": 54
           },
           "LAKE HILLS": {
-            "total": 268,
+            "total": 295,
             "republican": 28,
-            "democrat": 198,
-            "general": 42
+            "democrat": 214,
+            "general": 53
           },
           "RIDGESIDE": {
-            "total": 50,
+            "total": 52,
             "republican": 15,
-            "democrat": 26,
+            "democrat": 28,
             "general": 9
           },
           "TYNER": {
-            "total": 474,
-            "republican": 152,
-            "democrat": 230,
-            "general": 92
+            "total": 518,
+            "republican": 161,
+            "democrat": 256,
+            "general": 101
           },
           "WOODMORE": {
-            "total": 414,
-            "republican": 19,
-            "democrat": 360,
-            "general": 35
+            "total": 458,
+            "republican": 21,
+            "democrat": 397,
+            "general": 40
           }
         },
         "11": {
           "ALTON PARK": {
-            "total": 210,
-            "republican": 14,
-            "democrat": 148,
-            "general": 48
+            "total": 230,
+            "republican": 15,
+            "democrat": 160,
+            "general": 55
           },
           "EAST LAKE": {
-            "total": 122,
-            "republican": 22,
-            "democrat": 65,
-            "general": 35
+            "total": 143,
+            "republican": 25,
+            "democrat": 76,
+            "general": 42
           },
           "EASTSIDE": {
-            "total": 409,
-            "republican": 63,
-            "democrat": 261,
-            "general": 85
+            "total": 461,
+            "republican": 72,
+            "democrat": 291,
+            "general": 98
           },
           "LOOKOUT MOUNTAIN": {
-            "total": 180,
-            "republican": 107,
-            "democrat": 61,
+            "total": 188,
+            "republican": 112,
+            "democrat": 64,
             "general": 12
           },
           "LOOKOUT VALLEY": {
-            "total": 618,
-            "republican": 331,
-            "democrat": 190,
-            "general": 97
+            "total": 655,
+            "republican": 348,
+            "democrat": 202,
+            "general": 105
           },
           "MISSIONARY RIDGE": {
-            "total": 261,
-            "republican": 81,
-            "democrat": 135,
-            "general": 45
+            "total": 286,
+            "republican": 82,
+            "democrat": 155,
+            "general": 49
           },
           "ST ELMO": {
-            "total": 402,
-            "republican": 76,
-            "democrat": 269,
-            "general": 57
+            "total": 428,
+            "republican": 82,
+            "democrat": 283,
+            "general": 63
           }
         },
         "7": {
           "APISON A": {
-            "total": 267,
-            "republican": 162,
-            "democrat": 50,
-            "general": 55
+            "total": 293,
+            "republican": 173,
+            "democrat": 56,
+            "general": 64
           },
           "EAST BRAINERD A": {
-            "total": 589,
-            "republican": 259,
-            "democrat": 222,
-            "general": 108
+            "total": 647,
+            "republican": 288,
+            "democrat": 240,
+            "general": 119
           },
           "EAST BRAINERD B": {
-            "total": 982,
-            "republican": 440,
-            "democrat": 344,
-            "general": 198
-          },
-          "HURRICANE CREEK": {
-            "total": 970,
-            "republican": 506,
-            "democrat": 301,
-            "general": 163
-          },
-          "OOLTEWAH RINGGOLD": {
-            "total": 1094,
-            "republican": 564,
-            "democrat": 309,
+            "total": 1063,
+            "republican": 467,
+            "democrat": 375,
             "general": 221
           },
+          "HURRICANE CREEK": {
+            "total": 1030,
+            "republican": 529,
+            "democrat": 329,
+            "general": 172
+          },
+          "OOLTEWAH RINGGOLD": {
+            "total": 1174,
+            "republican": 590,
+            "democrat": 337,
+            "general": 247
+          },
           "WESTVIEW A": {
-            "total": 311,
-            "republican": 150,
-            "democrat": 108,
-            "general": 53
+            "total": 338,
+            "republican": 162,
+            "democrat": 114,
+            "general": 62
           },
           "WESTVIEW B": {
-            "total": 595,
-            "republican": 284,
-            "democrat": 222,
-            "general": 89
+            "total": 653,
+            "republican": 307,
+            "democrat": 239,
+            "general": 107
           }
         },
         "10": {
           "APISON B": {
-            "total": 540,
-            "republican": 282,
-            "democrat": 124,
-            "general": 134
+            "total": 563,
+            "republican": 289,
+            "democrat": 133,
+            "general": 141
           },
           "COLLEGEDALE A": {
-            "total": 352,
-            "republican": 154,
-            "democrat": 112,
-            "general": 86
+            "total": 382,
+            "republican": 161,
+            "democrat": 127,
+            "general": 94
           },
           "COLLEGEDALE B": {
-            "total": 372,
-            "republican": 220,
-            "democrat": 77,
-            "general": 75
+            "total": 387,
+            "republican": 227,
+            "democrat": 84,
+            "general": 76
           },
           "OOLTEWAH": {
-            "total": 930,
-            "republican": 524,
-            "democrat": 211,
-            "general": 195
+            "total": 1003,
+            "republican": 554,
+            "democrat": 227,
+            "general": 222
           },
           "OOLTEWAH GEORGETOWN": {
-            "total": 453,
-            "republican": 287,
-            "democrat": 76,
-            "general": 90
+            "total": 495,
+            "republican": 299,
+            "democrat": 93,
+            "general": 103
           },
           "SAVANNAH BAY": {
-            "total": 659,
-            "republican": 408,
-            "democrat": 140,
-            "general": 111
+            "total": 713,
+            "republican": 433,
+            "democrat": 150,
+            "general": 130
           },
           "SILVERDALE": {
-            "total": 272,
-            "republican": 118,
-            "democrat": 108,
-            "general": 46
+            "total": 292,
+            "republican": 124,
+            "democrat": 116,
+            "general": 52
           },
           "SUMMIT": {
-            "total": 615,
-            "republican": 231,
-            "democrat": 250,
-            "general": 134
+            "total": 673,
+            "republican": 251,
+            "democrat": 272,
+            "general": 150
           }
         },
         "4": {
           "AVONDALE": {
-            "total": 191,
+            "total": 205,
             "republican": 6,
-            "democrat": 153,
-            "general": 32
+            "democrat": 164,
+            "general": 35
           },
           "BUSHTOWN": {
-            "total": 385,
-            "republican": 16,
-            "democrat": 302,
-            "general": 67
+            "total": 428,
+            "republican": 18,
+            "democrat": 334,
+            "general": 76
           },
           "COURTHOUSE": {
-            "total": 167,
-            "republican": 19,
-            "democrat": 99,
-            "general": 49
-          },
-          "DOWNTOWN": {
-            "total": 366,
-            "republican": 85,
-            "democrat": 181,
-            "general": 100
-          },
-          "EAST CHATTANOOGA": {
-            "total": 345,
+            "total": 192,
             "republican": 20,
-            "democrat": 268,
-            "general": 57
-          },
-          "KINGSPOINT": {
-            "total": 351,
-            "republican": 57,
-            "democrat": 236,
+            "democrat": 114,
             "general": 58
           },
+          "DOWNTOWN": {
+            "total": 404,
+            "republican": 92,
+            "democrat": 195,
+            "general": 117
+          },
+          "EAST CHATTANOOGA": {
+            "total": 398,
+            "republican": 26,
+            "democrat": 305,
+            "general": 67
+          },
+          "KINGSPOINT": {
+            "total": 374,
+            "republican": 58,
+            "democrat": 255,
+            "general": 61
+          },
           "MURRAY HILLS": {
-            "total": 344,
-            "republican": 79,
-            "democrat": 210,
-            "general": 55
+            "total": 383,
+            "republican": 82,
+            "democrat": 237,
+            "general": 64
           },
           "RIDGEDALE": {
-            "total": 354,
-            "republican": 31,
-            "democrat": 273,
-            "general": 50
+            "total": 405,
+            "republican": 33,
+            "democrat": 307,
+            "general": 65
           }
         },
         "9": {
           "BIRCHWOOD": {
-            "total": 311,
-            "republican": 199,
-            "democrat": 58,
-            "general": 54
+            "total": 329,
+            "republican": 211,
+            "democrat": 60,
+            "general": 58
           },
           "HARRISON": {
-            "total": 739,
-            "republican": 320,
-            "democrat": 292,
-            "general": 127
+            "total": 805,
+            "republican": 336,
+            "democrat": 322,
+            "general": 147
           },
           "HARRISON BAY": {
-            "total": 907,
-            "republican": 561,
-            "democrat": 195,
-            "general": 151
+            "total": 974,
+            "republican": 591,
+            "democrat": 221,
+            "general": 162
           },
           "HUNTER": {
-            "total": 829,
-            "republican": 457,
-            "democrat": 234,
-            "general": 138
+            "total": 914,
+            "republican": 492,
+            "democrat": 264,
+            "general": 158
           },
           "MEADOWVIEW": {
-            "total": 523,
-            "republican": 318,
-            "democrat": 95,
-            "general": 110
+            "total": 576,
+            "republican": 341,
+            "democrat": 106,
+            "general": 129
           },
           "WOLFTEVER": {
-            "total": 935,
-            "republican": 429,
-            "democrat": 328,
-            "general": 178
+            "total": 1030,
+            "republican": 457,
+            "democrat": 370,
+            "general": 203
           }
         },
         "8": {
           "BRAINERD HILLS": {
-            "total": 265,
-            "republican": 64,
-            "democrat": 134,
-            "general": 67
+            "total": 299,
+            "republican": 72,
+            "democrat": 155,
+            "general": 72
           },
           "CONCORD A": {
-            "total": 257,
+            "total": 276,
             "republican": 73,
-            "democrat": 129,
-            "general": 55
+            "democrat": 142,
+            "general": 61
           },
           "CONCORD B": {
-            "total": 542,
-            "republican": 207,
-            "democrat": 228,
-            "general": 107
+            "total": 577,
+            "republican": 215,
+            "democrat": 241,
+            "general": 121
           },
           "EAST RIDGE A": {
-            "total": 505,
-            "republican": 202,
-            "democrat": 214,
-            "general": 89
+            "total": 553,
+            "republican": 209,
+            "democrat": 246,
+            "general": 98
           },
           "EAST RIDGE B": {
-            "total": 518,
-            "republican": 181,
-            "democrat": 271,
-            "general": 66
+            "total": 570,
+            "republican": 189,
+            "democrat": 302,
+            "general": 79
           },
           "EAST RIDGE C": {
-            "total": 196,
-            "republican": 71,
-            "democrat": 86,
-            "general": 39
+            "total": 219,
+            "republican": 77,
+            "democrat": 98,
+            "general": 44
           },
           "EAST RIDGE D": {
-            "total": 404,
-            "republican": 173,
-            "democrat": 158,
-            "general": 73
+            "total": 440,
+            "republican": 189,
+            "democrat": 172,
+            "general": 79
           }
         },
         "1": {
           "DALLAS": {
-            "total": 561,
-            "republican": 294,
-            "democrat": 167,
-            "general": 100
+            "total": 629,
+            "republican": 335,
+            "democrat": 175,
+            "general": 119
           },
           "FLAT TOP MOUNTAIN": {
-            "total": 47,
-            "republican": 35,
+            "total": 48,
+            "republican": 36,
             "democrat": 10,
             "general": 2
           },
           "MOWBRAY B": {
-            "total": 112,
-            "republican": 79,
+            "total": 117,
+            "republican": 81,
             "democrat": 24,
-            "general": 9
+            "general": 12
           },
           "POSSUM CREEK": {
-            "total": 724,
-            "republican": 456,
-            "democrat": 157,
-            "general": 111
+            "total": 779,
+            "republican": 487,
+            "democrat": 166,
+            "general": 126
           },
           "SALE CREEK": {
-            "total": 290,
-            "republican": 196,
-            "democrat": 50,
-            "general": 44
+            "total": 313,
+            "republican": 208,
+            "democrat": 58,
+            "general": 47
           },
           "SEQUOYAH": {
-            "total": 450,
-            "republican": 293,
-            "democrat": 83,
-            "general": 74
+            "total": 478,
+            "republican": 313,
+            "democrat": 87,
+            "general": 78
           },
           "SODDY DAISY A": {
-            "total": 575,
-            "republican": 359,
-            "democrat": 130,
-            "general": 86
+            "total": 608,
+            "republican": 379,
+            "democrat": 138,
+            "general": 91
           },
           "SODDY DAISY B": {
-            "total": 526,
-            "republican": 323,
-            "democrat": 117,
-            "general": 86
+            "total": 559,
+            "republican": 338,
+            "democrat": 125,
+            "general": 96
           },
           "SODDY DAISY C": {
-            "total": 365,
-            "republican": 252,
-            "democrat": 68,
-            "general": 45
+            "total": 382,
+            "republican": 265,
+            "democrat": 69,
+            "general": 48
           },
           "FALLING WATER A": {
-            "total": 92,
-            "republican": 54,
-            "democrat": 23,
-            "general": 15
+            "total": 103,
+            "republican": 59,
+            "democrat": 27,
+            "general": 17
           },
           "PLEASANT GROVE B": {
-            "total": 38,
+            "total": 45,
             "republican": 22,
-            "democrat": 14,
+            "democrat": 21,
             "general": 2
           }
         },
         "3": {
           "DUPONT": {
-            "total": 603,
-            "republican": 298,
-            "democrat": 208,
-            "general": 97
+            "total": 658,
+            "republican": 322,
+            "democrat": 223,
+            "general": 113
           },
           "GANNS": {
-            "total": 831,
-            "republican": 493,
-            "democrat": 214,
-            "general": 124
+            "total": 891,
+            "republican": 520,
+            "democrat": 229,
+            "general": 142
           },
           "HIXSON": {
-            "total": 485,
-            "republican": 225,
-            "democrat": 190,
-            "general": 70
+            "total": 519,
+            "republican": 234,
+            "democrat": 205,
+            "general": 80
           },
           "LAKESITE": {
-            "total": 166,
-            "republican": 94,
-            "democrat": 38,
-            "general": 34
+            "total": 185,
+            "republican": 105,
+            "democrat": 43,
+            "general": 37
           },
           "MIDDLE VALLEY": {
-            "total": 293,
-            "republican": 161,
-            "democrat": 92,
-            "general": 40
+            "total": 321,
+            "republican": 169,
+            "democrat": 106,
+            "general": 46
           },
           "NORTHGATE": {
-            "total": 601,
-            "republican": 277,
-            "democrat": 203,
-            "general": 121
+            "total": 642,
+            "republican": 289,
+            "democrat": 217,
+            "general": 136
           },
           "PLEASANT GROVE A": {
-            "total": 622,
-            "republican": 351,
-            "democrat": 187,
-            "general": 84
+            "total": 660,
+            "republican": 364,
+            "democrat": 202,
+            "general": 94
           },
           "VALLEYBROOK": {
-            "total": 1216,
-            "republican": 707,
-            "democrat": 346,
-            "general": 163
+            "total": 1309,
+            "republican": 750,
+            "democrat": 384,
+            "general": 175
           }
         },
         "2": {
           "FAIRMOUNT": {
-            "total": 401,
-            "republican": 203,
-            "democrat": 122,
-            "general": 76
+            "total": 421,
+            "republican": 210,
+            "democrat": 131,
+            "general": 80
           },
           "FALLING WATER B": {
-            "total": 166,
-            "republican": 105,
-            "democrat": 43,
-            "general": 18
+            "total": 179,
+            "republican": 114,
+            "democrat": 45,
+            "general": 20
           },
           "MOUNTAIN CREEK A": {
-            "total": 728,
-            "republican": 300,
-            "democrat": 302,
-            "general": 126
+            "total": 778,
+            "republican": 315,
+            "democrat": 330,
+            "general": 133
           },
           "MOUNTAIN CREEK B": {
-            "total": 264,
-            "republican": 101,
+            "total": 273,
+            "republican": 106,
             "democrat": 107,
-            "general": 56
+            "general": 60
           },
           "NORTHWOODS": {
-            "total": 800,
-            "republican": 333,
-            "democrat": 328,
-            "general": 139
+            "total": 861,
+            "republican": 350,
+            "democrat": 358,
+            "general": 153
           },
           "SIGNAL MOUNTAIN A": {
-            "total": 401,
-            "republican": 204,
-            "democrat": 146,
-            "general": 51
+            "total": 429,
+            "republican": 215,
+            "democrat": 157,
+            "general": 57
           },
           "SIGNAL MOUNTAIN B": {
-            "total": 732,
-            "republican": 416,
-            "democrat": 240,
-            "general": 76
+            "total": 776,
+            "republican": 429,
+            "democrat": 259,
+            "general": 88
           },
           "WALDEN": {
-            "total": 227,
-            "republican": 140,
-            "democrat": 59,
-            "general": 28
+            "total": 242,
+            "republican": 149,
+            "democrat": 61,
+            "general": 32
           },
           "MOWBRAY A": {
-            "total": 44,
+            "total": 45,
             "republican": 21,
             "democrat": 13,
-            "general": 10
+            "general": 11
           },
           "MOUNTAIN CREEK C": {
-            "total": 15,
+            "total": 17,
             "republican": 3,
-            "democrat": 10,
+            "democrat": 12,
             "general": 2
           }
         },
         "6": {
           "LUPTON CITY": {
-            "total": 455,
-            "republican": 145,
-            "democrat": 238,
-            "general": 72
+            "total": 499,
+            "republican": 159,
+            "democrat": 260,
+            "general": 80
           },
           "NORTH CHATTANOOGA A": {
-            "total": 315,
-            "republican": 72,
-            "democrat": 166,
-            "general": 77
+            "total": 342,
+            "republican": 75,
+            "democrat": 184,
+            "general": 83
           },
           "NORTH CHATTANOOGA B": {
-            "total": 169,
-            "republican": 52,
-            "democrat": 74,
-            "general": 43
+            "total": 192,
+            "republican": 59,
+            "democrat": 79,
+            "general": 54
           },
           "NORTHSHORE": {
-            "total": 695,
-            "republican": 201,
-            "democrat": 383,
-            "general": 111
+            "total": 761,
+            "republican": 218,
+            "democrat": 421,
+            "general": 122
           },
           "RED BANK A": {
-            "total": 463,
-            "republican": 111,
-            "democrat": 249,
-            "general": 103
+            "total": 508,
+            "republican": 119,
+            "democrat": 275,
+            "general": 114
           },
           "RED BANK B": {
-            "total": 407,
-            "republican": 181,
-            "democrat": 158,
-            "general": 68
+            "total": 444,
+            "republican": 192,
+            "democrat": 171,
+            "general": 81
           },
           "RED BANK C": {
-            "total": 324,
-            "republican": 118,
-            "democrat": 156,
-            "general": 50
+            "total": 363,
+            "republican": 132,
+            "democrat": 174,
+            "general": 57
           },
           "RIVERVIEW": {
-            "total": 335,
-            "republican": 94,
-            "democrat": 195,
-            "general": 46
+            "total": 382,
+            "republican": 105,
+            "democrat": 222,
+            "general": 55
           },
           "STUART HEIGHTS": {
-            "total": 614,
-            "republican": 232,
-            "democrat": 318,
-            "general": 64
+            "total": 677,
+            "republican": 260,
+            "democrat": 340,
+            "general": 77
           }
         }
       },
       "senate": {
         "11": {
           "AIRPORT A": {
-            "total": 61,
+            "total": 65,
             "republican": 11,
-            "democrat": 36,
+            "democrat": 40,
             "general": 14
           },
           "AVONDALE": {
-            "total": 191,
+            "total": 205,
             "republican": 6,
-            "democrat": 153,
-            "general": 32
+            "democrat": 164,
+            "general": 35
           },
           "BIRCHWOOD": {
-            "total": 311,
-            "republican": 199,
-            "democrat": 58,
-            "general": 54
+            "total": 329,
+            "republican": 211,
+            "democrat": 60,
+            "general": 58
           },
           "BONNY OAKS": {
-            "total": 465,
-            "republican": 46,
-            "democrat": 372,
-            "general": 47
+            "total": 510,
+            "republican": 48,
+            "democrat": 408,
+            "general": 54
           },
           "BUSHTOWN": {
-            "total": 385,
-            "republican": 16,
-            "democrat": 302,
-            "general": 67
-          },
-          "COLLEGEDALE A": {
-            "total": 352,
-            "republican": 154,
-            "democrat": 112,
-            "general": 86
-          },
-          "DALEWOOD": {
-            "total": 528,
-            "republican": 13,
-            "democrat": 453,
-            "general": 62
-          },
-          "DALLAS": {
-            "total": 561,
-            "republican": 294,
-            "democrat": 167,
-            "general": 100
-          },
-          "DUPONT": {
-            "total": 603,
-            "republican": 298,
-            "democrat": 208,
-            "general": 97
-          },
-          "EAST CHATTANOOGA": {
-            "total": 345,
-            "republican": 20,
-            "democrat": 268,
-            "general": 57
-          },
-          "FAIRMOUNT": {
-            "total": 401,
-            "republican": 203,
-            "democrat": 122,
+            "total": 428,
+            "republican": 18,
+            "democrat": 334,
             "general": 76
           },
+          "COLLEGEDALE A": {
+            "total": 382,
+            "republican": 161,
+            "democrat": 127,
+            "general": 94
+          },
+          "DALEWOOD": {
+            "total": 569,
+            "republican": 16,
+            "democrat": 480,
+            "general": 73
+          },
+          "DALLAS": {
+            "total": 629,
+            "republican": 335,
+            "democrat": 175,
+            "general": 119
+          },
+          "DUPONT": {
+            "total": 658,
+            "republican": 322,
+            "democrat": 223,
+            "general": 113
+          },
+          "EAST CHATTANOOGA": {
+            "total": 398,
+            "republican": 26,
+            "democrat": 305,
+            "general": 67
+          },
+          "FAIRMOUNT": {
+            "total": 421,
+            "republican": 210,
+            "democrat": 131,
+            "general": 80
+          },
           "FALLING WATER B": {
-            "total": 166,
-            "republican": 105,
-            "democrat": 43,
-            "general": 18
+            "total": 179,
+            "republican": 114,
+            "democrat": 45,
+            "general": 20
           },
           "FLAT TOP MOUNTAIN": {
-            "total": 47,
-            "republican": 35,
+            "total": 48,
+            "republican": 36,
             "democrat": 10,
             "general": 2
           },
           "GANNS": {
-            "total": 831,
-            "republican": 493,
-            "democrat": 214,
-            "general": 124
+            "total": 891,
+            "republican": 520,
+            "democrat": 229,
+            "general": 142
           },
           "GLENWOOD": {
-            "total": 348,
+            "total": 378,
             "republican": 47,
-            "democrat": 254,
-            "general": 47
+            "democrat": 277,
+            "general": 54
           },
           "HARRISON": {
-            "total": 739,
-            "republican": 320,
-            "democrat": 292,
-            "general": 127
+            "total": 805,
+            "republican": 336,
+            "democrat": 322,
+            "general": 147
           },
           "HARRISON BAY": {
-            "total": 907,
-            "republican": 561,
-            "democrat": 195,
-            "general": 151
+            "total": 974,
+            "republican": 591,
+            "democrat": 221,
+            "general": 162
           },
           "HIXSON": {
-            "total": 485,
-            "republican": 225,
-            "democrat": 190,
-            "general": 70
+            "total": 519,
+            "republican": 234,
+            "democrat": 205,
+            "general": 80
           },
           "HUNTER": {
-            "total": 829,
-            "republican": 457,
-            "democrat": 234,
-            "general": 138
+            "total": 914,
+            "republican": 492,
+            "democrat": 264,
+            "general": 158
           },
           "KINGSPOINT": {
-            "total": 351,
-            "republican": 57,
-            "democrat": 236,
-            "general": 58
+            "total": 374,
+            "republican": 58,
+            "democrat": 255,
+            "general": 61
           },
           "LAKE HILLS": {
-            "total": 268,
+            "total": 295,
             "republican": 28,
-            "democrat": 198,
-            "general": 42
+            "democrat": 214,
+            "general": 53
           },
           "LAKESITE": {
-            "total": 166,
-            "republican": 94,
-            "democrat": 38,
-            "general": 34
+            "total": 185,
+            "republican": 105,
+            "democrat": 43,
+            "general": 37
           },
           "LUPTON CITY": {
-            "total": 455,
-            "republican": 145,
-            "democrat": 238,
-            "general": 72
+            "total": 499,
+            "republican": 159,
+            "democrat": 260,
+            "general": 80
           },
           "MEADOWVIEW": {
-            "total": 523,
-            "republican": 318,
-            "democrat": 95,
-            "general": 110
+            "total": 576,
+            "republican": 341,
+            "democrat": 106,
+            "general": 129
           },
           "MIDDLE VALLEY": {
-            "total": 293,
-            "republican": 161,
-            "democrat": 92,
-            "general": 40
+            "total": 321,
+            "republican": 169,
+            "democrat": 106,
+            "general": 46
           },
           "MOUNTAIN CREEK A": {
-            "total": 728,
-            "republican": 300,
-            "democrat": 302,
-            "general": 126
+            "total": 778,
+            "republican": 315,
+            "democrat": 330,
+            "general": 133
           },
           "MOUNTAIN CREEK B": {
-            "total": 264,
-            "republican": 101,
+            "total": 273,
+            "republican": 106,
             "democrat": 107,
-            "general": 56
+            "general": 60
           },
           "MOWBRAY B": {
-            "total": 112,
-            "republican": 79,
+            "total": 117,
+            "republican": 81,
             "democrat": 24,
-            "general": 9
+            "general": 12
           },
           "MURRAY HILLS": {
-            "total": 344,
-            "republican": 79,
-            "democrat": 210,
-            "general": 55
+            "total": 383,
+            "republican": 82,
+            "democrat": 237,
+            "general": 64
           },
           "NORTH CHATTANOOGA A": {
-            "total": 315,
-            "republican": 72,
-            "democrat": 166,
-            "general": 77
+            "total": 342,
+            "republican": 75,
+            "democrat": 184,
+            "general": 83
           },
           "NORTHGATE": {
-            "total": 601,
-            "republican": 277,
-            "democrat": 203,
-            "general": 121
+            "total": 642,
+            "republican": 289,
+            "democrat": 217,
+            "general": 136
           },
           "NORTHSHORE": {
-            "total": 695,
-            "republican": 201,
-            "democrat": 383,
-            "general": 111
+            "total": 761,
+            "republican": 218,
+            "democrat": 421,
+            "general": 122
           },
           "NORTHWOODS": {
-            "total": 800,
-            "republican": 333,
-            "democrat": 328,
-            "general": 139
+            "total": 861,
+            "republican": 350,
+            "democrat": 358,
+            "general": 153
           },
           "OOLTEWAH": {
-            "total": 930,
-            "republican": 524,
-            "democrat": 211,
-            "general": 195
+            "total": 1003,
+            "republican": 554,
+            "democrat": 227,
+            "general": 222
           },
           "OOLTEWAH GEORGETOWN": {
-            "total": 453,
-            "republican": 287,
-            "democrat": 76,
-            "general": 90
+            "total": 495,
+            "republican": 299,
+            "democrat": 93,
+            "general": 103
           },
           "PLEASANT GROVE A": {
-            "total": 622,
-            "republican": 351,
-            "democrat": 187,
-            "general": 84
+            "total": 660,
+            "republican": 364,
+            "democrat": 202,
+            "general": 94
           },
           "POSSUM CREEK": {
-            "total": 724,
-            "republican": 456,
-            "democrat": 157,
-            "general": 111
+            "total": 779,
+            "republican": 487,
+            "democrat": 166,
+            "general": 126
           },
           "RED BANK B": {
-            "total": 407,
-            "republican": 181,
-            "democrat": 158,
-            "general": 68
+            "total": 444,
+            "republican": 192,
+            "democrat": 171,
+            "general": 81
           },
           "RED BANK C": {
-            "total": 324,
-            "republican": 118,
-            "democrat": 156,
-            "general": 50
+            "total": 363,
+            "republican": 132,
+            "democrat": 174,
+            "general": 57
           },
           "RIDGESIDE": {
-            "total": 50,
+            "total": 52,
             "republican": 15,
-            "democrat": 26,
+            "democrat": 28,
             "general": 9
           },
           "RIVERVIEW": {
-            "total": 335,
-            "republican": 94,
-            "democrat": 195,
-            "general": 46
+            "total": 382,
+            "republican": 105,
+            "democrat": 222,
+            "general": 55
           },
           "SALE CREEK": {
-            "total": 290,
-            "republican": 196,
-            "democrat": 50,
-            "general": 44
+            "total": 313,
+            "republican": 208,
+            "democrat": 58,
+            "general": 47
           },
           "SAVANNAH BAY": {
-            "total": 659,
-            "republican": 408,
-            "democrat": 140,
-            "general": 111
+            "total": 713,
+            "republican": 433,
+            "democrat": 150,
+            "general": 130
           },
           "SEQUOYAH": {
-            "total": 450,
-            "republican": 293,
-            "democrat": 83,
-            "general": 74
+            "total": 478,
+            "republican": 313,
+            "democrat": 87,
+            "general": 78
           },
           "SIGNAL MOUNTAIN A": {
-            "total": 401,
-            "republican": 204,
-            "democrat": 146,
-            "general": 51
+            "total": 429,
+            "republican": 215,
+            "democrat": 157,
+            "general": 57
           },
           "SIGNAL MOUNTAIN B": {
-            "total": 732,
-            "republican": 416,
-            "democrat": 240,
-            "general": 76
+            "total": 776,
+            "republican": 429,
+            "democrat": 259,
+            "general": 88
           },
           "SODDY DAISY A": {
-            "total": 575,
-            "republican": 359,
-            "democrat": 130,
-            "general": 86
+            "total": 608,
+            "republican": 379,
+            "democrat": 138,
+            "general": 91
           },
           "SODDY DAISY B": {
-            "total": 526,
-            "republican": 323,
-            "democrat": 117,
-            "general": 86
+            "total": 559,
+            "republican": 338,
+            "democrat": 125,
+            "general": 96
           },
           "SODDY DAISY C": {
-            "total": 365,
-            "republican": 252,
-            "democrat": 68,
-            "general": 45
+            "total": 382,
+            "republican": 265,
+            "democrat": 69,
+            "general": 48
           },
           "STUART HEIGHTS": {
-            "total": 614,
-            "republican": 232,
-            "democrat": 318,
-            "general": 64
+            "total": 677,
+            "republican": 260,
+            "democrat": 340,
+            "general": 77
           },
           "SUMMIT": {
-            "total": 615,
-            "republican": 231,
-            "democrat": 250,
-            "general": 134
+            "total": 673,
+            "republican": 251,
+            "democrat": 272,
+            "general": 150
           },
           "VALLEYBROOK": {
-            "total": 1216,
-            "republican": 707,
-            "democrat": 346,
-            "general": 163
+            "total": 1309,
+            "republican": 750,
+            "democrat": 384,
+            "general": 175
           },
           "WALDEN": {
-            "total": 227,
-            "republican": 140,
-            "democrat": 59,
-            "general": 28
+            "total": 242,
+            "republican": 149,
+            "democrat": 61,
+            "general": 32
           },
           "WOLFTEVER": {
-            "total": 935,
-            "republican": 429,
-            "democrat": 328,
-            "general": 178
+            "total": 1030,
+            "republican": 457,
+            "democrat": 370,
+            "general": 203
           },
           "FALLING WATER A": {
-            "total": 92,
-            "republican": 54,
-            "democrat": 23,
-            "general": 15
+            "total": 103,
+            "republican": 59,
+            "democrat": 27,
+            "general": 17
           },
           "MOWBRAY A": {
-            "total": 44,
+            "total": 45,
             "republican": 21,
             "democrat": 13,
-            "general": 10
+            "general": 11
           },
           "PLEASANT GROVE B": {
-            "total": 38,
+            "total": 45,
             "republican": 22,
-            "democrat": 14,
+            "democrat": 21,
             "general": 2
           }
         },
         "10": {
           "AIRPORT B": {
-            "total": 266,
-            "republican": 82,
-            "democrat": 135,
-            "general": 49
+            "total": 289,
+            "republican": 83,
+            "democrat": 145,
+            "general": 61
           },
           "ALTON PARK": {
-            "total": 210,
-            "republican": 14,
-            "democrat": 148,
-            "general": 48
+            "total": 230,
+            "republican": 15,
+            "democrat": 160,
+            "general": 55
           },
           "APISON A": {
-            "total": 267,
-            "republican": 162,
-            "democrat": 50,
-            "general": 55
+            "total": 293,
+            "republican": 173,
+            "democrat": 56,
+            "general": 64
           },
           "APISON B": {
-            "total": 540,
-            "republican": 282,
-            "democrat": 124,
-            "general": 134
+            "total": 563,
+            "republican": 289,
+            "democrat": 133,
+            "general": 141
           },
           "BRAINERD": {
-            "total": 380,
-            "republican": 88,
-            "democrat": 240,
-            "general": 52
+            "total": 429,
+            "republican": 104,
+            "democrat": 264,
+            "general": 61
           },
           "BRAINERD HILLS": {
-            "total": 265,
-            "republican": 64,
-            "democrat": 134,
-            "general": 67
+            "total": 299,
+            "republican": 72,
+            "democrat": 155,
+            "general": 72
           },
           "COLLEGEDALE B": {
-            "total": 372,
-            "republican": 220,
-            "democrat": 77,
-            "general": 75
+            "total": 387,
+            "republican": 227,
+            "democrat": 84,
+            "general": 76
           },
           "CONCORD A": {
-            "total": 257,
+            "total": 276,
             "republican": 73,
-            "democrat": 129,
-            "general": 55
+            "democrat": 142,
+            "general": 61
           },
           "CONCORD B": {
-            "total": 542,
-            "republican": 207,
-            "democrat": 228,
-            "general": 107
+            "total": 577,
+            "republican": 215,
+            "democrat": 241,
+            "general": 121
           },
           "COURTHOUSE": {
-            "total": 167,
-            "republican": 19,
-            "democrat": 99,
-            "general": 49
+            "total": 192,
+            "republican": 20,
+            "democrat": 114,
+            "general": 58
           },
           "DOWNTOWN": {
-            "total": 366,
-            "republican": 85,
-            "democrat": 181,
-            "general": 100
+            "total": 404,
+            "republican": 92,
+            "democrat": 195,
+            "general": 117
           },
           "EAST BRAINERD A": {
-            "total": 589,
-            "republican": 259,
-            "democrat": 222,
-            "general": 108
+            "total": 647,
+            "republican": 288,
+            "democrat": 240,
+            "general": 119
           },
           "EAST BRAINERD B": {
-            "total": 982,
-            "republican": 440,
-            "democrat": 344,
-            "general": 198
+            "total": 1063,
+            "republican": 467,
+            "democrat": 375,
+            "general": 221
           },
           "EAST LAKE": {
-            "total": 122,
-            "republican": 22,
-            "democrat": 65,
-            "general": 35
+            "total": 143,
+            "republican": 25,
+            "democrat": 76,
+            "general": 42
           },
           "EAST RIDGE A": {
-            "total": 505,
-            "republican": 202,
-            "democrat": 214,
-            "general": 89
+            "total": 553,
+            "republican": 209,
+            "democrat": 246,
+            "general": 98
           },
           "EAST RIDGE B": {
-            "total": 518,
-            "republican": 181,
-            "democrat": 271,
-            "general": 66
+            "total": 570,
+            "republican": 189,
+            "democrat": 302,
+            "general": 79
           },
           "EAST RIDGE C": {
-            "total": 196,
-            "republican": 71,
-            "democrat": 86,
-            "general": 39
+            "total": 219,
+            "republican": 77,
+            "democrat": 98,
+            "general": 44
           },
           "EAST RIDGE D": {
-            "total": 404,
-            "republican": 173,
-            "democrat": 158,
-            "general": 73
+            "total": 440,
+            "republican": 189,
+            "democrat": 172,
+            "general": 79
           },
           "EASTGATE": {
-            "total": 424,
-            "republican": 41,
-            "democrat": 330,
-            "general": 53
+            "total": 473,
+            "republican": 44,
+            "democrat": 363,
+            "general": 66
           },
           "EASTSIDE": {
-            "total": 409,
-            "republican": 63,
-            "democrat": 261,
-            "general": 85
+            "total": 461,
+            "republican": 72,
+            "democrat": 291,
+            "general": 98
           },
           "HURRICANE CREEK": {
-            "total": 970,
-            "republican": 506,
-            "democrat": 301,
-            "general": 163
+            "total": 1030,
+            "republican": 529,
+            "democrat": 329,
+            "general": 172
           },
           "LOOKOUT MOUNTAIN": {
-            "total": 180,
-            "republican": 107,
-            "democrat": 61,
+            "total": 188,
+            "republican": 112,
+            "democrat": 64,
             "general": 12
           },
           "LOOKOUT VALLEY": {
-            "total": 618,
-            "republican": 331,
-            "democrat": 190,
-            "general": 97
+            "total": 655,
+            "republican": 348,
+            "democrat": 202,
+            "general": 105
           },
           "MISSIONARY RIDGE": {
-            "total": 261,
-            "republican": 81,
-            "democrat": 135,
-            "general": 45
+            "total": 286,
+            "republican": 82,
+            "democrat": 155,
+            "general": 49
           },
           "NORTH CHATTANOOGA B": {
-            "total": 169,
-            "republican": 52,
-            "democrat": 74,
-            "general": 43
+            "total": 192,
+            "republican": 59,
+            "democrat": 79,
+            "general": 54
           },
           "OOLTEWAH RINGGOLD": {
-            "total": 1094,
-            "republican": 564,
-            "democrat": 309,
-            "general": 221
+            "total": 1174,
+            "republican": 590,
+            "democrat": 337,
+            "general": 247
           },
           "RED BANK A": {
-            "total": 463,
-            "republican": 111,
-            "democrat": 249,
-            "general": 103
+            "total": 508,
+            "republican": 119,
+            "democrat": 275,
+            "general": 114
           },
           "RIDGEDALE": {
-            "total": 354,
-            "republican": 31,
-            "democrat": 273,
-            "general": 50
+            "total": 405,
+            "republican": 33,
+            "democrat": 307,
+            "general": 65
           },
           "SILVERDALE": {
-            "total": 272,
-            "republican": 118,
-            "democrat": 108,
-            "general": 46
+            "total": 292,
+            "republican": 124,
+            "democrat": 116,
+            "general": 52
           },
           "ST ELMO": {
-            "total": 402,
-            "republican": 76,
-            "democrat": 269,
-            "general": 57
+            "total": 428,
+            "republican": 82,
+            "democrat": 283,
+            "general": 63
           },
           "TYNER": {
-            "total": 474,
-            "republican": 152,
-            "democrat": 230,
-            "general": 92
+            "total": 518,
+            "republican": 161,
+            "democrat": 256,
+            "general": 101
           },
           "WESTVIEW A": {
-            "total": 311,
-            "republican": 150,
-            "democrat": 108,
-            "general": 53
+            "total": 338,
+            "republican": 162,
+            "democrat": 114,
+            "general": 62
           },
           "WESTVIEW B": {
-            "total": 595,
-            "republican": 284,
-            "democrat": 222,
-            "general": 89
+            "total": 653,
+            "republican": 307,
+            "democrat": 239,
+            "general": 107
           },
           "WOODMORE": {
-            "total": 414,
-            "republican": 19,
-            "democrat": 360,
-            "general": 35
+            "total": 458,
+            "republican": 21,
+            "democrat": 397,
+            "general": 40
           },
           "MOUNTAIN CREEK C": {
-            "total": 15,
+            "total": 17,
             "republican": 3,
-            "democrat": 10,
+            "democrat": 12,
             "general": 2
           }
         }
@@ -10541,148 +10625,148 @@ var TURNOUT_DATA = {
       "house": {
         "28": {
           "AIRPORT A": {
-            "total": 52,
+            "total": 56,
             "republican": 9,
-            "democrat": 34,
+            "democrat": 38,
             "general": 9
           },
           "AIRPORT B": {
-            "total": 174,
-            "republican": 44,
-            "democrat": 106,
-            "general": 24
-          },
-          "ALTON PARK": {
-            "total": 191,
-            "republican": 8,
-            "democrat": 142,
-            "general": 41
-          },
-          "AVONDALE": {
-            "total": 191,
-            "republican": 6,
-            "democrat": 153,
+            "total": 192,
+            "republican": 45,
+            "democrat": 115,
             "general": 32
           },
-          "BONNY OAKS": {
-            "total": 465,
-            "republican": 46,
-            "democrat": 372,
+          "ALTON PARK": {
+            "total": 209,
+            "republican": 9,
+            "democrat": 153,
             "general": 47
           },
+          "AVONDALE": {
+            "total": 205,
+            "republican": 6,
+            "democrat": 164,
+            "general": 35
+          },
+          "BONNY OAKS": {
+            "total": 510,
+            "republican": 48,
+            "democrat": 408,
+            "general": 54
+          },
           "BRAINERD HILLS": {
-            "total": 41,
+            "total": 46,
             "republican": 8,
-            "democrat": 23,
+            "democrat": 28,
             "general": 10
           },
           "BUSHTOWN": {
-            "total": 338,
-            "republican": 8,
-            "democrat": 281,
-            "general": 49
+            "total": 374,
+            "republican": 10,
+            "democrat": 310,
+            "general": 54
           },
           "COURTHOUSE": {
-            "total": 117,
-            "republican": 13,
-            "democrat": 74,
-            "general": 30
+            "total": 141,
+            "republican": 14,
+            "democrat": 89,
+            "general": 38
           },
           "DALEWOOD": {
-            "total": 528,
-            "republican": 13,
-            "democrat": 453,
-            "general": 62
+            "total": 569,
+            "republican": 16,
+            "democrat": 480,
+            "general": 73
           },
           "DOWNTOWN": {
-            "total": 157,
-            "republican": 29,
-            "democrat": 83,
-            "general": 45
-          },
-          "EAST CHATTANOOGA": {
-            "total": 345,
-            "republican": 20,
-            "democrat": 268,
+            "total": 179,
+            "republican": 32,
+            "democrat": 90,
             "general": 57
           },
+          "EAST CHATTANOOGA": {
+            "total": 398,
+            "republican": 26,
+            "democrat": 305,
+            "general": 67
+          },
           "EAST LAKE": {
-            "total": 69,
+            "total": 75,
             "republican": 8,
-            "democrat": 45,
-            "general": 16
+            "democrat": 49,
+            "general": 18
           },
           "EASTGATE": {
-            "total": 424,
-            "republican": 41,
-            "democrat": 330,
-            "general": 53
+            "total": 473,
+            "republican": 44,
+            "democrat": 363,
+            "general": 66
           },
           "EASTSIDE": {
-            "total": 237,
-            "republican": 32,
-            "democrat": 156,
-            "general": 49
+            "total": 265,
+            "republican": 35,
+            "democrat": 176,
+            "general": 54
           },
           "GLENWOOD": {
-            "total": 251,
+            "total": 277,
             "republican": 24,
-            "democrat": 193,
-            "general": 34
-          },
-          "HARRISON": {
-            "total": 239,
-            "republican": 90,
-            "democrat": 105,
-            "general": 44
-          },
-          "KINGSPOINT": {
-            "total": 351,
-            "republican": 57,
-            "democrat": 236,
-            "general": 58
-          },
-          "LAKE HILLS": {
-            "total": 268,
-            "republican": 28,
-            "democrat": 198,
-            "general": 42
-          },
-          "MURRAY HILLS": {
-            "total": 344,
-            "republican": 79,
-            "democrat": 210,
-            "general": 55
-          },
-          "NORTH CHATTANOOGA A": {
-            "total": 200,
-            "republican": 43,
-            "democrat": 118,
+            "democrat": 214,
             "general": 39
           },
+          "HARRISON": {
+            "total": 268,
+            "republican": 94,
+            "democrat": 121,
+            "general": 53
+          },
+          "KINGSPOINT": {
+            "total": 374,
+            "republican": 58,
+            "democrat": 255,
+            "general": 61
+          },
+          "LAKE HILLS": {
+            "total": 295,
+            "republican": 28,
+            "democrat": 214,
+            "general": 53
+          },
+          "MURRAY HILLS": {
+            "total": 383,
+            "republican": 82,
+            "democrat": 237,
+            "general": 64
+          },
+          "NORTH CHATTANOOGA A": {
+            "total": 221,
+            "republican": 46,
+            "democrat": 134,
+            "general": 41
+          },
           "NORTH CHATTANOOGA B": {
-            "total": 169,
-            "republican": 52,
-            "democrat": 74,
-            "general": 43
+            "total": 192,
+            "republican": 59,
+            "democrat": 79,
+            "general": 54
           },
           "RIDGEDALE": {
-            "total": 354,
-            "republican": 31,
-            "democrat": 273,
-            "general": 50
+            "total": 405,
+            "republican": 33,
+            "democrat": 307,
+            "general": 65
           },
           "ST ELMO": {
-            "total": 114,
-            "republican": 24,
-            "democrat": 69,
-            "general": 21
+            "total": 125,
+            "republican": 28,
+            "democrat": 73,
+            "general": 24
           },
           "WOODMORE": {
-            "total": 414,
-            "republican": 19,
-            "democrat": 360,
-            "general": 35
+            "total": 458,
+            "republican": 21,
+            "democrat": 397,
+            "general": 40
           },
           "BRAINERD": {
             "total": 26,
@@ -10693,118 +10777,118 @@ var TURNOUT_DATA = {
         },
         "29": {
           "AIRPORT B": {
-            "total": 92,
+            "total": 97,
             "republican": 38,
-            "democrat": 29,
-            "general": 25
+            "democrat": 30,
+            "general": 29
           },
           "APISON B": {
-            "total": 155,
-            "republican": 84,
+            "total": 159,
+            "republican": 88,
             "democrat": 35,
             "general": 36
           },
           "BIRCHWOOD": {
-            "total": 311,
-            "republican": 199,
-            "democrat": 58,
-            "general": 54
+            "total": 329,
+            "republican": 211,
+            "democrat": 60,
+            "general": 58
           },
           "COLLEGEDALE A": {
-            "total": 352,
-            "republican": 154,
-            "democrat": 112,
-            "general": 86
+            "total": 382,
+            "republican": 161,
+            "democrat": 127,
+            "general": 94
           },
           "COLLEGEDALE B": {
-            "total": 372,
-            "republican": 220,
-            "democrat": 77,
-            "general": 75
+            "total": 387,
+            "republican": 227,
+            "democrat": 84,
+            "general": 76
           },
           "CONCORD B": {
-            "total": 359,
-            "republican": 141,
-            "democrat": 149,
-            "general": 69
+            "total": 378,
+            "republican": 146,
+            "democrat": 155,
+            "general": 77
           },
           "EAST BRAINERD B": {
-            "total": 301,
-            "republican": 167,
-            "democrat": 88,
-            "general": 46
+            "total": 321,
+            "republican": 177,
+            "democrat": 96,
+            "general": 48
           },
           "HARRISON BAY": {
-            "total": 907,
-            "republican": 561,
-            "democrat": 195,
-            "general": 151
+            "total": 974,
+            "republican": 591,
+            "democrat": 221,
+            "general": 162
           },
           "HUNTER": {
-            "total": 829,
-            "republican": 457,
-            "democrat": 234,
-            "general": 138
+            "total": 914,
+            "republican": 492,
+            "democrat": 264,
+            "general": 158
           },
           "MEADOWVIEW": {
-            "total": 523,
-            "republican": 318,
-            "democrat": 95,
-            "general": 110
+            "total": 576,
+            "republican": 341,
+            "democrat": 106,
+            "general": 129
           },
           "OOLTEWAH": {
-            "total": 930,
-            "republican": 524,
-            "democrat": 211,
-            "general": 195
+            "total": 1002,
+            "republican": 554,
+            "democrat": 227,
+            "general": 221
           },
           "OOLTEWAH GEORGETOWN": {
-            "total": 453,
-            "republican": 287,
-            "democrat": 76,
-            "general": 90
+            "total": 495,
+            "republican": 299,
+            "democrat": 93,
+            "general": 103
           },
           "OOLTEWAH RINGGOLD": {
-            "total": 693,
-            "republican": 342,
-            "democrat": 210,
-            "general": 141
+            "total": 736,
+            "republican": 357,
+            "democrat": 226,
+            "general": 153
           },
           "SAVANNAH BAY": {
-            "total": 659,
-            "republican": 408,
-            "democrat": 140,
-            "general": 111
+            "total": 713,
+            "republican": 433,
+            "democrat": 150,
+            "general": 130
           },
           "SILVERDALE": {
-            "total": 272,
-            "republican": 118,
-            "democrat": 108,
-            "general": 46
+            "total": 292,
+            "republican": 124,
+            "democrat": 116,
+            "general": 52
           },
           "SUMMIT": {
-            "total": 615,
-            "republican": 231,
-            "democrat": 250,
-            "general": 134
+            "total": 673,
+            "republican": 251,
+            "democrat": 272,
+            "general": 150
           },
           "TYNER": {
-            "total": 474,
-            "republican": 152,
-            "democrat": 230,
-            "general": 92
+            "total": 518,
+            "republican": 161,
+            "democrat": 256,
+            "general": 101
           },
           "WOLFTEVER": {
-            "total": 903,
-            "republican": 419,
-            "democrat": 314,
-            "general": 170
+            "total": 993,
+            "republican": 446,
+            "democrat": 353,
+            "general": 194
           },
           "BRAINERD HILLS": {
-            "total": 100,
-            "republican": 25,
-            "democrat": 54,
-            "general": 21
+            "total": 108,
+            "republican": 27,
+            "democrat": 58,
+            "general": 23
           },
           "AIRPORT A": {
             "total": 9,
@@ -10815,270 +10899,276 @@ var TURNOUT_DATA = {
         },
         "30": {
           "APISON A": {
-            "total": 267,
-            "republican": 162,
-            "democrat": 50,
-            "general": 55
+            "total": 293,
+            "republican": 173,
+            "democrat": 56,
+            "general": 64
           },
           "APISON B": {
-            "total": 385,
-            "republican": 198,
-            "democrat": 89,
-            "general": 98
+            "total": 404,
+            "republican": 201,
+            "democrat": 98,
+            "general": 105
           },
           "BRAINERD": {
-            "total": 354,
-            "republican": 87,
-            "democrat": 217,
-            "general": 50
+            "total": 403,
+            "republican": 103,
+            "democrat": 241,
+            "general": 59
           },
           "BRAINERD HILLS": {
-            "total": 124,
-            "republican": 31,
-            "democrat": 57,
-            "general": 36
-          },
-          "CONCORD A": {
-            "total": 257,
-            "republican": 73,
-            "democrat": 129,
-            "general": 55
-          },
-          "CONCORD B": {
-            "total": 183,
-            "republican": 66,
-            "democrat": 79,
-            "general": 38
-          },
-          "EAST BRAINERD A": {
-            "total": 589,
-            "republican": 259,
-            "democrat": 222,
-            "general": 108
-          },
-          "EAST BRAINERD B": {
-            "total": 681,
-            "republican": 273,
-            "democrat": 256,
-            "general": 152
-          },
-          "EAST LAKE": {
-            "total": 53,
-            "republican": 14,
-            "democrat": 20,
-            "general": 19
-          },
-          "EAST RIDGE A": {
-            "total": 505,
-            "republican": 202,
-            "democrat": 214,
-            "general": 89
-          },
-          "EAST RIDGE B": {
-            "total": 518,
-            "republican": 181,
-            "democrat": 271,
-            "general": 66
-          },
-          "EAST RIDGE C": {
-            "total": 196,
-            "republican": 71,
-            "democrat": 86,
+            "total": 145,
+            "republican": 37,
+            "democrat": 69,
             "general": 39
           },
+          "CONCORD A": {
+            "total": 276,
+            "republican": 73,
+            "democrat": 142,
+            "general": 61
+          },
+          "CONCORD B": {
+            "total": 199,
+            "republican": 69,
+            "democrat": 86,
+            "general": 44
+          },
+          "EAST BRAINERD A": {
+            "total": 647,
+            "republican": 288,
+            "democrat": 240,
+            "general": 119
+          },
+          "EAST BRAINERD B": {
+            "total": 742,
+            "republican": 290,
+            "democrat": 279,
+            "general": 173
+          },
+          "EAST LAKE": {
+            "total": 68,
+            "republican": 17,
+            "democrat": 27,
+            "general": 24
+          },
+          "EAST RIDGE A": {
+            "total": 553,
+            "republican": 209,
+            "democrat": 246,
+            "general": 98
+          },
+          "EAST RIDGE B": {
+            "total": 570,
+            "republican": 189,
+            "democrat": 302,
+            "general": 79
+          },
+          "EAST RIDGE C": {
+            "total": 219,
+            "republican": 77,
+            "democrat": 98,
+            "general": 44
+          },
           "EAST RIDGE D": {
-            "total": 404,
-            "republican": 173,
-            "democrat": 158,
-            "general": 73
+            "total": 440,
+            "republican": 189,
+            "democrat": 172,
+            "general": 79
           },
           "GLENWOOD": {
-            "total": 97,
+            "total": 101,
             "republican": 23,
-            "democrat": 61,
-            "general": 13
+            "democrat": 63,
+            "general": 15
           },
           "HURRICANE CREEK": {
-            "total": 970,
-            "republican": 506,
-            "democrat": 301,
-            "general": 163
+            "total": 1030,
+            "republican": 529,
+            "democrat": 329,
+            "general": 172
           },
           "MISSIONARY RIDGE": {
-            "total": 261,
-            "republican": 81,
-            "democrat": 135,
-            "general": 45
+            "total": 286,
+            "republican": 82,
+            "democrat": 155,
+            "general": 49
           },
           "OOLTEWAH RINGGOLD": {
-            "total": 401,
-            "republican": 222,
-            "democrat": 99,
-            "general": 80
+            "total": 438,
+            "republican": 233,
+            "democrat": 111,
+            "general": 94
           },
           "RIDGESIDE": {
-            "total": 50,
+            "total": 52,
             "republican": 15,
-            "democrat": 26,
+            "democrat": 28,
             "general": 9
           },
           "WESTVIEW A": {
-            "total": 311,
-            "republican": 150,
-            "democrat": 108,
-            "general": 53
+            "total": 338,
+            "republican": 162,
+            "democrat": 114,
+            "general": 62
           },
           "WESTVIEW B": {
-            "total": 595,
-            "republican": 284,
-            "democrat": 222,
-            "general": 89
+            "total": 653,
+            "republican": 307,
+            "democrat": 239,
+            "general": 107
           },
           "EASTSIDE": {
-            "total": 12,
+            "total": 15,
             "republican": 0,
-            "democrat": 10,
+            "democrat": 13,
             "general": 2
           },
           "ALTON PARK": {
-            "total": 19,
+            "total": 21,
             "republican": 6,
-            "democrat": 6,
-            "general": 7
+            "democrat": 7,
+            "general": 8
+          },
+          "OOLTEWAH": {
+            "total": 1,
+            "republican": 0,
+            "democrat": 0,
+            "general": 1
           }
         },
         "26": {
           "BUSHTOWN": {
-            "total": 47,
+            "total": 54,
             "republican": 8,
-            "democrat": 21,
-            "general": 18
+            "democrat": 24,
+            "general": 22
           },
           "COURTHOUSE": {
-            "total": 50,
+            "total": 51,
             "republican": 6,
             "democrat": 25,
-            "general": 19
+            "general": 20
           },
           "DALLAS": {
-            "total": 561,
-            "republican": 294,
-            "democrat": 167,
-            "general": 100
+            "total": 629,
+            "republican": 335,
+            "democrat": 175,
+            "general": 119
           },
           "DOWNTOWN": {
-            "total": 207,
-            "republican": 54,
-            "democrat": 98,
-            "general": 55
+            "total": 223,
+            "republican": 58,
+            "democrat": 105,
+            "general": 60
           },
           "DUPONT": {
-            "total": 603,
-            "republican": 298,
-            "democrat": 208,
-            "general": 97
+            "total": 658,
+            "republican": 322,
+            "democrat": 223,
+            "general": 113
           },
           "EASTSIDE": {
-            "total": 160,
-            "republican": 31,
-            "democrat": 95,
-            "general": 34
+            "total": 181,
+            "republican": 37,
+            "democrat": 102,
+            "general": 42
           },
           "GANNS": {
-            "total": 831,
-            "republican": 493,
-            "democrat": 214,
-            "general": 124
+            "total": 891,
+            "republican": 520,
+            "democrat": 229,
+            "general": 142
           },
           "HARRISON": {
-            "total": 500,
-            "republican": 230,
-            "democrat": 187,
-            "general": 83
+            "total": 537,
+            "republican": 242,
+            "democrat": 201,
+            "general": 94
           },
           "HIXSON": {
-            "total": 485,
-            "republican": 225,
-            "democrat": 190,
-            "general": 70
-          },
-          "LAKESITE": {
-            "total": 166,
-            "republican": 94,
-            "democrat": 38,
-            "general": 34
-          },
-          "LUPTON CITY": {
-            "total": 354,
-            "republican": 119,
-            "democrat": 184,
-            "general": 51
-          },
-          "MIDDLE VALLEY": {
-            "total": 293,
-            "republican": 161,
-            "democrat": 92,
-            "general": 40
-          },
-          "NORTHGATE": {
-            "total": 601,
-            "republican": 277,
-            "democrat": 203,
-            "general": 121
-          },
-          "NORTHSHORE": {
-            "total": 555,
-            "republican": 169,
-            "democrat": 306,
+            "total": 519,
+            "republican": 234,
+            "democrat": 205,
             "general": 80
           },
-          "PLEASANT GROVE A": {
-            "total": 622,
-            "republican": 351,
-            "democrat": 187,
-            "general": 84
+          "LAKESITE": {
+            "total": 185,
+            "republican": 105,
+            "democrat": 43,
+            "general": 37
           },
-          "POSSUM CREEK": {
-            "total": 709,
-            "republican": 441,
-            "democrat": 157,
-            "general": 111
+          "LUPTON CITY": {
+            "total": 382,
+            "republican": 125,
+            "democrat": 198,
+            "general": 59
           },
-          "RIVERVIEW": {
-            "total": 335,
-            "republican": 94,
-            "democrat": 195,
+          "MIDDLE VALLEY": {
+            "total": 321,
+            "republican": 169,
+            "democrat": 106,
             "general": 46
           },
+          "NORTHGATE": {
+            "total": 642,
+            "republican": 289,
+            "democrat": 217,
+            "general": 136
+          },
+          "NORTHSHORE": {
+            "total": 598,
+            "republican": 181,
+            "democrat": 330,
+            "general": 87
+          },
+          "PLEASANT GROVE A": {
+            "total": 660,
+            "republican": 364,
+            "democrat": 202,
+            "general": 94
+          },
+          "POSSUM CREEK": {
+            "total": 763,
+            "republican": 471,
+            "democrat": 166,
+            "general": 126
+          },
+          "RIVERVIEW": {
+            "total": 382,
+            "republican": 105,
+            "democrat": 222,
+            "general": 55
+          },
           "SALE CREEK": {
-            "total": 225,
-            "republican": 157,
-            "democrat": 38,
-            "general": 30
+            "total": 241,
+            "republican": 166,
+            "democrat": 42,
+            "general": 33
           },
           "SEQUOYAH": {
-            "total": 446,
-            "republican": 289,
-            "democrat": 83,
-            "general": 74
+            "total": 472,
+            "republican": 309,
+            "democrat": 85,
+            "general": 78
           },
           "STUART HEIGHTS": {
-            "total": 612,
-            "republican": 232,
-            "democrat": 316,
-            "general": 64
+            "total": 675,
+            "republican": 260,
+            "democrat": 338,
+            "general": 77
           },
           "VALLEYBROOK": {
-            "total": 1216,
-            "republican": 707,
-            "democrat": 346,
-            "general": 163
+            "total": 1309,
+            "republican": 750,
+            "democrat": 384,
+            "general": 175
           },
           "WOLFTEVER": {
-            "total": 32,
-            "republican": 10,
-            "democrat": 14,
-            "general": 8
+            "total": 37,
+            "republican": 11,
+            "democrat": 17,
+            "general": 9
           },
           "RED BANK A": {
             "total": 2,
@@ -11087,21 +11177,21 @@ var TURNOUT_DATA = {
             "general": 0
           },
           "FALLING WATER A": {
-            "total": 19,
+            "total": 22,
             "republican": 12,
-            "democrat": 6,
-            "general": 1
+            "democrat": 8,
+            "general": 2
           },
           "SODDY DAISY C": {
-            "total": 18,
-            "republican": 8,
+            "total": 22,
+            "republican": 12,
             "democrat": 7,
             "general": 3
           },
           "PLEASANT GROVE B": {
-            "total": 38,
+            "total": 45,
             "republican": 22,
-            "democrat": 14,
+            "democrat": 21,
             "general": 2
           },
           "SODDY DAISY B": {
@@ -11113,171 +11203,171 @@ var TURNOUT_DATA = {
         },
         "27": {
           "FAIRMOUNT": {
-            "total": 401,
-            "republican": 203,
-            "democrat": 122,
-            "general": 76
+            "total": 421,
+            "republican": 210,
+            "democrat": 131,
+            "general": 80
           },
           "FALLING WATER B": {
-            "total": 166,
-            "republican": 105,
-            "democrat": 43,
-            "general": 18
+            "total": 179,
+            "republican": 114,
+            "democrat": 45,
+            "general": 20
           },
           "FLAT TOP MOUNTAIN": {
-            "total": 47,
-            "republican": 35,
+            "total": 48,
+            "republican": 36,
             "democrat": 10,
             "general": 2
           },
           "LOOKOUT MOUNTAIN": {
-            "total": 180,
-            "republican": 107,
-            "democrat": 61,
+            "total": 188,
+            "republican": 112,
+            "democrat": 64,
             "general": 12
           },
           "LOOKOUT VALLEY": {
-            "total": 618,
-            "republican": 331,
-            "democrat": 190,
-            "general": 97
+            "total": 655,
+            "republican": 348,
+            "democrat": 202,
+            "general": 105
           },
           "LUPTON CITY": {
-            "total": 101,
-            "republican": 26,
-            "democrat": 54,
+            "total": 117,
+            "republican": 34,
+            "democrat": 62,
             "general": 21
           },
           "MOUNTAIN CREEK A": {
-            "total": 728,
-            "republican": 300,
-            "democrat": 302,
-            "general": 126
+            "total": 778,
+            "republican": 315,
+            "democrat": 330,
+            "general": 133
           },
           "MOUNTAIN CREEK B": {
-            "total": 264,
-            "republican": 101,
+            "total": 273,
+            "republican": 106,
             "democrat": 107,
-            "general": 56
+            "general": 60
           },
           "MOWBRAY B": {
-            "total": 112,
-            "republican": 79,
+            "total": 117,
+            "republican": 81,
             "democrat": 24,
-            "general": 9
+            "general": 12
           },
           "NORTH CHATTANOOGA A": {
-            "total": 115,
+            "total": 121,
             "republican": 29,
-            "democrat": 48,
-            "general": 38
-          },
-          "NORTHSHORE": {
-            "total": 140,
-            "republican": 32,
-            "democrat": 77,
-            "general": 31
-          },
-          "NORTHWOODS": {
-            "total": 800,
-            "republican": 333,
-            "democrat": 328,
-            "general": 139
-          },
-          "RED BANK A": {
-            "total": 461,
-            "republican": 111,
-            "democrat": 247,
-            "general": 103
-          },
-          "RED BANK B": {
-            "total": 407,
-            "republican": 181,
-            "democrat": 158,
-            "general": 68
-          },
-          "RED BANK C": {
-            "total": 324,
-            "republican": 118,
-            "democrat": 156,
-            "general": 50
-          },
-          "SIGNAL MOUNTAIN A": {
-            "total": 401,
-            "republican": 204,
-            "democrat": 146,
-            "general": 51
-          },
-          "SIGNAL MOUNTAIN B": {
-            "total": 732,
-            "republican": 416,
-            "democrat": 240,
-            "general": 76
-          },
-          "SODDY DAISY A": {
-            "total": 575,
-            "republican": 359,
-            "democrat": 130,
-            "general": 86
-          },
-          "SODDY DAISY B": {
-            "total": 514,
-            "republican": 316,
-            "democrat": 114,
-            "general": 84
-          },
-          "SODDY DAISY C": {
-            "total": 347,
-            "republican": 244,
-            "democrat": 61,
+            "democrat": 50,
             "general": 42
           },
+          "NORTHSHORE": {
+            "total": 163,
+            "republican": 37,
+            "democrat": 91,
+            "general": 35
+          },
+          "NORTHWOODS": {
+            "total": 861,
+            "republican": 350,
+            "democrat": 358,
+            "general": 153
+          },
+          "RED BANK A": {
+            "total": 506,
+            "republican": 119,
+            "democrat": 273,
+            "general": 114
+          },
+          "RED BANK B": {
+            "total": 444,
+            "republican": 192,
+            "democrat": 171,
+            "general": 81
+          },
+          "RED BANK C": {
+            "total": 363,
+            "republican": 132,
+            "democrat": 174,
+            "general": 57
+          },
+          "SIGNAL MOUNTAIN A": {
+            "total": 429,
+            "republican": 215,
+            "democrat": 157,
+            "general": 57
+          },
+          "SIGNAL MOUNTAIN B": {
+            "total": 776,
+            "republican": 429,
+            "democrat": 259,
+            "general": 88
+          },
+          "SODDY DAISY A": {
+            "total": 608,
+            "republican": 379,
+            "democrat": 138,
+            "general": 91
+          },
+          "SODDY DAISY B": {
+            "total": 547,
+            "republican": 331,
+            "democrat": 122,
+            "general": 94
+          },
+          "SODDY DAISY C": {
+            "total": 360,
+            "republican": 253,
+            "democrat": 62,
+            "general": 45
+          },
           "ST ELMO": {
-            "total": 288,
-            "republican": 52,
-            "democrat": 200,
-            "general": 36
+            "total": 303,
+            "republican": 54,
+            "democrat": 210,
+            "general": 39
           },
           "WALDEN": {
-            "total": 227,
-            "republican": 140,
-            "democrat": 59,
-            "general": 28
+            "total": 242,
+            "republican": 149,
+            "democrat": 61,
+            "general": 32
           },
           "FALLING WATER A": {
-            "total": 73,
-            "republican": 42,
-            "democrat": 17,
-            "general": 14
+            "total": 81,
+            "republican": 47,
+            "democrat": 19,
+            "general": 15
           },
           "MOWBRAY A": {
-            "total": 44,
+            "total": 45,
             "republican": 21,
             "democrat": 13,
-            "general": 10
+            "general": 11
           },
           "POSSUM CREEK": {
-            "total": 15,
-            "republican": 15,
+            "total": 16,
+            "republican": 16,
             "democrat": 0,
             "general": 0
           },
           "SALE CREEK": {
-            "total": 65,
-            "republican": 39,
-            "democrat": 12,
+            "total": 72,
+            "republican": 42,
+            "democrat": 16,
             "general": 14
           },
           "MOUNTAIN CREEK C": {
-            "total": 15,
+            "total": 17,
             "republican": 3,
-            "democrat": 10,
+            "democrat": 12,
             "general": 2
           },
           "SEQUOYAH": {
-            "total": 4,
+            "total": 6,
             "republican": 4,
-            "democrat": 0,
+            "democrat": 2,
             "general": 0
           },
           "STUART HEIGHTS": {
@@ -11297,628 +11387,628 @@ var TURNOUT_DATA = {
       "school": {
         "5": {
           "AIRPORT A": {
-            "total": 61,
+            "total": 65,
             "republican": 11,
-            "democrat": 36,
+            "democrat": 40,
             "general": 14
           },
           "AIRPORT B": {
-            "total": 266,
-            "republican": 82,
-            "democrat": 135,
-            "general": 49
+            "total": 289,
+            "republican": 83,
+            "democrat": 145,
+            "general": 61
           },
           "BONNY OAKS": {
-            "total": 465,
-            "republican": 46,
-            "democrat": 372,
-            "general": 47
+            "total": 510,
+            "republican": 48,
+            "democrat": 408,
+            "general": 54
           },
           "BRAINERD": {
-            "total": 380,
-            "republican": 88,
-            "democrat": 240,
-            "general": 52
+            "total": 429,
+            "republican": 104,
+            "democrat": 264,
+            "general": 61
           },
           "DALEWOOD": {
-            "total": 528,
-            "republican": 13,
-            "democrat": 453,
-            "general": 62
+            "total": 569,
+            "republican": 16,
+            "democrat": 480,
+            "general": 73
           },
           "EASTGATE": {
-            "total": 424,
-            "republican": 41,
-            "democrat": 330,
-            "general": 53
+            "total": 473,
+            "republican": 44,
+            "democrat": 363,
+            "general": 66
           },
           "GLENWOOD": {
-            "total": 348,
+            "total": 378,
             "republican": 47,
-            "democrat": 254,
-            "general": 47
+            "democrat": 277,
+            "general": 54
           },
           "LAKE HILLS": {
-            "total": 268,
+            "total": 295,
             "republican": 28,
-            "democrat": 198,
-            "general": 42
+            "democrat": 214,
+            "general": 53
           },
           "RIDGESIDE": {
-            "total": 50,
+            "total": 52,
             "republican": 15,
-            "democrat": 26,
+            "democrat": 28,
             "general": 9
           },
           "TYNER": {
-            "total": 474,
-            "republican": 152,
-            "democrat": 230,
-            "general": 92
+            "total": 518,
+            "republican": 161,
+            "democrat": 256,
+            "general": 101
           },
           "WOODMORE": {
-            "total": 414,
-            "republican": 19,
-            "democrat": 360,
-            "general": 35
+            "total": 458,
+            "republican": 21,
+            "democrat": 397,
+            "general": 40
           }
         },
         "11": {
           "ALTON PARK": {
-            "total": 210,
-            "republican": 14,
-            "democrat": 148,
-            "general": 48
+            "total": 230,
+            "republican": 15,
+            "democrat": 160,
+            "general": 55
           },
           "EAST LAKE": {
-            "total": 122,
-            "republican": 22,
-            "democrat": 65,
-            "general": 35
+            "total": 143,
+            "republican": 25,
+            "democrat": 76,
+            "general": 42
           },
           "EASTSIDE": {
-            "total": 409,
-            "republican": 63,
-            "democrat": 261,
-            "general": 85
+            "total": 461,
+            "republican": 72,
+            "democrat": 291,
+            "general": 98
           },
           "LOOKOUT MOUNTAIN": {
-            "total": 180,
-            "republican": 107,
-            "democrat": 61,
+            "total": 188,
+            "republican": 112,
+            "democrat": 64,
             "general": 12
           },
           "LOOKOUT VALLEY": {
-            "total": 618,
-            "republican": 331,
-            "democrat": 190,
-            "general": 97
+            "total": 655,
+            "republican": 348,
+            "democrat": 202,
+            "general": 105
           },
           "MISSIONARY RIDGE": {
-            "total": 261,
-            "republican": 81,
-            "democrat": 135,
-            "general": 45
+            "total": 286,
+            "republican": 82,
+            "democrat": 155,
+            "general": 49
           },
           "ST ELMO": {
-            "total": 402,
-            "republican": 76,
-            "democrat": 269,
-            "general": 57
+            "total": 428,
+            "republican": 82,
+            "democrat": 283,
+            "general": 63
           }
         },
         "7": {
           "APISON A": {
-            "total": 267,
-            "republican": 162,
-            "democrat": 50,
-            "general": 55
+            "total": 293,
+            "republican": 173,
+            "democrat": 56,
+            "general": 64
           },
           "EAST BRAINERD A": {
-            "total": 589,
-            "republican": 259,
-            "democrat": 222,
-            "general": 108
+            "total": 647,
+            "republican": 288,
+            "democrat": 240,
+            "general": 119
           },
           "EAST BRAINERD B": {
-            "total": 982,
-            "republican": 440,
-            "democrat": 344,
-            "general": 198
-          },
-          "HURRICANE CREEK": {
-            "total": 970,
-            "republican": 506,
-            "democrat": 301,
-            "general": 163
-          },
-          "OOLTEWAH RINGGOLD": {
-            "total": 1094,
-            "republican": 564,
-            "democrat": 309,
+            "total": 1063,
+            "republican": 467,
+            "democrat": 375,
             "general": 221
           },
+          "HURRICANE CREEK": {
+            "total": 1030,
+            "republican": 529,
+            "democrat": 329,
+            "general": 172
+          },
+          "OOLTEWAH RINGGOLD": {
+            "total": 1174,
+            "republican": 590,
+            "democrat": 337,
+            "general": 247
+          },
           "WESTVIEW A": {
-            "total": 311,
-            "republican": 150,
-            "democrat": 108,
-            "general": 53
+            "total": 338,
+            "republican": 162,
+            "democrat": 114,
+            "general": 62
           },
           "WESTVIEW B": {
-            "total": 595,
-            "republican": 284,
-            "democrat": 222,
-            "general": 89
+            "total": 653,
+            "republican": 307,
+            "democrat": 239,
+            "general": 107
           }
         },
         "10": {
           "APISON B": {
-            "total": 540,
-            "republican": 282,
-            "democrat": 124,
-            "general": 134
+            "total": 563,
+            "republican": 289,
+            "democrat": 133,
+            "general": 141
           },
           "COLLEGEDALE A": {
-            "total": 352,
-            "republican": 154,
-            "democrat": 112,
-            "general": 86
+            "total": 382,
+            "republican": 161,
+            "democrat": 127,
+            "general": 94
           },
           "COLLEGEDALE B": {
-            "total": 372,
-            "republican": 220,
-            "democrat": 77,
-            "general": 75
+            "total": 387,
+            "republican": 227,
+            "democrat": 84,
+            "general": 76
           },
           "OOLTEWAH": {
-            "total": 930,
-            "republican": 524,
-            "democrat": 211,
-            "general": 195
+            "total": 1003,
+            "republican": 554,
+            "democrat": 227,
+            "general": 222
           },
           "OOLTEWAH GEORGETOWN": {
-            "total": 453,
-            "republican": 287,
-            "democrat": 76,
-            "general": 90
+            "total": 495,
+            "republican": 299,
+            "democrat": 93,
+            "general": 103
           },
           "SAVANNAH BAY": {
-            "total": 659,
-            "republican": 408,
-            "democrat": 140,
-            "general": 111
+            "total": 713,
+            "republican": 433,
+            "democrat": 150,
+            "general": 130
           },
           "SILVERDALE": {
-            "total": 272,
-            "republican": 118,
-            "democrat": 108,
-            "general": 46
+            "total": 292,
+            "republican": 124,
+            "democrat": 116,
+            "general": 52
           },
           "SUMMIT": {
-            "total": 615,
-            "republican": 231,
-            "democrat": 250,
-            "general": 134
+            "total": 673,
+            "republican": 251,
+            "democrat": 272,
+            "general": 150
           }
         },
         "4": {
           "AVONDALE": {
-            "total": 191,
+            "total": 205,
             "republican": 6,
-            "democrat": 153,
-            "general": 32
+            "democrat": 164,
+            "general": 35
           },
           "BUSHTOWN": {
-            "total": 385,
-            "republican": 16,
-            "democrat": 302,
-            "general": 67
+            "total": 428,
+            "republican": 18,
+            "democrat": 334,
+            "general": 76
           },
           "COURTHOUSE": {
-            "total": 167,
-            "republican": 19,
-            "democrat": 99,
-            "general": 49
-          },
-          "DOWNTOWN": {
-            "total": 366,
-            "republican": 85,
-            "democrat": 181,
-            "general": 100
-          },
-          "EAST CHATTANOOGA": {
-            "total": 345,
+            "total": 192,
             "republican": 20,
-            "democrat": 268,
-            "general": 57
-          },
-          "KINGSPOINT": {
-            "total": 351,
-            "republican": 57,
-            "democrat": 236,
+            "democrat": 114,
             "general": 58
           },
+          "DOWNTOWN": {
+            "total": 404,
+            "republican": 92,
+            "democrat": 195,
+            "general": 117
+          },
+          "EAST CHATTANOOGA": {
+            "total": 398,
+            "republican": 26,
+            "democrat": 305,
+            "general": 67
+          },
+          "KINGSPOINT": {
+            "total": 374,
+            "republican": 58,
+            "democrat": 255,
+            "general": 61
+          },
           "MURRAY HILLS": {
-            "total": 344,
-            "republican": 79,
-            "democrat": 210,
-            "general": 55
+            "total": 383,
+            "republican": 82,
+            "democrat": 237,
+            "general": 64
           },
           "RIDGEDALE": {
-            "total": 354,
-            "republican": 31,
-            "democrat": 273,
-            "general": 50
+            "total": 405,
+            "republican": 33,
+            "democrat": 307,
+            "general": 65
           }
         },
         "9": {
           "BIRCHWOOD": {
-            "total": 311,
-            "republican": 199,
-            "democrat": 58,
-            "general": 54
+            "total": 329,
+            "republican": 211,
+            "democrat": 60,
+            "general": 58
           },
           "HARRISON": {
-            "total": 739,
-            "republican": 320,
-            "democrat": 292,
-            "general": 127
+            "total": 805,
+            "republican": 336,
+            "democrat": 322,
+            "general": 147
           },
           "HARRISON BAY": {
-            "total": 907,
-            "republican": 561,
-            "democrat": 195,
-            "general": 151
+            "total": 974,
+            "republican": 591,
+            "democrat": 221,
+            "general": 162
           },
           "HUNTER": {
-            "total": 829,
-            "republican": 457,
-            "democrat": 234,
-            "general": 138
+            "total": 914,
+            "republican": 492,
+            "democrat": 264,
+            "general": 158
           },
           "MEADOWVIEW": {
-            "total": 523,
-            "republican": 318,
-            "democrat": 95,
-            "general": 110
+            "total": 576,
+            "republican": 341,
+            "democrat": 106,
+            "general": 129
           },
           "WOLFTEVER": {
-            "total": 935,
-            "republican": 429,
-            "democrat": 328,
-            "general": 178
+            "total": 1030,
+            "republican": 457,
+            "democrat": 370,
+            "general": 203
           }
         },
         "8": {
           "BRAINERD HILLS": {
-            "total": 265,
-            "republican": 64,
-            "democrat": 134,
-            "general": 67
+            "total": 299,
+            "republican": 72,
+            "democrat": 155,
+            "general": 72
           },
           "CONCORD A": {
-            "total": 257,
+            "total": 276,
             "republican": 73,
-            "democrat": 129,
-            "general": 55
+            "democrat": 142,
+            "general": 61
           },
           "CONCORD B": {
-            "total": 542,
-            "republican": 207,
-            "democrat": 228,
-            "general": 107
+            "total": 577,
+            "republican": 215,
+            "democrat": 241,
+            "general": 121
           },
           "EAST RIDGE A": {
-            "total": 505,
-            "republican": 202,
-            "democrat": 214,
-            "general": 89
+            "total": 553,
+            "republican": 209,
+            "democrat": 246,
+            "general": 98
           },
           "EAST RIDGE B": {
-            "total": 518,
-            "republican": 181,
-            "democrat": 271,
-            "general": 66
+            "total": 570,
+            "republican": 189,
+            "democrat": 302,
+            "general": 79
           },
           "EAST RIDGE C": {
-            "total": 196,
-            "republican": 71,
-            "democrat": 86,
-            "general": 39
+            "total": 219,
+            "republican": 77,
+            "democrat": 98,
+            "general": 44
           },
           "EAST RIDGE D": {
-            "total": 404,
-            "republican": 173,
-            "democrat": 158,
-            "general": 73
+            "total": 440,
+            "republican": 189,
+            "democrat": 172,
+            "general": 79
           }
         },
         "1": {
           "DALLAS": {
-            "total": 561,
-            "republican": 294,
-            "democrat": 167,
-            "general": 100
+            "total": 629,
+            "republican": 335,
+            "democrat": 175,
+            "general": 119
           },
           "FLAT TOP MOUNTAIN": {
-            "total": 47,
-            "republican": 35,
+            "total": 48,
+            "republican": 36,
             "democrat": 10,
             "general": 2
           },
           "MOWBRAY B": {
-            "total": 112,
-            "republican": 79,
+            "total": 117,
+            "republican": 81,
             "democrat": 24,
-            "general": 9
+            "general": 12
           },
           "POSSUM CREEK": {
-            "total": 724,
-            "republican": 456,
-            "democrat": 157,
-            "general": 111
+            "total": 779,
+            "republican": 487,
+            "democrat": 166,
+            "general": 126
           },
           "SALE CREEK": {
-            "total": 290,
-            "republican": 196,
-            "democrat": 50,
-            "general": 44
+            "total": 313,
+            "republican": 208,
+            "democrat": 58,
+            "general": 47
           },
           "SEQUOYAH": {
-            "total": 450,
-            "republican": 293,
-            "democrat": 83,
-            "general": 74
+            "total": 478,
+            "republican": 313,
+            "democrat": 87,
+            "general": 78
           },
           "SODDY DAISY A": {
-            "total": 575,
-            "republican": 359,
-            "democrat": 130,
-            "general": 86
+            "total": 608,
+            "republican": 379,
+            "democrat": 138,
+            "general": 91
           },
           "SODDY DAISY B": {
-            "total": 526,
-            "republican": 323,
-            "democrat": 117,
-            "general": 86
+            "total": 559,
+            "republican": 338,
+            "democrat": 125,
+            "general": 96
           },
           "SODDY DAISY C": {
-            "total": 365,
-            "republican": 252,
-            "democrat": 68,
-            "general": 45
+            "total": 382,
+            "republican": 265,
+            "democrat": 69,
+            "general": 48
           },
           "FALLING WATER A": {
-            "total": 92,
-            "republican": 54,
-            "democrat": 23,
-            "general": 15
+            "total": 103,
+            "republican": 59,
+            "democrat": 27,
+            "general": 17
           },
           "PLEASANT GROVE B": {
-            "total": 38,
+            "total": 45,
             "republican": 22,
-            "democrat": 14,
+            "democrat": 21,
             "general": 2
           }
         },
         "3": {
           "DUPONT": {
-            "total": 603,
-            "republican": 298,
-            "democrat": 208,
-            "general": 97
+            "total": 658,
+            "republican": 322,
+            "democrat": 223,
+            "general": 113
           },
           "GANNS": {
-            "total": 831,
-            "republican": 493,
-            "democrat": 214,
-            "general": 124
+            "total": 891,
+            "republican": 520,
+            "democrat": 229,
+            "general": 142
           },
           "HIXSON": {
-            "total": 485,
-            "republican": 225,
-            "democrat": 190,
-            "general": 70
+            "total": 519,
+            "republican": 234,
+            "democrat": 205,
+            "general": 80
           },
           "LAKESITE": {
-            "total": 166,
-            "republican": 94,
-            "democrat": 38,
-            "general": 34
+            "total": 185,
+            "republican": 105,
+            "democrat": 43,
+            "general": 37
           },
           "MIDDLE VALLEY": {
-            "total": 293,
-            "republican": 161,
-            "democrat": 92,
-            "general": 40
+            "total": 321,
+            "republican": 169,
+            "democrat": 106,
+            "general": 46
           },
           "NORTHGATE": {
-            "total": 601,
-            "republican": 277,
-            "democrat": 203,
-            "general": 121
+            "total": 642,
+            "republican": 289,
+            "democrat": 217,
+            "general": 136
           },
           "PLEASANT GROVE A": {
-            "total": 622,
-            "republican": 351,
-            "democrat": 187,
-            "general": 84
+            "total": 660,
+            "republican": 364,
+            "democrat": 202,
+            "general": 94
           },
           "VALLEYBROOK": {
-            "total": 1216,
-            "republican": 707,
-            "democrat": 346,
-            "general": 163
+            "total": 1309,
+            "republican": 750,
+            "democrat": 384,
+            "general": 175
           }
         },
         "2": {
           "FAIRMOUNT": {
-            "total": 401,
-            "republican": 203,
-            "democrat": 122,
-            "general": 76
+            "total": 421,
+            "republican": 210,
+            "democrat": 131,
+            "general": 80
           },
           "FALLING WATER B": {
-            "total": 166,
-            "republican": 105,
-            "democrat": 43,
-            "general": 18
+            "total": 179,
+            "republican": 114,
+            "democrat": 45,
+            "general": 20
           },
           "MOUNTAIN CREEK A": {
-            "total": 728,
-            "republican": 300,
-            "democrat": 302,
-            "general": 126
+            "total": 778,
+            "republican": 315,
+            "democrat": 330,
+            "general": 133
           },
           "MOUNTAIN CREEK B": {
-            "total": 264,
-            "republican": 101,
+            "total": 273,
+            "republican": 106,
             "democrat": 107,
-            "general": 56
+            "general": 60
           },
           "NORTHWOODS": {
-            "total": 800,
-            "republican": 333,
-            "democrat": 328,
-            "general": 139
+            "total": 861,
+            "republican": 350,
+            "democrat": 358,
+            "general": 153
           },
           "SIGNAL MOUNTAIN A": {
-            "total": 401,
-            "republican": 204,
-            "democrat": 146,
-            "general": 51
+            "total": 429,
+            "republican": 215,
+            "democrat": 157,
+            "general": 57
           },
           "SIGNAL MOUNTAIN B": {
-            "total": 732,
-            "republican": 416,
-            "democrat": 240,
-            "general": 76
+            "total": 776,
+            "republican": 429,
+            "democrat": 259,
+            "general": 88
           },
           "WALDEN": {
-            "total": 227,
-            "republican": 140,
-            "democrat": 59,
-            "general": 28
+            "total": 242,
+            "republican": 149,
+            "democrat": 61,
+            "general": 32
           },
           "MOWBRAY A": {
-            "total": 44,
+            "total": 45,
             "republican": 21,
             "democrat": 13,
-            "general": 10
+            "general": 11
           },
           "MOUNTAIN CREEK C": {
-            "total": 15,
+            "total": 17,
             "republican": 3,
-            "democrat": 10,
+            "democrat": 12,
             "general": 2
           }
         },
         "6": {
           "LUPTON CITY": {
-            "total": 455,
-            "republican": 145,
-            "democrat": 238,
-            "general": 72
+            "total": 499,
+            "republican": 159,
+            "democrat": 260,
+            "general": 80
           },
           "NORTH CHATTANOOGA A": {
-            "total": 315,
-            "republican": 72,
-            "democrat": 166,
-            "general": 77
+            "total": 342,
+            "republican": 75,
+            "democrat": 184,
+            "general": 83
           },
           "NORTH CHATTANOOGA B": {
-            "total": 169,
-            "republican": 52,
-            "democrat": 74,
-            "general": 43
+            "total": 192,
+            "republican": 59,
+            "democrat": 79,
+            "general": 54
           },
           "NORTHSHORE": {
-            "total": 695,
-            "republican": 201,
-            "democrat": 383,
-            "general": 111
+            "total": 761,
+            "republican": 218,
+            "democrat": 421,
+            "general": 122
           },
           "RED BANK A": {
-            "total": 463,
-            "republican": 111,
-            "democrat": 249,
-            "general": 103
+            "total": 508,
+            "republican": 119,
+            "democrat": 275,
+            "general": 114
           },
           "RED BANK B": {
-            "total": 407,
-            "republican": 181,
-            "democrat": 158,
-            "general": 68
+            "total": 444,
+            "republican": 192,
+            "democrat": 171,
+            "general": 81
           },
           "RED BANK C": {
-            "total": 324,
-            "republican": 118,
-            "democrat": 156,
-            "general": 50
+            "total": 363,
+            "republican": 132,
+            "democrat": 174,
+            "general": 57
           },
           "RIVERVIEW": {
-            "total": 335,
-            "republican": 94,
-            "democrat": 195,
-            "general": 46
+            "total": 382,
+            "republican": 105,
+            "democrat": 222,
+            "general": 55
           },
           "STUART HEIGHTS": {
-            "total": 614,
-            "republican": 232,
-            "democrat": 318,
-            "general": 64
+            "total": 677,
+            "republican": 260,
+            "democrat": 340,
+            "general": 77
           }
         }
       },
       "city": {
         "6": {
           "AIRPORT A": {
-            "total": 61,
+            "total": 65,
             "republican": 11,
-            "democrat": 36,
+            "democrat": 40,
             "general": 14
           },
           "AIRPORT B": {
-            "total": 266,
-            "republican": 82,
-            "democrat": 135,
-            "general": 49
+            "total": 289,
+            "republican": 83,
+            "democrat": 145,
+            "general": 61
           },
           "BRAINERD": {
-            "total": 228,
-            "republican": 58,
-            "democrat": 135,
-            "general": 35
+            "total": 260,
+            "republican": 70,
+            "democrat": 150,
+            "general": 40
           },
           "BRAINERD HILLS": {
-            "total": 265,
-            "republican": 64,
-            "democrat": 134,
-            "general": 67
+            "total": 299,
+            "republican": 72,
+            "democrat": 155,
+            "general": 72
           },
           "CONCORD A": {
-            "total": 173,
+            "total": 187,
             "republican": 53,
-            "democrat": 84,
-            "general": 36
+            "democrat": 94,
+            "general": 40
           },
           "SILVERDALE": {
-            "total": 259,
-            "republican": 114,
-            "democrat": 104,
-            "general": 41
+            "total": 278,
+            "republican": 120,
+            "democrat": 111,
+            "general": 47
           },
           "SUMMIT": {
-            "total": 67,
+            "total": 70,
             "republican": 20,
-            "democrat": 34,
-            "general": 13
+            "democrat": 36,
+            "general": 14
           },
           "TYNER": {
-            "total": 474,
-            "republican": 152,
-            "democrat": 230,
-            "general": 92
+            "total": 518,
+            "republican": 161,
+            "democrat": 256,
+            "general": 101
           },
           "OOLTEWAH": {
             "total": 1,
@@ -11935,320 +12025,320 @@ var TURNOUT_DATA = {
         },
         "7": {
           "ALTON PARK": {
-            "total": 191,
-            "republican": 8,
-            "democrat": 142,
-            "general": 41
+            "total": 209,
+            "republican": 9,
+            "democrat": 153,
+            "general": 47
           },
           "DOWNTOWN": {
-            "total": 298,
-            "republican": 73,
-            "democrat": 144,
-            "general": 81
+            "total": 333,
+            "republican": 79,
+            "democrat": 156,
+            "general": 98
           },
           "EAST LAKE": {
-            "total": 98,
-            "republican": 17,
-            "democrat": 53,
-            "general": 28
+            "total": 117,
+            "republican": 20,
+            "democrat": 63,
+            "general": 34
           },
           "EASTSIDE": {
-            "total": 211,
-            "republican": 36,
-            "democrat": 131,
-            "general": 44
+            "total": 243,
+            "republican": 43,
+            "democrat": 147,
+            "general": 53
           },
           "ST ELMO": {
-            "total": 400,
-            "republican": 76,
-            "democrat": 268,
-            "general": 56
+            "total": 426,
+            "republican": 82,
+            "democrat": 282,
+            "general": 62
           }
         },
         "8": {
           "AVONDALE": {
-            "total": 191,
+            "total": 205,
             "republican": 6,
-            "democrat": 153,
-            "general": 32
+            "democrat": 164,
+            "general": 35
           },
           "BUSHTOWN": {
-            "total": 339,
-            "republican": 13,
-            "democrat": 264,
-            "general": 62
+            "total": 379,
+            "republican": 15,
+            "democrat": 293,
+            "general": 71
           },
           "COURTHOUSE": {
-            "total": 167,
-            "republican": 19,
-            "democrat": 99,
-            "general": 49
+            "total": 192,
+            "republican": 20,
+            "democrat": 114,
+            "general": 58
           },
           "DOWNTOWN": {
-            "total": 68,
-            "republican": 12,
-            "democrat": 37,
+            "total": 71,
+            "republican": 13,
+            "democrat": 39,
             "general": 19
           },
           "EASTSIDE": {
-            "total": 142,
-            "republican": 22,
-            "democrat": 93,
-            "general": 27
+            "total": 154,
+            "republican": 24,
+            "democrat": 99,
+            "general": 31
           },
           "GLENWOOD": {
-            "total": 14,
+            "total": 15,
             "republican": 0,
-            "democrat": 10,
+            "democrat": 11,
             "general": 4
           },
           "KINGSPOINT": {
-            "total": 160,
-            "republican": 31,
-            "democrat": 101,
-            "general": 28
+            "total": 174,
+            "republican": 32,
+            "democrat": 111,
+            "general": 31
           },
           "RIDGEDALE": {
-            "total": 29,
+            "total": 31,
             "republican": 3,
-            "democrat": 21,
+            "democrat": 23,
             "general": 5
           },
           "EAST CHATTANOOGA": {
-            "total": 51,
+            "total": 57,
             "republican": 3,
-            "democrat": 37,
-            "general": 11
+            "democrat": 41,
+            "general": 13
           },
           "EAST LAKE": {
-            "total": 24,
+            "total": 26,
             "republican": 5,
-            "democrat": 12,
-            "general": 7
+            "democrat": 13,
+            "general": 8
           },
           "ALTON PARK": {
-            "total": 19,
+            "total": 21,
             "republican": 6,
-            "democrat": 6,
-            "general": 7
+            "democrat": 7,
+            "general": 8
           }
         },
         "5": {
           "BONNY OAKS": {
-            "total": 465,
-            "republican": 46,
-            "democrat": 372,
-            "general": 47
+            "total": 510,
+            "republican": 48,
+            "democrat": 408,
+            "general": 54
           },
           "DALEWOOD": {
-            "total": 220,
-            "republican": 5,
-            "democrat": 189,
-            "general": 26
+            "total": 236,
+            "republican": 6,
+            "democrat": 200,
+            "general": 30
           },
           "EASTGATE": {
-            "total": 294,
-            "republican": 27,
-            "democrat": 235,
-            "general": 32
+            "total": 332,
+            "republican": 29,
+            "democrat": 259,
+            "general": 44
           },
           "HARRISON": {
-            "total": 168,
-            "republican": 64,
-            "democrat": 73,
-            "general": 31
+            "total": 184,
+            "republican": 66,
+            "democrat": 84,
+            "general": 34
           },
           "KINGSPOINT": {
-            "total": 191,
+            "total": 200,
             "republican": 26,
-            "democrat": 135,
+            "democrat": 144,
             "general": 30
           },
           "LAKE HILLS": {
-            "total": 268,
+            "total": 295,
             "republican": 28,
-            "democrat": 198,
-            "general": 42
+            "democrat": 214,
+            "general": 53
           },
           "MURRAY HILLS": {
-            "total": 344,
-            "republican": 79,
-            "democrat": 210,
-            "general": 55
+            "total": 383,
+            "republican": 82,
+            "democrat": 237,
+            "general": 64
           },
           "WOODMORE": {
-            "total": 414,
-            "republican": 19,
-            "democrat": 360,
-            "general": 35
+            "total": 458,
+            "republican": 21,
+            "democrat": 397,
+            "general": 40
           },
           "WOLFTEVER": {
-            "total": 7,
+            "total": 8,
             "republican": 5,
             "democrat": 2,
-            "general": 0
+            "general": 1
           },
           "EAST CHATTANOOGA": {
-            "total": 16,
+            "total": 18,
             "republican": 0,
-            "democrat": 13,
+            "democrat": 15,
             "general": 3
           }
         },
         "9": {
           "BRAINERD": {
-            "total": 152,
-            "republican": 30,
-            "democrat": 105,
-            "general": 17
+            "total": 169,
+            "republican": 34,
+            "democrat": 114,
+            "general": 21
           },
           "BUSHTOWN": {
-            "total": 46,
+            "total": 49,
             "republican": 3,
-            "democrat": 38,
+            "democrat": 41,
             "general": 5
           },
           "DALEWOOD": {
-            "total": 308,
-            "republican": 8,
-            "democrat": 264,
-            "general": 36
-          },
-          "EAST CHATTANOOGA": {
-            "total": 278,
-            "republican": 17,
-            "democrat": 218,
+            "total": 333,
+            "republican": 10,
+            "democrat": 280,
             "general": 43
           },
+          "EAST CHATTANOOGA": {
+            "total": 323,
+            "republican": 23,
+            "democrat": 249,
+            "general": 51
+          },
           "EASTGATE": {
-            "total": 130,
-            "republican": 14,
-            "democrat": 95,
-            "general": 21
+            "total": 141,
+            "republican": 15,
+            "democrat": 104,
+            "general": 22
           },
           "EASTSIDE": {
-            "total": 56,
+            "total": 64,
             "republican": 5,
-            "democrat": 37,
+            "democrat": 45,
             "general": 14
           },
           "GLENWOOD": {
-            "total": 334,
+            "total": 363,
             "republican": 47,
-            "democrat": 244,
-            "general": 43
+            "democrat": 266,
+            "general": 50
           },
           "MISSIONARY RIDGE": {
-            "total": 261,
-            "republican": 81,
-            "democrat": 135,
-            "general": 45
+            "total": 286,
+            "republican": 82,
+            "democrat": 155,
+            "general": 49
           },
           "RIDGEDALE": {
-            "total": 325,
-            "republican": 28,
-            "democrat": 252,
-            "general": 45
+            "total": 374,
+            "republican": 30,
+            "democrat": 284,
+            "general": 60
           },
           "EAST RIDGE B": {
-            "total": 3,
+            "total": 4,
             "republican": 0,
-            "democrat": 2,
+            "democrat": 3,
             "general": 1
           }
         },
         "4": {
           "CONCORD A": {
-            "total": 84,
+            "total": 89,
             "republican": 20,
-            "democrat": 45,
-            "general": 19
+            "democrat": 48,
+            "general": 21
           },
           "CONCORD B": {
-            "total": 542,
-            "republican": 207,
-            "democrat": 228,
-            "general": 107
+            "total": 577,
+            "republican": 215,
+            "democrat": 241,
+            "general": 121
           },
           "EAST BRAINERD A": {
-            "total": 589,
-            "republican": 259,
-            "democrat": 222,
-            "general": 108
+            "total": 647,
+            "republican": 288,
+            "democrat": 240,
+            "general": 119
           },
           "EAST BRAINERD B": {
-            "total": 982,
-            "republican": 440,
-            "democrat": 344,
-            "general": 198
+            "total": 1063,
+            "republican": 467,
+            "democrat": 375,
+            "general": 221
           },
           "HURRICANE CREEK": {
-            "total": 191,
-            "republican": 75,
-            "democrat": 81,
-            "general": 35
+            "total": 209,
+            "republican": 80,
+            "democrat": 91,
+            "general": 38
           },
           "SILVERDALE": {
-            "total": 13,
+            "total": 14,
             "republican": 4,
-            "democrat": 4,
+            "democrat": 5,
             "general": 5
           },
           "WESTVIEW A": {
-            "total": 12,
+            "total": 14,
             "republican": 4,
-            "democrat": 6,
-            "general": 2
+            "democrat": 7,
+            "general": 3
           }
         },
         "2": {
           "DUPONT": {
-            "total": 107,
-            "republican": 42,
-            "democrat": 53,
-            "general": 12
+            "total": 113,
+            "republican": 44,
+            "democrat": 56,
+            "general": 13
           },
           "LUPTON CITY": {
-            "total": 354,
-            "republican": 119,
-            "democrat": 184,
-            "general": 51
+            "total": 382,
+            "republican": 125,
+            "democrat": 198,
+            "general": 59
           },
           "NORTH CHATTANOOGA A": {
-            "total": 315,
-            "republican": 72,
-            "democrat": 166,
-            "general": 77
+            "total": 342,
+            "republican": 75,
+            "democrat": 184,
+            "general": 83
           },
           "NORTH CHATTANOOGA B": {
-            "total": 35,
-            "republican": 7,
-            "democrat": 16,
-            "general": 12
+            "total": 39,
+            "republican": 8,
+            "democrat": 17,
+            "general": 14
           },
           "NORTHGATE": {
-            "total": 17,
+            "total": 18,
             "republican": 4,
-            "democrat": 10,
+            "democrat": 11,
             "general": 3
           },
           "NORTHSHORE": {
-            "total": 695,
-            "republican": 201,
-            "democrat": 383,
-            "general": 111
+            "total": 761,
+            "republican": 218,
+            "democrat": 421,
+            "general": 122
           },
           "RIVERVIEW": {
-            "total": 335,
-            "republican": 94,
-            "democrat": 195,
-            "general": 46
+            "total": 382,
+            "republican": 105,
+            "democrat": 222,
+            "general": 55
           },
           "STUART HEIGHTS": {
-            "total": 612,
-            "republican": 232,
-            "democrat": 316,
-            "general": 64
+            "total": 675,
+            "republican": 260,
+            "democrat": 338,
+            "general": 77
           },
           "RED BANK A": {
             "total": 2,
@@ -12259,89 +12349,89 @@ var TURNOUT_DATA = {
         },
         "3": {
           "DUPONT": {
-            "total": 496,
-            "republican": 256,
-            "democrat": 155,
-            "general": 85
+            "total": 545,
+            "republican": 278,
+            "democrat": 167,
+            "general": 100
           },
           "HIXSON": {
-            "total": 217,
-            "republican": 107,
-            "democrat": 84,
-            "general": 26
+            "total": 232,
+            "republican": 110,
+            "democrat": 92,
+            "general": 30
           },
           "LUPTON CITY": {
-            "total": 101,
-            "republican": 26,
-            "democrat": 54,
+            "total": 117,
+            "republican": 34,
+            "democrat": 62,
             "general": 21
           },
           "NORTHGATE": {
-            "total": 584,
-            "republican": 273,
-            "democrat": 193,
-            "general": 118
+            "total": 624,
+            "republican": 285,
+            "democrat": 206,
+            "general": 133
           },
           "NORTHWOODS": {
-            "total": 454,
-            "republican": 170,
-            "democrat": 203,
-            "general": 81
+            "total": 495,
+            "republican": 180,
+            "democrat": 226,
+            "general": 89
           },
           "VALLEYBROOK": {
-            "total": 1216,
-            "republican": 707,
-            "democrat": 346,
-            "general": 163
+            "total": 1309,
+            "republican": 750,
+            "democrat": 384,
+            "general": 175
           }
         },
         "1": {
           "HIXSON": {
-            "total": 268,
-            "republican": 118,
-            "democrat": 106,
-            "general": 44
+            "total": 287,
+            "republican": 124,
+            "democrat": 113,
+            "general": 50
           },
           "LOOKOUT VALLEY": {
-            "total": 580,
-            "republican": 318,
-            "democrat": 173,
-            "general": 89
+            "total": 614,
+            "republican": 332,
+            "democrat": 185,
+            "general": 97
           },
           "MOUNTAIN CREEK A": {
-            "total": 728,
-            "republican": 300,
-            "democrat": 302,
-            "general": 126
+            "total": 778,
+            "republican": 315,
+            "democrat": 330,
+            "general": 133
           },
           "MOUNTAIN CREEK B": {
-            "total": 134,
-            "republican": 32,
+            "total": 140,
+            "republican": 34,
             "democrat": 64,
-            "general": 38
+            "general": 42
           },
           "NORTH CHATTANOOGA B": {
-            "total": 134,
-            "republican": 45,
-            "democrat": 58,
-            "general": 31
+            "total": 153,
+            "republican": 51,
+            "democrat": 62,
+            "general": 40
           },
           "NORTHWOODS": {
-            "total": 346,
-            "republican": 163,
-            "democrat": 125,
-            "general": 58
+            "total": 366,
+            "republican": 170,
+            "democrat": 132,
+            "general": 64
           },
           "FALLING WATER A": {
-            "total": 5,
-            "republican": 2,
+            "total": 8,
+            "republican": 5,
             "democrat": 0,
             "general": 3
           },
           "MOUNTAIN CREEK C": {
-            "total": 11,
+            "total": 13,
             "republican": 1,
-            "democrat": 8,
+            "democrat": 10,
             "general": 2
           }
         }
@@ -12443,61 +12533,61 @@ var TURNOUT_DATA = {
     }
   },
   "firstTimeVoters": {
-    "total": 1587,
-    "turnoutPercent": 3.92,
+    "total": 1820,
+    "turnoutPercent": 4.14,
     "partyBreakdown": {
       "republican": 0,
       "democrat": 0,
-      "general": 1587
+      "general": 1820
     },
     "ageGroups": {
       "65+": {
-        "total": 428,
+        "total": 443,
         "republican": 0,
         "democrat": 0,
-        "general": 428
+        "general": 443
       },
       "30-49": {
-        "total": 349,
+        "total": 417,
         "republican": 0,
         "democrat": 0,
-        "general": 349
+        "general": 417
       },
       "50-64": {
-        "total": 310,
+        "total": 354,
         "republican": 0,
         "democrat": 0,
-        "general": 310
+        "general": 354
       },
       "18-29": {
-        "total": 500,
+        "total": 606,
         "republican": 0,
         "democrat": 0,
-        "general": 500
+        "general": 606
       }
     },
     "sex": {
       "M": {
-        "total": 712,
+        "total": 832,
         "republican": 0,
         "democrat": 0,
-        "general": 712
+        "general": 832
       },
       "F": {
-        "total": 875,
+        "total": 988,
         "republican": 0,
         "democrat": 0,
-        "general": 875
+        "general": 988
       }
     },
     "locations": {
       "By Mail/NH Voters": 75,
-      "Brainerd": 211,
-      "Collegedale": 330,
-      "Election Comm.": 447,
-      "Harrison": 130,
-      "Hixson": 278,
-      "Soddy Daisy": 116
+      "Brainerd": 250,
+      "Collegedale": 382,
+      "Election Comm.": 504,
+      "Harrison": 149,
+      "Hixson": 322,
+      "Soddy Daisy": 138
     },
     "dailyTrend": [
       {
@@ -12542,7 +12632,7 @@ var TURNOUT_DATA = {
       },
       {
         "date": "2026-10-24",
-        "count": 0
+        "count": 233
       },
       {
         "date": "2026-10-26",
@@ -12568,267 +12658,267 @@ var TURNOUT_DATA = {
     "districts": {
       "commission": {
         "5": {
-          "total": 116,
+          "total": 127,
           "republican": 0,
           "democrat": 0,
-          "general": 116
+          "general": 127
         },
         "11": {
-          "total": 95,
+          "total": 103,
           "republican": 0,
           "democrat": 0,
-          "general": 95
+          "general": 103
         },
         "10": {
-          "total": 193,
+          "total": 224,
           "republican": 0,
           "democrat": 0,
-          "general": 193
+          "general": 224
         },
         "8": {
-          "total": 114,
-          "republican": 0,
-          "democrat": 0,
-          "general": 114
-        },
-        "1": {
           "total": 133,
           "republican": 0,
           "democrat": 0,
           "general": 133
         },
-        "3": {
-          "total": 156,
+        "1": {
+          "total": 154,
           "republican": 0,
           "democrat": 0,
-          "general": 156
+          "general": 154
+        },
+        "3": {
+          "total": 179,
+          "republican": 0,
+          "democrat": 0,
+          "general": 179
         },
         "4": {
-          "total": 122,
+          "total": 151,
           "republican": 0,
           "democrat": 0,
-          "general": 122
+          "general": 151
         },
         "9": {
-          "total": 141,
+          "total": 163,
           "republican": 0,
           "democrat": 0,
-          "general": 141
+          "general": 163
         },
         "2": {
-          "total": 138,
+          "total": 154,
           "republican": 0,
           "democrat": 0,
-          "general": 138
+          "general": 154
         },
         "6": {
-          "total": 180,
+          "total": 210,
           "republican": 0,
           "democrat": 0,
-          "general": 180
+          "general": 210
         },
         "7": {
-          "total": 199,
+          "total": 222,
           "republican": 0,
           "democrat": 0,
-          "general": 199
+          "general": 222
         }
       },
       "senate": {
         "10": {
-          "total": 661,
+          "total": 752,
           "republican": 0,
           "democrat": 0,
-          "general": 661
+          "general": 752
         },
         "11": {
-          "total": 926,
+          "total": 1068,
           "republican": 0,
           "democrat": 0,
-          "general": 926
+          "general": 1068
         }
       },
       "house": {
         "28": {
-          "total": 213,
+          "total": 257,
           "republican": 0,
           "democrat": 0,
-          "general": 213
+          "general": 257
         },
         "29": {
-          "total": 404,
+          "total": 458,
           "republican": 0,
           "democrat": 0,
-          "general": 404
+          "general": 458
         },
         "30": {
-          "total": 292,
+          "total": 335,
           "republican": 0,
           "democrat": 0,
-          "general": 292
+          "general": 335
         },
         "26": {
-          "total": 364,
+          "total": 419,
           "republican": 0,
           "democrat": 0,
-          "general": 364
+          "general": 419
         },
         "27": {
-          "total": 314,
+          "total": 351,
           "republican": 0,
           "democrat": 0,
-          "general": 314
+          "general": 351
         }
       },
       "school": {
         "5": {
-          "total": 116,
+          "total": 127,
           "republican": 0,
           "democrat": 0,
-          "general": 116
+          "general": 127
         },
         "11": {
-          "total": 95,
+          "total": 103,
           "republican": 0,
           "democrat": 0,
-          "general": 95
+          "general": 103
         },
         "10": {
-          "total": 193,
+          "total": 224,
           "republican": 0,
           "democrat": 0,
-          "general": 193
+          "general": 224
         },
         "8": {
-          "total": 114,
-          "republican": 0,
-          "democrat": 0,
-          "general": 114
-        },
-        "1": {
           "total": 133,
           "republican": 0,
           "democrat": 0,
           "general": 133
         },
-        "3": {
-          "total": 156,
+        "1": {
+          "total": 154,
           "republican": 0,
           "democrat": 0,
-          "general": 156
+          "general": 154
+        },
+        "3": {
+          "total": 179,
+          "republican": 0,
+          "democrat": 0,
+          "general": 179
         },
         "4": {
-          "total": 122,
+          "total": 151,
           "republican": 0,
           "democrat": 0,
-          "general": 122
+          "general": 151
         },
         "9": {
-          "total": 141,
+          "total": 163,
           "republican": 0,
           "democrat": 0,
-          "general": 141
+          "general": 163
         },
         "2": {
-          "total": 138,
+          "total": 154,
           "republican": 0,
           "democrat": 0,
-          "general": 138
+          "general": 154
         },
         "6": {
-          "total": 180,
+          "total": 210,
           "republican": 0,
           "democrat": 0,
-          "general": 180
+          "general": 210
         },
         "7": {
-          "total": 199,
+          "total": 222,
           "republican": 0,
           "democrat": 0,
-          "general": 199
+          "general": 222
         }
       },
       "city": {
         "6": {
-          "total": 100,
+          "total": 108,
           "republican": 0,
           "democrat": 0,
-          "general": 100
+          "general": 108
         },
         "7": {
-          "total": 68,
+          "total": 82,
           "republican": 0,
           "democrat": 0,
-          "general": 68
+          "general": 82
         },
         "4": {
-          "total": 115,
+          "total": 130,
           "republican": 0,
           "democrat": 0,
-          "general": 115
+          "general": 130
         },
         "3": {
-          "total": 122,
+          "total": 137,
           "republican": 0,
           "democrat": 0,
-          "general": 122
+          "general": 137
         },
         "9": {
-          "total": 66,
+          "total": 76,
           "republican": 0,
           "democrat": 0,
-          "general": 66
+          "general": 76
         },
         "1": {
-          "total": 93,
+          "total": 105,
           "republican": 0,
           "democrat": 0,
-          "general": 93
+          "general": 105
         },
         "2": {
-          "total": 115,
+          "total": 132,
           "republican": 0,
           "democrat": 0,
-          "general": 115
+          "general": 132
         },
         "5": {
-          "total": 47,
+          "total": 56,
           "republican": 0,
           "democrat": 0,
-          "general": 47
+          "general": 56
         },
         "8": {
-          "total": 74,
+          "total": 86,
           "republican": 0,
           "democrat": 0,
-          "general": 74
+          "general": 86
         }
       }
     },
     "precincts": {
       "AIRPORT B": {
-        "total": 7,
+        "total": 8,
         "republican": 0,
         "democrat": 0,
-        "general": 7
+        "general": 8
       },
       "ALTON PARK": {
+        "total": 18,
+        "republican": 0,
+        "democrat": 0,
+        "general": 18
+      },
+      "APISON B": {
+        "total": 31,
+        "republican": 0,
+        "democrat": 0,
+        "general": 31
+      },
+      "BRAINERD": {
         "total": 16,
         "republican": 0,
         "democrat": 0,
         "general": 16
-      },
-      "APISON B": {
-        "total": 28,
-        "republican": 0,
-        "democrat": 0,
-        "general": 28
-      },
-      "BRAINERD": {
-        "total": 14,
-        "republican": 0,
-        "democrat": 0,
-        "general": 14
       },
       "COLLEGEDALE B": {
         "total": 20,
@@ -12837,106 +12927,106 @@ var TURNOUT_DATA = {
         "general": 20
       },
       "CONCORD B": {
-        "total": 32,
-        "republican": 0,
-        "democrat": 0,
-        "general": 32
-      },
-      "DALLAS": {
-        "total": 19,
-        "republican": 0,
-        "democrat": 0,
-        "general": 19
-      },
-      "DUPONT": {
-        "total": 22,
-        "republican": 0,
-        "democrat": 0,
-        "general": 22
-      },
-      "EAST CHATTANOOGA": {
-        "total": 9,
-        "republican": 0,
-        "democrat": 0,
-        "general": 9
-      },
-      "EAST RIDGE D": {
-        "total": 19,
-        "republican": 0,
-        "democrat": 0,
-        "general": 19
-      },
-      "GLENWOOD": {
-        "total": 13,
-        "republican": 0,
-        "democrat": 0,
-        "general": 13
-      },
-      "HUNTER": {
-        "total": 29,
-        "republican": 0,
-        "democrat": 0,
-        "general": 29
-      },
-      "LOOKOUT VALLEY": {
-        "total": 19,
-        "republican": 0,
-        "democrat": 0,
-        "general": 19
-      },
-      "MOUNTAIN CREEK A": {
         "total": 38,
         "republican": 0,
         "democrat": 0,
         "general": 38
       },
-      "MOUNTAIN CREEK B": {
+      "DALLAS": {
+        "total": 22,
+        "republican": 0,
+        "democrat": 0,
+        "general": 22
+      },
+      "DUPONT": {
+        "total": 24,
+        "republican": 0,
+        "democrat": 0,
+        "general": 24
+      },
+      "EAST CHATTANOOGA": {
+        "total": 12,
+        "republican": 0,
+        "democrat": 0,
+        "general": 12
+      },
+      "EAST RIDGE D": {
+        "total": 21,
+        "republican": 0,
+        "democrat": 0,
+        "general": 21
+      },
+      "GLENWOOD": {
         "total": 14,
         "republican": 0,
         "democrat": 0,
         "general": 14
       },
-      "NORTHGATE": {
-        "total": 33,
+      "HUNTER": {
+        "total": 36,
         "republican": 0,
         "democrat": 0,
-        "general": 33
+        "general": 36
       },
-      "NORTHSHORE": {
-        "total": 34,
+      "LOOKOUT VALLEY": {
+        "total": 20,
         "republican": 0,
         "democrat": 0,
-        "general": 34
+        "general": 20
       },
-      "OOLTEWAH RINGGOLD": {
-        "total": 54,
+      "MOUNTAIN CREEK A": {
+        "total": 39,
         "republican": 0,
         "democrat": 0,
-        "general": 54
+        "general": 39
       },
-      "RIDGEDALE": {
+      "MOUNTAIN CREEK B": {
         "total": 17,
         "republican": 0,
         "democrat": 0,
         "general": 17
       },
-      "SIGNAL MOUNTAIN B": {
-        "total": 16,
+      "NORTHGATE": {
+        "total": 38,
         "republican": 0,
         "democrat": 0,
-        "general": 16
+        "general": 38
       },
-      "SILVERDALE": {
-        "total": 11,
+      "NORTHSHORE": {
+        "total": 36,
         "republican": 0,
         "democrat": 0,
-        "general": 11
+        "general": 36
       },
-      "SODDY DAISY B": {
+      "OOLTEWAH RINGGOLD": {
+        "total": 57,
+        "republican": 0,
+        "democrat": 0,
+        "general": 57
+      },
+      "RIDGEDALE": {
         "total": 22,
         "republican": 0,
         "democrat": 0,
         "general": 22
+      },
+      "SIGNAL MOUNTAIN B": {
+        "total": 22,
+        "republican": 0,
+        "democrat": 0,
+        "general": 22
+      },
+      "SILVERDALE": {
+        "total": 13,
+        "republican": 0,
+        "democrat": 0,
+        "general": 13
+      },
+      "SODDY DAISY B": {
+        "total": 23,
+        "republican": 0,
+        "democrat": 0,
+        "general": 23
       },
       "ST ELMO": {
         "total": 10,
@@ -12945,124 +13035,124 @@ var TURNOUT_DATA = {
         "general": 10
       },
       "SUMMIT": {
-        "total": 27,
+        "total": 29,
         "republican": 0,
         "democrat": 0,
-        "general": 27
+        "general": 29
       },
       "VALLEYBROOK": {
-        "total": 37,
+        "total": 43,
         "republican": 0,
         "democrat": 0,
-        "general": 37
+        "general": 43
       },
       "WESTVIEW B": {
-        "total": 24,
+        "total": 28,
         "republican": 0,
         "democrat": 0,
-        "general": 24
+        "general": 28
       },
       "BONNY OAKS": {
-        "total": 9,
-        "republican": 0,
-        "democrat": 0,
-        "general": 9
-      },
-      "CONCORD A": {
-        "total": 11,
-        "republican": 0,
-        "democrat": 0,
-        "general": 11
-      },
-      "EAST BRAINERD A": {
-        "total": 30,
-        "republican": 0,
-        "democrat": 0,
-        "general": 30
-      },
-      "EAST RIDGE C": {
-        "total": 9,
-        "republican": 0,
-        "democrat": 0,
-        "general": 9
-      },
-      "EASTGATE": {
-        "total": 11,
-        "republican": 0,
-        "democrat": 0,
-        "general": 11
-      },
-      "EASTSIDE": {
-        "total": 27,
-        "republican": 0,
-        "democrat": 0,
-        "general": 27
-      },
-      "HURRICANE CREEK": {
-        "total": 34,
-        "republican": 0,
-        "democrat": 0,
-        "general": 34
-      },
-      "LAKE HILLS": {
-        "total": 7,
-        "republican": 0,
-        "democrat": 0,
-        "general": 7
-      },
-      "MISSIONARY RIDGE": {
         "total": 10,
         "republican": 0,
         "democrat": 0,
         "general": 10
       },
-      "MURRAY HILLS": {
-        "total": 6,
+      "CONCORD A": {
+        "total": 13,
         "republican": 0,
         "democrat": 0,
-        "general": 6
+        "general": 13
       },
-      "TYNER": {
-        "total": 37,
+      "EAST BRAINERD A": {
+        "total": 32,
         "republican": 0,
         "democrat": 0,
-        "general": 37
+        "general": 32
       },
-      "EAST BRAINERD B": {
-        "total": 38,
+      "EAST RIDGE C": {
+        "total": 11,
         "republican": 0,
         "democrat": 0,
-        "general": 38
+        "general": 11
       },
-      "OOLTEWAH": {
-        "total": 37,
+      "EASTGATE": {
+        "total": 12,
         "republican": 0,
         "democrat": 0,
-        "general": 37
+        "general": 12
       },
-      "OOLTEWAH GEORGETOWN": {
-        "total": 18,
+      "EASTSIDE": {
+        "total": 29,
         "republican": 0,
         "democrat": 0,
-        "general": 18
+        "general": 29
       },
-      "SAVANNAH BAY": {
-        "total": 22,
+      "HURRICANE CREEK": {
+        "total": 39,
         "republican": 0,
         "democrat": 0,
-        "general": 22
+        "general": 39
       },
-      "WESTVIEW A": {
+      "LAKE HILLS": {
         "total": 8,
         "republican": 0,
         "democrat": 0,
         "general": 8
       },
-      "WOLFTEVER": {
-        "total": 25,
+      "MISSIONARY RIDGE": {
+        "total": 11,
         "republican": 0,
         "democrat": 0,
-        "general": 25
+        "general": 11
+      },
+      "MURRAY HILLS": {
+        "total": 8,
+        "republican": 0,
+        "democrat": 0,
+        "general": 8
+      },
+      "TYNER": {
+        "total": 39,
+        "republican": 0,
+        "democrat": 0,
+        "general": 39
+      },
+      "EAST BRAINERD B": {
+        "total": 41,
+        "republican": 0,
+        "democrat": 0,
+        "general": 41
+      },
+      "OOLTEWAH": {
+        "total": 44,
+        "republican": 0,
+        "democrat": 0,
+        "general": 44
+      },
+      "OOLTEWAH GEORGETOWN": {
+        "total": 24,
+        "republican": 0,
+        "democrat": 0,
+        "general": 24
+      },
+      "SAVANNAH BAY": {
+        "total": 28,
+        "republican": 0,
+        "democrat": 0,
+        "general": 28
+      },
+      "WESTVIEW A": {
+        "total": 11,
+        "republican": 0,
+        "democrat": 0,
+        "general": 11
+      },
+      "WOLFTEVER": {
+        "total": 29,
+        "republican": 0,
+        "democrat": 0,
+        "general": 29
       },
       "AVONDALE": {
         "total": 4,
@@ -13071,16 +13161,16 @@ var TURNOUT_DATA = {
         "general": 4
       },
       "COURTHOUSE": {
-        "total": 27,
+        "total": 31,
         "republican": 0,
         "democrat": 0,
-        "general": 27
+        "general": 31
       },
       "DOWNTOWN": {
-        "total": 30,
+        "total": 39,
         "republican": 0,
         "democrat": 0,
-        "general": 30
+        "general": 39
       },
       "FAIRMOUNT": {
         "total": 20,
@@ -13089,10 +13179,10 @@ var TURNOUT_DATA = {
         "general": 20
       },
       "HIXSON": {
-        "total": 14,
+        "total": 15,
         "republican": 0,
         "democrat": 0,
-        "general": 14
+        "general": 15
       },
       "LUPTON CITY": {
         "total": 15,
@@ -13101,46 +13191,46 @@ var TURNOUT_DATA = {
         "general": 15
       },
       "NORTH CHATTANOOGA A": {
-        "total": 31,
+        "total": 37,
         "republican": 0,
         "democrat": 0,
-        "general": 31
+        "general": 37
       },
       "NORTH CHATTANOOGA B": {
-        "total": 13,
+        "total": 20,
         "republican": 0,
         "democrat": 0,
-        "general": 13
+        "general": 20
       },
       "RED BANK A": {
+        "total": 38,
+        "republican": 0,
+        "democrat": 0,
+        "general": 38
+      },
+      "RIVERVIEW": {
+        "total": 21,
+        "republican": 0,
+        "democrat": 0,
+        "general": 21
+      },
+      "WOODMORE": {
+        "total": 5,
+        "republican": 0,
+        "democrat": 0,
+        "general": 5
+      },
+      "HARRISON": {
         "total": 34,
         "republican": 0,
         "democrat": 0,
         "general": 34
       },
-      "RIVERVIEW": {
-        "total": 18,
-        "republican": 0,
-        "democrat": 0,
-        "general": 18
-      },
-      "WOODMORE": {
-        "total": 4,
-        "republican": 0,
-        "democrat": 0,
-        "general": 4
-      },
-      "HARRISON": {
-        "total": 29,
-        "republican": 0,
-        "democrat": 0,
-        "general": 29
-      },
       "HARRISON BAY": {
-        "total": 22,
+        "total": 23,
         "republican": 0,
         "democrat": 0,
-        "general": 22
+        "general": 23
       },
       "FALLING WATER A": {
         "total": 6,
@@ -13149,10 +13239,10 @@ var TURNOUT_DATA = {
         "general": 6
       },
       "LAKESITE": {
-        "total": 6,
+        "total": 7,
         "republican": 0,
         "democrat": 0,
-        "general": 6
+        "general": 7
       },
       "MIDDLE VALLEY": {
         "total": 3,
@@ -13161,34 +13251,34 @@ var TURNOUT_DATA = {
         "general": 3
       },
       "NORTHWOODS": {
-        "total": 32,
+        "total": 35,
         "republican": 0,
         "democrat": 0,
-        "general": 32
+        "general": 35
       },
       "PLEASANT GROVE A": {
-        "total": 18,
+        "total": 23,
         "republican": 0,
         "democrat": 0,
-        "general": 18
+        "general": 23
       },
       "POSSUM CREEK": {
-        "total": 32,
+        "total": 39,
         "republican": 0,
         "democrat": 0,
-        "general": 32
+        "general": 39
       },
       "SEQUOYAH": {
-        "total": 13,
-        "republican": 0,
-        "democrat": 0,
-        "general": 13
-      },
-      "SODDY DAISY A": {
         "total": 15,
         "republican": 0,
         "democrat": 0,
         "general": 15
+      },
+      "SODDY DAISY A": {
+        "total": 18,
+        "republican": 0,
+        "democrat": 0,
+        "general": 18
       },
       "BRAINERD HILLS": {
         "total": 18,
@@ -13197,34 +13287,34 @@ var TURNOUT_DATA = {
         "general": 18
       },
       "BUSHTOWN": {
-        "total": 19,
+        "total": 24,
         "republican": 0,
         "democrat": 0,
-        "general": 19
+        "general": 24
       },
       "EAST RIDGE A": {
-        "total": 13,
+        "total": 16,
         "republican": 0,
         "democrat": 0,
-        "general": 13
+        "general": 16
       },
       "EAST RIDGE B": {
-        "total": 12,
+        "total": 16,
         "republican": 0,
         "democrat": 0,
-        "general": 12
+        "general": 16
       },
       "KINGSPOINT": {
-        "total": 10,
+        "total": 11,
         "republican": 0,
         "democrat": 0,
-        "general": 10
+        "general": 11
       },
       "MEADOWVIEW": {
-        "total": 22,
+        "total": 26,
         "republican": 0,
         "democrat": 0,
-        "general": 22
+        "general": 26
       },
       "RIDGESIDE": {
         "total": 2,
@@ -13233,46 +13323,46 @@ var TURNOUT_DATA = {
         "general": 2
       },
       "COLLEGEDALE A": {
-        "total": 30,
+        "total": 35,
         "republican": 0,
         "democrat": 0,
-        "general": 30
+        "general": 35
       },
       "RED BANK B": {
-        "total": 11,
-        "republican": 0,
-        "democrat": 0,
-        "general": 11
-      },
-      "RED BANK C": {
-        "total": 12,
-        "republican": 0,
-        "democrat": 0,
-        "general": 12
-      },
-      "SIGNAL MOUNTAIN A": {
-        "total": 6,
-        "republican": 0,
-        "democrat": 0,
-        "general": 6
-      },
-      "BIRCHWOOD": {
         "total": 14,
         "republican": 0,
         "democrat": 0,
         "general": 14
       },
-      "EAST LAKE": {
-        "total": 10,
+      "RED BANK C": {
+        "total": 13,
         "republican": 0,
         "democrat": 0,
-        "general": 10
+        "general": 13
+      },
+      "SIGNAL MOUNTAIN A": {
+        "total": 8,
+        "republican": 0,
+        "democrat": 0,
+        "general": 8
+      },
+      "BIRCHWOOD": {
+        "total": 15,
+        "republican": 0,
+        "democrat": 0,
+        "general": 15
+      },
+      "EAST LAKE": {
+        "total": 12,
+        "republican": 0,
+        "democrat": 0,
+        "general": 12
       },
       "GANNS": {
-        "total": 23,
+        "total": 26,
         "republican": 0,
         "democrat": 0,
-        "general": 23
+        "general": 26
       },
       "MOWBRAY A": {
         "total": 5,
@@ -13281,40 +13371,40 @@ var TURNOUT_DATA = {
         "general": 5
       },
       "SALE CREEK": {
-        "total": 12,
+        "total": 13,
         "republican": 0,
         "democrat": 0,
-        "general": 12
+        "general": 13
       },
       "SODDY DAISY C": {
-        "total": 10,
+        "total": 13,
         "republican": 0,
         "democrat": 0,
-        "general": 10
+        "general": 13
       },
       "DALEWOOD": {
-        "total": 5,
+        "total": 6,
         "republican": 0,
         "democrat": 0,
-        "general": 5
+        "general": 6
       },
       "APISON A": {
-        "total": 11,
+        "total": 14,
         "republican": 0,
         "democrat": 0,
-        "general": 11
+        "general": 14
       },
       "STUART HEIGHTS": {
-        "total": 12,
+        "total": 16,
         "republican": 0,
         "democrat": 0,
-        "general": 12
+        "general": 16
       },
       "MOWBRAY B": {
-        "total": 3,
+        "total": 4,
         "republican": 0,
         "democrat": 0,
-        "general": 3
+        "general": 4
       },
       "FLAT TOP MOUNTAIN": {
         "total": 1,
@@ -13323,10 +13413,10 @@ var TURNOUT_DATA = {
         "general": 1
       },
       "WALDEN": {
-        "total": 3,
+        "total": 4,
         "republican": 0,
         "democrat": 0,
-        "general": 3
+        "general": 4
       },
       "FALLING WATER B": {
         "total": 4,
