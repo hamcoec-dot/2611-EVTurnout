@@ -610,7 +610,7 @@ var TURNOUT_DATA = {
       "partyBreakdown": null
     },
     {
-      "date": "10/30/26-Election Day",
+      "date": "10/30/26 thru Election Day",
       "isMailOnly": true,
       "values": {
         "By Mail/NH Voters": 0,
@@ -12561,7 +12561,7 @@ var TURNOUT_DATA = {
         "count": 0
       },
       {
-        "date": "10/30/26-Election Day",
+        "date": "10/30/26 thru Election Day",
         "count": 0
       }
     ],

@@ -491,10 +491,10 @@ def main():
 
     # Election Day
     # Row covers the day after early voting ends through Election Day
-    # ("10/30/26-Election Day" = 10/30/26 through Election Day).
+    # (e.g. "10/30/26 thru Election Day").
     election_day_dt = end_dt + timedelta(days=1)
     short_date = f"{election_day_dt.month}/{election_day_dt.day}/{str(election_day_dt.year)[2:]}"
-    timeline_dates.append(f"{short_date}-Election Day")
+    timeline_dates.append(f"{short_date} thru Election Day")
 
     # Single source of truth for day groupings: maps a ballot date (YYYY-MM-DD)
     # to the Daily Turnout Breakdown row it belongs to. Every by-day series must
