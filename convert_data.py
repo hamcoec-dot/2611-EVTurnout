@@ -490,9 +490,21 @@ def main():
         curr_dt += timedelta(days=1)
 
     # Election Day
+    # Row covers the day after early voting ends through Election Day
+    # ("10/30/26-Election Day" = 10/30/26 through Election Day).
     election_day_dt = end_dt + timedelta(days=1)
     short_date = f"{election_day_dt.month}/{election_day_dt.day}/{str(election_day_dt.year)[2:]}"
     timeline_dates.append(f"{short_date}-Election Day")
+
+    # Single source of truth for day groupings: maps a ballot date (YYYY-MM-DD)
+    # to the Daily Turnout Breakdown row it belongs to. Every by-day series must
+    # use this so its time frames match the table exactly.
+    def timeline_bucket(csv_date):
+        if csv_date < early_voting_start:
+            return pre_ev_label
+        if csv_date > early_voting_end:
+            return timeline_dates[-1]  # Election Day row
+        return csv_date if csv_date in timeline_dates else None
 
     # Build dailyTurnout objects
     for d_str in timeline_dates:
@@ -518,19 +530,7 @@ def main():
         # Aggregate CSV records for this timeline date
         party_breakdown = {}
         for csv_date, breakdown in csv_data.items():
-            # Check if csv_date matches pre-EV, exact EV date, or election day
-            is_match = False
-            if "Thru" in d_str:
-                if csv_date < early_voting_start:
-                    is_match = True
-            elif "Election Day" in d_str:
-                if csv_date > early_voting_end:
-                    is_match = True
-            else:
-                if csv_date == d_str:
-                    is_match = True
-
-            if is_match:
+            if timeline_bucket(csv_date) == d_str:
                 for loc, counts in breakdown.items():
                     if loc not in party_breakdown:
                         party_breakdown[loc] = {"total": 0, "democrat": 0, "republican": 0, "general": 0}
@@ -742,8 +742,9 @@ def main():
         loc = v["location"]
         ft_location_dist[loc] = ft_location_dist.get(loc, 0) + 1
         
-        d = v["date"]
-        ft_daily_trend[d] = ft_daily_trend.get(d, 0) + 1
+        bucket = timeline_bucket(v["date"])
+        if bucket is not None:
+            ft_daily_trend[bucket] = ft_daily_trend.get(bucket, 0) + 1
         
         if v["commission"]: add_voter(ft_commission_dist, v["commission"], p)
         if v["senate"]: add_voter(ft_senate_dist, v["senate"], p)
@@ -759,7 +760,8 @@ def main():
         "ageGroups": ft_age_groups,
         "sex": ft_sex_dist,
         "locations": ft_location_dist,
-        "dailyTrend": ft_daily_trend,
+        # Ordered exactly like dailyTurnout (same rows / time frames)
+        "dailyTrend": [{"date": e["date"], "count": ft_daily_trend.get(e["date"], 0)} for e in daily_turnout],
         "districts": {
             "commission": ft_commission_dist,
             "senate": ft_senate_dist,

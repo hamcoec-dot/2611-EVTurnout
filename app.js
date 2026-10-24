@@ -524,6 +524,21 @@ function formatLabelDate(dateStr) {
   return dateStr.replace(/\s/g, "&nbsp;");
 }
 
+// Shared time frames for every by-day chart. Returns the Daily Turnout
+// Breakdown rows (same groupings, same order) with matching plain-text labels,
+// plus the index of the last row that has reported turnout.
+function getDailyTimeline() {
+  var rows = (TURNOUT_DATA && TURNOUT_DATA.dailyTurnout) ? TURNOUT_DATA.dailyTurnout : [];
+  var lastReportedIndex = -1;
+  for (var i = 0; i < rows.length; i++) {
+    if (rows[i].total > 0) lastReportedIndex = i;
+  }
+  var labels = rows.map(function(row) {
+    return formatLabelDate(row.date).replace(/&nbsp;/g, ' ');
+  });
+  return { rows: rows, labels: labels, lastReportedIndex: lastReportedIndex };
+}
+
 // Append detail table sub-row
 function appendDetailsSubrow(tbody, rIdx, entry) {
   var trDetail = document.createElement("tr");
@@ -2428,15 +2443,16 @@ function renderFTDailyTrendChart() {
   if (!ctx || !TURNOUT_DATA.firstTimeVoters) return;
 
   var ft = TURNOUT_DATA.firstTimeVoters;
-  var trend = ft.dailyTrend || {};
+  var trend = ft.dailyTrend || [];
+  var countsByDate = {};
+  for (var i = 0; i < trend.length; i++) countsByDate[trend[i].date] = trend[i].count;
 
-  var sortedDates = Object.keys(trend).sort();
-  var counts = sortedDates.map(function(d) { return trend[d]; });
-
-  var labels = sortedDates.map(function(d) {
-    var parts = d.split('-');
-    if (parts.length === 3) return parseInt(parts[1], 10) + '/' + parseInt(parts[2], 10);
-    return d;
+  // Same rows and labels as the Daily Turnout Breakdown table
+  var tl = getDailyTimeline();
+  var labels = tl.labels;
+  var counts = tl.rows.map(function(row, idx) {
+    if (idx > tl.lastReportedIndex) return null; // not reported yet: stop the line
+    return countsByDate[row.date] || 0;
   });
 
   ftDailyTrendChartRef = new Chart(ctx, {
@@ -2449,7 +2465,7 @@ function renderFTDailyTrendChart() {
         borderColor: '#D4A843',
         backgroundColor: 'rgba(212, 168, 67, 0.15)',
         borderWidth: 3,
-        fill: true,
+        fill: false,
         tension: 0.3,
         pointBackgroundColor: '#1B2A4A',
         pointRadius: 5,
@@ -2463,6 +2479,7 @@ function renderFTDailyTrendChart() {
         x: { grid: { display: false } },
         y: {
           beginAtZero: true,
+          grace: '12%', // headroom so the top point's label isn't clipped
           grid: { color: '#E2E8F0' },
           title: { display: true, text: 'Daily First-Time Voters' }
         }
