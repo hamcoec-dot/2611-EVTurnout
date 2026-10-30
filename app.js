@@ -1537,7 +1537,7 @@ function renderAgeChart() {
   var demo = TURNOUT_DATA.demographics.ageGroups || {};
   var labels = ['18-29', '30-49', '50-64', '65+'];
   if (demo['Unknown']) labels.push('Unknown');
-  if (demo['<18']) labels.unshift('<18');
+  // '<18' bracket intentionally omitted: tiny counts mislead the public
 
   var repData = [];
   var demData = [];
